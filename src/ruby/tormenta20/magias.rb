@@ -13,17 +13,17 @@ module Tormenta20
       end
 
       def arcanas
-        return @divinas if @divinas
+        return @arcanas if @arcanas
 
-        @divinas = OpenStruct.new
-        @divinas = OpenStructJson.load('magias', include_if: -> (magia) { magia.type == 'divina' })
+        @arcanas = OpenStruct.new
+        @arcanas = OpenStructJson.load('magias', include_if: -> (magia) { magia.type == 'arcana' })
       end
 
       def universais
-        return @divinas if @divinas
+        return @universais if @universais
 
-        @divinas = OpenStruct.new
-        @divinas = OpenStructJson.load('magias', include_if: -> (magia) { magia.type == 'divina' })
+        @universais = OpenStruct.new
+        @universais = OpenStructJson.load('magias', include_if: -> (magia) { magia.type == 'universal' })
       end
 
       def method_missing(method)

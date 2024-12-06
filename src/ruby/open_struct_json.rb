@@ -1,5 +1,5 @@
 class OpenStructJson
-  BASE_PATH = __dir__.gsub('ruby', 'json/')
+  BASE_PATH = __dir__.gsub(/ruby\/?$/, 'json/')
     
   class << self
     def load(path, include_if: nil, reject_if: nil)

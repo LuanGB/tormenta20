@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    tormenta20 (0.1.0)
+    tormenta20 (0.2.0)
       activesupport (~> 8.0)
 
 GEM
