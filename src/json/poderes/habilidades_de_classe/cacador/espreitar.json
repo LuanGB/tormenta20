@@ -1,0 +1,21 @@
+{
+  "id": "espreitar",
+  "name": "Espreitar",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_cacador",
+  "description": "Quando usa a habilidade Marca da Presa, você recebe um bônus de +1 em testes de perícia contra a criatura marcada. Esse bônus aumenta em +1 para cada PM adicional gasto na habilidade e também dobra com a habilidade Inimigo.",
+  "requirements": [
+    {
+      "type": "fearute_actived",
+      "sub_type": "soft",
+      "feature": "marca_da_presa"
+    }
+  ],
+  "effects": [
+    {
+      "type": "skill_test_improvement",
+      "value": 1
+    }
+  ],
+  "costs": null
+}

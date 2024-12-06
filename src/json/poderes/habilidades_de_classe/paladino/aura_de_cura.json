@@ -1,0 +1,27 @@
+{
+  "id": "aura_de_cura",
+  "name": "Aura de Cura",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_paladino",
+  "description": "Enquanto sua aura estiver ativa, no início de seus turnos, você e os aliados a sua escolha dentro dela curam um número de PV igual a 5 + seu bônus de Carisma.",
+  "requirements": [
+     {
+      "type": "character_lvl",
+      "sub_type": "hard",
+      "value": 6
+    },
+    {
+      "type": "fearute_actived",
+      "sub_type": "soft",
+      "feature": "aura_sagrada"
+    }
+  ],
+  "effects": [
+    {
+      "type": "PV_improvement",
+      "value": "5_mais_bonus_de_car",
+      "requirements": "aliados_a_sua_escolha_dentro_da_area"
+    }
+  ],
+  "costs": null
+}

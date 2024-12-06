@@ -1,0 +1,60 @@
+{
+  "id": "escaramuca",
+  "name": "Escaramuça",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_cacador",
+  "description": "Quando se move 6m ou mais, você recebe +2 em Defesa e Reflexos e +1d8 nas rolagens de dano de ataques corpo a corpo e à distância em alcance curto até o início de seu próximo turno. Você não pode usar esta habilidade se estiver vestindo armadura pesada.",
+  "requirements": [
+     {
+      "type": "character_lvl",
+      "sub_type": "hard",
+      "value": 6
+    },
+    {
+      "type": "attr_value",
+      "sub_type": "hard",
+      "attr": "des",
+      "value": 15
+    },
+    {
+      "type": "travelled_distance",
+      "sub_type": "soft",
+      "distance": "6_metros_ou_mais"
+    },
+    {
+      "type": "attack_type",
+      "sub_type": "soft",
+      "attack": ["corpo_a_corpo", "a_distancia_curto"]
+    },
+    {
+      "type": "armor_type",
+      "sub_type": "soft",
+      "armor": "leve"
+    }
+
+  ],
+  "effects": [
+    {
+      "type": "attack_improvement",
+      "value": "1d8",
+      "duration": "turno"
+    },
+    {
+      "type": "damage_improvement",
+      "value": "1d8",
+      "duration": "turno"
+    },
+    {
+      "type": "skill_improvement",
+      "value": 2,
+      "skill": "reflexos",
+      "duration": "turno"
+    },
+    {
+      "type": "defense_improvement",
+      "value": 2,
+      "duration": "turno"
+    }
+  ],
+  "costs": null
+}

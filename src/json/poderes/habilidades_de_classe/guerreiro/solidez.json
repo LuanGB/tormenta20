@@ -1,0 +1,20 @@
+{
+  "id": "solidez",
+  "name": "Solidez",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_guerreiro",
+  "description": "Se estiver usando um escudo, você aplica o bônus na Defesa recebido pelo escudo em testes de resistência.",
+  "requirements": [
+    {
+      "type": "hold_shield",
+      "sub_type": "soft"
+    }
+  ],
+  "effects": [
+    {
+      "type": "add_bonus_to_skill",
+      "bonus": "defesa_do_escudo"
+    }
+  ],
+  "costs": null
+}

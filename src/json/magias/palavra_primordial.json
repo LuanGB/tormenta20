@@ -1,0 +1,36 @@
+{
+  "id": "palavra_primordial",
+  "name": "Palavra Primordial",
+  "type": "universal",
+  "circle": "5",
+  "school": "encan",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "curto_6m_9q",
+  "target": {
+    "amount": 1,
+    "up_to": null,
+    "type": "criatura_de_nivel_mais_baixo_que_voce"
+  },
+  "effect": "alvo",
+  "effect_details": null,
+  "counterspel": null,
+  "duration": "instantânea",
+  "duration_details": null,
+  "resistence": {
+    "effect": "parcial",
+    "skill": "vontade"
+  },
+  "extra_costs": null,
+  "description": "Você pronuncia uma palavra do idioma primordial da Criação, que causa um dos efeitos abaixo, a sua escolha.\nAtordoar: a criatura fica atordoada por 2d4 rodadas. Se passar no teste de resistência, fica desprevenida por 1d4 rodadas.\nCegar: a criatura fica cega. Se passar no teste de resistência, fica ofuscada por 1d4 rodadas.\nMatar: a criatura morre. Além do teste de Vontade, a criatura tem direito a um teste de Fortitude. Se passar em qualquer um deles, em vez de morrer sofre 10d8 pontos de dano de trevas e fica sangrando.",
+  "enhancements": null,
+  "effects": [
+    {
+      "type": "outro",
+      "attribute": null,
+      "amount": null,
+      "resistence_requirement": "vontade",
+      "extra_requirements": null
+    }
+  ]
+}

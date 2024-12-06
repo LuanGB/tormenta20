@@ -1,0 +1,27 @@
+{
+  "id": "vitalidade",
+  "name": "Vitalidade",
+  "type": "poder_geral",
+  "sub_type": "poder_de_combate",
+  "description": "Você recebe +1 PV por nível de personagem e +2 em Fortitude.",
+  "requirements": [
+    {
+      "type": "attr_value",
+      "sub_type": "hard",
+      "attr": "con",
+      "value": 13
+    }
+  ],
+  "effects": [
+    {
+      "type": "PV_improvement",
+      "value": 1,
+      "extra_details": "por_nivel_do_personagem"
+    },
+    {
+      "type": "skill_improvement",
+      "value": 2,
+      "skill": "fortitude"
+    }
+  ]
+}

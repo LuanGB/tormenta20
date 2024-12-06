@@ -1,0 +1,36 @@
+{
+  "id": "trespassar",
+  "name": "Trespassar",
+  "type": "poder_geral",
+  "sub_type": "poder_de_combate",
+  "description": "Quando você faz um ataque corpo a corpo e reduz os pontos de vida do alvo para 0 ou menos, pode gastar 1 PM para fazer um ataque adicional contra outra criatura dentro do seu alcance. O ataque adicional usa os mesmos valores de ataque e dano, masb os dados devem ser rolados novamente.",
+  "requirements": [
+    {
+      "type": "feature",
+      "sub_type": "hard",
+      "id": "ataque_poderoso"
+    },
+    {
+      "type": "attack_type",
+      "sub_type": "soft",
+      "attack": "corpo_a_corpo"
+    },
+    {
+      "type": "targed_life",
+      "sub_type": "soft",
+      "value": [0, "<0"] 
+    }
+  ],
+  "effects": [
+    {
+      "type": "extra_attack",
+      "attack": "outra_criatura_no_alcance"
+    }
+  ],
+  "costs": [
+    {
+    "value": 1,
+    "type": "PM"
+    }
+  ]
+}

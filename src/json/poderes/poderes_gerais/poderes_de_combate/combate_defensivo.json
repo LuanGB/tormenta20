@@ -1,0 +1,32 @@
+{
+  "id": "combate_defensivo",
+  "name": "Combate Defensivo",
+  "type": "poder_geral",
+  "sub_type": "poder_de_combate",
+  "description": "Quando usa a ação atacar, você pode usar este poder. Se fizer isso, até seu próximo turno, sofre –2 em todos os testes de ataque, mas recebe +5 na Defesa.",
+  "requirements": [
+    {
+      "type": "attr_value",
+      "sub_type": "hard",
+      "attr": "int",
+      "value": 13
+    },
+    {
+      "type": "action_type",
+      "sub_type": "soft",
+      "action": "atacar"
+    }
+  ],
+  "effects": [
+    {
+      "type": "attack_penalty",
+      "value": -2,
+      "duration": "proximo_turno"
+    },
+    {
+      "type": "defense_improvement",
+      "value": 5,
+      "duration": "proximo_turno"
+    }
+  ]
+}

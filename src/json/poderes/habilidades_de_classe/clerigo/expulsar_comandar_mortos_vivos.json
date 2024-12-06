@@ -1,0 +1,16 @@
+{
+  "id": "expulsar_comandar_mortos_vivos",
+  "name": "Expulsar/Comandar Mortos-Vivos",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_clerigo",
+  "description": "Você pode usar uma ação padrão e 3 PM para expulsar (se sua divindade canaliza energia positiva) ou comandar (se canaliza energia negativa) todos os mortos-vivos em alcance curto. Mortos-vivos expulsos ficam apavorados por 1d6 rodadas. Mortos-vivos comandados ficam sob suas ordens; entretanto, o nível somado de mortos-vivos sob seu comando ao mesmo tempo não pode exceder o seu próprio nível +3. Dar uma ordem a mortos-vivos é uma ação de movimento. Mortos-vivos têm direito a um teste de Vontade (CD Car) para evitar qualquer destes efeitos.",
+  "requirements": [
+    {
+      "type": "feature",
+      "sub_type": "hard",
+      "id": "canalizar_energia_positiva_negativa"
+    }
+  ],
+  "effects": "ver_texto",
+  "costs": null
+}

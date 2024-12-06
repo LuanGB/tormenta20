@@ -1,0 +1,87 @@
+{
+  "id": "sono",
+  "name": "Sono",
+  "type": "arcana",
+  "circle": "1",
+  "school": "encan",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "curto_6m_9q",
+  "target": {
+    "amount": 1,
+    "up_to": null,
+    "type": "criatura"
+  },
+  "effect": "alvo",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "cena",
+  "duration_details": null,
+  "resistence": {
+    "effect": "parcial",
+    "skill": "vontade"
+  },
+  "extra_costs": null,
+  "description": "Um sono místico recai sobre o alvo. Se passar na resistência, fica fatigado por uma rodada. Se falhar, fica inconsciente e caído.",
+  "enhancements": [
+    {
+      "cost": 2,
+      "type": "muda",
+      "description": "muda o alvo para área de quadrado com 3m de lado. Todas as criaturas na área dentro do limite de ND são afetadas.",
+      "extra_details": null
+    },
+    {
+      "cost": 2,
+      "type": "outro",
+      "description": "afeta alvos de ND 5 ou menor. Requer 2º círculo.",
+      "extra_details": {
+        "requirement": "2_circulo"
+      }
+    },
+    {
+      "cost": 5,
+      "type": "outro",
+      "description": "afeta alvos de ND 10 ou menor. Requer 3º círculo.",
+      "extra_details": {
+        "requirement": "3_circulo"
+      }
+    },
+    {
+      "cost": 5,
+      "type": "muda",
+      "description": "muda o alvo para criaturas escolhidas. Todas as criaturas no alcance dentro do limite de ND são afetadas.",
+      "extra_details": {
+        "target": {
+          "amount": null,
+          "up_to": null,
+          "type": "criaturas_escolhidas"
+        }
+      }
+    },
+    {
+      "cost": 9,
+      "type": "outro",
+      "description": "afeta alvos de ND 15 ou menor. Requer 4º círculo.",
+      "extra_details": {
+        "requirement": "4_circulo"
+      }
+    },
+    {
+      "cost": 14,
+      "type": "outro",
+      "description": "afeta alvos de qualquer ND. Requer 5º círculo.",
+      "extra_details": {
+        "requirement": "5_circulo"
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "condição",
+      "attribute": null,
+      "amount": null,
+      "resistence_requirement": "vontade",
+      "extra_requirements": null
+    }
+  ]
+}

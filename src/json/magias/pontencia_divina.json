@@ -1,0 +1,59 @@
+{
+  "id": "potencia_divina",
+  "name": "Potência Divina",
+  "type": "divina",
+  "circle": "3",
+  "school": "trans",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "pessoal",
+  "target": {
+    "amount": null,
+    "up_to": null,
+    "type": "voce"
+  },
+  "effect": "alvo",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "sustentada",
+  "duration_details": null,
+  "resistence": null,
+  "extra_costs": null,
+  "description": "Você canaliza o poder de sua divindade. Você aumenta uma categoria de tamanho (seu equipamento muda de acordo). Além disso, você recebe Força +8 e resistência a dano 10. Você não pode lançar magias enquanto estiver sob efeito de Potência Divina.",
+  "enhancements": [
+    {
+      "cost": 2,
+      "type": "aumenta",
+      "description": "aumenta o bônus de Força em +2",
+      "extra_details": null
+    },
+    {
+      "cost": 2,
+      "type": "aumenta",
+      "description": "aumenta a resistência a dano em +2.",
+      "extra_details": null
+    },
+    {
+      "cost": 2,
+      "type": "muda",
+      "description": "muda o alcance para toque e o alvo para 1 criatura. A magia falha se o alvo não seguir a mesma divindade que você.",
+      "extra_details": {
+        "range": "toque",
+        "target": {
+          "amount": 1,
+          "up_to": null,
+          "type": "criatura"
+        }
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "bônus",
+      "attribute": "for,resistencia_a_dano",
+      "amount": "+8,10",
+      "resistence_requirement": null,
+      "extra_requirements": null
+    }
+  ]
+}

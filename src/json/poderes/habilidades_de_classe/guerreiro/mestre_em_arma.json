@@ -1,0 +1,35 @@
+{
+  "id": "mestre_em_arma",
+  "name": "Mestre em Arma",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_guerreiro",
+  "description": "Escolha uma arma. Com esta arma, seu dano aumenta em um passo e você pode gastar 2 PM para rolar novamente um teste de ataque recém realizado.",
+  "requirements": [
+     {
+      "type": "character_lvl",
+      "sub_type": "hard",
+      "value": 12
+    },
+    {
+      "type": "feature",
+      "sub_type": "hard",
+      "id": "especializacao_em_arma"
+    }
+  ],
+  "effects": [
+    {
+      "type": "reroll_dice",
+      "costs": [
+        {
+        "value": 2,
+        "type": "PM"
+        }
+      ]
+    },
+    {
+      "type": "damage_improvement",
+      "value": "Um_passo"
+    }
+  ],
+  "costs": null
+}

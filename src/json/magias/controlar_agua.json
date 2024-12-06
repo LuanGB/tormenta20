@@ -1,0 +1,48 @@
+{
+  "id": "nome_em_snake_case",
+  "name": "Nome em Letras Maiúsculas",
+  "type": "divina",
+  "circle": "3",
+  "school": "trans",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "longo_90m_60q",
+  "target": {
+    "amount": null,
+    "up_to": null,
+    "type": "area"
+  },
+  "effect": "area_30m",
+  "effect_details": {
+    "shape": "esfera",
+    "dimention": "raio",
+    "size": "x30_y30",
+    "other_details": null
+  },
+  "counterspell": null,
+  "duration": "cena",
+  "duration_details": null,
+  "resistence": {
+    "effect": null,
+    "skill": "varia_de_acordo_com_texto"
+  },
+  "extra_costs": null,
+  "description": "Ao lançar a magia, escolha um dos efeitos abaixo.\nCongelar: toda a água mundana na área é congelada. Criaturas nadando na área ficam imóveis; escapar exige gastar uma ação padrão e passar num teste de Atletismo ou Acrobacia.\nDerreter: gelo mundano na área vira água e a magia termina. A critério do mestre, isso pode criar terreno difícil.\nEnchente: eleva o nível da água mundana na área em até 4,5m. A sua escolha, muda área para alvo: uma embarcação. O alvo recebe +3m em seu deslocamento pela duração do efeito.\nEvaporar: toda a água e gelo mundano na área evaporam e a magia termina. Elementais da água, plantas e criaturas com imunidade a frio na área sofrem 10d8 pontos de dano de fogo; outras criaturas vivas recebem metade desse dano (Fortitude reduz à metade).\nPartir: diminui o nível de toda água mundana na área em até 4,5m. Em um corpo d’água raso, isso abre um caminho seco. Em um corpo d’água profundo, cria um redemoinho que pode prender barcos (um teste de Pilotagem permite ao piloto livrar a embarcação). Elementais da água na área ficam lentos.",
+  "enhancements": [
+    {
+      "cost": 2,
+      "type": "aumenta",
+      "description": "aumenta o dano em +2d8.",
+      "extra_details": null
+    }
+  ],
+  "effects": [
+    {
+      "type": "controle",
+      "attribute": null,
+      "amount": null,
+      "resistence_requirement": null,
+      "extra_requirements": null
+    }
+  ]
+}

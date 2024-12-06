@@ -1,0 +1,32 @@
+{
+  "id": "velocidade_ladina",
+  "name": "Velocidade Ladina",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_ladino",
+  "description": "Uma vez por rodada, você pode gastar 2 PM para realizar uma ação de movimento adicional em seu turno.",
+  "requirements": [
+    {
+      "type": "attr_value",
+      "sub_type": "hard",
+      "attr": "des",
+      "value": 15
+    },
+    {
+      "type": "skill_training",
+      "sub_type": "hard",
+      "skill": "iniciativa"
+    }
+  ],
+  "effects": [
+    {
+      "type": "extra_action",
+      "action": "movimento"
+    }
+  ],
+  "costs": [
+    {
+    "value": 2,
+    "type": "PM"
+    }
+  ]
+}

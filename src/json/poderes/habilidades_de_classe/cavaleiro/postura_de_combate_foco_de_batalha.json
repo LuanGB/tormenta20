@@ -1,0 +1,26 @@
+{
+  "id": "postura_de_combate_foco_de_batalha",
+  "name": "Postura de Combate: Foco de Batalha",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_cavaleiro",
+  "description": "Sempre que um inimigo atacá-lo, você recebe 1 PM temporário. Pontos de mana temporários desaparecem no final da cena.",
+  "requirements": null,
+  "effects": [
+    {
+      "type": "PM_improvement",
+      "value": 1,
+      "duration": "cena",
+      "requirements": "sofrer_ataque"
+    }
+  ],
+  "costs": [
+    {
+    "value": 2,
+    "type": "PM"
+    },
+    {
+     "action": "moviment",
+     "type": "acao" 
+    }
+  ]
+}

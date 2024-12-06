@@ -1,0 +1,10 @@
+{
+  "id": "empatia_selvagem",
+  "name": "Empatia Selvagem",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_cacador",
+  "description": "Você pode se comunicar com animais por meio de linguagem corporal e vocalizações. Você pode usar Adestramento com animais para mudar atitude e pedir favores (veja Diplomacia, na página 117).",
+  "requirements": null,
+  "effects": "ver_texto",
+  "costs": null
+}

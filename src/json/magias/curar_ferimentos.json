@@ -1,0 +1,85 @@
+{
+  "id": "curar_ferimentos",
+  "name": "Curar Ferimentos",
+  "type": "divina",
+  "circle": "1",
+  "school": "abjur",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "toque",
+  "target": {
+    "amount": 1,
+    "up_to": null,
+    "type": "criatura"
+  },
+  "effect": "alvo",
+  "effect_details": null,
+  "counterspell": "infligir_ferimentos",
+  "duration": "instantânea",
+  "duration_details": null,
+  "resistence": null,
+  "extra_costs": null,
+  "description": "Você canaliza energia positiva que recupera 2d8+2 pontos de vida na criatura tocada. Como mortos-vivos usam energia negativa, cura mágica causa dano de luz a eles (Vontade reduz à metade). Curar Ferimentos anula Infligir Ferimentos.",
+  "enhancements": [
+    {
+      "cost": 0,
+      "type": "outro",
+      "description": "em vez do normal, estabiliza uma criatura",
+      "extra_details": null
+    },
+    {
+      "cost": 0,
+      "type": "muda",
+      "description": "muda o alvo para 1 morto-vivo. Em vez do normal, causa 1d8 pontos de dano de luz (Vontade reduz à metade).",
+      "extra_details": {
+        "target": {
+          "amount": 1,
+          "up_to": null,
+          "type": "morto-vivo"
+        },
+        "resistence": {
+          "effect": "reduz_à_metade",
+          "skill": "vontade"
+        }
+      }
+    },
+    {
+      "cost": 1,
+      "type": "aumenta",
+      "description": "aumenta a cura em +1d8+1.",
+      "extra_details": null
+    },
+    {
+      "cost": 2,
+      "type": "outro",
+      "description": "também remove uma condição de fadiga do alvo.",
+      "extra_details": null
+    },
+    {
+      "cost": 2,
+      "type": "muda",
+      "description": "muda o alcance para curto.",
+      "extra_details": {
+        "range": "curto"
+      }
+    },
+    {
+      "cost": 5,
+      "type": "muda",
+      "description": "muda o alcance para curto e o alvo para criaturas escolhidas.",
+      "extra_details": {
+        "range": "curto",
+        "target": "criaturas_escolhidas"
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "bônus",
+      "attribute": "pv",
+      "amount": "2d8+2",
+      "resistence_requirement": null,
+      "extra_requirements": null
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "liberdade_da_pradaria",
+  "name": "Liberdade da Pradaria",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_druida",
+  "description": "Você recebe +2 em Reflexos. Se estiver ao ar livre, você pode gastar 1 PM sempre que lançar uma magia para aumentar o alcance dela em um passo (de toque para curto, de curto para médio etc.).",
+  "requirements": null,
+  "effects": [
+    {
+      "type": "magic_range_improvement",
+      "amount": "um_passo",
+      "costs": [
+        {
+        "value": 1,
+        "type": "PM"
+        }
+      ]
+    },
+    {
+      "type": "skill_improvement",
+      "value": 2,
+      "skill": "reflexos"
+    }
+  ],
+  "costs": null
+}

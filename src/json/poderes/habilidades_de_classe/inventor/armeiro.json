@@ -1,0 +1,26 @@
+{
+  "id": "armeiro",
+  "name": "Armeiro",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_inventor",
+  "description": "Você recebe proficiência com armas marciais corpo a corpo. Quando usa uma arma corpo a corpo, pode usar seu modificador de Inteligência em vez de Força nos testes de ataque e rolagens de dano.",
+  "requirements": [
+    {
+      "type": "skill_training",
+      "sub_type": "hard",
+      "skill": ["luta", "oficio_armeiro"]
+    }
+  ],
+  "effects": [
+    {
+      "type": "weapon_proficiency",
+      "weapon": "marciais_corpo_a_corpo"
+    },
+    {
+      "type": "switch_skill_attr",
+      "skill": "luta",
+      "attr": "int"
+    }
+  ],
+  "costs": null
+}

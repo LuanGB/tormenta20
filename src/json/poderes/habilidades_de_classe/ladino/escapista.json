@@ -1,0 +1,16 @@
+{
+  "id": "escapista",
+  "name": "Escapista",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_ladino",
+  "description": "Você recebe +5 em testes de Acrobacia para escapar e em testes para resistir a efeitos que restrinjam seu movimento, como a manobra agarrar e a magia Amarras Etéreas.",
+  "requirements": null,
+  "effects": [
+    {
+      "type": "skill_improvement",
+      "value": 5,
+      "requirements": "testes_de_resistencia_que_restringem_movimento"
+    }
+  ],
+  "costs": null
+}

@@ -1,0 +1,26 @@
+{
+  "id": "romper_resistencias",
+  "name": "Romper Resistências",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_guerreiro",
+  "description": "Quando faz um Ataque Especial, você pode gastar 2 PM adicionais para ignorar qualquer resistência a dano de uma criatura.",
+  "requirements": [
+    {
+      "type": "fearute_actived",
+      "sub_type": "soft",
+      "feature": "ataque_especial"
+    }
+  ],
+  "effects": [
+    {
+      "type": "ingore_RD",
+      "RD": "qualquer"
+    }
+  ],
+  "costs": [
+    {
+    "value": 2,
+    "type": "PM"
+    }
+  ]
+}

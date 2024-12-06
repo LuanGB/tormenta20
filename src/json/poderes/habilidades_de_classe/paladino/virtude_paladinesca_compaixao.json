@@ -1,0 +1,21 @@
+{
+  "id": "virtude_paladinesca_compaixao",
+  "name": "Virtude Paladinesca: Compaixão",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_paladino",
+  "description": "Você pode usar Cura pelas Mãos em alcance curto e, para cada PM que gastar, cura 2d6+1 (em vez de 1d8+1).",
+  "requirements": null,
+  "effects": [
+    {
+      "type": "change_range_fearture",
+      "feature": "cura_pelas_maos",
+      "range": "curto"
+    },
+    {
+      "type": "change_cure_feature",
+      "value": "2d6+1",
+      "feature": "cura_pelas_maos"
+    }
+  ],
+  "costs": null
+}

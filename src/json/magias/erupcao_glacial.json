@@ -1,0 +1,64 @@
+{
+  "id": "erupcao_glacial",
+  "name": "Erupção Glacial",
+  "type": "arcana",
+  "circle": "3",
+  "school": "evoc",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "medio_30m_20q",
+  "target": {
+    "amount": null,
+    "up_to": null,
+    "type": "area"
+  },
+  "effect": "area",
+  "effect_details": {
+    "shape": "quadrado",
+    "dimention": "lado",
+    "size": "6m_yq",
+    "other_details": null
+  },
+  "counterspell": null,
+  "duration": "instantânea",
+  "duration_details": "as estacas sao destruidas por qualquer quantidade de dano de fogo mágico",
+  "resistence": {
+    "effect": "parcial",
+    "skill": "reflexos"
+  },
+  "extra_costs": null,
+  "description": "Estacas de gelo irrompem do chão. Criaturas na área sofrem 4d6 de dano de corte, 4d6 de dano de frio e ficam caídas. Passar no teste de Reflexos evita o dano de corte e a queda. As estacas duram pela cena, o que torna a área afetada terreno difícil, e concedem cobertura para criaturas dentro da área ou atrás dela. As estacas são destruídas caso sofram qualquer quantidade de dano por fogo mágico.",
+  "enhancements": [
+    {
+      "cost": 3,
+      "type": "aumenta",
+      "description": "aumenta o dano de frio em +2d6 e o dano de corte em +2d6.",
+      "extra_details": null
+    },
+    {
+      "cost": 4,
+      "type": "muda",
+      "description": "muda a área para cilindro com 6m de raio e 6m de altura e a duração para sustentada. Em vez do normal, a magia cria uma tempestade de granizo que causa 3d6 pontos de dano de impacto e 3d6 pontos de dano de frio em todas as criaturas na área (sem teste de resistência). A tempestade fornece camuflagem a todas as criaturas dentro dela e deixa o piso escorregadio. Piso escorregadio conta como terreno difícil e obriga criaturas na área a fazer testes de Acrobacia para equilíbrio (veja Tormenta20, página 115). Requer 4º círculo.",
+      "extra_details": {
+        "effect": "area",
+        "effect_details": {
+          "shape": "cilindro",
+          "dimention": "raio,altura",
+          "size": "6m_yq",
+          "other_details": null
+        },
+        "duration": "sustentada",
+        "requirement": "4_circulo"
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "dano",
+      "attribute": "pv",
+      "amount": "4d6+4d6",
+      "resistence_requirement": "reflexos",
+      "extra_requirements": null
+    }
+  ]
+}

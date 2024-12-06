@@ -1,0 +1,59 @@
+{
+  "id": "segunda_chance",
+  "name": "Segunda Chance",
+  "type": "divina",
+  "circle": "5",
+  "school": "evoc",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "toque",
+  "target": {
+    "amount": 1,
+    "up_to": null,
+    "type": "criatura"
+  },
+  "effect": "alvo",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "instantânea",
+  "duration_details": null,
+  "resistence": null,
+  "extra_costs": null,
+  "description": "Um brilho alaranjado, na forma de asas de fênix, emana do alvo. Ele recupera 200 pontos de vida e se cura de qualquer das seguintes condições: abalado, apavorado, alquebrado, atordoado, cego, confuso, debilitado, enjoado, envenenado, esmorecido, exausto, fascinado, fatigado, fraco, frustrado, lento, ofuscado, paralisado, pasmo ou surdo.",
+  "enhancements": [
+    {
+      "cost": 1,
+      "type": "aumenta",
+      "description": "aumenta a cura em +20PV.",
+      "extra_details": null
+    },
+    {
+      "cost": 2,
+      "type": "muda",
+      "description": "muda o alcance para curto e o alvo para até 5 criaturas",
+      "extra_details": {
+        "range": "curto_6m_9q",
+        "target": {
+          "amount": 5,
+          "up_to": true,
+          "type": "criaturas"
+        }
+      }
+    },
+    {
+      "cost": 5,
+      "type": "muda",
+      "description": "muda o alvo para uma criatura que tenha morrido há até uma rodada. Esta magia pode curá-la.",
+      "extra_details": null
+    }
+  ],
+  "effects": [
+    {
+      "type": "cura",
+      "attribute": "pv",
+      "amount": "200",
+      "resistence_requirement": null,
+      "extra_requirements": null
+    }
+  ]
+}

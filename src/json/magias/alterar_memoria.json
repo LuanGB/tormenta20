@@ -1,0 +1,57 @@
+{
+  "id": "alterar_memoria",
+  "name": "Alterar Memória",
+  "type": "arcana",
+  "circle": "4",
+  "school": "encan",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "toque",
+  "target": {
+    "amount": 1,
+    "up_to": null,
+    "type": "criatura"
+  },
+  "effect": "alvo",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "instantânea",
+  "duration_details": null,
+  "resistence": {
+    "effect": "anula",
+    "skill": "vontade"
+  },
+  "extra_costs": null,
+  "description": "Você invade a mente do alvo e altera ou apaga suas memórias da última hora.",
+  "enhancements": [
+    {
+      "cost": 2,
+      "type": "muda",
+      "description": "muda o alcance para cone de 4,5m e o alvo para criaturas na área.",
+      "extra_details": {
+        "effect": "area",
+        "effect_details": {
+        "shape": "cones",
+        "dimention": "extenção",
+        "size": "4,5m",
+        "other_details": null
+        }
+      }
+    },
+    {
+      "cost": 5,
+      "type": "muda",
+      "description": "você pode alterar ou apagar as memórias das últimas 24 horas.",
+      "extra_details": null
+    }
+  ],
+  "effects": [
+    {
+      "type": "outro",
+      "attribute": null,
+      "amount": null,
+      "resistence_requirement": "vontade",
+      "extra_requirements": null
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "aparar",
+  "name": "Aparar",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_bucaneiro",
+  "description": "Uma vez por rodada, quando é atingido por um ataque corpo a corpo, você pode gastar 1 PM para apará-lo. Faça um teste de ataque. Se o resultado do seu teste for maior que o do oponente, você evita o ataque. Você só pode usar este poder se estiver usando uma arma leve ou ágil.",
+  "requirements": [
+    {
+      "type": "weapon_type",
+      "sub_type": "soft",
+      "weapon": ["leve", "agil"]
+    },
+    {
+      "type": "feature",
+      "sub_type": "hard",
+      "id": "esgrimista"
+    }
+  ],
+  "effects": null,
+  "costs": [
+    {
+    "value": 1,
+    "type": "PM"
+    }
+  ]
+}

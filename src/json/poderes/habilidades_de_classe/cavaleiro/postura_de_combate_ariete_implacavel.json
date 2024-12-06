@@ -1,0 +1,34 @@
+{
+  "id": "postura_de_combate_ariete_implacavel",
+  "name": "Postura de Combate: Aríete Implacável.",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_cavaleiro",
+  "description": "Ao assumir esta postura, você aumenta o bônus de ataque em investidas em +2. Para cada 2 PM adicionais que gastar quando assumir a postura, aumenta o bônus de ataque em +1. Além disso, se fizer uma investida contra um objeto, causa +2d8 de dano. Você precisa se deslocar todos os turnos para manter esta postura ativa.",
+  "requirements": [
+    {
+      "type": "manouver",
+      "sub_type": "soft",
+      "manouver": "investida"
+    }
+  ],
+  "effects": [
+    {
+      "type": "damage_improvement",
+      "value": "2d8"
+    },
+    {
+      "type": "attack_improvement",
+      "value": 2
+    }
+  ],
+  "costs": [
+    {
+    "value": 2,
+    "type": "PM"
+    },
+    {
+     "action": "moviment",
+     "type": "acao" 
+    }
+  ]
+}

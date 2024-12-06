@@ -1,0 +1,40 @@
+{
+  "id": "touche",
+  "name": "Touché",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_bucaneiro",
+  "description": "Quando se aproxima de um inimigo e o ataca com uma arma leve ou ágil no mesmo turno, você pode gastar 2 PM para aumentar seu dano em um passo e receber +5 na margem de ameaça.",
+  "requirements": [
+     {
+      "type": "character_lvl",
+      "sub_type": "hard",
+      "value": 10
+    },
+    {
+      "type": "weapon_type",
+      "sub_type": "soft",
+      "weapon": ["leve", "agil"]
+    },
+    {
+      "type": "feature",
+      "sub_type": "hard",
+      "id": "esgrimista"
+    }
+  ],
+  "effects": [
+    {
+      "type": "damage_improvement",
+      "value": "um_passo"
+    },
+    {
+      "type": "critical_improvement",
+      "value": 5
+    }
+  ],
+  "costs": [
+    {
+    "value": 2,
+    "type": "PM"
+    }
+  ]
+}

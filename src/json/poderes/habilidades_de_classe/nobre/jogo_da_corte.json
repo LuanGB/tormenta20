@@ -1,0 +1,20 @@
+{
+  "id": "jogo_da_corte",
+  "name": "Jogo da Corte",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_nobre",
+  "description": "Você pode gastar 1 PM para rolar novamente um teste recém realizado de Diplomacia, Intuição ou Nobreza.",
+  "requirements": null,
+  "effects": [
+    {
+      "type": "reroll_skill_dice",
+      "skill": ["diplomacia", "intuicao", "nobreza"]
+    }
+  ],
+  "costs": [
+    {
+    "value": 1,
+    "type": "PM"
+    }
+  ]
+}

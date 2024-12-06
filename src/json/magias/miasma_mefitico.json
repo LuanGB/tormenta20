@@ -1,0 +1,68 @@
+{
+  "id": "miasma_mefitico",
+  "name": "Miasma Mefítico",
+  "type": "divina",
+  "circle": "2",
+  "school": "necro",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "medio_30m_20q",
+  "target": {
+    "amount": null,
+    "up_to": null,
+    "type": "nuvem_com_6m_de_raio"
+  },
+  "effect": "area",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "instantânea",
+  "duration_details": null,
+  "resistence": {
+    "effect": "veja_texto",
+    "skill": "fortitude"
+  },
+  "extra_costs": null,
+  "description": "A área é coberta por emanações letais. Criaturas na área sofrem 5d6 pontos de dano de veneno e ficam enjoadas por 1 rodada. Se passarem na resistência, sofrem metade do dano e não ficam enjoadas.",
+  "enhancements": [
+    {
+      "cost": 0,
+      "type": "muda",
+      "description": "muda o alcance para toque, a área para alvo (1 criatura com 0 PV ou menos), a duração para instantânea e a resistência para Fortitude anula. Em vez do normal, você canaliza o Miasma contra uma vítima. Se falhar na resistência, ela morre e você recebe +2 na CD de suas magias por 1 dia. Se passar, fica imune a este truque por um dia.",
+      "extra_details": {
+        "range": "toque",
+        "target": {
+          "amount": 1,
+          "up_to": null,
+          "type": "criatura_com_0_PV_ou_menos"
+        },
+        "effect": "alvo",
+        "duration": "instantânea",
+        "resistence": {
+          "effect": "anula",
+          "skill": "fortitude"
+        }
+      }
+    },
+    {
+      "cost": 2,
+      "type": "aumenta",
+      "description": "aumenta o dano em +1d6.",
+      "extra_details": null
+    },
+    {
+      "cost": 3,
+      "type": "muda",
+      "description": "muda o tipo de dano para trevas.",
+      "extra_details": null
+    }
+  ],
+  "effects": [
+    {
+      "type": "dano",
+      "attribute": "pv",
+      "amount": "5d6",
+      "resistence_requirement": "fortitude",
+      "extra_requirements": null
+    }
+  ]
+}

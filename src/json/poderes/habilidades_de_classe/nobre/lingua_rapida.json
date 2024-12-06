@@ -1,0 +1,21 @@
+{
+  "id": "lingua_rapida",
+  "name": "Língua Rápida",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_nobre",
+  "description": "Quando faz um teste de Diplomacia para mudar atitude como uma ação completa, você sofre uma penalidade de –5, em vez de –10.",
+  "requirements": [
+    {
+      "type": "skill_test",
+      "sub_type": "soft",
+      "skill": "diplomacia"
+    }
+  ],
+  "effects": [
+    {
+      "type": "reduce_penalty",
+      "value": -5
+    }
+  ],
+  "costs": null
+}

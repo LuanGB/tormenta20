@@ -1,0 +1,31 @@
+{
+  "id": "cano_raiado",
+  "name": "Cano Raiado",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_inventor",
+  "description": "Quando usa uma arma de disparo feita por você mesmo, ela recebe +1 na margem de ameaça.",
+  "requirements": [
+     {
+      "type": "character_lvl",
+      "sub_type": "hard",
+      "value": 5
+    },
+    {
+      "type": "weapon_type",
+      "sub_type": "soft",
+      "weapon": "disparo_feita_por_voce"
+    },
+    {
+      "type": "feature",
+      "sub_type": "hard",
+      "id": "balistica"
+    }
+  ],
+  "effects": [
+    {
+      "type": "critical_improvement",
+      "value": 1
+    }
+  ],
+  "costs": null
+}

@@ -1,0 +1,27 @@
+{
+  "id": "liturgia_magica",
+  "name": "Liturgia Mágica",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_clerigo",
+  "description": "Você pode gastar uma ação de movimento para executar uma breve liturgia de sua fé. Se fizer isso, a CD para resistir à sua próxima magia divina (desde que lançada até o final de seu próximo turno) aumenta em +2.",
+  "requirements": [
+    {
+      "type": "magic_type",
+      "sub_type": "soft",
+      "magic": "divina"
+    }
+  ],
+  "effects": [
+    {
+      "type": "CD_improvement",
+      "value": 2,
+      "duration": "magia_lancada_ate_o_fim_do_proximo_turno"
+    }
+  ],
+  "costs": [
+    {
+    "value": 1,
+    "type": "acao_de_movimento"
+    }
+  ]
+}

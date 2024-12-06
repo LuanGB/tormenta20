@@ -1,0 +1,15 @@
+{
+  "id": "maestria_em_pericia",
+  "name": "Maestria em Perícia",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_inventor",
+  "description": "Escolha um número de perícias treinadas igual ao seu bônus de Inteligência. Com essas perícias, você pode gastar 1 PM para escolher 10 em qualquer situação, exceto testes de ataque.",
+  "requirements": null,
+  "effects": "ver_texto",
+  "costs": [
+    {
+    "value": 1,
+    "type": "PM"
+    }
+  ]
+}

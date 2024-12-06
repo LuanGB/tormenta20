@@ -1,0 +1,64 @@
+{
+  "id": "oracao",
+  "name": "Oração",
+  "type": "divina",
+  "circle": "2",
+  "school": "encan",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "curto_6m_9q",
+  "target": {
+    "amount": null,
+    "up_to": null,
+    "type": "todas_as_criaturas"
+  },
+  "effect": "alvo",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "sustentada",
+  "duration_details": null,
+  "resistence": null,
+  "extra_costs": null,
+  "description": "Todos os seus aliados no alcance recebem +2 em testes de perícia e rolagens de dano, e todos os seus inimigos no alcance sofrem –2 em testes de perícia e rolagens de dano. Esses bônus e penalidades são cumulativos com outras magias.",
+  "enhancements": [
+    {
+      "cost": 2,
+      "type": "aumenta",
+      "description": "aumenta os bônus em +1, limitado pelo círculo máximo de magia que você pode lançar.",
+      "extra_details": null
+    },
+    {
+      "cost": 2,
+      "type": "aumenta",
+      "description": "aumenta as penalidades em –1, limitado pelo círculo máximo de magia que você pode lançar.",
+      "extra_details": null
+    },
+    {
+      "cost": 7,
+      "type": "muda",
+      "description": "muda o alcance para médio. Requer 3º círculo.",
+      "extra_details": {
+        "range": "medio_30m_20q",
+        "requirement": "3_circulo"
+      }
+    },
+    {
+      "cost": 12,
+      "type": "muda",
+      "description": "muda a duração para cena. Requer 4º círculo.",
+      "extra_details": {
+        "duration": "cena",
+        "requirement": "4_circulo"
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "bonus,penalidade",
+      "attribute": "rolagens_de_dano_e_testes_de_pericia",
+      "amount": "+2-2",
+      "resistence_requirement": null,
+      "extra_requirements": null
+    }
+  ]
+}

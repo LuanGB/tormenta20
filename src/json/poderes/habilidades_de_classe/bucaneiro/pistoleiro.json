@@ -1,0 +1,22 @@
+{
+  "id": "pistoleiro",
+  "name": "Pistoleiro",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_bucaneiro",
+  "description": "Você recebe proficiência com armas de fogo e +2 nas rolagens de dano com essas armas.",
+  "requirements": [
+    {
+      "type": "weapon_type",
+      "sub_type": "soft",
+      "weapon": "fogo"
+    }
+  ],
+  "effects": [
+    {
+      "type": "damage_improvement",
+      "value": 2,
+      "duration": "permanent"
+    }
+  ],
+  "costs": null
+}

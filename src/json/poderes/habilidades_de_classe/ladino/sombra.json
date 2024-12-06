@@ -1,0 +1,22 @@
+{
+  "id": "sombra",
+  "name": "Sombra",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_ladino",
+  "description": "Você recebe +2 em Furtividade. Além disso, pode se mover com seu deslocamento normal enquanto usa Furtividade sem sofrer penalidades no teste de perícia.",
+  "requirements": [
+    {
+      "type": "skill_training",
+      "sub_type": "hard",
+      "skill": "furtividade"
+    }
+  ],
+  "effects": [
+    {
+      "type": "skill_improvement",
+      "value": 2,
+      "skill": "furtividade"
+    }
+  ],
+  "costs": null
+}

@@ -1,0 +1,23 @@
+{
+  "id": "investida_imprudente",
+  "name": "Investida Imprudente",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_barbaro",
+  "description": "Quando faz uma investida, você pode aumentar sua penalidade em Defesa pela investida para –5 para receber um bônus de +1d8 na rolagem de dano deste ataque.",
+  "requirements": [
+    {
+      "type": "manouver_attack",
+      "manouver": "investida"
+    }
+  ],
+  "effects": [
+    {
+      "type": "defense_penalty",
+      "value": -5
+    },
+    {
+      "type": "damage_improvement",
+      "value": "+1d8"
+    }
+  ]
+}

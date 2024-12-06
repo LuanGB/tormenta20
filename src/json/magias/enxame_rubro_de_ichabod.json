@@ -1,0 +1,80 @@
+{
+  "id": "enxame_rubro_de_ichabod",
+  "name": "Enxame Rubro de Ichabod",
+  "type": "arcana",
+  "circle": "3",
+  "school": "conv",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "medio_30m_20q",
+  "target": {
+    "amount": 1,
+    "up_to": null,
+    "type": "enxame_grande"
+  },
+  "effect": "area",
+  "effect_details": {
+    "shape": "quadrado",
+    "dimention": "lado",
+    "size": "3m_yq",
+    "other_details": null
+  },
+  "counterspell": null,
+  "duration": "ustentada",
+  "duration_details": null,
+  "resistence": {
+    "effect": "reduz_à_metade|",
+    "skill": "reflexos"
+  },
+  "extra_costs": null,
+  "description": "Você conjura um enxame de insetos, vermes e parasitas da Tormenta, que surge em um ponto a sua escolha e ocupa um quadrado de 3m. O enxame pode passar pelo espaço de outras criaturas e não impede que elas entrem no seu. No fim de seus turnos, o enxame causa 4d12 pontos de dano de ácido a qualquer criatura em seu espaço (Reflexos reduz à metade). Você pode gastar uma ação de movimento para movê-lo com deslocamento de 12m.",
+  "enhancements": [
+    {
+      "cost": 1,
+      "type": "outro",
+      "description": "além do normal, uma criatura que falhe no teste de Reflexos fica agarrada (o enxame escala e cobre o corpo dela). A criatura pode gastar uma ação padrão e fazer um teste de Acrobacia ou Atletismo para escapar. Se você mover o enxame, a criatura fica livre.",
+      "extra_details": null
+    },
+    {
+      "cost": 2,
+      "type": "aumenta",
+      "description": "aumenta o dano em +1d12.",
+      "extra_details": null
+    },
+    {
+      "cost": 2,
+      "type": "muda",
+      "description": "muda o dano para trevas.",
+      "extra_details": null
+    },
+    {
+      "cost": 3,
+      "type": "muda",
+      "description": "o enxame vira Enorme (quadrado de 6m).",
+      "extra_details": null
+    },
+    {
+      "cost": 3,
+      "type": "bônus",
+      "description": "o enxame ganha deslocamento de voo 18m e passa a ocupar um cubo em vez de um quadrado.",
+      "extra_details": null
+    },
+    {
+      "cost": 4,
+      "type": "outro",
+      "description": "no início de cada um de seus turnos, role 1d6. Em um 5 ou 6, um novo enxame surge adjacente a um já existente. Você pode mover todos os enxames com uma única ação de movimento, mas eles não podem ocupar o mesmo espaço. Requer 4º círculo.",
+      "extra_details": {
+        "requirement": "4_circulo"
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "dano",
+      "attribute": "pv",
+      "amount": "4d12",
+      "resistence_requirement": "reflexos",
+      "extra_requirements": null
+    }
+  ]
+}

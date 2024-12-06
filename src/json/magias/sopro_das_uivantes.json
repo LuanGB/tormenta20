@@ -1,0 +1,57 @@
+{
+  "id": "sopro_das_uivantes",
+  "name": "Sopro das Uivantes",
+  "type": "arcana",
+  "circle": "2",
+  "school": "encan",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "curto_6m_9q",
+  "target": {
+    "amount": null,
+    "up_to": null,
+    "type": "cone"
+  },
+  "effect": "curto_6m_9q",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "instantânea",
+  "duration_details": null,
+  "resistence": {
+    "effect": "parcial",
+    "skill": "fortitude"
+  },
+  "extra_costs": null,
+  "description": "Você sopra ar gélido que causa 4d6 pontos de dano de frio (Fortitude reduz à metade). Criaturas de tamanho Médio ou menor que falhem na resistência são empurradas 6m na direção oposta. Se houver uma parede ou outro objeto sólido (mas não uma criatura) no caminho, a criatura para de se mover, mas sofre 1d6 pontos de dano de impacto.",
+  "enhancements": [
+    {
+      "cost": 2,
+      "type": "aumenta",
+      "description": "aumenta o dano de frio +2d6.",
+      "extra_details": null
+    },
+    {
+      "cost": 2,
+      "type": "outro",
+      "description": "além do normal, criaturas que falhem no teste de Fortitude ficam caídas.",
+      "extra_details": null
+    },
+    {
+      "cost": 3,
+      "type": "aumenta",
+      "description": "aumenta o tamanho máximo das criaturas afetadas em uma categoria. Requer 3º círculo.",
+      "extra_details": {
+        "requirement": "3_circulo"
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "dano",
+      "attribute": "pv",
+      "amount": "4d6",
+      "resistence_requirement": "fortitude",
+      "extra_requirements": null
+    }
+  ]
+}

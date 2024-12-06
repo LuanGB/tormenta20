@@ -1,0 +1,25 @@
+{
+  "id": "oficina_de_campo",
+  "name": "Oficina de Campo",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_inventor",
+  "description": "Você pode gastar uma hora e 2 PM para fazer a manutenção do equipamento de seu grupo. Cada membro do grupo escolhe uma arma, armadura ou escudo para manutenção. Armas recebem +1 em testes de ataque, armaduras e escudos têm sua penalidade de armadura reduzida em 1. Os benefícios duram um dia.",
+  "requirements": [
+    {
+      "type": "skill_training",
+      "sub_type": "hard",
+      "skill": "oficio_armeiro"
+    }
+  ],
+  "effects": "ver_texto",
+  "costs": [
+    {
+    "value": 1,
+    "type": "PM"
+    },
+    {
+    "value": 1,
+    "type": "hora"
+    }
+  ]
+}

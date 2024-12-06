@@ -1,0 +1,36 @@
+{
+  "id": "golpe_elemental",
+  "name": "Golpe Elemental",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_bardo",
+  "description": "Enquanto estiver sob efeito de Inspiração, sempre que você acertar um ataque corpo a corpo, pode gastar 1 PM para causar 1d6 de dano adicional de ácido, eletricidade, fogo ou frio, a sua escolha. Para cada quatro níveis que possuir, pode gastar +1 PM para aumentar o dano em +1d6.",
+  "requirements": [
+    {
+      "type": "fearute_actived",
+      "sub_type": "soft",
+      "skill": "inspiracao"
+    },
+    {
+      "type": "attack_type",
+      "sub_type": "soft",
+      "weapon": "corpo_a_corpo"
+    },
+    {
+      "type": "feature",
+      "sub_type": "soft",
+      "skill": "golpe_magico"
+    }
+  ],
+  "effects": [
+    {
+      "type": "damage_improvement",
+      "value": "1d6"
+    }
+  ],
+  "costs": [
+    {
+    "value": 1,
+    "type": "PM"
+    }
+  ]
+}

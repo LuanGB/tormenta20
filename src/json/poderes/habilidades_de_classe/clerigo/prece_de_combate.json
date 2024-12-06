@@ -1,0 +1,26 @@
+{
+  "id": "prece_de_combate",
+  "name": "Prece de Combate",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_clerigo",
+  "description": "Quando lança uma magia divina com tempo de conjuração de uma ação padrão em si mesmo, você pode gastar +2 PM para lançá-la como uma ação de movimento.",
+  "requirements": [
+    {
+      "type": "magic_type",
+      "sub_type": "soft",
+      "weapon": "divina_de_acao_padrao"
+    }
+  ],
+  "effects": [
+    {
+      "type": "change_acction_type",
+      "acction": "movimento"
+    }
+  ],
+  "costs": [
+    {
+    "value": 2,
+    "type": "PM"
+    }
+  ]
+}

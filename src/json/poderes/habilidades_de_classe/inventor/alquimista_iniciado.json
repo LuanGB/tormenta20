@@ -1,0 +1,27 @@
+{
+  "id": "alquimista_iniciado",
+  "name": "Alquimista Iniciado",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_inventor",
+  "description": "Você recebe um livro de fórmulas e pode fabricar poções com fórmulas que conheça de 1º e 2º círculos. Veja a página 327 para as regras de poções.",
+  "requirements": [
+    {
+      "type": "attr_value",
+      "sub_type": "hard",
+      "attr": ["int", "sab"],
+      "value": 13
+    },
+    {
+      "type": "skill_training",
+      "sub_type": "hard",
+      "skill": "oficio_alquimia"
+    }
+  ],
+  "effects": [
+    {
+      "type": "create_item",
+      "item": "pocao"
+    }
+  ],
+  "costs": "ver_texto"
+}

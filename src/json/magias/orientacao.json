@@ -1,0 +1,63 @@
+{
+  "id": "orientacao",
+  "name": "Orientação",
+  "type": "divina",
+  "circle": "1",
+  "school": "adiv",
+  "execution": "movimento",
+  "execution_details": "null",
+  "range": "curto_6m_9q",
+  "target": {
+    "amount": 1,
+    "up_to": null,
+    "type": "criatura"
+  },
+  "effect": "alvo",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "cena",
+  "duration_details": null,
+  "resistence": null,
+  "extra_costs": null,
+  "description": "Você oferece ajuda. Escolha um atributo — até o final da cena, sempre que o alvo fizer um teste de perícia baseada no atributo escolhido, pode rolar dois dados e ficar com o melhor resultado. Esse benefício não se aplica a testes de ataque ou resistência.",
+  "enhancements": [
+    {
+      "cost": 0,
+      "type": "muda",
+      "description": "muda a execução para ação padrão e a duração para 1 rodada. O bônus vale para um único teste. Uma criatura só pode ser afetada por esse truque uma vez por dia.",
+      "extra_details": {
+        "execution": "padrao",
+        "duration": "1_rodada"
+      }
+    },
+    {
+      "cost": 5,
+      "type": "muda",
+      "description": "em vez de um atributo, escolha entre atributos físicos (Força, Destreza e Constituição) ou mentais (Inteligência, Sabedoria e Carisma). Requer 3º círculo.",
+      "extra_details": {
+        "requirement": "3_circulo"
+      }
+    },
+    {
+      "cost": 5,
+      "type": "muda",
+      "description": "muda o alvo para criaturas escolhidas. Requer 3º círculo.",
+      "extra_details": {
+        "target": {
+          "amount": null,
+          "up_to": null,
+          "type": "ciaturas_escolhidas"
+        }
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "ajuda",
+      "attribute": "veja_texto",
+      "amount": null,
+      "resistence_requirement": null,
+      "extra_requirements": null
+    }
+  ]
+}

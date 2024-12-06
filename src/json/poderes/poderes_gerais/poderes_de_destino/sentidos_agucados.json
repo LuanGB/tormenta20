@@ -1,0 +1,32 @@
+{
+  "id": "sentidos_agucados",
+  "name": "Sentidos Aguçados",
+  "type": "poder_geral",
+  "sub_type": "poder_de_destino",
+  "description": "Você recebe +2 em Percepção, não fica desprevenido contra inimigos que não possa ver e, sempre que erra um ataque devido a camuflagem ou camuflagem total, pode rolar mais uma vez o dado da chance de falha.",
+  "requirements": [
+    {
+      "type": "attr_value",
+      "sub_type": "hard",
+      "attr": "sab",
+      "value": 13
+    },
+    {
+      "type": "skill_training",
+      "sub_type": "hard",
+      "skill": "percepcao"
+    }
+  ],
+  "effects": [
+    {
+      "type": "roll_dice_again",
+      "requirements": "errar_ataque_devido_camuflagem_total_ou_parcial"
+    },
+    {
+      "type": "skill_improvement",
+      "skill": "percepcao",
+      "value": 2,
+      "duration": "permanente"
+    }
+  ]
+}

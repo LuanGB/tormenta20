@@ -1,0 +1,118 @@
+{
+  "id": "conjurar_monstro",
+  "name": "Conjurar Monstro",
+  "type": "arcana",
+  "circle": "1",
+  "school": "conv",
+  "execution": "completa",
+  "execution_details": null,
+  "range": "curto_6m_9q",
+  "target": {
+    "amount": 1,
+    "up_to": null,
+    "type": "criatura"
+  },
+  "effect": "alvo",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "sustentada",
+  "duration_details": null,
+  "resistence": null,
+  "extra_costs": null,
+  "description": "Esta magia conjura um monstro Pequeno com For 14, Des 17 e os outros atributos nulos. Ele tem desl. 9m, 20 PV, não tem Defesa (ataques contra ele acertam automaticamente), tem Reflexos igual ao seu e é imune a efeitos que pedem um teste de Fortitude ou Vontade. Você escolhe a aparência e o tipo de dano do monstro, entre corte, impacto e perfuração.\nO monstro age no seu próximo turno e pode fazer uma ação de movimento por rodada. Você pode usar uma ação padrão para dar uma das ordens a seguir a ele.\nMover: o monstro se movimenta o dobro do deslocamento nessa rodada.\nAtacar: o monstro ataca um alvo em alcance corpo a corpo. O ataque acerta automaticamente e causa 2d4+2 pontos de dano.\nLançar Magia: o monstro serve como ponto de origem para uma magia lançada por você com execução de uma ação padrão ou menor. Ele pode descarregar um Toque Chocante em um inimigo distante, ou mesmo “cuspir\" uma Bola de Fogo! Você gasta PM normalmente para lançar a magia.\nOutros usos criativos para monstros conjurados ficam a critério do mestre. Você só pode ter um monstro conjurado por esta magia por vez e o monstro não age sem receber uma ordem. Para os aprimoramentos desta magia, veja a carta de continuação.",
+  "enhancements": [
+    {
+      "cost": 1,
+      "type": "bonus",
+      "description": "o monstro ganha deslocamento de escalada ou natação igual ao terrestre.",
+      "extra_details": null
+    },
+    {
+      "cost": 1,
+      "type": "aumenta",
+      "description": "aumenta o deslocamento em +3 m",
+      "extra_details": null
+    },
+    {
+      "cost": 1,
+      "type": "muda",
+      "description": "muda o tipo de dano do ataque do monstro para ácido, fogo, frio ou eletricidade.",
+      "extra_details": null
+    },
+    {
+      "cost": 2,
+      "type": "bonus",
+      "description": "ganha percepção às cegas (alcance curto)",
+      "extra_details": null
+    },
+    {
+      "cost": 2,
+      "type": "aumenta",
+      "description": "aumenta os PV do monstro em +10 para cada categoria de tamanho (+10 PV para Pequeno +20 PV para Médio etc.).",
+      "extra_details": null
+    },
+    {
+      "cost": 2,
+      "type": "muda",
+      "description": "muda o tamanho do monstro para Médio. Ele tem For 18, Des 16, 45 PV, desl. 12m e seu ataque causa 2d6+4 pontos de dano.",
+      "extra_details": null
+    },
+    {
+      "cost": 2,
+      "type": "bonus",
+      "description": "ganha resistência 5 contra dois tipos de dano (por exemplo, corte e frio).",
+      "extra_details": null
+    },
+    {
+      "cost": 4,
+      "type": "bonus",
+      "description": "ganha uma nova ordem: Sopro. Causa o dobro de seu dano em um cone de 6m (Ref reduz à metade).",
+      "extra_details": null
+    },
+    {
+      "cost": 5,
+      "type": "aumenta",
+      "description": "aumenta o tamanho para Grande. Ele tem For 24, Des 14, 75 PV, desl. 12m e seu ataque causa 3d6+7 pontos de dano. Requer 2º círculo.",
+      "extra_details": {
+        "requirement": "2_circulo"
+      }
+    },
+    {
+      "cost": 9,
+      "type": "bonus",
+      "description": "ganha desl. de voo igual ao dobro do terrestre.",
+      "extra_details": null
+    },
+    {
+      "cost": 9,
+      "type": "bonus",
+      "description": "ganha imunidade contra dois tipos de dano.",
+      "extra_details": null
+    },
+    {
+      "cost": 9,
+      "type": "aumenta",
+      "description": "aumenta o tamanho para Enorme. Ele tem For 32, Des 12, 110 PV, desl. 15m e seu ataque causa 4d6+11 pontos de dano. Requer 4º círculo.",
+      "extra_details": {
+        "requirement": "4_circulo"
+      }
+    },
+    {
+      "cost": 14,
+      "type": "aumenta",
+      "description": "aumenta o tamanho para Colossal. Ele tem For 41, Des 10, 180 PV, desl. 15m e seu ataque causa 6d6+15 de dano. Requer 5º círculo.",
+      "extra_details": {
+        "requirement": "5_circulo"
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "convoca",
+      "attribute": null,
+      "amount": null,
+      "resistence_requirement": null,
+      "extra_requirements": null
+    }
+  ]
+}

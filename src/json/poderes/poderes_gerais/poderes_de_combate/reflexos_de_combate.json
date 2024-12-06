@@ -1,0 +1,21 @@
+{
+  "id": "reflexos_de_combate",
+  "name": "Reflexos de Combate",
+  "type": "poder_geral",
+  "sub_type": "poder_de_combate",
+  "description": "Você ganha uma ação de movimento extra no seu primeiro turno de cada combate.",
+  "requirements": [
+    {
+      "type": "attr_value",
+      "sub_type": "hard",
+      "attr": "des",
+      "value": 13
+    }
+  ],
+  "effects": [
+    {
+      "type": "extra_move_action",
+      "requirement": "primeiro_turno_do_combate"
+    }
+  ]
+}

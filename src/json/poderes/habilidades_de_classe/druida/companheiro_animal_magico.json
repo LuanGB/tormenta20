@@ -1,0 +1,21 @@
+{
+  "id": "companheiro_animal_magico",
+  "name": "Companheiro Animal Mágico",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_druida",
+  "description": "Escolha um de seus companheiros animais. Esse animal recebe um segundo tipo diferente, entre destruidor ou médico, ganhando os bônus equivalentes.",
+  "requirements": [
+     {
+      "type": "character_lvl",
+      "sub_type": "hard",
+      "value": 8
+    },
+    {
+      "type": "feature",
+      "sub_type": "hard",
+      "id": "companheiro_animal"
+    }
+  ],
+  "effects": "ver_texto",
+  "costs": null
+}

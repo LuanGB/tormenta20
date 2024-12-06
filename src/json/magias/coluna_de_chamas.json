@@ -1,0 +1,54 @@
+{
+  "id": "coluna_de_chamas",
+  "name": "Coluna de Chamas",
+  "type": "divina",
+  "circle": "|3",
+  "school": "evoc",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "longo_90m_60q",
+  "target": {
+    "amount": null,
+    "up_to": null,
+    "type": "cilindro"
+  },
+  "effect": "area",
+  "effect_details": {
+    "shape": "cilindro",
+    "dimention": "lado,altura",
+    "size": "3m,30m",
+    "other_details": null
+  },
+  "counterspell": null,
+  "duration": "instantânea",
+  "duration_details": null,
+  "resistence": {
+    "effect": "reduz_à_metade|",
+    "skill": "reflexos"
+  },
+  "extra_costs": null,
+  "description": "Um pilar de fogo sagrado desce dos céus, causando 6d6 pontos de dano de fogo mais 6d6 pontos de dano de luz nas criaturas e objetos livres na área.",
+  "enhancements": [
+    {
+      "cost": 1,
+      "type": "aumenta",
+      "description": "aumenta o dano de fogo em +1d6.",
+      "extra_details": null
+    },
+    {
+      "cost": 1,
+      "type": "aumenta",
+      "description": "aumenta o dano de luz em +1d6.",
+      "extra_details": null
+    }
+  ],
+  "effects": [
+    {
+      "type": "dano",
+      "attribute": "pv",
+      "amount": "6d6+6d6",
+      "resistence_requirement": "reflexos",
+      "extra_requirements": null
+    }
+  ]
+}

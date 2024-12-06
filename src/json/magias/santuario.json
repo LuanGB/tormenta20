@@ -1,0 +1,49 @@
+{
+  "id": "santuario",
+  "name": "Santuário",
+  "type": "divina",
+  "circle": "1",
+  "school": "abjur",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "toque",
+  "target": {
+    "amount": 1,
+    "up_to": null,
+    "type": "criatura"
+  },
+  "effect": "alvo",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "cena",
+  "duration_details": "se o alvo realizar ações hostis a magia é dissipada",
+  "resistence": {
+    "effect": "anula",
+    "skill": "vontade"
+  },
+  "extra_costs": null,
+  "description": "Qualquer criatura que tente fazer uma ação hostil contra o alvo deve fazer um teste de Vontade. Se falhar, não consegue, perde a ação e não pode tentar novamente até o fim da cena. Santuário não protege o alvo de efeitos de área. Além disso, o próprio alvo também não pode fazer ações hostis, ou a magia é dissipada — mas pode usar outras habilidades e magias de cura e suporte (como Curar Ferimentos, Bênção e assim por diante).",
+  "enhancements": [
+    {
+      "cost": 1,
+      "type": "outro",
+      "description": "além do normal, escolha um tipo de criatura entre animal, construto ou morto-vivo. Você não pode ser percebido por criaturas não inteligentes do tipo escolhido, não importando o sentido usado.",
+      "extra_details": null
+    },
+    {
+      "cost": 9,
+      "type": "outro",
+      "description": "também protege o alvo contra efeitos de área. Uma criatura que tente atacar uma área que inclua o alvo deve fazer o teste de Vontade; se falhar, não consegue e perde a ação. Ela só pode tentar novamente se o alvo sair da área.",
+      "extra_details": null
+    }
+  ],
+  "effects": [
+    {
+      "type": "outro",
+      "attribute": null,
+      "amount": null,
+      "resistence_requirement": "vontade",
+      "extra_requirements": null
+    }
+  ]
+}

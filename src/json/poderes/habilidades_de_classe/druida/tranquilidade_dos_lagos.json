@@ -1,0 +1,26 @@
+{
+  "id": "tranquilidade_dos_lagos",
+  "name": "Tranquilidade dos Lagos",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_druida",
+  "description": "Você recebe +2 em Vontade. Se estiver em alcance médio de um lago, rio ou equivalente, pode gastar 1 PM uma vez por rodada para repetir um teste de resistência recém realizado.",
+  "requirements": null,
+  "effects": [
+    {
+      "type": "reroll_resistence_test",
+      "requirement": "estar_em_alcance_medio_de_um_lago_ou_rio",
+      "costs": [
+        {
+        "value": 1,
+        "type": "PM"
+        }
+      ]
+    },
+    {
+      "type": "skill_improvement",
+      "value": 2,
+      "skill": "vontade"
+    }
+  ],
+  "costs": null
+}

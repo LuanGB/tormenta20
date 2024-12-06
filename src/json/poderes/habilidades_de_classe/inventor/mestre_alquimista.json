@@ -1,0 +1,33 @@
+{
+  "id": "mestre_alquimista",
+  "name": "Mestre Alquimista",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_inventor",
+  "description": "Você pode fabricar poções com fórmulas que conheça de qualquer círculo.",
+  "requirements": [
+    {
+      "type": "character_lvl",
+      "sub_type": "hard",
+      "value": 10
+    },
+    {
+      "type": "attr_value",
+      "sub_type": "hard",
+      "attr": ["int", "sab"],
+      "value": 17
+    },
+    {
+      "type": "feature",
+      "sub_type": "hard",
+      "id": "alquimista_iniciado"
+    }
+  ],
+  "effects": [
+    {
+      "type": "create_item",
+      "item": "pocao",
+      "circulo": "qualquer_um"
+    }
+  ],
+  "costs": null
+}

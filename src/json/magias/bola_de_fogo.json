@@ -1,0 +1,60 @@
+{
+  "id": "bola_de_fogo",
+  "name": "Bola de Fogo",
+  "type": "arcana",
+  "circle": "2",
+  "school": "evoc",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "medio_30m_20q",
+  "target": {
+    "amount": null,
+    "up_to": null,
+    "type": "area"
+  },
+  "effect": "area",
+  "effect_details": {
+    "shape": "esfera",
+    "dimention": "raio",
+    "size": "6m",
+    "other_details": null
+  },
+  "counterspell": null,
+  "duration": "instantânea",
+  "duration_details": null,
+  "resistence": {
+    "effect": "reduz_à_metade|",
+    "skill": "reflexos"
+  },
+  "extra_costs": null,
+  "description": "Esta famosa magia cria uma poderosa explosão, causando 6d6 pontos de dano de fogo em todas as criaturas e objetos livres na área.",
+  "enhancements": [
+    {
+      "cost": 2,
+      "type": "aumenta",
+      "description": "aumenta o dano em +2d6.",
+      "extra_details": null
+    },
+    {
+      "cost": 2,
+      "type": "muda",
+      "description": "muda a área para efeito de esfera flamejante com tamanho Médio e a duração para cena. Em vez do normal, cria uma esfera flamejante com 1,5m de diâmetro que causa 3d6 pontos de dano a qualquer criatura no mesmo espaço. Você pode gastar uma ação de movimento para fazer a esfera voar 9m em qualquer direção. Ela é imune a dano, mas pode ser apagada com água. Uma criatura só pode sofrer dano da esfera uma vez por rodada.",
+      "extra_details": null
+    },
+    {
+      "cost": 3,
+      "type": "muda",
+      "description": "muda a duração para 1 dia ou até ser descarregada. Em vez do normal, você cria uma pequena pedra flamejante, que pode detonar como uma reação, descarregando a magia. A pedra pode ser usada como uma arma de arremesso com alcance curto. Uma vez detonada, causa o dano da magia numa área de esfera de 6m de raio.",
+      "extra_details": null
+    }
+  ],
+  "effects": [
+    {
+      "type": "dano",
+      "attribute": "pv",
+      "amount": "6d6",
+      "resistence_requirement": "reflexos",
+      "extra_requirements": null
+    }
+  ]
+}

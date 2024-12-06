@@ -1,0 +1,53 @@
+{
+  "id": "missa_escudo_divino",
+  "name": "Missa: Escudo Divino",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_clerigo",
+  "description": "Sua fé protege os ouvintes. Os participantes recebem +1 em Defesa e testes de resistência.",
+  "requirements": null,
+  "effects": [
+    {
+      "type": "create_item",
+      "item": "pocao",
+      "action": "livre"
+    },
+    {
+      "type": "condition",
+      "condition": "abalada",
+      "duration": "cena"
+    },
+    {
+      "type": "manouver_improvement",
+      "manouver": ["derrubar", "empurrar"],
+      "action": "livre"
+    },
+    {
+      "type": "attack_penalty",
+      "value": -2,
+      "duration": ""
+    },
+    {
+      "type": "defense_improvement",
+      "value": 1
+    },
+    {
+      "type": "resistence_improvement",
+      "value": 1
+    },
+    {
+      "type": "amount_targets",
+      "amount": "1_mas_bonus_sab",
+      "duration": "um_dia"
+    }
+  ],
+  "costs": [
+    {
+    "value": 1,
+    "type": "hora"
+    },
+    {
+    "value": 25,
+    "type": "tibares"
+    }
+  ]
+}

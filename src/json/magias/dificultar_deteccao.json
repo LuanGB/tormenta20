@@ -1,0 +1,51 @@
+{
+  "id": "dificultar_deteccao",
+  "name": "Dificiltar Detecção",
+  "type": "arcana",
+  "circle": "3",
+  "school": "abjur",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "toque",
+  "target": {
+    "amount": 1,
+    "up_to": null,
+    "type": "criatura_ou_objeto"
+  },
+  "effect": "alvo",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "1_dia",
+  "duration_details": null,
+  "resistence": null,
+  "extra_costs": null,
+  "description": "Esta magia oculta a presença do alvo contra qualquer meio mágico de detecção, inclusive detectar magia. Um conjurador que lance uma magia de adivinhação para detectar a presença ou localização do alvo deve fazer um teste de Vontade. Se falhar, a magia não funciona, mas os PM são gastos mesmo assim. Se for lançada sobre uma criatura, Dificultar Detecção protege tanto a criatura quanto seu equipamento.",
+  "enhancements": [
+    {
+      "cost": 4,
+      "type": "muda",
+      "description": "muda o alvo para área de cubo de 9m. Qualquer criatura ou objeto na área recebe o efeito da magia enquanto estiver dentro dela.",
+      "extra_details": {
+        "target": "area_de_cubo_de_9m",
+        "duration": "enquanto_estiver_dentro-da_area"
+      }
+    },
+    {
+      "cost": 4,
+      "type": "muda",
+      "description": "muda a duração para 1 semana.",
+      "extra_details": {
+        "duration": "1_semana"
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "outro",
+      "attribute": null,
+      "amount": null,
+      "resistence_requirement": null,
+      "extra_requirements": null
+    }
+  ]
+}

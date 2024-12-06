@@ -1,0 +1,27 @@
+{
+  "id": "lendas_e_historias",
+  "name": "Lendas e Histórias",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_bardo",
+  "description": "Você possui um acervo mental de relatos, canções e folclore, sendo um arquivo vivo de assuntos gerais. Além de outros benefícios a critério do mestre, você pode gastar 1 PM para rolar novamente um teste recém realizado de Conhecimento, Misticismo, Nobreza ou Religião para informação, identificar criaturas ou identificar itens mágicos.",
+  "requirements": [
+    {
+      "type": "attr_value",
+      "sub_type": "hard",
+      "attr": "int",
+      "value": 13
+    }
+  ],
+  "effects": [
+    {
+      "type": "reroll_skill_teste",
+      "skill": ["conhecimento", "misticismo", "nobreza", "religiao"]
+    }
+  ],
+  "costs": [
+    {
+    "value": 1,
+    "type": "PM"
+    }
+  ]
+}

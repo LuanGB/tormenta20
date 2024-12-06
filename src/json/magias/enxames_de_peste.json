@@ -1,0 +1,88 @@
+{
+  "id": "enxames_de_peste",
+  "name": "Enxames de Peste",
+  "type": "divina",
+  "circle": "2",
+  "school": "conv",
+  "execution": "completa",
+  "execution_details": null,
+  "range": "medio_30m_20qo",
+  "target": {
+    "amount": 1,
+    "up_to": null,
+    "type": "enxame_medio"
+  },
+  "effect": "area",
+  "effect_details": {
+    "shape": "quadrado",
+    "dimention": "lado",
+    "size": "1,5m_yq",
+    "other_details": null
+  },
+  "counterspell": null,
+  "duration": "sustentada",
+  "duration_details": null,
+  "resistence": {
+    "effect": "reduz_à_metade|",
+    "skill": "fortitude"
+  },
+  "extra_costs": null,
+  "description": "Você conjura um enxame de criaturas a sua escolha, como besouros, gafanhotos, mosquitos, ratos, morcegos ou serpentes, que surge em um ponto a sua escolha e ocupa um quadrado de 1,5m. O enxame pode passar pelo espaço de outras criaturas e não impede que outras criaturas entrem no espaço dele. No final de cada um de seus turnos, o enxame causa 2d12 pontos de dano de veneno a qualquer criatura em seu espaço (Fortitude reduz à metade). Você pode gastar uma ação de movimento para mover o enxame com deslocamento de 12m.",
+  "enhancements": [
+    {
+      "cost": 2,
+      "type": "aumenta",
+      "description": "aumenta o dano em +1d12.",
+      "extra_details": null
+    },
+    {
+      "cost": 3,
+      "type": "muda",
+      "description": "muda a resistência para Reflexos reduz à metade e o enxame para criaturas maiores, como gatos, guaxinins, compsognatos ou kobolds. Ele causa 3d12 pontos de dano (a sua escolha entre corte, impacto ou perfuração). O resto da magia segue normal.",
+      "extra_details": {
+        "resistence": {
+          "effect": "reduz_à_metade",
+          "skill": "reflexos"
+        }
+      }
+    },
+    {
+      "cost": 5,
+      "type": "aumenta",
+      "description": "aumenta o número de enxames em +1. Eles não podem ocupar o mesmo espaço. Requer 3º círculo.",
+      "extra_details": {
+        "target": {
+        "amount": 2,
+        "up_to": null,
+        "type": "enxames_medios"
+      },
+      "requirement": "3_circulo"
+      }
+    },
+    {
+      "cost": 7,
+      "type": "muda",
+      "description": "muda a resistência para Reflexos reduz à metade e o enxame para criaturas elementais. Ele causa 5d12 pontos do dano (a sua escolha entre ácido, eletricidade, fogo ou frio). O resto da magia segue normal. Requer 4º círculo.",
+      "extra_details": {
+      "resistence": {
+        "effect": "reduz_à_metade",
+        "skill": "reflexos"
+       },  
+      "target": {
+        "amount": 1,
+        "up_to": null,
+        "type": "enxames_de_criaturas_elementais"
+      }  
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "dano",
+      "attribute": "pv",
+      "amount": "2d12",
+      "resistence_requirement": "fortitude",
+      "extra_requirements": null
+    }
+  ]
+}

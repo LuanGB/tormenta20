@@ -1,0 +1,61 @@
+{
+  "id": "comunhao_com_a_natureza",
+  "name": "Comunhão com a Natureza",
+  "type": "divina",
+  "circle": "3",
+  "school": "adiv",
+  "execution": "completa",
+  "execution_details": null,
+  "range": "pessoal",
+  "target": {
+    "amount": null,
+    "up_to": null,
+    "type": "voce"
+  },
+  "effect": "voce",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "1_dia",
+  "duration_details": "a magia acaba se você ficar sem dados",
+  "resistence": null,
+  "extra_costs": null,
+  "description": "Após uma breve união com a natureza local, você obtém informações e intuições sobre a região em que está, numa distância equivalente a um dia de viagem. Você recebe 6d4 dados de auxílio. Enquanto a magia durar, sempre que for realizar um teste de perícia em áreas naturais, você pode gastar qualquer quantidade desses d4 e adicionar o resultado rolado como bônus no teste. A magia termina se você ficar sem dados.",
+  "enhancements": [
+    {
+      "cost": 1,
+      "type": "muda",
+      "description": "muda a execução para 1 minuto e a duração para instantânea. Em vez do normal, você descobre 1d4+1 informações sobre os seguintes temas: terreno, animais, vegetais, minerais, cursos d’água e presença de criaturas antinaturais numa região natural em que você esteja. Você pode, por exemplo, descobrir a quantidade de cavernas (terreno), se uma planta rara existe (vegetais) e se há mortos-vivos (criaturas antinaturais) na região.",
+      "extra_details": {
+        "execution": "1_minuto",
+        "duration": "instantânea"
+      }
+    },
+    {
+      "cost": 3,
+      "type": "aumenta",
+      "description": "aumenta o número de dados de auxílio em +2.",
+      "extra_details": null
+    },
+    {
+      "cost": 4,
+      "type": "muda",
+      "description": "muda o tipo dos dados de auxílio para d6.",
+      "extra_details": null
+    },
+    {
+      "cost": 8,
+      "type": "muda",
+      "description": "muda o tipo dos dados de auxílio para d8.",
+      "extra_details": null
+    }
+  ],
+  "effects": [
+    {
+      "type": "informação",
+      "attribute": null,
+      "amount": null,
+      "resistence_requirement": null,
+      "extra_requirements": null
+    }
+  ]
+}

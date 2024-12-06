@@ -1,0 +1,28 @@
+{
+  "id": "escudeiro",
+  "name": "Escudeiro",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_cavaleiro",
+  "description": "Você recebe os serviços de um escudeiro, um aliado especial que cuida de seu equipamento. Suas armas recebem um bônus de +1 em rolagens de dano e sua armadura concede +1 em Defesa. Além disso, você pode pagar 1 PM para receber ajuda do escudeiro em combate. Você recebe uma ação de movimento que pode usar para se levantar, sacar um item ou trazer sua montaria. O escudeiro não conta em seu limite de aliados. Caso ele morra, você pode treinar outro com um mês de trabalho.",
+  "requirements": null,
+  "effects": [
+    {
+      "type": "damage_improvement",
+      "value": 1
+    },
+    {
+      "type": "defense_improvement",
+      "value": 1
+    },
+    {
+      "type": "extra_action",
+      "action": "movimento"
+    }
+  ],
+  "costs": [
+    {
+    "value": 1,
+    "type": "PM"
+    }
+  ]
+}

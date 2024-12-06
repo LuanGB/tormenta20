@@ -1,0 +1,34 @@
+{
+  "id": "tornado_de_dor",
+  "name": "Tornado de Dor",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_guerreiro",
+  "description": "Você pode gastar uma ação padrão e 2 PM para desferir uma série de golpes giratórios. Faça um ataque corpo a corpo e compare-o com a Defesa de cada inimigo adjacente. Então faça uma rolagem de dano com um bônus cumulativo de +2 para cada acerto e aplique-a em cada inimigo atingido.",
+  "requirements": [
+     {
+      "type": "character_lvl",
+      "sub_type": "hard",
+      "value": 6
+    },
+    {
+      "type": "attack_type",
+      "sub_type": "soft",
+      "attack": "corpo_a_corpo"
+    }
+  ],
+  "effects": [
+    {
+      "type": "damage_bonus_improvement",
+      "value": "2_por_acerto"
+    }
+  ],
+  "costs": [
+    {
+    "value": 2,
+    "type": "PM"
+    },
+    {
+    "type": "acao_padrao"
+    }
+  ]
+}

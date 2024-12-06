@@ -1,0 +1,46 @@
+{
+  "id": "selo_de_mana",
+  "name": "Selo de Mana",
+  "type": "universal",
+  "circle": "3",
+  "school": "encan",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "toque",
+  "target": {
+    "amount": 1,
+    "up_to": null,
+    "type": "criatura"
+  },
+  "effect": "alvo",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "cena",
+  "duration_details": null,
+  "resistence": {
+    "effect": "parcial",
+    "skill": "vontade"
+  },
+  "extra_costs": null,
+  "description": "Seu toque manifesta um selo mágico na pele do alvo, que atrapalha o fluxo de mana. Pela duração da magia, sempre que o alvo realizar qualquer ação que gaste PM, deve fazer um teste de Vontade; se passar, faz a ação normalmente. Se falhar, a ação não tem efeito (mas os PM são gastos mesmo assim).",
+  "enhancements": [
+    {
+      "cost": 4,
+      "type": "muda",
+      "description": "muda o alcance para curto e o alvo para criaturas escolhidas dentro do alcance. Requer 4º círculo.",
+      "extra_details": {
+        "range": "curto",
+        "target": "criaturas_escolhidas"
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "outro",
+      "attribute": null,
+      "amount": null,
+      "resistence_requirement": "vontade",
+      "extra_requirements": null
+    }
+  ]
+}

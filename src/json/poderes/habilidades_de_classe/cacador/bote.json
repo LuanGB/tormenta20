@@ -1,0 +1,40 @@
+{
+  "id": "bote",
+  "name": "Bote",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_cacador",
+  "description": "Se estiver empunhando duas armas e fizer uma investida, você pode pagar 1 PM para fazer um ataque adicional com sua arma secundária.",
+  "requirements": [
+     {
+      "type": "character_lvl",
+      "sub_type": "hard",
+      "value": 6
+    },
+    {
+      "type": "amount_weapon",
+      "sub_type": "soft",
+      "amount": "2"
+    },
+    {
+      "type": "feature",
+      "sub_type": "hard",
+      "id": "ambidestria"
+    },
+    {
+      "type": "execute_manouver",
+      "sub_type": "soft",
+      "manouver": "investida"
+    }
+  ],
+  "effects": [
+    {
+      "type": "extra_attack"
+    }
+  ],
+  "costs": [
+    {
+    "value": 1,
+    "type": "PM"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": "ferreiro",
+  "name": "Ferreiro",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_inventor",
+  "description": "Quando usa uma arma corpo a corpo feita por você mesmo, o dano dela aumenta em um passo.",
+  "requirements": [
+     {
+      "type": "character_lvl",
+      "sub_type": "hard",
+      "value": 5
+    },
+    {
+      "type": "weapon_type",
+      "sub_type": "soft",
+      "weapon": "corpo_a_corpo_feita_por_voce"
+    },
+    {
+      "type": "feature",
+      "sub_type": "hard",
+      "id": "armeiro"
+    }
+  ],
+  "effects": [
+    {
+      "type": "damage_improvement",
+      "value": "um_passo"
+    }
+  ],
+  "costs": null
+}

@@ -1,0 +1,58 @@
+{
+  "id": "enfeiticar",
+  "name": "Enfeitiçar",
+  "type": "arcana",
+  "circle": "1",
+  "school": "encan",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "curto_6m_9q",
+  "target": {
+    "amount": 1,
+    "up_to": null,
+    "type": "humanoide"
+  },
+  "effect": "alvo",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "cena",
+  "duration_details": "se você ou seus aliados tomarem qualquer ação hostil contra o alvo, a magia é dissipada e o alvo retorna à atitude que tinha antes (ou piorada, de acordo com o mestre)",
+  "resistence": {
+    "effect": "anula",
+    "skill": "vontade"
+  },
+  "extra_costs": null,
+  "description": "Esta magia torna o alvo prestativo (veja Tormenta20, página 118). Ele não fica sob seu controle, mas percebe suas palavras e ações da maneira mais favorável possível. Você recebe um bônus de +10 em testes de Diplomacia com a vítima. Um alvo hostil ou que esteja envolvido em um combate recebe +5 em seu teste de resistência. Se você ou seus aliados tomarem qualquer ação hostil contra o alvo, a magia é dissipada e o alvo retorna à atitude que tinha antes (ou piorada, de acordo com o mestre).",
+  "enhancements": [
+    {
+      "cost": 2,
+      "type": "muda",
+      "description": "em vez do normal, você sugere uma ação para o alvo e ele obedece. A sugestão deve ser feita de modo que pareça aceitável, a critério do mestre. Pedir ao alvo que pule de um precipício, por exemplo, dissipa a magia. Já sugerir a um guarda que descanse um pouco, de modo que você e seus aliados passem por ele é aceitável. Quando o alvo executa a ação, a magia termina. Você pode determinar uma condição específica para a sugestão: por exemplo, que um rico mercador doe suas moedas para o primeiro mendigo que encontrar.",
+      "extra_details": null
+    },
+    {
+      "cost": 5,
+      "type": "muda",
+      "description": "muda o alvo para 1 espírito ou monstro. Requer 3º círculo.",
+      "extra_details": {
+        "requirement": "3_circulo"
+      }
+    },
+    {
+      "cost": 5,
+      "type": "alvos",
+      "description": "afeta todos os alvos dentro do alcance.",
+      "extra_details": null
+    }
+  ],
+  "effects": [
+    {
+      "type": "bônus",
+      "attribute": null,
+      "skill": "diplomacia",
+      "amount": "+10",
+      "resistence_requirement": "vontade",
+      "extra_requirements": null
+    }
+  ]
+}

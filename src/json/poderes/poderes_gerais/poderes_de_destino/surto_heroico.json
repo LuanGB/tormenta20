@@ -1,0 +1,26 @@
+{
+  "id": "surto_heroico",
+  "name": "Surto Heróico",
+  "type": "poder_geral",
+  "sub_type": "poder_de_destino",
+  "description": "Uma vez por rodada, você pode gastar 5 PM para realizar uma ação padrão ou de movimento adicional.",
+  "requirements": [
+    {
+      "type": "use",
+      "sub_type": "soft",
+      "use": "uma_vez_por_rodada"
+    }
+  ],
+  "effects": [
+    {
+      "type": "extra_action",
+      "action": ["padrão", "movimento"]
+    }
+  ],
+  "costs": [
+    {
+    "value": 5,
+    "type": "PM"
+    }
+  ]
+}

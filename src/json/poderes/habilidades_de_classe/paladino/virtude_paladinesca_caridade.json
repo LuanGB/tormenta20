@@ -1,0 +1,21 @@
+{
+  "id": "virtude_paladinesca_caridade",
+  "name": "Virtude Paladinesca: Caridade",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_paladino",
+  "description": "O custo de suas habilidades de paladino que tenham um aliado como alvo é reduzido em 1 PM.",
+  "requirements": [
+    {
+      "type": "target_type",
+      "sub_type": "soft",
+      "target": "aliado"
+    }
+  ],
+  "effects": [
+    {
+      "type": "reduce_PM_cost",
+      "value": -1
+    }
+  ],
+  "costs": null
+}

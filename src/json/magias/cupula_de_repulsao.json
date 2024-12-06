@@ -1,0 +1,54 @@
+{
+  "id": "cupula_de_repulsao",
+  "name": "Cúpula de Repulsão",
+  "type": "divina",
+  "circle": "4",
+  "school": "abjur",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "pessoal",
+  "target": {
+    "amount": null,
+    "up_to": null,
+    "type": "voce"
+  },
+  "effect": "area_3m",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "cena",
+  "duration_details": "Se você tentar se aproximar além do limite de 3m, rompe a cúpula e a magia é dissipada.",
+  "resistence": null,
+  "extra_costs": null,
+  "description": "",
+  "enhancements": [
+    {
+      "cost": 1,
+      "type": "outro",
+      "description": "você pode se aproximar sem romper a cúpula.",
+      "extra_details": null
+    },
+    {
+      "cost": 4,
+      "type": "outro",
+      "description": "como normal, mas você pode escolher um tipo de criaturas sem limitação (todos os animais, todos os monstros etc.).",
+      "extra_details": null
+    },
+    {
+      "cost": 8,
+      "type": "muda",
+      "description": "muda a duração para sustentada. Além do normal, qualquer ataque, magia ou habilidade de uma criatura afetada é desviado pelo efeito e não o atinge. Requer 5º círculo.",
+      "extra_details": {
+        "requirement": "5_circulo"
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "outro",
+      "attribute": null,
+      "amount": null,
+      "resistence_requirement": null,
+      "extra_requirements": null
+    }
+  ]
+}

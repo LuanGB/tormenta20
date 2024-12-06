@@ -1,0 +1,79 @@
+{
+  "id": "servo_morto_vivo",
+  "name": "Servo Morto-Vivo",
+  "type": "universal",
+  "circle": "3",
+  "school": "necro",
+  "execution": "completa",
+  "execution_details": null,
+  "range": "toque",
+  "target": {
+    "amount": 1,
+    "up_to": null,
+    "type": "cadaver"
+  },
+  "effect": "alvo",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "instantânea",
+  "duration_details": "os mortos-vivos duram até serem destruidos",
+  "resistence": null,
+  "extra_costs": {
+    "material_component": "ônix negro inserido no olho ou boca do cadáver",
+    "material_component_cost": "T$ 100",
+    "pm_debuff": null,
+    "pm_sacrifice": null
+  },
+  "description": "Transforma o cadáver de um humanoide, animal ou monstro em um esqueleto ou zumbi (conforme o estado de conservação do corpo). O morto-vivo obedece a todos os seus comandos. Se quiser que o morto-vivo o acompanhe, ele funciona como um aliado iniciante, de um tipo a sua escolha entre ajudante, atirador, combatente, fortão, guardião ou montaria.\nSe não quiser usar o morto-vivo como aliado, pode ordenar que ele proteja um local específico, atacando invasores. O nível somado de mortos-vivos sob seu comando não pode exceder o seu próprio nível +3, mas você só pode receber os benefícios de um deles como aliado por vez. Eles duram até serem destruídos.\nComponente material: um ônix negro (T$ 100), inserido na boca ou olho do cadáver.",
+  "enhancements": [
+    {
+      "cost": 3,
+      "type": "muda",
+      "description": "muda para componente material pó de ônix negro (T$ 500) e cria um carniçal (aliado veterano, ajudante, atirador, combatente, fortão ou guardião).",
+      "extra_details": {
+        "extra_costs": {
+          "material_component": "pó de ônix negro",
+          "material_component_cost": "T$ 500",
+          "pm_debuff": null,
+          "pm_sacrifice": null
+        }
+      }
+    },
+    {
+      "cost": 3,
+      "type": "muda",
+      "description": "muda para componente material pó de ônix negro (T$ 500) e cria uma sombra (aliado veterano, assassino, combatente ou perseguidor)",
+      "extra_details": {
+        "extra_costs": {
+          "material_component": "pó de ônix negro",
+          "material_component_cost": "T$ 500",
+          "pm_debuff": null,
+          "pm_sacrifice": null
+        }
+      }
+    },
+    {
+      "cost": 7,
+      "type": "muda",
+      "description": "muda para componente material ferramentas de embalsamar (T$ 1.000) e cria uma múmia (aliado mestre, ajudante, destruidor, guardião ou médico). Requer 4º círculo.",
+      "extra_details": {
+        "extra_costs": {
+          "material_component": "ferramentas de embalsamar",
+          "material_component_cost": "T$ 1.000",
+          "pm_debuff": null,
+          "pm_sacrifice": null
+        },
+        "requirement": "4_circulo"
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "outro",
+      "attribute": null,
+      "amount": null,
+      "resistence_requirement": null,
+      "extra_requirements": null
+    }
+  ]
+}

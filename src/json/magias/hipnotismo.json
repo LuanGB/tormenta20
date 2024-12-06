@@ -1,0 +1,104 @@
+{
+  "id": "hipnotismo",
+  "name": "Hipnotismo",
+  "type": "arcana",
+  "circle": "1",
+  "school": "conv",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "curto_6m_9q",
+  "target": {
+    "amount": null,
+    "up_to": null,
+    "type": "criaturas_escolhidas_de_ND2_ou_menor"
+  },
+  "effect": "alvo",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "1d4_rodadas",
+  "duration_details": null,
+  "resistence": {
+    "effect": "anula",
+    "skill": "vontade"
+  },
+  "extra_costs": null,
+  "description": "Suas palavras e movimentos ritmados deixam as criaturas fascinadas. Esta magia só afeta criaturas que possam perceber você. Se usar esta magia em combate, os alvos recebem +5 em seus testes de resistência.",
+  "enhancements": [
+    {
+      "cost": 0,
+      "type": "muda",
+      "description": "muda o alvo para 1 criatura e a duração para 1 rodada. Em vez de fascinado, o alvo fica pasmo. Uma criatura só pode ser afetada por este truque uma vez por cena.",
+      "extra_details": {
+        "target": {
+          "amount": 1,
+          "up_to": null,
+          "type": "criatura"
+        },
+        "duration": "1_rodada"
+      }
+    },
+    {
+      "cost": 1,
+      "type": "outro",
+      "description": "como o normal, mas se passarem na resistência os alvos não saberão que foram alvos de uma magia.",
+      "extra_details": null
+    },
+    {
+      "cost": 2,
+      "type": "muda",
+      "description": "muda a duração para cena.",
+      "extra_details": {
+        "duration": "cena"
+      }
+    },
+    {
+      "cost": 2,
+      "type": "muda",
+      "description": "muda o alcance para médio.",
+      "extra_details": {
+        "range": "medio_30m_20q"
+      }
+    },
+    {
+      "cost": 2,
+      "type": "muda",
+      "description": "afeta alvos de ND 5 ou menor. Requer 2º círculo.",
+      "extra_details": {
+        "requirement": "2_circulo"
+      }
+    },
+    {
+      "cost": 5,
+      "type": "muda",
+      "description": "afeta alvos de ND 10 ou menor. Requer 3º círculo.",
+      "extra_details": {
+        "requirement": "3_circulo"
+      }
+    },
+    {
+      "cost": 9,
+      "type": "muda",
+      "description": "afeta alvos de ND 15 ou menor. Requer 4º círculo.",
+      "extra_details": {
+        "requirement": "4_circulo"
+      }
+    },
+    {
+      "cost": 14,
+      "type": "muda",
+      "description": "afeta alvos de ND 20 ou menor. Requer 5º círculo.",
+      "extra_details": {
+        "requirement": "5_circulo"
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "condição",
+      "attribute": null,
+      "amount": null,
+      "resistence_requirement": "vontade",
+      "extra_requirements": null
+    }
+  ]
+}

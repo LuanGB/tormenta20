@@ -1,0 +1,52 @@
+{
+  "id": "sonho",
+  "name": "Sonho",
+  "type": "arcana",
+  "circle": "4",
+  "school": "adiv",
+  "execution": "10_minutos",
+  "execution_details": null,
+  "range": "ilimitado",
+  "target": {
+    "amount": 1,
+    "up_to": null,
+    "type": "criatura_viva"
+  },
+  "effect": "alvo",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "veja_texto",
+  "duration_details": "se sair do transe a magia acaba",
+  "resistence": null,
+  "extra_costs": null,
+  "description": "Você entra nos sonhos de uma criatura. Uma vez lá, pode conversar com ela até que ela acorde. Se o alvo não estiver dormindo quando você lançar a magia, você pode permanecer em transe até que ele adormeça. Durante o transe, você fica indefeso e sem consciência dos arredores. Você pode sair do transe quando quiser, mas a magia termina.",
+  "enhancements": [
+    {
+      "cost": 2,
+      "type": "transforma",
+      "description": "transforma o sonho do alvo em um pesadelo. A vítima deve fazer um teste de Vontade. Se falhar, não recupera PV ou PM pela noite, sofre 1d10 pontos de dano de trevas e acorda fatigada. A vítima recebe bônus ou penalidades em seu teste de resistência, dependendo do conhecimento que você tiver dela. Use os mesmos modificadores da magia Vidência.",
+      "extra_details": null
+    },
+    {
+      "cost": 1,
+      "type": "aumenta",
+      "description": "aumenta o número de alvos em +1. Todos os alvos compartilham um mesmo sonho (ou pesadelo) entre si e com você.",
+      "extra_details": {
+        "target": {
+          "amount": 2,
+          "up_to": null,
+          "type": "criatura_viva"
+        }
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "outro",
+      "attribute": null,
+      "amount": null,
+      "resistence_requirement": null,
+      "extra_requirements": null
+    }
+  ]
+}

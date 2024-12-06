@@ -1,0 +1,21 @@
+{
+  "id": "gatuno",
+  "name": "Gatuno",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_ladino",
+  "description": "Você recebe +2 em Atletismo. Quando escala, avança seu deslocamento normal, em vez de metade dele.",
+  "requirements": [
+    {
+      "type": "skill_training",
+      "sub_type": "hard",
+      "skill": "atletismo"
+    }
+  ],
+  "effects": [
+    {
+      "type": "skill_improvement",
+      "value": 2
+    }
+  ],
+  "costs": null
+}

@@ -1,0 +1,48 @@
+{
+  "id": "imagem_espelhada",
+  "name": "Imagem Espelhada",
+  "type": "arcana",
+  "circle": "1",
+  "school": "ilus",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "pessoal",
+  "target": {
+    "amount": null,
+    "up_to": null,
+    "type": "voce"
+  },
+  "effect": "alvo",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "cena",
+  "duration_details": "Cada vez que um ataque contra você erra, uma das imagens desaparece",
+  "resistence": null,
+  "extra_costs": null,
+  "description": "Três cópias ilusórias suas aparecem. As duplicatas ficam ao seu redor e imitam suas ações, tornando difícil para um inimigo saber quem atacar. Você recebe +6 na Defesa. Cada vez que um ataque contra você erra, uma das imagens desaparece e o bônus na Defesa diminui em 2. Um oponente deve ver as cópias para ser confundido. Se você estiver invisível, ou o atacante fechar os olhos, você não recebe o bônus (mas o atacante ainda sofre penalidades normais por não enxergar).",
+  "enhancements": [
+    {
+      "cost": 2,
+      "type": "aumenta",
+      "description": "aumenta o número de cópias em +1 (e o bônus na Defesa em +2).",
+      "extra_details": null
+    },
+    {
+      "cost": 2,
+      "type": "muda",
+      "description": "além do normal, toda vez que uma cópia é destruída, emite um clarão de luz. A criatura que destruiu a cópia fica ofuscada por uma rodada. Requer 2º círculo.",
+      "extra_details": {
+        "requirement": "2_circulo"
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "bonus",
+      "attribute": "def",
+      "amount": "+6",
+      "resistence_requirement": null,
+      "extra_requirements": "você precisa estar visível para receber o bonus na defesa"
+    }
+  ]
+}

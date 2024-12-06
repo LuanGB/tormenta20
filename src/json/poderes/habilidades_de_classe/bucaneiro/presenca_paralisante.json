@@ -1,0 +1,22 @@
+{
+  "id": "presenca_paralisante",
+  "name": "Presença Paralisante",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_bucaneiro",
+  "description": "Você soma seu bônus de Carisma em Iniciativa.",
+  "requirements": [
+    {
+      "type": "attr_value",
+      "sub_type": "hard",
+      "attr": "car",
+      "value": 13
+    }
+  ],
+  "effects": [
+    {
+      "type": "add_damage_attr",
+      "attr": "car"
+    }
+  ],
+  "costs": null
+}

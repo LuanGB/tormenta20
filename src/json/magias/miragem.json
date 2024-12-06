@@ -1,0 +1,62 @@
+{
+  "id": "miragem",
+  "name": "Miragem",
+  "type": "arcana",
+  "circle": "3",
+  "school": "ilus",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "longo_90m_60q",
+  "target": {
+    "amount": null,
+    "up_to": null,
+    "type": "cubo_de_ate_90m_de_lado"
+  },
+  "effect": "longo_90m_60q",
+  "effect_details": {
+    "shape": "cubo",
+    "dimention": "lado",
+    "size": "90m_60q",
+    "other_details": null
+  },
+  "counterspell": null,
+  "duration": "1_dia",
+  "duration_details": null,
+  "resistence": {
+    "effect": "desacredita",
+    "skill": "vontade"
+  },
+  "extra_costs": null,
+  "description": "Você faz um terreno parecer outro, incluindo sons e cheiros. Uma planície pode parecer um pântano, uma floresta pode parecer uma montanha etc. Esta magia pode ser usada para criar armadilhas: areia movediça pode parecer terra firme ou um precipício pode parecer um lago. Você pode alterar, incluir e esconder estruturas dentro da área, mas não criaturas (embora elas possam se esconder nas estruturas ilusórias).",
+  "enhancements": [
+    {
+      "cost": 4,
+      "type": "outro",
+      "description": "além do normal, pode alterar a aparência de criaturas escolhidas na área, como se usando Disfarce Ilusório.",
+      "extra_details": null
+    },
+    {
+      "cost": 9,
+      "type": "muda",
+      "description": "muda a duração para permanente e adiciona componente material (pó de diamante no valor de T$ 1.000). Requer 5º círculo.",
+      "extra_details": {
+        "duration": "permanente",
+        "extra_costs": {
+          "material_component": "pó de diamante",
+          "material_component_cost": "T$ 1.000",
+          "pm_debuff": null,
+          "pm_sacrifice": null
+        }
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "ilusão",
+      "attribute": null,
+      "amount": null,
+      "resistence_requirement": "vontade",
+      "extra_requirements": null
+    }
+  ]
+}

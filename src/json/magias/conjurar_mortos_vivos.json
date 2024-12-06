@@ -1,0 +1,70 @@
+{
+  "id": "conjurar_mortos_vivos",
+  "name": "Conjurar Mortos-Vivos",
+  "type": "universal",
+  "circle": "2",
+  "school": "necro",
+  "execution": "completa",
+  "execution_details": null,
+  "range": "curto_6m_9q",
+  "target": {
+    "amount": 6,
+    "up_to": false,
+    "type": "mortos-vivos"
+  },
+  "effect": "curto_6m_9q",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "sustentada",
+  "duration_details": "Os mortos-vivos desaparecem quando são reduzidos a 0 PV ou no fim da cena.",
+  "resistence": null,
+  "extra_costs": null,
+  "description": "Seis esqueletos de tamanho Médio feitos de energia negativa emergem do chão em espaços desocupados escolhidos por você dentro do alcance. Você pode usar uma ação de movimento para fazer os mortos-vivos andarem ou uma ação padrão para fazê-los causar dano a criaturas adjacentes. Os mortos-vivos desaparecem quando são reduzidos a 0 PV ou no fim da cena. Os mortos-vivos não agem sem receber uma ordem. Usos criativos para criaturas invocadas fora de combate ficam a critério do mestre.",
+  "enhancements": [
+    {
+      "cost": 2,
+      "type": "aumenta",
+      "description": "aumenta o número de mortos-vivos conjurados em +1.",
+      "extra_details": null
+    },
+    {
+      "cost": 3,
+      "type": "outro",
+      "description": "em vez de esqueletos, conjura carniçais. Requer 3º círculo.",
+      "extra_details": {
+        "requirement": "3_circulo"
+      }
+    },
+    {
+      "cost": 7,
+      "type": "outro",
+      "description": "em vez de esqueletos, conjura sombras. Requer 4º círculo.",
+      "extra_details": {
+        "requirement": "4_circulo"
+      }
+    }
+  ],
+  "statistc_details": [
+    {
+      "type": "esqueleto",
+      "description": "For 14, Des 14 e todos os outros atributos nulos; 1 PV, não tem valor de Defesa ou testes de resistência e falha automaticamente em qualquer teste oposto. Deslocamento 9m e causa 1d6+2 pontos de dano de trevas. Imune a atordoamento, dano não letal, doença, encantamento, fadiga, frio, ilusão, paralisia, sono e veneno."
+    },
+    {
+      "type": "carniçal",
+      "description": "como o esqueleto, mas tem For 16, Des 16, 12 PV e causa 1d8+3 pontos de dano de trevas mais 1d8 pontos de dano de veneno. Além disso, criaturas atingidas por um carniçal devem passar num teste de Fortitude (CD igual à da magia) ou ficam paralisadas por 1 rodada. Uma criatura que passe no teste de resistência fica imune à paralisia dos carniçais por 24 horas."
+    },
+    {
+      "type": "sombra",
+      "description": "como o esqueleto, mas tem a habilidade incorpóreo, Des 18, 30 PV e causa 1d10 pontos de dano de trevas mais 1d10 pontos de dano de frio. Além disso, criaturas vivas atingidas por uma sombra devem passar num teste de Fortitude (CD igual à da magia) ou perdem 1d4 PM. Sombras perdem a habilidade incorpóreo quando expostas à luz do sol."
+    }
+  ],
+  "effects": [
+    {
+      "type": "conjura",
+      "attribute": null,
+      "amount": null,
+      "resistence_requirement": null,
+      "extra_requirements": null
+    }
+  ]
+}

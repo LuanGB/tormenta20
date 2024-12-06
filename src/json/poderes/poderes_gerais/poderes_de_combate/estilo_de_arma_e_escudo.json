@@ -1,0 +1,27 @@
+{
+  "id": "estilo_de_arma_e_escudo",
+  "name": "Estilo de Arma e Escudo",
+  "type": "poder_geral",
+  "sub_type": "poder_de_combate",
+  "description": "Se você estiver usando um escudo, o bônus na Defesa que ele fornece aumenta em +2.",
+  "requirements": [
+    {
+      "type": "expertise",
+      "sub_type": "hard",
+      "id": "luta"
+    },
+    {
+      "type": "feature",
+      "sub_type": "hard",
+      "id": "proeficiencia_com_escudos"
+    }
+  ],
+  "effects": [
+    {
+      "type": "defense_improvement",
+      "value": 2,
+      "duration": "permanente",
+      "requirements": "estar_usando_escudo"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "id": "profanar",
+  "name": "Profanar",
+  "type": "divina",
+  "circle": "1",
+  "school": "necro",
+  "execution": "padrão",
+  "execution_details": "Esta magia não pode ser lançada em uma área contendo um símbolo visível dedicado a uma divindade que não a sua",
+  "range": "longo_90m_60q",
+  "target": {
+    "amount": null,
+    "up_to": null,
+    "type": "esfera_com_9m_de_raio"
+  },
+  "effect": "area",
+  "effect_details": null,
+  "counterspell": "consagrar",
+  "duration": "1_dia",
+  "duration_details": null,
+  "resistence": null,
+  "extra_costs": null,
+  "description": "Esta magia enche a área com energia negativa. Efeitos que causam dano de trevas ou canalizam energia negativa têm o dano dobrado dentro da área. Esta magia não pode ser lançada em uma área contendo um símbolo visível dedicado a uma divindade que não a sua. Profanar anula Consagrar.",
+  "enhancements": [
+    {
+      "cost": 1,
+      "type": "outro",
+      "description": "além do normal, mortos-vivos na área recebem +2 na Defesa e +2 em todos os testes.",
+      "extra_details": null
+    },
+     {
+      "cost": 2,
+      "type": "aumenta",
+      "description": "aumenta os bônus para mortos-vivos em +1.",
+      "extra_details": null
+    },
+    {
+      "cost": 9,
+      "type": "muda",
+      "description": "muda a execução para 1 hora, a duração para permanente e adiciona componente material (incenso e óleos no valor de T$ 1.000). Requer 4º círculo.",
+      "extra_details": {
+        "execution": "1_hora",
+        "duration": "permanente",
+        "extra_costs": {
+          "material_component": "incenso e óleos",
+          "material_component_cost": "T$ 1.000",
+          "pm_debuff": null,
+          "pm_sacrifice": null
+        },
+        "requirement": "4_circulo"
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "aumenta|muda|outro",
+      "attribute": "pv|pm...",
+      "amount": "+10",
+      "resistence_requirement": null,
+      "extra_requirements": null
+    }
+  ]
+}

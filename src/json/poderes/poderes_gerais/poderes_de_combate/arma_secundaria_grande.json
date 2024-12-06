@@ -1,0 +1,20 @@
+{
+  "id": "arma_secundaria_grande",
+  "name": "Arma Secundária Grande",
+  "type": "poder_geral",
+  "sub_type": "poder_de_combate",
+  "description": "Você pode usar duas armas de uma mão com o poder Estilo de Duas Armas.",
+  "requirements": [
+    {
+      "type": "feature",
+      "sub_type": "hard",
+      "id": "estilo_de_duas_armas"
+    }
+  ],
+  "effects": [
+    {
+      "type": "feature_improvement",
+      "improvement": "two_one_handed_weapons"
+    }
+  ]
+}

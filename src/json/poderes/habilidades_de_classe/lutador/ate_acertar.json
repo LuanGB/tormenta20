@@ -1,0 +1,27 @@
+{
+  "id": "ate_acertar",
+  "name": "Até Acertar",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_lutador",
+  "description": "Se você errar um ataque desarmado, recebe um bônus cumulativo de +2 em testes de ataque e rolagens de dano desarmado contra o mesmo oponente. Os bônus terminam quando você acertar um ataque ou no fim da cena, o que acontecer primeiro.",
+  "requirements": [
+    {
+      "type": "attack_type",
+      "sub_type": "soft",
+      "attack": "desarmado"
+    }
+  ],
+  "effects": [
+    {
+      "type": "attack_improvement",
+      "value": "2_por_ataque_falho",
+      "duration": "cena_ou_acertar_ataque"
+    },
+    {
+      "type": "damage_improvement",
+      "value": "2_por_ataque_falho",
+      "duration": "cena_ou_acertar_ataque"
+    }
+  ],
+  "costs": null
+}

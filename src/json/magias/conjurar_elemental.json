@@ -1,0 +1,48 @@
+{
+  "id": "conjurar_elemental",
+  "name": "Conjurar Elemental",
+  "type": "arcana",
+  "circle": "4",
+  "school": "conv",
+  "execution": "completa",
+  "execution_details": null,
+  "range": "medio_30m_20q",
+  "target": {
+    "amount": null,
+    "up_to": null,
+    "type": "criatura|objeto|..."
+  },
+  "effect": "alvo",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "sustentada",
+  "duration_details": null,
+  "resistence": null,
+  "extra_costs": null,
+  "description": "Esta magia transforma uma porção de um elemento inerte em uma criatura elemental Grande do tipo do elemento alvo. Por exemplo, lançar esta magia numa fogueira ou tocha cria um elemental do fogo. Você pode criar elementais do ar água, fogo e terra com essa magia. O elemental obedece a todos os seus comandos e pode funcionar como um aliado mestre do tipo destruidor (mas sem custo em PM) e mais um tipo entre os indicados na lista abaixo. Somente você pode ser auxiliado pelo elemental e ele não conta em seu limite de aliados.\nAr: assassino, perseguidor ou vigilante. Dano de eletricidade.\nÁgua: ajudante, guardião ou médico. Dano de frio.\nFogo: atirador, combatente ou fortão. Dano de fogo.\nTerra: combatente, guardião ou montaria. Dano de impacto.",
+  "enhancements": [
+    {
+      "cost": 5,
+      "type": "muda",
+      "description": "o elemental muda para Enorme e recebe dois tipos de aliado indicados no seu elemento.",
+      "extra_details": null
+    },
+    {
+      "cost": 5,
+      "type": "outro",
+      "description": "você convoca um elemental de cada tipo. Você pode ordenar que cada elemental auxilie você ou seus aliados. Requer 5º círculo.",
+      "extra_details": {
+        "requirement": "5_circulo"
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "convoca",
+      "attribute": null,
+      "amount": null,
+      "resistence_requirement": null,
+      "extra_requirements": null
+    }
+  ]
+}

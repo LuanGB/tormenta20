@@ -1,0 +1,75 @@
+{
+  "id": "circulo_da_justica",
+  "name": "Círculo da Justiça",
+  "type": "divina",
+  "circle": "2",
+  "school": "abjur",
+  "execution": "completa",
+  "execution_details": null,
+  "range": "curto_6m_9q",
+  "target": {
+    "amount": null,
+    "up_to": null,
+    "type": "area"
+  },
+  "effect": "area",
+  "effect_details": {
+    "shape": "esfera",
+    "dimention": "lado",
+    "size": "9m_yq",
+    "other_details": null
+  },
+  "counterspell": null,
+  "duration": "1_dia",
+  "duration_details": null,
+  "resistence": {
+    "effect": "parcial",
+    "skill": "vontade"
+  },
+  "extra_costs": null,
+  "description": "Também conhecida como Lágrimas de Hyninn, esta magia é usada em tribunais e para proteger áreas sensíveis. Criaturas na área sofrem –10 em testes de Acrobacia, Enganação, Furtividade e Ladinagem e não podem mentir deliberadamente — mas podem tentar evitar perguntas que normalmente responderiam com uma mentira (sendo evasivas ou cometendo omissões, por exemplo). Uma criatura que passe na resistência tem as penalidades reduzidas para –5 e pode mentir.",
+  "enhancements": [
+    {
+      "cost": 1,
+      "type": "muda",
+      "description": "muda a execução para ação padrão, o alcance para pessoal, o alvo para você, a duração para cena e a resistência para nenhuma. Em vez do normal, qualquer criatura ou objeto invisível em alcance curto se torna visível. Isso não dissipa o efeito mágico; se sair do seu alcance, a criatura ou objeto voltam a ficar invisíveis.",
+      "extra_details": {
+        "execution": "padrao",
+        "range": "pessoal",
+        "target": "voce",
+        "duration": "cena",
+        "resistence": null 
+      }
+    },
+    {
+      "cost": 3,
+      "type": "muda",
+      "description": "muda a penalidade nas perícias para –10 (se passar na resistência) e –20 (se falhar). Requer 4º círculo.",
+      "extra_details": {
+        "requirement": "4_circulo"
+      }
+    },
+    {
+      "cost": 7,
+      "type": "muda",
+      "description": "muda a duração para permanente e adiciona componente material (balança de prata no valor de T$ 5.000).",
+      "extra_details": {
+        "extra_costs": {
+         "material_component": "balança de prata",
+         "material_component_cost": "T$ 5000",
+         "pm_debuff": null,
+         "pm_sacrifice": null
+        }
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "penalidade",
+      "attribute": null,
+      "amount": null,
+      "resistence_requirement": "vontade",
+      "extra_requirements": null
+    }
+  ]
+}

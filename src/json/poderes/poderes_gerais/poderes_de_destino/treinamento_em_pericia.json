@@ -1,0 +1,16 @@
+{
+  "id": "treinamento_em_pericia",
+  "name": "Treinamento em Perícia",
+  "type": "poder_geral",
+  "sub_type": "poder_de_destino",
+  "description": "Você se torna treinado em uma perícia a sua escolha. Você pode escolher este poder outras vezes para perícias diferentes.",
+  "requirements": null,
+  "effects": [
+    {
+      "type": "skill_improvement",
+      "skill": "a_sua_escolha",
+      "improvement": "se_torna_treinado",
+      "requirement": "uma_vez_por_pericia"
+    }
+  ]
+}

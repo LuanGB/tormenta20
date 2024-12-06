@@ -1,0 +1,26 @@
+{
+  "id": "manipular",
+  "name": "Manipular",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_bardo",
+  "description": "Você pode gastar 1 PM para forçar uma criatura que esteja fascinada a fazer um teste de Vontade (CD Car). Se a criatura falhar, sofre o efeito da magia Enfeitiçar até o fim da cena. Se passar, fica imune a esta habilidade por um dia. Usar esta habilidade não conta como uma ameaça à criatura fascinada.",
+  "requirements": [
+    {
+      "type": "feature",
+      "sub_type": "hard",
+      "id": "fascinar"
+    },
+    {
+      "type": "codition_effect",
+      "sub_type": "soft",
+      "codition": "fascinada"
+    }
+  ],
+  "effects": null,
+  "costs": [
+    {
+    "value": 1,
+    "type": "PM"
+    }
+  ]
+}

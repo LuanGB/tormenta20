@@ -1,0 +1,31 @@
+{
+  "id": "bloqueio_com_escudo",
+  "name": "BLoqueio Com Escudo",
+  "type": "poder_geral",
+  "sub_type": "poder_de_combate",
+  "description": "Quando é atingido por um ataque, habilidade ou magia, você pode gastar 1 PM para receber resistência a dano contra este ataque igual ao bônus na Defesa que seu escudo fornece. Você só pode usar este poder se estiver usando um escudo.",
+  "requirements": [
+    {
+      "type": "shield_equipped",
+      "sub_type": "soft"
+    },
+    {
+      "type": "feature",
+      "sub_type": "hard",
+      "id": "estilo_de_arma_e_escudo"
+    }
+  ],
+  "effects": [
+    {
+      "type": "bonus",
+      "value": "igual_ao_bonus_na_defesa_que_o_escudo_fornece",
+      "requirement": "ser_atingido_por_ataque_habilidade_ou_magia"
+    }
+  ],
+  "costs": [
+    {
+    "value": 1,
+    "type": "PM"
+    }
+  ]
+}

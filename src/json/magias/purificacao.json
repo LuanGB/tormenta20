@@ -1,0 +1,60 @@
+{
+  "id": "purificacao",
+  "name": "Purificação",
+  "type": "divina",
+  "circle": "2",
+  "school": "evoc",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "toque",
+  "target": {
+    "amount": 1,
+    "up_to": null,
+    "type": "criatura"
+  },
+  "effect": "alvo",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "instantânea",
+  "duration_details": null,
+  "resistence": null,
+  "extra_costs": null,
+  "description": "Seu toque purifica a criatura tocada. Esta magia remove uma das seguintes condições: abalado, apavorado, alquebrado, atordoado, cego, confuso, debilitado, enjoado, envenenado, esmorecido, exausto, fascinado, fatigado, fraco, frustrado, lento, ofuscado, paralisado, pasmo ou surdo.",
+  "enhancements": [
+    {
+      "cost": 2,
+      "type": "outro",
+      "description": "também cura todo o dano causado por venenos.",
+      "extra_details": null
+    },
+    {
+      "cost": 2,
+      "type": "muda",
+      "description": "em vez de uma, remove todas as condições listadas.",
+      "extra_details": null
+    },
+    {
+      "cost": 3,
+      "type": "outro",
+      "description": "também permite que o alvo solte qualquer item amaldiçoado que esteja segurando (mas não remove a maldição do item em si).",
+      "extra_details": null
+    },
+    {
+      "cost": 7,
+      "type": "outro",
+      "description": "também dissipa magias e efeitos prejudiciais de encantamento, necromancia e transmutação afetando o alvo. Requer 3º círculo.",
+      "extra_details": {
+        "requirement": "3_circulo"
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "outro",
+      "attribute": null,
+      "amount": null,
+      "resistence_requirement": null,
+      "extra_requirements": null
+    }
+  ]
+}

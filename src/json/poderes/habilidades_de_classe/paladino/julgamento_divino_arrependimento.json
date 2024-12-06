@@ -1,0 +1,22 @@
+{
+  "id": "julgamento_divino_arrependimento",
+  "name": "Julgamento Divino: Arrependimento",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_paladino",
+  "description": "Você pode gastar 2 PM para marcar um inimigo em alcance curto. Na próxima vez que esse inimigo acertar um ataque em você ou em um de seus aliados, deve fazer um teste de Vontade (CD Car). Se falhar, fica atordoado no próximo turno dele. Você só pode proferir este julgamento uma vez por cena contra cada criatura.",
+  "requirements": null,
+  "effects": [
+    {
+      "type": "condition",
+      "condition": "atordoado",
+      "duration": "prox_turno_dele",
+      "requirement": "acertar_ataque_contra_vc_ou_aliados_e_falhar_na_resistencia"
+    }
+  ],
+  "costs": [
+    {
+    "value": 2,
+    "type": "PM"
+    }
+  ]
+}

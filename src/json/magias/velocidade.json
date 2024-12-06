@@ -1,0 +1,61 @@
+{
+  "id": "velocidade",
+  "name": "Velocidade",
+  "type": "arcana",
+  "circle": "2",
+  "school": "trans",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "curto_6m_9q",
+  "target": {
+    "amount": 1,
+    "up_to": null,
+    "type": "criatura"
+  },
+  "effect": "alvo",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "cena",
+  "duration_details": null,
+  "resistence": null,
+  "extra_costs": null,
+  "description": "O alvo pode realizar uma ação padrão ou de movimento adicional por turno. Esta ação não pode ser usada para lançar magias e ativar engenhocas.",
+  "enhancements": [
+    {
+      "cost": 7,
+      "type": "muda",
+      "description": "muda o alvo para criaturas escolhidas no alcance. Requer 4º círculo.",
+      "extra_details": {
+        "target": {
+          "amount": null,
+          "up_to": null,
+          "type": "criaturas_escolhidas"
+        },
+        "requirement": "4_circulo"
+      }
+    },
+    {
+      "cost": 7,
+      "type": "muda",
+      "description": "muda o alcance para pessoal e o alvo para você. Você acelera sua mente, além de seu corpo. A ação adicional pode ser usada para lançar magias e ativar engenhocas. Requer 4º círculo.",
+      "extra_details": {
+        "range": "pessoal",
+         "target": {
+          "amount": null,
+          "up_to": null,
+          "type": "voce"
+        },
+        "requirement": "4_circulo"
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "outro",
+      "attribute": null,
+      "amount": null,
+      "resistence_requirement": null,
+      "extra_requirements": null
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "golpe_divino",
+  "name": "Golpe Divino",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_paladino",
+  "description": "Quando faz um ataque corpo a corpo, você pode gastar 2 PM para desferir um golpe destruidor. Você soma seu bônus de Carisma no teste de ataque e +1d8 na rolagem de dano. A cada quatro níveis, pode gastar +1 PM para aumentar o dano em +1d8.",
+  "requirements": [
+     {
+      "type": "character_lvl",
+      "sub_type": "hard",
+      "value": [1,5,9,13,17]
+    },
+    {
+      "type": "attack_type",
+      "sub_type": "soft",
+      "attack": "corpo_a_corpo"
+    }
+  ],
+  "effects": [
+    {
+      "type": "damage_improvement",
+      "value": "1d8"
+    },
+    {
+      "type": "add_skill_attr",
+      "skill": "luta",
+      "attr": "car"
+    }
+  ],
+  "costs": [
+    {
+    "value": 2,
+    "type": "PM"
+    }
+  ]
+}

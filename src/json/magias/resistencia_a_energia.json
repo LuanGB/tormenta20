@@ -1,0 +1,81 @@
+{
+  "id": "resistencia_a_energia",
+  "name": "Resistência a Energia",
+  "type": "universal",
+  "circle": "1",
+  "school": "abjur",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "toque",
+  "target": {
+    "amount": 1,
+    "up_to": null,
+    "type": "criatura"
+  },
+  "effect": "alvo",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "cena",
+  "duration_details": null,
+  "resistence": null,
+  "extra_costs": null,
+  "description": "Ao lançar esta magia, escolha entre ácido, eletricidade, fogo, frio, luz ou trevas. O alvo recebe resistência 10 contra a energia escolhida, passando a ignorar os 10 primeiros pontos de dano de cada ataque feito com essa energia (veja mais em Tormenta20, página 392).",
+  "enhancements": [
+    {
+      "cost": 2,
+      "type": "aumenta",
+      "description": "aumenta a resistência em +5.",
+      "extra_details": null
+    },
+    {
+      "cost": 2,
+      "type": "muda",
+      "description": "muda a duração para 1 dia. Requer 2º círculo",
+      "extra_details": {
+        "duration": "1_dia",
+        "requirement": "2_circulo"
+      }
+    },
+    {
+      "cost": 5,
+      "type": "muda",
+      "description": "muda o alcance para curto e o alvo para criaturas escolhidas. Requer 3º círculo.",
+      "extra_details": {
+        "range": "curto_6m_9q",
+        "target": {
+          "amount": null,
+          "up_to": null,
+          "type": "criaturas_escolhidas"
+        },
+        "requirement": "3_circulo"
+      }
+    },
+    {
+      "cost": 5,
+      "type": "muda",
+      "description": "muda o efeito para resistência a dano de todos os tipos de energia. Requer 3º círculo.",
+      "extra_details": {
+        "effects": "resistencia_a_dano_de_todos_os_tipos",
+        "requirement": "3_circulo"
+      }
+    },
+    {
+      "cost": 9,
+      "type": "muda",
+      "description": "muda o efeito para imunidade a um tipo de dano de energia. Requer 4º círculo.",
+      "extra_details": {
+        "effects": "imunidade_a_um_tipo_de_dano_de_energia",
+        "requirement": "4_circulo"
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "resistência",
+      "attribute": null,
+      "amount": "10",
+      "resistence_requirement": null,
+      "extra_requirements": null
+    }
+  ]
+}

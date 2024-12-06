@@ -1,0 +1,26 @@
+{
+  "id": "foco_em_pericia",
+  "name": "Foco em Perícia",
+  "type": "poder_geral",
+  "sub_type": "poder_de_destino",
+  "description": "Escolha uma perícia. Quando faz um teste dessa perícia, você pode gastar 1 PM para rolar dois dados e usar o melhor resultado. Você pode escolher este poder outras vezes para perícias diferentes. Este poder não pode ser aplicado em Luta e Pontaria (mas veja Foco em Arma).",
+  "requirements": [
+    {
+      "type": "expertise",
+      "sub_type": "hard",
+      "id": "pericia_escolhida"
+    }
+  ],
+  "effects": [
+    {
+      "type": "improve dice roll",
+      "description": "role_dois_dados_e_fique_com_o_maior_resultado"
+    }
+  ],
+  "costs": [
+    {
+    "value": 1,
+    "type": "PM"
+    }
+  ]
+}

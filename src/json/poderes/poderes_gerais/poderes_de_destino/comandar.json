@@ -1,0 +1,37 @@
+{
+  "id": "comandar",
+  "name": "Comandar",
+  "type": "poder_geral",
+  "sub_type": "poder_de_destino",
+  "description": "Você pode gastar uma ação de movimento e 1 PM para gritar ordens para seus aliados em alcance médio. Eles recebem +1 em testes de perícia até o fim da cena.",
+  "requirements": [
+    {
+      "type": "attr_value",
+      "sub_type": "hard",
+      "attr": "car",
+      "value": 13
+    },
+    {
+      "type": "range",
+      "sub_type": "soft",
+      "description": "medio"
+    }
+  ],
+  "effects": [
+    {
+      "type": "skiill_test_improvement",
+      "value": 1,
+      "duration": "fim_da_cena"
+    }
+  ],
+  "costs": [
+    {
+    "value": 1,
+    "type": "PM"
+    },
+    {
+    "value": 1,
+    "type": "acao_de_movimento"
+    } 
+  ]
+}

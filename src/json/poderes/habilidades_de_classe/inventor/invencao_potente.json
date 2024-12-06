@@ -1,0 +1,26 @@
+{
+  "id": "invencao_potente",
+  "name": "Invenção Potente",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_inventor",
+  "description": "Quando usa um item fabricado por você mesmo, você pode pagar 1 PM para aumentar em +2 a CD para resistir a ele.",
+  "requirements": [
+    {
+      "type": "item_type",
+      "sub_type": "soft",
+      "item": "fabricado_por_voce"
+    }
+  ],
+  "effects": [
+    {
+      "type": "CD_improvement",
+      "value": 2
+    }
+  ],
+  "costs": [
+    {
+    "value": 1,
+    "type": "PM"
+    }
+  ]
+}

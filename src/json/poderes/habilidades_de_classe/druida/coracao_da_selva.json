@@ -1,0 +1,16 @@
+{
+  "id": "coracao_da_selva",
+  "name": "Coração da Selva",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_druida",
+  "description": "Você recebe +2 em Fortitude e se torna imune a venenos.",
+  "requirements": null,
+  "effects": [
+    {
+      "type": "skill_improvement",
+      "value": 2,
+      "skill": "fortitute"
+    }
+  ],
+  "costs": null
+}

@@ -1,0 +1,51 @@
+{
+  "id": "viagem_planar",
+  "name": "Viagem Planar",
+  "type": "universal",
+  "circle": "4",
+  "school": "conv",
+  "execution": "completa",
+  "execution_details": null,
+  "range": "toque",
+  "target": {
+    "amount": null,
+    "up_to": null,
+    "type": "pessoal"
+  },
+  "effect": "voce",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "instantânea",
+  "duration_details": null,
+  "resistence": null,
+  "extra_costs": {
+    "material_component": "bastão de metal precioso em forma de forquilha",
+    "material_component_cost": "T$ 1.000",
+    "pm_debuff": null,
+    "pm_sacrifice": null
+  },
+  "description": "Você viaja instantaneamente para outro plano da Criação. Lá, você chega de 10 a 1.000km do destino pretendido (role 1d100 e multiplique por 10km).\nComponente material: um bastão de metal precioso em forma de forquilha (no valor de T$ 1.000). O tipo de metal determina para qual plano de existência você será enviado. Os metais que levam a dimensões específicas podem ser difíceis de encontrar, de acordo com o mestre.",
+  "enhancements": [
+    {
+      "cost": 2,
+      "type": "muda",
+      "description": "muda o alvo para até cinco criaturas voluntárias que você esteja tocando.",
+      "extra_details": {
+        "target": {
+          "amount": 5,
+          "up_to": true,
+          "type": "criaturas_que_esteja_tocando"
+        }
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "outro",
+      "attribute": null,
+      "amount": null,
+      "resistence_requirement": null,
+      "extra_requirements": null
+    }
+  ]
+}

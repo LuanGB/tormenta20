@@ -1,0 +1,28 @@
+{
+  "id": "esgrimista",
+  "name": "Esgrimista",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_bucaneiro",
+  "description": "Quando usa uma arma leve ou ágil,você soma seu bônus de Inteligência nas rolagens de dano (limitado pelo seu nível).",
+  "requirements": [
+    {
+      "type": "weapon_type",
+      "sub_type": "soft",
+      "weapon": ["leve", "agil"]
+    },
+    {
+      "type": "attr_value",
+      "sub_type": "hard",
+      "attr": "int",
+      "value": 13
+    }
+  ],
+  "effects": [
+    {
+      "type": "damage_attr_bonus",
+      "amount": "bonus_de_attr",
+      "attr": "int"
+    }
+  ],
+  "costs": null
+}

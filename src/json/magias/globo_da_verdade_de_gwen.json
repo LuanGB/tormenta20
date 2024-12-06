@@ -1,0 +1,65 @@
+{
+  "id": "globo_da_verdade_de_gwen",
+  "name": "Globo da Verdade de Gwen",
+  "type": "divina",
+  "circle": "2",
+  "school": "adiv",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "curto_6m_9q",
+  "target": {
+    "amount": 1,
+    "up_to": null,
+    "type": "globo"
+  },
+  "effect": "alvo",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "cena",
+  "duration_details": null,
+  "resistence": null,
+  "extra_costs": null,
+  "description": "Cria um globo flutuante e intangível, com 50cm de diâmetro. O globo mostra uma cena vista até uma semana atrás por você ou por uma criatura que você toque ao lançar a magia (mediante uma pergunta; a criatura pode fazer um teste de Vontade para anular o efeito), permitindo que outras pessoas a vejam.",
+  "enhancements": [
+    {
+      "cost": 1,
+      "type": "muda",
+      "description": "o globo mostra uma cena vista até um mês atrás.",
+      "extra_details": null
+    },
+    {
+      "cost": 2,
+      "type": "muda",
+      "description": "como acima, até um ano atrás.",
+      "extra_details": null
+    },
+    {
+      "cost": 2,
+      "type": "muda",
+      "description": "ao lançar a magia, você pode tocar um cadáver. O globo mostra a última cena vista por essa criatura.",
+      "extra_details": null
+    },
+    {
+      "cost": 4,
+      "type": "muda",
+      "description": "muda o alcance para longo e o efeito para 10 globos. Todos mostram a mesma cena.",
+      "extra_details": {
+        "range": "longo_90m_60q",
+        "target": {
+          "amount": 10,
+          "up_to": false,
+          "type": "globos"
+        }
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "outro",
+      "attribute": null,
+      "amount": null,
+      "resistence_requirement": null,
+      "extra_requirements": null
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "codigo_de_honra",
+  "name": "Código de Honra",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_cavaleiro",
+  "description": "Cavaleiros distinguem-se de meros combatentes por seguir um código de conduta. Fazem isto para mostrar que estão acima dos mercenários e bandoleiros que infestam os campos de batalha. Você não pode atacar um oponente pelas costas (em termos de jogo, não pode se beneficiar do bônus de flanquear), caído, desprevenido ou incapaz de lutar. Se violar o código, você perde todos os seus PM e só pode recuperá-los a partir do próximo dia. Rebaixar-se ao nível dos covardes e desesperados abala a autoconfiança que eleva o cavaleiro.",
+  "requirements": [
+     {
+      "type": "character_lvl",
+      "sub_type": "hard",
+      "value": 1
+    }
+  ],
+  "effects": null,
+  "costs": null
+}

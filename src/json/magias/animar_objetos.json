@@ -1,0 +1,87 @@
+{
+  "id": "animar_objetos",
+  "name": "Animar Objetos",
+  "type": "arcana",
+  "circle": "4",
+  "school": "trans",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "medio_30m_20q",
+  "target": [
+    {
+    "amount": 8,
+    "up_to": true,
+    "type": "objeto",
+    "dimention": "minusculo|pequeno"
+    },
+    {
+    "amount": 4,
+    "up_to": true,
+    "type": "objeto",
+    "dimention": "médio"
+    },
+    {
+    "amount": 2,
+    "up_to": true,
+    "type": "objeto",
+    "dimention": "grande"
+    },
+    {
+    "amount": 1,
+    "up_to": false,
+    "type": "objeto",
+    "dimention": "enorme"
+    }
+  ],
+  "effect": null,
+  "counterspell": null,
+  "duration": "cena",
+  "duration_details": null,
+  "resistence": null,
+  "description": "Você concede vida a objetos inanimados. Cada objeto se torna um aliado sob seu controle (tipo escolhido da lista de tamanho, não conta em seu limite de aliados). Com uma ação de movimento, você pode comandar mentalmente qualquer objeto animado dentro do alcance para que auxilie você ou outra criatura. Objetos animados têm Força, Destreza e PV de acordo com seu tamanho; todos os outros atributos são nulos, eles não têm valor de Defesa ou testes de resistência, falham automaticamente em testes opostos e são imunes a doenças, fadiga, sangramento, sono e veneno. Diferente de aliados comuns, um objeto pode ser alvo de um ataque direto.\nEsta magia não afeta itens mágicos, nem objetos que estejam sendo carregados por outra criatura.",
+  "enhancements": [
+    {
+      "cost": 5,
+      "type": "muda|adiciona",
+      "description": "muda a duração para permanente e adiciona componente material (prataria no valor de T$ 1.000). Você pode ter um máximo de objetos animados igual à metade do seu nível.",
+      "extra_details": {
+        "extra_costs": {
+          "material_component": "prataria",
+          "material_component_cost": "T$ 1000"
+        }
+      }
+    }
+  ],
+  "effects": [
+    {
+      "dimention": "minusculo",
+      "attribute": "for,des,pv",
+      "amount": "4,18,5",
+      "type": "assassino_ou_combatente_iniciante"
+    },
+    {
+      "dimention": "pequeno",
+      "attribute": "for,des,pv",
+      "amount": "6,14,10",
+      "type": "combatente_ou_guardião_iniciante"
+    },
+    {
+      "dimention": "médio",
+      "attribute": "for,des,pv",
+      "amount": "10,12,20",
+      "type": "combatente_ou_guardião_veterano"
+    },
+    {
+      "dimention": "grande",
+      "attribute": "for,des,pv",
+      "amount": "14,10,40",
+      "type": "fortão_ou_guardião_ou_montaria_veterano"
+    },
+    {
+      "dimention": "enorme",
+      "attribute": "for,des,pv",
+      "amount": "18,6,60",
+      "type": "fortão_ou_guardião_ou_montaria_mestre"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "arremeso_potente",
+  "name": "Arremesso Potente",
+  "type": "poder_geral",
+  "sub_type": "poder_de_combate",
+  "description": "Quando usa uma arma de arremesso, você pode usar seu modificador de Força em vez de Destreza nos testes de ataque. Se você possuir o poder Ataque Poderoso, poderá usá-lo com armas de arremesso.",
+  "requirements": [
+    {
+      "type": "attr_value",
+      "sub_type": "hard",
+      "attr": "for",
+      "value": 13
+    },
+    {
+      "type": "weapon_type",
+      "sub_type": "soft",
+      "weapons": ["arma_leve_de_arremesso"]
+    },
+    {
+      "type": "feature",
+      "sub_type": "hard",
+      "id": "estilo_de_arremesso"
+    }
+  ],
+  "effects": [
+    {
+      "type": "switch_skill_attr",
+      "skill": "luta",
+      "attr": "for"
+    },
+    {
+      "type": "use_damage_attr",
+      "attr": "for"
+    },
+    {
+    "type": "switch_weapon_type",
+    "requirements": [
+        {
+        "type": "feature",
+        "id": "ataque_poderoso",
+        "weapons": "armas_de_arremesso"
+        }
+    ]
+    }  
+  ]
+}

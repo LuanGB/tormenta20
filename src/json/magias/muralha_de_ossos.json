@@ -1,0 +1,56 @@
+{
+  "id": "muralha_de_ossos",
+  "name": "Muralha de Ossos",
+  "type": "universal",
+  "circle": "4",
+  "school": "necro",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "medio_30m_20q",
+  "target": {
+    "amount": null,
+    "up_to": null,
+    "type": "muro_de_ossos"
+  },
+  "effect": "alvo",
+  "effect_details": {
+    "shape": "parede",
+    "dimention": "extenção",
+    "size": "veja_texto",
+    "other_details": null
+  },
+  "counterspell": null,
+  "duration": "cena",
+  "duration_details": null,
+  "resistence": null,
+  "extra_costs": null,
+  "description": "Uma parede de ossos se eleva da terra. A parede tem 15m de comprimento, 3m de altura e 1,5m de espessura. Ela pode ter qualquer forma — não precisa ser uma linha reta —, mas sua base precisa estar no chão e ela não pode aparecer de modo que ocupe o espaço de uma criatura.\nÉ possível escalar a parede. Isso exige um teste de Atletismo e causa 4d8 pontos de dano de corte. Também é possível destruir o muro para atravessá-lo ou libertar uma criatura agarrada. Cada trecho de 3m do muro tem Defesa 8, 40 PV e resistência a corte, frio e perfuração 5.",
+  "enhancements": [
+    {
+      "cost": 2,
+      "type": "aumenta",
+      "description": "aumenta o comprimento em +15m e altura em +3m (máximo de 60m de comprimento e 9m de altura).",
+      "extra_details": null
+    },
+    {
+      "cost": 5,
+      "type": "outro",
+      "description": "o muro é feito de uma massa de esqueletos animados. Quando você lança a magia e no início de cada um de seus turnos, todos os inimigos adjacentes à muralha sofrem 4d8 pontos de dano de corte e devem fazer um teste de Reflexos. Se falharem, são agarrados pela muralha. Uma criatura agarrada pode gastar uma ação padrão para fazer um teste de Acrobacia ou Atletismo para se soltar.",
+      "extra_details": {
+        "resistence": {
+          "effect": "parcial",
+          "skill": "reflexos"
+        }
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "outro",
+      "attribute": null,
+      "amount": null,
+      "resistence_requirement": null,
+      "extra_requirements": null
+    }
+  ]
+}

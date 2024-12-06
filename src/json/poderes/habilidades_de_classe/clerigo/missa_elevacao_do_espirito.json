@@ -1,0 +1,29 @@
+{
+  "id": "missa_elevacao_do_espirito",
+  "name": "Missa: Elevação do Espírito",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_clerigo",
+  "description": "Você inflama a determinação dos ouvintes. Os participantes recebem pontos de mana temporários em um valor igual ao seu bônus de Sabedoria.",
+  "requirements": null,
+  "effects": [
+    {
+      "type": "PM_bonus_attr",
+      "attr": "sab"
+    },
+    {
+      "type": "amount_targets",
+      "amount": "1_mas_bonus_sab",
+      "duration": "um_dia"
+    }
+  ],
+  "costs": [
+    {
+    "value": 1,
+    "type": "hora"
+    },
+    {
+    "value": 25,
+    "type": "tibares"
+    }
+  ]
+}

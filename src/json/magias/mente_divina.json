@@ -1,0 +1,63 @@
+{
+  "id": "mente_divina",
+  "name": "Mente Divina",
+  "type": "divina",
+  "circle": "2",
+  "school": "adiv",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "toque",
+  "target": {
+    "amount": 1,
+    "up_to": null,
+    "type": "criatura"
+  },
+  "effect": "alvo",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "cena",
+  "duration_details": null,
+  "resistence": null,
+  "extra_costs": null,
+  "description": "Você traz inspiração divina à mente do alvo. Escolha entre Inteligência, Sabedoria ou Carisma. O alvo recebe +4 no atributo escolhido. Esse aumento não oferece PV, PM ou perícias adicionais.",
+  "enhancements": [
+    {
+      "cost": 3,
+      "type": "muda",
+      "description": "em vez do normal, o alvo recebe +4 nos três atributos mentais. Requer 3º círculo.",
+      "extra_details": {
+        "requirement": "3_circulo"
+      }
+    },
+    {
+      "cost": 7,
+      "type": "muda",
+      "description": "muda o alcance para curto e o alvo para criaturas escolhidas.",
+      "extra_details": {
+        "range": "curto_6m_9q",
+        "target": {
+          "amount": null,
+          "up_to": null,
+          "type": "criaturas_escolhidas"
+        }
+      }
+    },
+    {
+      "cost": 7,
+      "type": "aumenta",
+      "description": "aumenta o bônus em +2. Requer 4º círculo.",
+      "extra_details": {
+        "requirement": "4_circulo"
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "bonus",
+      "attribute": "int_ou_car_ou_sab",
+      "amount": "+4",
+      "resistence_requirement": null,
+      "extra_requirements": null
+    }
+  ]
+}

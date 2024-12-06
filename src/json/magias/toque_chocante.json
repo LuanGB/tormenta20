@@ -1,0 +1,69 @@
+{
+  "id": "toque_chocante",
+  "name": "Toque Chocante",
+  "type": "arcana",
+  "circle": "1",
+  "school": "evoc",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "toque",
+  "target": {
+    "amount": 1,
+    "up_to": null,
+    "type": "criatura"
+  },
+  "effect": "alvo",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "instantânea",
+  "duration_details": null,
+  "resistence": {
+    "effect": "reduz_à_metade",
+    "skill": "fortitude"
+  },
+  "extra_costs": null,
+  "description": "Arcos elétricos envolvem sua mão, causando 2d8+2 pontos de dano de eletricidade. Se o alvo usa armadura de metal (ou carrega muito metal, a critério do mestre), sofre uma penalidade de –5 no teste de resistência.",
+  "enhancements": [
+    {
+      "cost": 1,
+      "type": "aumenta",
+      "description": "aumenta o dano em 1d8+1",
+      "extra_details": null
+    },
+    {
+      "cost": 2,
+      "type": "outro",
+      "description": "como parte da execução da magia, você faz um ataque corpo a corpo contra o alvo. Se acertar, causa o dano do ataque e da magia.",
+      "extra_details": null
+    },
+    {
+      "cost": 2,
+      "type": "muda",
+      "description": "muda o alcance para pessoal e o alvo para área: esfera com 6m de raio. Você dispara raios pelas pontas dos dedos que afetam todas as criaturas na área.",
+      "extra_details": {
+        "range": "pessoal",
+        "target": {
+          "amount": null,
+          "up_to": null,
+          "type": "esfera"
+        },
+        "effect": "area",
+        "effect_details": {
+          "shape": "esfera",
+          "dimention": "raio",
+          "size": "6m_yq",
+          "other_details": null
+        }
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "dano",
+      "attribute": "pv",
+      "amount": "+d8+2",
+      "resistence_requirement": "fortitude",
+      "extra_requirements": null
+    }
+  ]
+}

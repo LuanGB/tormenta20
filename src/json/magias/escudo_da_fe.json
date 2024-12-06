@@ -1,0 +1,76 @@
+{
+  "id": "escudo_da_fe",
+  "name": "Escudo da Fé",
+  "type": "divina",
+  "circle": "1",
+  "school": "abjur",
+  "execution": "reacao",
+  "execution_details": null,
+  "range": "curto_6m_9q",
+  "target": {
+    "amount": 1,
+    "up_to": null,
+    "type": "criatura"
+  },
+  "effect": "alvo",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "1_turno",
+  "duration_details": null,
+  "resistence": null,
+  "extra_costs": null,
+  "description": "Um escudo místico se manifesta momentaneamente para bloquear um golpe. O alvo recebe +2 na Defesa.",
+  "enhancements": [
+    {
+      "cost": 1,
+      "type": "muda",
+      "description": "muda a execução para ação padrão, o alcance para toque e a duração para cena.",
+      "extra_details": {
+        "execution": "padrao",
+        "range": "toque",
+        "duration": "cena"
+      }
+    },
+    {
+      "cost": 1,
+      "type": "bonus",
+      "description": "também fornece ao alvo camuflagem contra ataques à distância.",
+      "extra_details": null
+    },
+    {
+      "cost": 2,
+      "type": "aumenta",
+      "description": "aumenta o bônus na Defesa em +1.",
+      "extra_details": null
+    },
+    {
+      "cost": 2,
+      "type": "muda",
+      "description": "muda a execução para ação padrão, o alcance para toque e a duração para cena. A magia cria uma conexão mística entre você e o alvo. Além do efeito normal, o alvo sofre apenas metade do dano por ataques e efeitos; a outra metade do dano é transferida a você. Se a qualquer momento o alvo sair de alcance curto de você, a magia é dissipada. Requer 2º círculo.",
+      "extra_details": {
+        "execution": "padrao",
+        "range": "toque",
+        "duration": "cena",
+        "requirement": "2_ciculo"
+      }
+    },
+    {
+      "cost": 3,
+      "type": "muda",
+      "description": "muda a duração para 1 dia. Requer 2º círculo.",
+      "extra_details": {
+        "duration": "1_dia",
+        "requirement": "2_circulo"
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "bônus",
+      "attribute": "def",
+      "amount": "+2",
+      "resistence_requirement": null,
+      "extra_requirements": null
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "condicao",
+  "name": "Condição",
+  "type": "divina",
+  "circle": "2",
+  "school": "adiv",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "curto_6m_9q",
+  "target": {
+    "amount": 5,
+    "up_to": true,
+    "type": "criaturas"
+  },
+  "effect": "alvo",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "cena",
+  "duration_details": null,
+  "resistence": null,
+  "extra_costs": null,
+  "description": "Pela duração da magia, você sabe a posição e condição (PV atuais, se estão sob efeito de magia...) das criaturas escolhidas. Depois de lançada, a distância entre você e os alvos não importa — a magia só deixa de detectar um alvo se ele morrer ou viajar para outro plano.",
+  "enhancements": [
+    {
+      "cost": 1,
+      "type": "aumenta",
+      "description": "aumenta o numero de alvos em +1",
+      "extra_details": null     
+    },
+    {
+      "cost": 1,
+      "type": "aumenta",
+      "description": "aumenta a duração para 1 dia",
+      "extra_details": null
+    }
+  ],
+  "effects": [
+    {
+      "type": "outro",
+      "attribute": null,
+      "amount": null,
+      "resistence_requirement": null,
+      "extra_requirements": null
+    }
+  ]
+}

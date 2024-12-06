@@ -1,0 +1,36 @@
+{
+  "id": "campeao",
+  "name": "Campeão",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_guerreiro",
+  "description": "No 20º nível, o dano de todos os seus ataques aumenta em um passo. Além disso, sempre que você faz um Ataque Especial ou um Golpe Pessoal e acerta o ataque, recupera metade dos PM gastos nele. Por exemplo, se fizer um Ataque Especial gastando 5 PM para ganhar +20 nas rolagens de dano e acertar o ataque, recupera 2 PM.",
+  "requirements": [
+     {
+      "type": "character_lvl",
+      "sub_type": "hard",
+      "value": 20
+    },
+    {
+      "type": "fearute_actived",
+      "sub_type": "soft",
+      "feature": "golpe_pessoal"
+    },
+    {
+      "type": "fearute_actived",
+      "sub_type": "soft",
+      "feature": "ataque_especial"
+    }
+  ],
+  "effects": [
+    {
+      "type": "recovery_PM",
+      "value": "metade_do_que_foi_gasto_para_dar_o_ataque",
+      "requirement": "acertar_o_ataque"
+    },
+    {
+      "type": "damage_improvement",
+      "value": "um_passo"
+    }
+  ],
+  "costs": null
+}

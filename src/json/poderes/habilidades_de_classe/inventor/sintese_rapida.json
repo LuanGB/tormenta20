@@ -1,0 +1,16 @@
+{
+  "id": "sintese_rapida",
+  "name": "Síntese Rápida",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_inventor",
+  "description": "Você fabrica itens alquímicos e poções em uma categoria de tempo menor. Três meses viram um mês, um mês vira uma semana, uma semana vira um dia e um dia vira uma hora (o tempo mínimo).",
+  "requirements": [
+    {
+      "type": "feature",
+      "sub_type": "hard",
+      "id": "alquimista_iniciado"
+    }
+  ],
+  "effects": "ver_texto",
+  "costs": null
+}

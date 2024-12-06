@@ -1,0 +1,54 @@
+{
+  "id": "marca_da_obediencia",
+  "name": "Marca da Obediência",
+  "type": "universal",
+  "circle": "2",
+  "school": "encan",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "toque",
+  "target": {
+    "amount": 0,
+    "up_to": null,
+    "type": "criatura"
+  },
+  "effect": "alvo",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "cena",
+  "duration_details": null,
+  "resistence": {
+    "effect": "anula",
+    "skill": "vontade"
+  },
+  "extra_costs": null,
+  "description": "Você toca uma criatura, gravando uma marca mística no corpo dela enquanto profere uma ordem, como “não ataque a mim ou meus aliados\" “siga-me\" ou “não saia desta sala\". A criatura deve seguir essa ordem, gastando todas as ações de seu turno para isso. A ordem não pode ser genérica demais (como “ajude-me\", por exemplo), nem forçar o alvo a atos suicidas. A cada rodada, o alvo pode fazer um teste de Vontade. Se passar, a magia é dissipada.",
+  "enhancements": [
+    {
+      "cost": 3,
+      "type": "muda",
+      "description": "muda a duração para 1 dia. Se não estiver em combate, a criatura só pode fazer o teste de Vontade a cada hora. Requer 3º círculo.",
+      "extra_details": {
+        "duration": "1_dia",
+        "requirement": "3_circulo"
+      }
+    },
+    {
+      "cost": 3,
+      "type": "dano",
+      "description": "sempre que o alvo fizer o teste de Vontade e falhar, a marca causa 3d6 pontos de dano mental. Requer 3º círculo.",
+      "extra_details": {
+        "requirement": "3_circulo"
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "controle",
+      "attribute": null,
+      "amount": null,
+      "resistence_requirement": "vontade",
+      "extra_requirements": null
+    }
+  ]
+}

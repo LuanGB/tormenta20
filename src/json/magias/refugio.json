@@ -1,0 +1,71 @@
+{
+  "id": "refugio",
+  "name": "Refúgio",
+  "type": "arcana",
+  "circle": "2",
+  "school": "abjur",
+  "execution": "completa",
+  "execution_details": null,
+  "range": "curto_6m_9q",
+  "target": {
+    "amount": null,
+    "up_to": null,
+    "type": "domo"
+  },
+  "effect": "area_domo",
+  "effect_details": {
+    "shape": "domo",
+    "dimention": "raio",
+    "size": "6m_9q",
+    "other_details": null
+  },
+  "counterspell": null,
+  "duration": "1_dia",
+  "duration_details": null,
+  "resistence": null,
+  "extra_costs": null,
+  "description": "Cria um domo imóvel, quase opaco por fora e transparente por dentro. Ele protege contra calor, frio e forças pequenas (vento, chuva...), mas não contra qualquer coisa capaz de causar dano (flechas, Bolas de Fogo...). Criaturas dentro dele têm camuflagem total contra ataques de fora, e podem entrar e sair livremente. As condições de descanso no domo são normais.",
+  "enhancements": [
+    {
+      "cost": 1,
+      "type": "outro",
+      "description": "além do normal, os limites do domo são envoltos por uma fumaça escura e espessa, que impede criaturas do lado de fora de enxergar ou ouvir o que está dentro e bloqueia magias de adivinhação.",
+      "extra_details": null
+    },
+    {
+      "cost": 3,
+      "type": "muda",
+      "description": "cria uma cabana mobiliada para até 10 criaturas Médias (descanso confortável). Há duas janelas e uma porta (PV 15, RD 5 e o mesmo efeito de Tranca Arcana). Paredes têm PV 200 e RD 5.",
+      "extra_details": {
+        "target": "cabana_mobiliada"
+      }    
+    },
+    {
+      "cost": 3,
+      "type": "muda",
+      "description": "cria um espaço extradimensional, similar a uma caverna vazia e escura, para até 10 criaturas Médias. A entrada é desenhada num objeto fixo (pedra árvore...) e permite ver fora. Efeitos de fora não afetam o interior e vice-versa. Ao fim da magia, todo o conteúdo surge na área vazia mais próxima à entrada. Requer 3º círculo.",
+      "extra_details": {
+        "target": "espaço_extradimensional",
+        "requirement": "3_circulo"
+      }
+    },
+    {
+      "cost": 9,
+      "type": "muda",
+      "description": "cria uma mansão extradimensional para até 100 criaturas Médias (descanso luxuoso) com 10 servos como em Servo Invisível. Você escolhe quem pode entrar e torna a única entrada de luz visível ou invisível com uma ação livre. Requer 4º círculo.",
+      "extra_details": {
+        "target": "mansão_extradimesional",
+        "requirement": "4_circulo"
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "outro",
+      "attribute": null,
+      "amount": null,
+      "resistence_requirement": null,
+      "extra_requirements": null
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "id": "semiplano",
+  "name": "Semiplano",
+  "type": "arcana",
+  "circle": "5",
+  "school": "conv",
+  "execution": "completa",
+  "execution_details": null,
+  "range": "curto_6m_9q",
+  "target": {
+    "amount": null,
+    "up_to": null,
+    "type": "area"
+  },
+  "effect": "area_semiplano",
+  "effect_details": {
+    "shape": "outros",
+    "dimention": "lado",
+    "size": "30m_yq",
+    "other_details": null
+  },
+  "counterspell": null,
+  "duration": "1_dia",
+  "duration_details": "pode gastar uma ação de movimento para voltar o plano material",
+  "resistence": null,
+  "extra_costs": null,
+  "description": "Você cria uma dimensão particular. Você pode entrar nela gastando uma ação padrão e 1 PM, desaparecendo do plano material como se tivesse se teletransportado. Você pode levar criaturas voluntárias e objetos que esteja tocando, ao custo de 1 PM por criatura ou 200kg. Uma vez no semiplano, você pode gastar uma ação completa para voltar ao plano material, no mesmo local onde estava. Caso conheça a magia Viagem Planar, pode lançá-la para voltar ao plano material em outro local. Você escolhe a forma e a aparência do semiplano — uma caverna, um asteroide que singra o éter, um palacete de cristal etc. Ele contém ar, luz e calor, mas além disso é vazio.",
+  "enhancements": [
+    {
+      "cost": 2,
+      "type": "muda",
+      "description": "adiciona alvo (1 criatura). Você cria uma semiplano labiríntico e expulsa o alvo para ele. A cada rodada, a vítima tem direito a um teste de Inteligência (CD 30), com bônus cumulativo de +1 por teste já realizado, para escapar. Quando escapa, o alvo reaparece no plano material no mesmo local onde estava quando a magia foi lançada. Salto Dimensional e Teletransporte não ajudam a escapar do labirinto, mas Viagem Planar, sim.",
+      "extra_details": {
+        "target": {
+          "amount": 1,
+          "up_to": null,
+          "type": "criatura"
+        }
+      }
+    },
+    {
+      "cost": 5,
+      "type": "muda",
+      "description": "muda a duração para permanente e adiciona componente material (diorama do semiplano feito de materiais preciosos no valor de T$ 5.000). Você pode lançar a magia diversas vezes para aumentar as dimensões do semiplano em +30m de lado a cada vez.",
+      "extra_details": {
+        "duration": "permanente",
+        "extra_costs": {
+          "material_component": "diorama do semiplano feito de materiais preciosos",
+          "material_component_cost": "T$ 5.000",
+          "pm_debuff": null,
+          "pm_sacrifice": null
+        }
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "outro",
+      "attribute": null,
+      "amount": null,
+      "resistence_requirement": null,
+      "extra_requirements": null
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "forma_primal",
+  "name": "Forma Primal",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_druida",
+  "description": "Quando usa Forma Selvagem, você pode se transformar em uma fera primal. Você recebe os benefícios de dois tipos de animais (bônus iguais não se acumulam; use o que você quiser de cada tipo).",
+  "requirements": [
+     {
+      "type": "character_lvl",
+      "sub_type": "hard",
+      "value": 18
+    },
+    {
+      "type": "feature",
+      "sub_type": "hard",
+      "id": "forma_selvagem",
+      "amount": "duas_vezes"
+    }
+  ],
+  "effects": "ver_texto",
+  "costs": null
+}

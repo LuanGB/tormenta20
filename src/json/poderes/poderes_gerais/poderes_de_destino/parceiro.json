@@ -1,0 +1,26 @@
+{
+  "id": "parceiro",
+  "name": "Parceiro",
+  "type": "poder_geral",
+  "sub_type": "poder_de_destino",
+  "description": "Você possui um parceiro animal ou humanoide que o acompanha em aventuras. Escolha os detalhes dele, como nome, aparência e personalidade. Em termos de jogo é um aliado iniciante de um tipo a sua escolha (veja a página 246). O parceiro obedece às suas ordens e se arrisca para ajudá-lo. Entretanto, se for maltratado, pode parar de segui-lo (de acordo como mestre). Se perder seu parceiro, você recebe outro no início da próxima aventura.",
+  "requirements": [
+    {
+      "type": "character_level",
+      "sub_type": "hard",
+      "value": 6
+    },
+    {
+      "type": "skill_training",
+      "sub_type": "hard",
+      "skill": ["adestramento", "diplomacia"]
+    }
+  ],
+  "effects": [
+    {
+      "type": "receive_partner",
+      "partner_type": ["animal", "humanoide"],
+      "details": "veja_descrição"    
+    }
+  ]
+}

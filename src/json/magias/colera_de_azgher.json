@@ -1,0 +1,62 @@
+{
+  "id": "colera_de_azgher",
+  "name": "Cólera de Azgher",
+  "type": "divina",
+  "circle": "4",
+  "school": "evoc",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "medio_30m_20q",
+  "target": {
+    "amount": null,
+    "up_to": null,
+    "type": "area"
+  },
+  "effect": "area",
+  "effect_details": {
+    "shape": "esfera",
+    "dimention": "raio",
+    "size": "6m_yq",
+    "other_details": null
+  },
+  "counterspell": null,
+  "duration": "instantânea",
+  "duration_details": null,
+  "resistence": {
+    "effect": "parcial",
+    "skill": "reflexos"
+  },
+  "extra_costs": null,
+  "description": "Você cria uma explosão de luz dourada e intensa. Criaturas na área ficam cegas por 1d4 rodadas, pegam fogo e sofrem 10d6 pontos de dano de fogo (mortos-vivos sofrem 10d8 pontos de dano). Uma criatura que passe no teste de resistência não fica cega, não pega fogo e sofre metade do dano.",
+  "enhancements": [
+    {
+      "cost": 2,
+      "type": "aumenta",
+      "description": "aumenta o dano em +2d6 (+2d8 contra mortos-vivos).",
+      "extra_details": null
+    },
+    {
+      "cost": 2,
+      "type": "aumenta",
+      "description": "aumenta a área em +6m de raio.",
+      "extra_details": null
+    },
+    {
+      "cost": 5,
+      "type": "dissipar_magia",
+      "description": "a luz purificadora do Deus-Sol dissipa todas as magias de necromancia ativas na área. Requer 5º círculo.",
+      "extra_details": {
+        "requirement": "5_circulo"
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "dano",
+      "attribute": "pv",
+      "amount": "10d6",
+      "resistence_requirement": "reflexos",
+      "extra_requirements": null
+    }
+  ]
+}

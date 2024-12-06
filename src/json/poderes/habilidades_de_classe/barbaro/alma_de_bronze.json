@@ -1,0 +1,20 @@
+{
+  "id": "alma_de_bronze",
+  "name": "Alma de Bronze",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_barbaro",
+  "description": "Quando entra em fúria, você recebe uma quantidade de pontos de vida temporários igual a metade do seu nível + mod. Força.",
+  "requirements": [
+    {
+      "type": "fearute_actived",
+      "sub_type": "soft",
+      "skill": "furia"
+    }
+  ],
+  "effects": [
+    {
+      "type": "PV_improvement",
+      "value": "metade_do_lvl_mais_mod_de_forca"
+    }
+  ]
+}

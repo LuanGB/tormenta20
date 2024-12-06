@@ -1,0 +1,64 @@
+{
+  "id": "seta_infalivel_de_talude",
+  "name": "Seta Infalível de Talude",
+  "type": "arcana",
+  "circle": "1",
+  "school": "evoc",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "medio_30m_20q",
+  "target": {
+    "amount": 2,
+    "up_to": true,
+    "type": "criaturas"
+  },
+  "effect": "alvo",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "instantânea",
+  "duration_details": null,
+  "resistence": null,
+  "extra_costs": null,
+  "description": "Favorita entre arcanistas iniciantes, esta magia lança duas setas de energia que causam 1d4+1 pontos de dano de essência cada. Você pode lançar as setas em alvos diferentes ou concentrá-las num mesmo alvo. Caso você possua um bônus no dano de magias, como pelo poder Arcano de Batalha, ele é aplicado em apenas uma seta (o bônus vale para a magia, não para cada alvo).",
+  "enhancements": [
+    {
+      "cost": 2,
+      "type": "muda",
+      "description": "muda as setas para lanças de energia que surgem e caem do céu. Cada lança causa 1d8+1 pontos de dano de essência. Requer 2º círculo.",
+      "extra_details": {
+        "requirement": "2_circulo"
+      }
+    },
+    {
+      "cost": 2,
+      "type": "muda",
+      "description": "muda o número de setas/lanças para três.",
+      "extra_details": null
+    },
+    {
+      "cost": 4,
+      "type": "muda",
+      "description": "muda o número de setas/lanças para cinco. Requer 2º círculo",
+      "extra_details": {
+        "requirement": "2_circulo"
+      }
+    },
+    {
+      "cost": 9,
+      "type": "muda",
+      "description": "muda o número de setas/lanças para dez. Requer 4º círculo",
+      "extra_details": {
+        "requirement": "4_circulo"
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "dano",
+      "attribute": "pv",
+      "amount": "1d4+1,1d4+1",
+      "resistence_requirement": null,
+      "extra_requirements": null
+    }
+  ]
+}

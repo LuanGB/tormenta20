@@ -1,0 +1,26 @@
+{
+  "id": "armadura_brilhante",
+  "name": "Armadura Brilhante",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_nobre",
+  "description": "Você pode somar o modificador de Carisma na Defesa quando usa armadura pesada. Se fizer isso, não pode somar o modificador de Destreza, mesmo que outras habilidades ou efeitos permitam isso.",
+  "requirements": [
+     {
+      "type": "character_lvl",
+      "sub_type": "hard",
+      "value": 8
+    },
+    {
+      "type": "armor_type",
+      "sub_type": "soft",
+      "armor": "pesada"
+    }
+  ],
+  "effects": [
+    {
+      "type": "use_defense_attr",
+      "attr": "car"
+    }
+  ],
+  "costs": null
+}

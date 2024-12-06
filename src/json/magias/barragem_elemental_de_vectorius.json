@@ -1,0 +1,86 @@
+{
+  "id": "barragem_elemental_de_vectorius",
+  "name": "Barragem Elemental de Vectorius",
+  "type": "arcana",
+  "circle": "5",
+  "school": "evoc",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "longo_90m_60q",
+  "target": {
+    "amount": 4,
+    "up_to": false,
+    "type": "esferas_elementais"
+  },
+  "effect": "area_12m",
+  "effect_details": {
+    "shape": "esfera",
+    "dimention": "raio",
+    "size": "12m",
+    "other_details": null
+  },
+  "counterspell": null,
+  "duration": "instantânea",
+  "duration_details": null,
+  "resistence": {
+    "effect": "reduz_à_metade|",
+    "skill": "reflexos"
+  },
+  "description": "Criada pelo arquimago Vectorius, esta magia produz quatro esferas elementais (ácido, eletricidade, fogo e frio) que voam até um ponto a sua escolha. Quando atingem o ponto escolhido, explodem causando 6d6 pontos de dano (cada uma do seu tipo) numa esfera com 12m de raio. Um teste de Reflexos reduz o dano à metade. Você pode mirar cada esfera em uma criatura ou ponto diferente. Uma criatura ao alcance da explosão de mais de uma esfera deve fazer um teste de resistência para cada uma. Além disso, as esferas causam os seguintes efeitos em criaturas que falharem em seus respectivos testes de resistência:\n• Esfera de ácido: vulnerável até o fim da cena.\n• Esfera elétrica: atordoado por uma rodada.\n• Esfera de fogo: em chamas.\n• Esfera de frio: lento até o fim da cena.",
+  "enhancements": [
+    {
+      "cost": 5,
+      "type": "aumenta",
+      "description": "aumenta o dano de cada esfera em +2d6.",
+      "extra_details": null
+    },
+    {
+      "cost": 5,
+      "type": "muda",
+      "description": "muda o tipo de dano de todas as esferas para essência (mas elas ainda causam os outros efeitos como se seu tipo de dano não mudasse).",
+      "extra_details": null
+    }
+  ],
+  "effects": [
+    {
+      "type": "dano_de_acido",
+      "attribute": "pv",
+      "amount": "6d6",
+      "resistence_requirement": "reflexos",
+      "extra_effects": {
+        "effect": "vulnerável",
+        "duration": "cena"
+      }
+    },
+    {
+       "type": "dano_de_eletricidade",
+      "attribute": "pv",
+      "amount": "6d6",
+      "resistence_requirement": "reflexos",
+      "extra_effects": {
+        "effect": "atordoado",
+        "duration": "uma_rodada"
+      }
+    },
+    {
+      "type": "dano_de_fogo",
+      "attribute": "pv",
+      "amount": "6d6",
+      "resistence_requirement": "reflexos",
+      "extra_effects": {
+        "effect": "em_chamas",
+        "duration": null
+      }
+    },
+    {
+      "type": "dano_de_frio",
+      "attribute": "pv",
+      "amount": "6d6",
+      "resistence_requirement": "reflexos",
+      "extra_effects": {
+        "effect": "lento",
+        "duration": "cena"
+      }
+    }
+  ]
+}

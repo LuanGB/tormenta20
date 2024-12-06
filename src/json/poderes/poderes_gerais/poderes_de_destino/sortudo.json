@@ -1,0 +1,26 @@
+{
+  "id": "sortudo",
+  "name": "Sortudo",
+  "type": "poder_geral",
+  "sub_type": "poder_de_destino",
+  "description": "Você pode gastar 3 PM para rolar novamente um teste recém realizado (apenas uma vez por teste).",
+  "requirements": [
+    {
+      "type": "use",
+      "sub_type": "soft",
+      "use": "uma_vez_por_teste"
+    }
+  ],
+  "effects": [
+    {
+      "type": "roll_dice_again",
+      "requirements": "teste_recem_realizado"
+    }
+  ],
+  "costs": [
+    {
+    "value": 3,
+    "type": "PM"
+    }
+  ]
+}

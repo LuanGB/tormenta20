@@ -1,0 +1,72 @@
+{
+  "id": "concentracao_de_combate",
+  "name": "Concentração de Combate",
+  "type": "arcana",
+  "circle": "1",
+  "school": "adiv",
+  "execution": "livre",
+  "execution_details": null,
+  "range": "pessoal",
+  "target": {
+    "amount": null,
+    "up_to": null,
+    "type": "voce"
+  },
+  "effect": "voce",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "1_rodada",
+  "duration_details": null,
+  "resistence": null,
+  "extra_costs": null,
+  "description": "Você amplia sua percepção, antecipando movimentos dos inimigos e achando brechas em sua defesa. Quando faz um teste de ataque, você rola dois dados e usa o melhor resultado.",
+  "enhancements": [
+    {
+      "cost": 2,
+      "type": "muda",
+      "description": "muda a execução para padrão e a duração para cena. Requer 2º círculo.",
+      "extra_details": {
+        "requirement": "2_circulo"
+      }
+    },
+    {
+      "cost": 5,
+      "type": "outro",
+      "description": "além do normal, ao atacar você, um inimigo deve rolar dois dados e usar o pior resultado. Requer 3º círculo.",
+      "extra_details": {
+        "requirement": "3_circulo"
+      }
+    },
+    {
+      "cost": 9,
+      "type": "muda",
+      "description": "muda a execução para padrão, o alcance para curto, o alvo para criaturas escolhidas e a duração para cena. Requer 4º círculo.",
+      "extra_details": {
+        "execution": "padrão",
+        "range": "curto",
+        "target": "criaturas_escolhidas",
+        "duration": "cena",
+        "requirement": "4_circulo"
+      }
+    },
+    {
+      "cost": 14,
+      "type": "muda",
+      "description": "muda a execução para padrão e a duração para 1 dia. Além do normal, você recebe um sexto sentido que o avisa de qualquer perigo ou ameaça. Você fica imune às condições surpreendido e desprevenido e recebe +10 em Defesa e Reflexos. Requer 5º círculo.",
+      "extra_details": {
+        "execution": "padrão",
+        "duration": "1_dia",
+        "requirement": "5_circulo"
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "amplia",
+      "attribute": "percepção",
+      "amount": null,
+      "resistence_requirement": null,
+      "extra_requirements": null
+    }
+  ]
+}

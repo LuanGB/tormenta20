@@ -2,11 +2,18 @@
 
 source "https://rubygems.org"
 
-# Specify your gem's dependencies in tormenta20.gemspec
+# production dependencies in tormenta20.gemspec
 gemspec
 
-gem "rake", "~> 13.0"
+# only dev and test specs
 
-gem "rspec", "~> 3.0"
+group :development do
+  gem "rbs", "~> 3.7"
+end
 
-gem "rubocop", "~> 1.21"
+group :test, :development do
+  gem "rake", "~> 13.0"
+  gem "rspec", "~> 3.0"
+  gem "rubocop", "~> 1.21"
+end
+

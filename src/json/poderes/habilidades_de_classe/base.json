@@ -1,0 +1,92 @@
+{
+  "id": "",
+  "name": "",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_paladino",
+  "description": "",
+  "requirements": [
+     {
+      "type": "character_lvl",
+      "sub_type": "hard",
+      "value": 0
+    },
+    {
+      "type": "fearute_actived",
+      "sub_type": "soft",
+      "feature": "aura_sagrada"
+    },
+    {
+      "type": "attr_value",
+      "sub_type": "hard",
+      "attr": "int",
+      "value": 13
+    },
+    {
+      "type": "weapon_type",
+      "sub_type": "soft",
+      "weapon": "corpo_a_corpo"
+    },
+    {
+      "type": "feature",
+      "sub_type": "hard",
+      "id": "estilo_de_duas_armas"
+    },
+    {
+      "type": "skill_training",
+      "sub_type": "hard",
+      "skill": "adestramento"
+    },
+    {
+      "type": "expertise",
+      "sub_type": "soft",
+      "skill": "lancar_magias"
+    },
+    {
+      "type": "caminho_do_arcanista",
+      "sub_type": "hard",
+      "id": ["bruxo", "mago"]
+    }
+  ],
+  "effects": [
+    {
+      "type": "create_item",
+      "item": "pocao",
+      "action": "livre"
+    },
+    {
+      "type": "condition",
+      "condition": "abalada",
+      "duration": "cena"
+    },
+    {
+      "type": "manouver_improvement",
+      "manouver": ["derrubar", "empurrar"],
+      "action": "livre"
+    },
+    {
+      "type": "attack_penalty",
+      "value": -2,
+      "duration": ""
+    },
+    {
+      "type": "damage_improvement",
+      "value": 5,
+      "duration": ""
+    },
+    {
+      "type": "switch_skill_attr",
+      "skill": "luta",
+      "attr": "des"
+    },
+    {
+      "type": "use_damage_attr",
+      "attr": "des"
+    }
+  ],
+  "costs": [
+    {
+    "value": 1,
+    "type": "PM"
+    }
+  ]
+}

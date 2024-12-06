@@ -1,0 +1,76 @@
+{
+  "id": "explosao_de_chamas",
+  "name": "Explosão de Chamas",
+  "type": "arcana",
+  "circle": "1",
+  "school": "evoc",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "6m",
+  "target": {
+    "amount": null,
+    "up_to": null,
+    "type": "cone"
+  },
+  "effect": "area",
+  "effect_details": {
+    "shape": "cone",
+    "dimention": "extenção",
+    "size": "6m_yq",
+    "other_details": null
+  },
+  "counterspell": null,
+  "duration": "instantânea",
+  "duration_details": null,
+  "resistence": {
+    "effect": "reduz_à_metade",
+    "skill": "reflexos"
+  },
+  "extra_costs": null,
+  "description": "Um leque de chamas irrompe de suas mãos, causando 2d6 pontos de dano de fogo às criaturas na área.",
+  "enhancements": [
+    {
+      "cost": 0,
+      "type": "muda",
+      "description": "muda o alcance para curto, a área para alvo de 1 objeto e a resistência para Reflexos anula. Você gera uma pequena explosão que não causa dano mas pode acender uma vela, tocha ou fogueira. Também pode fazer um objeto inflamável com RD 0 (como uma corda ou pergaminho) ficar em chamas. Uma criatura em posse de um objeto pode evitar esse efeito se passar no teste de resistência.",
+      "extra_details": {
+        "range": "curto_6m_9q",
+        "target": {
+          "amount": 1,
+          "up_to": null,
+          "type": "objeto"
+        },
+        "resistence": {
+          "effect": "anula",
+          "skill": "reflexos"
+        }
+      }
+    },
+    {
+      "cost": 1,
+      "type": "aumenta",
+      "description": "aumnta o dano em +1d6.",
+      "extra_details": null
+    },
+    {
+      "cost": 1,
+      "type": "muda",
+      "description": "muda a resistência para Reflexos parcial. Se passar, a criatura reduz o dano à metade; se falhar, fica em chamas (veja Condições, em Tormenta20, página 393).",
+      "extra_details": {
+        "resistence": {
+          "effect": "parcial",
+          "skill": "reflexos"
+        }
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "dano",
+      "attribute": "pv",
+      "amount": "2d6",
+      "resistence_requirement": "reflexos",
+      "extra_requirements": null
+    }
+  ]
+}

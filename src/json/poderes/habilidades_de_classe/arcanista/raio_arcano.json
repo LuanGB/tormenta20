@@ -1,0 +1,25 @@
+{
+  "id": "raio_arcano",
+  "name": "Raio Arcano",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_arcanista",
+  "description": "Você pode gastar uma ação padrão para disparar um raio num alvo em alcance curto que causa 1d6 pontos de dano de essência. Esse dano aumenta em +1d6 para cada círculo de magia acima do 1º que você puder lançar. O alvo pode fazer um teste de Reflexos (CD atributo-chave) para reduzir o dano à metade.",
+  "requirements": [
+    {
+      "type": "action_type",
+      "sub_type": "soft",
+      "action": "padrao"
+    },
+    {
+      "type": "range",
+      "sub_type": "soft",
+      "range": "curto"
+    }
+  ],
+  "effects": [
+    {
+      "type": "damage_ataque",
+      "value": "1d6_para_cada_circulo_que_possa_lançar"
+    }
+  ]
+}

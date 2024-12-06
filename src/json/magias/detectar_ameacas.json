@@ -1,0 +1,65 @@
+{
+  "id": "detectar_ameacas",
+  "name": "Detectar Ameaças",
+  "type": "divina",
+  "circle": "1",
+  "school": "adiv",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "pessoal",
+  "target": {
+    "amount": null,
+    "up_to": null,
+    "type": "area"
+  },
+  "effect": "area",
+  "effect_details": {
+    "shape": "esfera",
+    "dimention": "raio",
+    "size": "9m_yq",
+    "other_details": null
+  },
+  "counterspell": null,
+  "duration": "instantânea",
+  "duration_details": null,
+  "resistence": null,
+  "extra_costs": null,
+  "description": "Você percebe a presença e a localização de criaturas inamistosas ou hostis na área, mesmo através de barreiras físicas.",
+  "enhancements": [
+    {
+      "cost": 0,
+      "type": "muda",
+      "description": "em vez de criaturas, você percebe a presença e localização de venenos.",
+      "extra_details": null
+    },
+    {
+      "cost": 1,
+      "type": "muda",
+      "description": "muda a execução para ação completa. Você descobre também a raça ou espécie e o poder das criaturas (determinado pela aura delas). Criaturas de 1º a 6º nível geram uma aura tênue, criaturas de 7º a 12º nível geram uma aura moderada e criaturas de 13º ao 20º nível geram uma aura poderosa. Criaturas acima do 20º nível geram uma aura avassaladora.",
+      "extra_details": {
+        "execution": "completa"
+      }
+    },
+    {
+      "cost": 2,
+      "type": "muda",
+      "description": "em vez de criaturas, você percebe a presença e localização de armadilhas.",
+      "extra_details": null
+    },
+    {
+      "cost": 5,
+      "type": "muda",
+      "description": "muda a área para esfera de 30m de raio. Requer 3º círculo.",
+      "extra_details": null
+    }
+  ],
+  "effects": [
+    {
+      "type": "outro",
+      "attribute": null,
+      "amount": null,
+      "resistence_requirement": null,
+      "extra_requirements": null
+    }
+  ]
+}

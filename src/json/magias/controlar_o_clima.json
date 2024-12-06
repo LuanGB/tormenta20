@@ -1,0 +1,47 @@
+{
+  "id": "controlar_o_clima",
+  "name": "Nome em Letras Maiúsculas",
+  "type": "divina",
+  "circle": "4",
+  "school": "trans",
+  "execution": "completa",
+  "execution_details": null,
+  "range": "2km",
+  "target": {
+    "amount": null,
+    "up_to": null,
+    "type": "area"
+  },
+  "effect": "area_",
+  "effect_details": {
+    "shape": "esfera",
+    "dimention": "raio",
+    "size": "x2_y2",
+    "other_details": null
+  },
+  "counterspell": null,
+  "duration": "4_dias_12_horas",
+  "duration_details": null,
+  "resistence": null,
+  "extra_costs": null,
+  "description": "Você muda o clima da área onde se encontra, podendo criar qualquer condição climática: chuva, neve, ventos, névoas... Veja Tormenta20, página 253, para os efeitos em jogo do clima.",
+  "enhancements": [
+    {
+      "cost": 1,
+      "type": "muda",
+      "description": "muda o raio da área para 3km e duração para 1d4 dias.",
+      "extra_details": {
+        "requirement": "classe_druida"
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "muda",
+      "attribute": "clima",
+      "amount": null,
+      "resistence_requirement": null,
+      "extra_requirements": null
+    }
+  ]
+}

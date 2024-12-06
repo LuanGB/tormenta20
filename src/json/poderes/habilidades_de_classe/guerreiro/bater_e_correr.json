@@ -1,0 +1,16 @@
+{
+  "id": "bater_e_correr",
+  "name": "Bater e Correr",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_guerreiro",
+  "description": "Quando faz uma investida, você pode continuar se movendo após o ataque, até o limite de seu deslocamento. Se gastar 2 PM, pode fazer uma investida sobre terreno difícil e sem sofrer a penalidade de Defesa.",
+  "requirements": [
+    {
+      "type": "manouver_attack",
+      "sub_type": "soft",
+      "manouver": "investida"
+    }
+  ],
+  "effects": "ver_texto",
+  "costs": "ver_texto"
+}

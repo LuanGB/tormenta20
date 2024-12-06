@@ -1,0 +1,45 @@
+{
+  "id": "estilo_de_duas_armas",
+  "name": "Estilo de Duas Armas",
+  "type": "poder_geral",
+  "sub_type": "poder_de_combate",
+  "description": "Se estiver usando duas armas (e pelo menos uma delas for leve) e fizer a ação atacar, você pode fazer dois ataques, um com cada arma. Se fizer isso, sofre –2 em todos os testes de ataque até o seu próximo turno. Se você possuir Ambidestria, não sofre essa penalidade.",
+  "requirements": [
+    {
+      "type": "attr_value",
+      "sub_type": "hard",
+      "attr": "des",
+      "value": 15
+    },
+    {
+      "type": "dual_weapons",
+      "sub_type": "soft",
+      "weapons": "pelo_menos_uma_leve"
+    },
+    {
+      "type": "action_type",
+      "sub_type": "soft",
+      "action": "atacar"
+    },
+    {
+      "type": "expertise",
+      "sub_type": "hard",
+      "id": "luta"
+    }
+  ],
+  "effects": [
+    {
+      "type": "extra_attack",
+      "action": "livre"
+    },
+    {
+      "type": "attack_penalty",
+      "value": -2,
+      "duration": "proximo_turno",
+      "extra_details": {
+        "type": "feature_cancel_effect",
+        "fearure": "ambidestria"
+      }
+    }
+  ]
+}

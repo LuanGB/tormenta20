@@ -1,0 +1,20 @@
+{
+  "id": "heranca_superior",
+  "name": "Herança Superior",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_arcanista",
+  "description": "Você recebe a herança superior de sua linhagem sobrenatural.",
+  "requirements": [
+     {
+      "type": "character_lvl",
+      "sub_type": "soft",
+      "value": 11
+    },
+    {
+      "type": "feature",
+      "sub_type": "hard",
+      "id": "heranca_aprimorada"
+    }
+  ],
+  "effects": null
+}

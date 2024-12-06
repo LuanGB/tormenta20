@@ -1,0 +1,25 @@
+{
+  "id": "critico_brutal",
+  "name": "Crítico Brutal",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_barbaro",
+  "description": "Seu multiplicador de crítico com ataques corpo a corpo aumenta em +1. Por exemplo, se fizer um crítico com um machado de batalha, seu multiplicador será x4, em vez de x3.",
+  "requirements": [
+     {
+      "type": "character_lvl",
+      "sub_type": "soft",
+      "value": 6
+    },
+    {
+      "type": "weapon_type",
+      "sub_type": "soft",
+      "weapon": "corpo_a_corpo"
+    }
+  ],
+  "effects": [
+    {
+      "type": "critical_improvement",
+      "value": 1
+    }
+  ]
+}

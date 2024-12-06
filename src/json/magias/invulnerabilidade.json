@@ -1,0 +1,47 @@
+{
+  "id": "invulnerabilidade",
+  "name": "Invulnerabilidade",
+  "type": "universal",
+  "circle": "5",
+  "school": "abjur",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "pessoal",
+  "target": {
+    "amount": null,
+    "up_to": null,
+    "type": "voce"
+  },
+  "effect": "alvo",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "cena",
+  "duration_details": null,
+  "resistence": null,
+  "extra_costs": null,
+  "description": "Esta magia cria uma barreira mágica impenetrável que protege você contra efeitos nocivos mentais ou físicos, a sua escolha.\nProteção mental: você fica imune às condições abalado, alquebrado, apavorado, atordoado, confuso, esmorecido, fascinado, frustrado e pasmo, além de efeitos de encantamento e ilusão.\nProteção física: você fica imune às condições atordoado, cego, debilitado, enjoado, envenenado, exausto, fatigado, fraco, lento, ofuscado e paralisado, além de acertos críticos, ataques furtivos e doenças.",
+  "enhancements": [
+    {
+      "cost": 5,
+      "type": "muda",
+      "description": "muda o alcance para curto e o alvo para 1 criatura.",
+      "extra_details": {
+        "range": "curto_6m_9q",
+        "target": {
+          "amount": 1,
+          "up_to": null,
+          "type": "criatura"
+        }
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "proteção",
+      "attribute": null,
+      "amount": null,
+      "resistence_requirement": null,
+      "extra_requirements": null
+    }
+  ]
+}

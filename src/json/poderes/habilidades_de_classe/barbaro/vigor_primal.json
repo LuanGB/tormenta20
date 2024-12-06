@@ -1,0 +1,20 @@
+{
+  "id": "vigor_primal",
+  "name": "Vigor Primal",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_barbaro",
+  "description": "Você pode gastar uma ação de movimento e 1 PM para recuperar 1d12 pontos de vida. Para cada 2 PM extras que você gastar, cura +1d12 PV (pode gastar 3 PM para recuperar 2d12 PV, 5 PM para recuperar 3d12 PV e assim por diante).",
+  "requirements": null,
+  "effects": [
+    {
+      "type": "recover_life",
+      "value": "1d12"
+    }
+  ],
+  "costs": [
+    {
+    "value": 1,
+    "type": "PM"
+    }
+  ]
+}

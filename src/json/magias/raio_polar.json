@@ -1,0 +1,51 @@
+{
+  "id": "raio_polar",
+  "name": "Raio polar",
+  "type": "arcana",
+  "circle": "4",
+  "school": "evoc",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "medio_30m_20q",
+  "target": {
+    "amount": 1,
+    "up_to": null,
+    "type": "criatura"
+  },
+  "effect": "alvo",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "instantânea",
+  "duration_details": null,
+  "resistence": {
+    "effect": "parcial",
+    "skill": "fortitude"
+  },
+  "extra_costs": null,
+  "description": "Você dispara um raio azul esbranquiçado de gelo e ar congelante. O alvo sofre 10d8 pontos de dano de frio e fica preso em um bloco de gelo (paralisado). Se passar no teste de resistência, sofre metade do dano e, em vez de paralisado, fica lento por uma rodada.\nÉ possível quebrar o gelo para libertar uma criatura presa: o bloco tem 20 PV, resistência a dano 10 e é vulnerável a fogo. Uma criatura presa pode usar uma ação completa para fazer um teste de Atletismo e tentar se libertar do gelo; cada vez que passar no teste causa 10 pontos de dano ao bloco, ignorando a RD.",
+  "enhancements": [
+    {
+      "cost": 3,
+      "type": "aumenta",
+      "description": "aumenta o dano em +2d8.",
+      "extra_details": null
+    },
+    {
+      "cost": 5,
+      "type": "muda",
+      "description": "muda o alvo para área de esfera de 6m de raio. Em vez de um raio, você dispara uma esfera de gelo que explode, causando o efeito da magia em todas as criaturas na área.",
+      "extra_details": {
+        "target": "area_esfera_de_6m_de_raio"
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "dano",
+      "attribute": "pv",
+      "amount": "10d8",
+      "resistence_requirement": "fortitude",
+      "extra_requirements": null
+    }
+  ]
+}

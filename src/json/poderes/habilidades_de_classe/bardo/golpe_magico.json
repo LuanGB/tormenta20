@@ -1,0 +1,31 @@
+{
+  "id": "golpe_magico",
+  "name": "Golpe Mágico",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_bardo",
+  "description": "Enquanto estiver sob efeito de Inspiração, sempre que você acertar um ataque corpo a corpo em um inimigo, recebe 2 PM temporários. Você pode ganhar um máximo de PM temporários por cena igual ao seu nível. PM temporários desaparecem no final da cena.",
+  "requirements": [
+    {
+      "type": "fearute_actived",
+      "sub_type": "soft",
+      "skill": "inspiracao"
+    },
+    {
+      "type": "attack_type",
+      "sub_type": "soft",
+      "weapon": "corpo_a_corpo"
+    },
+    {
+      "type": "feature",
+      "sub_type": "hard",
+      "id": "esgrima_magica"
+    }
+  ],
+  "effects": [
+    {
+      "type": "PM_improvement",
+      "value": 2,
+      "duration": "cena"
+    }
+  ]
+}

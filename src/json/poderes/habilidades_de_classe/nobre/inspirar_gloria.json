@@ -1,0 +1,31 @@
+{
+  "id": "inspirar_gloria",
+  "name": "Inspirar Glória",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_nobre",
+  "description": "A presença de um nobre motiva as pessoas a realizarem façanhas impressionantes. Você pode gastar 5 PM para fazer um aliado em alcance curto ganhar uma ação padrão adicional no próximo turno dele. Você só pode usar esta habilidade uma vez por cena em cada aliado.",
+  "requirements": [
+     {
+      "type": "character_lvl",
+      "sub_type": "hard",
+      "value": 8
+    },
+    {
+      "type": "range_type",
+      "sub_type": "soft",
+      "range": "curto"
+    },
+    {
+      "type": "feature",
+      "sub_type": "hard",
+      "id": "inspirar_confianca"
+    }
+  ],
+  "effects": "ver_texto",
+  "costs": [
+    {
+    "value": 5,
+    "type": "PM"
+    }
+  ]
+}

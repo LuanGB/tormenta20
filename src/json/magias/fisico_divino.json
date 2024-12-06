@@ -1,0 +1,56 @@
+{
+  "id": "fisico_divino",
+  "name": "Físico Divino",
+  "type": "divina",
+  "circle": "2",
+  "school": "trans",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "toque",
+  "target": {
+    "amount": 1,
+    "up_to": null,
+    "type": "criatura"
+  },
+  "effect": "alvo",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "cena",
+  "duration_details": null,
+  "resistence": null,
+  "extra_costs": null,
+  "description": "O alvo se torna uma versão mais poderosa de si mesmo. O alvo recebe +4 em Força, Destreza ou Constituição, a sua escolha. Esse aumento não oferece PV ou PM adicionais.",
+  "enhancements": [
+    {
+      "cost": 3,
+      "type": "muda",
+      "description": "em vez do normal, o alvo recebe +4 nos três atributos físicos. Requer 3º círculo.",
+      "extra_details": {
+        "requirement": "3_circulo"
+      }
+    },
+    {
+      "cost": 7,
+      "type": "muda",
+      "description": "muda o alcance para curto e o alvo para criaturas escolhidas.",
+      "extra_details": null
+    },
+    {
+      "cost": 7,
+      "type": "aumenta",
+      "description": "aumenta o bônus em +2. Requer 4º círculo.",
+      "extra_details": {
+        "requirement": "4_circulo"
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "bônus",
+      "attribute": "for_des_const",
+      "amount": "+4",
+      "resistence_requirement": null,
+      "extra_requirements": null
+    }
+  ]
+}

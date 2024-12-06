@@ -1,0 +1,21 @@
+{
+  "id": "pajem",
+  "name": "Pajem",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_cavaleiro",
+  "description": "Você recebe os serviços de um pajem, um aliado especial que o auxilia em pequenos afazeres. Você recebe +2 em Diplomacia, por estar sempre aprumado, e sua recuperação de PV e PM aumenta em +1 por nível, por estar sempre confortável. O pajem pode executar pequenas tarefas, como entregar mensagens e comprar itens, e não conta em seu limite de aliados. Caso ele morra, você pode treinar outro com uma semana de trabalho.",
+  "requirements": null,
+  "effects": [
+    {
+      "type": "skill_improvement",
+      "value": 2,
+      "skill": "diplomacia"
+    },
+    {
+      "type": "recovery_status_improvement",
+      "skill": "mais_1_por_lvl",
+      "status": ["PM", "PV"]
+    }
+  ],
+  "costs": null
+}

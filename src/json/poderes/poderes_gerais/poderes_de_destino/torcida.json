@@ -1,0 +1,38 @@
+{
+  "id": "torcida",
+  "name": "Torcida",
+  "type": "poder_geral",
+  "sub_type": "poder_de_destino",
+  "description": "Você recebe +2 em testes de perícia e Defesa quando tem a torcida a seu favor. Entenda-se por “torcida\" qualquer número de criaturas inteligentes em alcance médio que não esteja realizando nenhuma ação além de torcer por você.",
+  "requirements": [
+    {
+      "type": "attr_value",
+      "sub_type": "hard",
+      "attr": "car",
+      "value": 13
+    },
+    {
+      "type": "range",
+      "sub_type": "soft",
+      "range": "medio"
+    },
+    {
+      "type": "support",
+      "sub_type": "hard",
+      "support": "ao_menos_uma_criatura_inteligente_que_nao_faça_acoes_alem_de_torcer_por_voce"
+    }
+  ],
+  "effects": [
+    {
+      "type": "skill_improvment",
+      "skill": "all",
+      "value": 2,
+      "duration": "enquanto_houver_torcida"
+    },
+    {
+      "type": "defense_improvement",
+      "value": 2,
+      "duration": "enquanto_houver_torcida"
+    }
+  ]
+}

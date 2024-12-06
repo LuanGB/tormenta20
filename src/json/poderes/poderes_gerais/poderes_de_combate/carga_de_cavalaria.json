@@ -1,0 +1,29 @@
+{
+  "id": "carga_de_cavalaria",
+  "name": "Carga De Cavalaria",
+  "type": "poder_geral",
+  "sub_type": "poder_de_combate",
+  "description": "Quando faz uma investida montada, você causa +2d8 pontos de dano. Além disso, pode continuar se movendo depois do ataque. Você deve se mover em linha reta e seu movimento máximo ainda é o dobro do seu deslocamento.",
+  "requirements": [
+    {
+      "type": "movement_action",
+      "sub_type": "soft",
+      "action": "investida_montada"
+    },
+    {
+      "type": "feature",
+      "sub_type": "hard",
+      "id": "ginete"
+    }
+  ],
+  "effects": [
+    {
+      "type": "damage_improvement",
+      "value": "2d8"
+    },
+    {
+      "type": "moviment_improvement",
+      "moviment": "move_atack_move"
+    }
+  ]
+}

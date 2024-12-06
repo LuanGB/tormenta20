@@ -1,0 +1,24 @@
+{
+  "id": "raio_poderoso",
+  "name": "Raio Poderoso",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_arcanista",
+  "description": "Os dados de dano do seu Raio Arcano aumentam para d8 e o alcance dele aumenta para médio.",
+  "requirements": [
+    {
+      "type": "feature",
+      "sub_type": "hard",
+      "id": "raio_arcano"
+    }
+  ],
+  "effects": [
+    {
+      "type": "change_damage",
+      "value": "1d8_por_circulo_que_possa_lançar"
+    },
+    {
+      "type": "change_range",
+      "range": "media"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "id": "invisibilidade",
+  "name": "Invisibilidade",
+  "type": "arcana",
+  "circle": "2",
+  "school": "ilus",
+  "execution": "livre",
+  "execution_details": null,
+  "range": "pessoal",
+  "target": {
+    "amount": null,
+    "up_to": null,
+    "type": "voce"
+  },
+  "effect": "alvo",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "1_rodada",
+  "duration_details": "A magia termina se o alvo faz um ataque ou usa uma habilidade hostil",
+  "resistence": null,
+  "extra_costs": null,
+  "description": "O alvo fica invisível, incluindo seu equipamento. Ele recebe camuflagem total e +20 em testes de Furtividade. Como o normal, criaturas que não possam vê-lo ficam desprevenidas contra seus ataques.\nA magia termina se o alvo faz um ataque ou usa uma habilidade hostil. Causar dano indiretamente não é considerado um ataque. Ações contra objetos livres não dissipam a Invisibilidade.\nLuz carregada pelo alvo não fica invisível, mas objetos apanhados por ele sim. Objetos soltos voltam a ser visíveis, bem como qualquer parte deles que se estenda além de seu alcance corpo a corpo natural.",
+  "enhancements": [
+    {
+      "cost": 1,
+      "type": "muda",
+      "description": "muda a execução para ação padrão, o alcance para toque e o alvo para 1 criatura ou 1 objeto Grande ou menor.",
+      "extra_details": {
+        "execution": "padrão",
+        "range": "toque",
+        "target": {
+          "amount": 1,
+          "up_to": null,
+          "type": "criatura_ou_objeto_grande_ou_menor"
+        }
+      }
+    },
+    {
+      "cost": 3,
+      "type": "muda",
+      "description": "muda a duração para cena. Requer 3º círculo.",
+      "extra_details": {
+        "duration": "cena",
+        "requirement": "3_circulo"
+      }
+    },
+    {
+      "cost": 3,
+      "type": "muda",
+      "description": "muda a duração para sustentada. Em vez do normal, o alvo gera uma esfera de invisibilidade. O alvo e todas as criaturas a até 3m dele se tornam invisíveis (ainda ficam visíveis caso façam uma ação hostial). A esfera se move com o alvo; qualquer coisa que saia da esfera fica visível. Requer 3º círculo.",
+      "extra_details": {
+        "duration": "sustentada",
+        "requirement": "3_circulo"
+      }
+    },
+    {
+      "cost": 7,
+      "type": "muda",
+      "description": "muda a execução para ação padrão, o alcance para toque e o alvo para 1 criatura. A magia não é dissipada caso o alvo faça um ataque ou use uma habilidade ofensiva. Requer 4º círculo.",
+      "extra_details": {
+        "execution": "padrão",
+        "range": "toque",
+        "target": {
+          "amount": 1,
+          "up_to": null,
+          "type": "criatura"
+        },
+        "requirement": "4_circulo"
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "aumenta",
+      "attribute": null,
+      "skill": "furtividade",
+      "amount": "+20",
+      "resistence_requirement": null,
+      "extra_requirements": null
+    }
+  ]
+}

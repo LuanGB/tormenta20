@@ -1,0 +1,55 @@
+{
+  "id": "adaga_mental",
+  "name": "Adaga Mental",
+  "type": "arcana",
+  "circle": "1",
+  "school": "encan",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "curto_6m_9q",
+  "target": {
+    "amount": 1,
+    "up_to": null,
+    "type": "criatura"
+  },
+  "effect": "alvo",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "instantânea",
+  "duration_details": "o alvo fica pasmo por 1 rodada",
+  "resistence": {
+    "effect": "parcial",
+    "skill": "vontade"
+  },
+  "extra_costs": null,
+  "description": "Você manifesta e dispara uma adaga imaterial contra a mente do alvo, que sofre 2d6 pontos de dano mental e fica pasmo por uma rodada. Se passar no teste de resistência, sofre apenas metade do dano e não fica pasmo.",
+  "enhancements": [
+    {
+      "cost": 1,
+      "type": "outro",
+      "description": "você lança a magia sem gesticular ou pronunciar palavras (o que permite lançar essa magia de armadura) e a adaga se torna invisível. Se o alvo falhar no teste de resistência, não percebe que você lançou uma magia contra ele.",
+      "extra_details": null
+    },
+    {
+      "cost": 2,
+      "type": "muda",
+      "description": "muda a duração para 1 dia. Além do normal, você “finca\" a adaga na mente do alvo. Enquanto a magia durar, você sabe a direção e localização do alvo, desde que ele esteja no mesmo mundo.",
+      "extra_details": null
+    },
+    {
+      "cost": 2,
+      "type": "aumenta",
+      "description": "aumenta o dano em +1d6",
+      "extra_details": null
+    }
+  ],
+  "effects": [
+    {
+      "type": "dano",
+      "attribute": "pv",
+      "amount": "2d6",
+      "resistence_requirement": "vontade",
+      "extra_requirements": null
+    }
+  ]
+}

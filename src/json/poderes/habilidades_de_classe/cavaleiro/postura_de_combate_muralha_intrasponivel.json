@@ -1,0 +1,38 @@
+{
+  "id": "postura_de_combate_muralha_intrasponivel",
+  "name": "Postura de Combate: Muralha Intransponível",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_cavaleiro",
+  "description": "Para assumir esta postura você precisa estar empunhando um escudo. Você recebe +1 na Defesa e em Reflexos. Além disso, quando sofre um ataque que permite um teste de Reflexos para reduzir o dano à metade, não sofre nenhum dano se passar. Para cada 2 PM adicionais que gastar quando assumir a postura, aumenta esse bônus em +1. Por fim, enquanto mantiver esta postura, seu deslocamento é reduzido para 3m.",
+  "requirements": [
+    {
+      "type": "hold_shield",
+      "sub_type": "soft"
+    }
+  ],
+  "effects": [
+    {
+      "type": "displacement_reduce",
+      "value": 3
+    },
+    {
+      "type": "defense_improvement",
+      "value": 1
+    },
+    {
+      "type": "skill_improvement",
+      "value": 1,
+      "skill": "reflexos"
+    }
+  ],
+  "costs": [
+    {
+    "value": 2,
+    "type": "PM"
+    },
+    {
+     "action": "moviment",
+     "type": "acao" 
+    }
+  ]
+}

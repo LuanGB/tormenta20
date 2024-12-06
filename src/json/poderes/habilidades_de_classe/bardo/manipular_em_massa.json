@@ -1,0 +1,36 @@
+{
+  "id": "manipular_em_massa",
+  "name": "Manipular em Massa",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_bardo",
+  "description": "Quando usa Manipular, você pode gastar 2 PM extras. Se fizer isso, afeta todas as criaturas a sua escolha em alcance curto.",
+  "requirements": [
+     {
+      "type": "character_lvl",
+      "sub_type": "soft",
+      "value": 10
+    },
+    {
+      "type": "feature",
+      "sub_type": "hard",
+      "id": "fascinar_em_massa"
+    },
+    {
+      "type": "feature",
+      "sub_type": "hard",
+      "id": "manipular"
+    }
+  ],
+  "effects": [
+    {
+      "type": "target",
+      "amount": "criaturas_a_sua_escolha"
+    }
+  ],
+  "costs": [
+    {
+    "value": 2,
+    "type": "PM"
+    }
+  ]
+}

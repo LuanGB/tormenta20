@@ -1,0 +1,19 @@
+{
+  "id": "ginete",
+  "name": "Ginete",
+  "type": "poder_geral",
+  "sub_type": "poder_de_combate",
+  "description": "Você passa automaticamente em testes de Cavalgar para não cair da montaria quando sofre dano. Além disso, não sofre penalidades para atacar à distância ou lançar magias quando montado.",
+  "requirements": [
+    {
+      "type": "expertise",
+      "sub_type": "hard",
+      "id": "cavalgar"
+    }
+  ],
+  "effects": [
+    {
+      "type": ""
+    }
+  ]
+}

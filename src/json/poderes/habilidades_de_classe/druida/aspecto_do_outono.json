@@ -1,0 +1,42 @@
+{
+  "id": "aspecto_do_outono",
+  "name": "Aspecto do Outono",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_druida",
+  "description": "Você aprende uma magia de necromancia, arcana ou divina, de qualquer círculo que possa lançar. Você pode gastar 1 PM para impor uma penalidade de –2 nos testes de resistência de todos os inimigos em alcance médio até o início do seu próximo turno. Durante o outono, suas magias de druida custam −1 PM.",
+  "requirements": null,
+  "effects": [
+    {
+      "type": "learn_magic",
+      "magic": "necromancia_arcana_ou_divina",
+      "requirement": "apenas_circulo_que_possa_lancar"
+    },
+    {
+      "type": "condition",
+      "condition": "abalada",
+      "duration": "cena"
+    },
+    {
+      "type": "manouver_improvement",
+      "manouver": ["derrubar", "empurrar"],
+      "action": "livre"
+    },
+    {
+      "type": "enemy_resistence_penalty",
+      "value": -2,
+      "range": "medio",
+      "duration": "proximo_turno"
+    },
+    {
+      "type": "reduce_PM_cost",
+      "value": -1,
+      "duration": "durante_o_outono"
+    }
+  ],
+  "costs": [
+    {
+    "value": 1,
+    "type": "PM"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "id": "familiar",
+  "name": "Familiar",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_arcanista",
+  "description": "Você possui um animal de estimação mágico. Veja o quadro para detalhes.",
+  "requirements": null,
+  "effects": null
+}

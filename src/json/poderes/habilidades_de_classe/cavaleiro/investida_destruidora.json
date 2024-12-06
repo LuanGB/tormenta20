@@ -1,0 +1,26 @@
+{
+  "id": "investida_destruidora",
+  "name": "Investida Destruidora",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_cavaleiro",
+  "description": "Quando faz a ação investida, você pode gastar 2 PM. Se fizer isso, causa +2d8 pontos de dano. Você deve usar esta habilidade antes de rolar o ataque.",
+  "requirements": [
+    {
+      "type": "manouver",
+      "sub_type": "soft",
+      "manouver": "investida"
+    }
+  ],
+  "effects": [
+    {
+      "type": "damage_improvement",
+      "value":"2d8" 
+    }
+  ],
+  "costs": [
+    {
+    "value": 2,
+    "type": "PM"
+    }
+  ]
+}

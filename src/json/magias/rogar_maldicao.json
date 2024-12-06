@@ -1,0 +1,58 @@
+{
+  "id": "rogar_maldicao",
+  "name": "Rogar Maldição",
+  "type": "divina",
+  "circle": "2",
+  "school": "necro",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "curto_6m_9q",
+  "target": {
+    "amount": 1,
+    "up_to": null,
+    "type": "criatura"
+  },
+  "effect": "alvo",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "sustentada",
+  "duration_details": null,
+  "resistence": {
+    "effect": "anula",
+    "skill": "fortitude"
+  },
+  "extra_costs": null,
+  "description": "Você entoa cânticos maléficos que amaldiçoam uma vítima, criando efeitos variados. Ao lançar a magia, escolha entre os seguintes.\nDebilidade: o alvo fica esmorecido e não pode se comunicar ou lançar magias. Ainda reconhece seus aliados e pode segui-los e ajudá-los, mas sempre de maneira simplória.\nDoença: muda a duração para instantânea. O alvo contrai uma doença a sua escolha, que o afeta imediatamente (sem período de incubação).\nFraqueza: o alvo fica debilitado e lento.\nIsolamento: o alvo perde o uso de um de seus cinco sentidos a sua escolha. Se perder a visão, fica cego. Se perder a audição, fica surdo. Se perder o olfato ou paladar, não pode usar a habilidade faro. Se perder o tato, fica caído e não pode se levantar.\nVocê pode inventar sua maldição, usando esses exemplos como sugestões, com aprovação do mestre.",
+  "enhancements": [
+    {
+      "cost": 3,
+      "type": "aumenta",
+      "description": "aumenta o número de efeitos que você pode escolher em +1. Requer 3º círculo.",
+      "extra_details": {
+        "requirement": "3_circulo"
+      }
+    },
+    {
+      "cost": 7,
+      "type": "muda",
+      "description": "muda a duração para permanente e resistência para Fortitude parcial. Se passar, a criatura ainda sofre os efeitos da maldição, mas por 1 rodada. Requer 4º círculo.",
+      "extra_details": {
+        "duration": "permanente",
+        "resistence": {
+          "effect": "parcial",
+          "skill": "fortitude"
+        },
+        "requirement": "4_circulo"
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "outro",
+      "attribute": null,
+      "amount": null,
+      "resistence_requirement": "fortitude",
+      "extra_requirements": null
+    }
+  ]
+}

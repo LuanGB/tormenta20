@@ -1,0 +1,29 @@
+{
+  "id": "quebrar_aprimorado",
+  "name": "Quebrar Aprimorado",
+  "type": "poder_geral",
+  "sub_type": "poder_de_combate",
+  "description": "Você recebe +2 em testes de ataque para quebrar. Quando reduz os PV de uma arma para 0 ou menos, você pode gastar 1 PM para realizar um ataque extra contra o usuário dela. O ataque adicional usa os mesmos valores de ataque e dano, mas os dados devem ser rolados novamente.",
+  "requirements": [
+    {
+      "type": "maneuver_type",
+      "sub_type": "soft",
+      "maneuver": "quebrar"
+    },
+    {
+      "type": "feature",
+      "sub_type": "hard",
+      "id": "ataque_poderoso"
+    }
+  ],
+  "effects": [
+    {
+      "type": "manouver_test_improvement",
+      "manouver": "quebrar",
+      "value": 2
+    },
+    {
+      "type": "extra_attack"
+    }
+  ]
+}

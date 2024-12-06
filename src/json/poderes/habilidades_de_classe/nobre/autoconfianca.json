@@ -1,0 +1,31 @@
+{
+  "id": "autoconfianca",
+  "name": "Autoconfiança",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_nobre",
+  "description": "Você pode somar seu bônus de Carisma em vez de Destreza na Defesa (mas continua não podendo somar um bônus de atributo na Defesa quando usa armadura pesada).",
+  "requirements": [
+     {
+      "type": "character_lvl",
+      "sub_type": "hard",
+      "value": 1
+    },
+    {
+      "type": "armor_type_banned",
+      "sub_type": "soft",
+      "armor": "pesada"
+    },
+    {
+      "type": "feature",
+      "sub_type": "hard",
+      "id": "estilo_de_duas_armas"
+    }
+  ],
+  "effects": [
+    {
+      "type": "switch_defense_attr",
+      "attr": "car"
+    }
+  ],
+  "costs": null
+}

@@ -1,0 +1,29 @@
+{
+  "id": "missa_bencao_da_vida",
+  "name": "Missa: Benção da Vida",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_clerigo",
+  "description": "Você abençoa os presentes com energia positiva. Os participantes recebem pontos de vida temporários em um valor igual ao seu nível + seu bônus de Sabedoria.",
+  "requirements": null,
+  "effects": [
+    {
+      "type": "PV_improvement",
+      "amount": "nvl_mais_bonus_sab"
+    },
+    {
+      "type": "amount_targets",
+      "amount": "1_mas_bonus_sab",
+      "duration": "um_dia"
+    }
+  ],
+  "costs": [
+    {
+    "value": 1,
+    "type": "hora"
+    },
+    {
+    "value": 25,
+    "type": "tibares"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "aspecto_do_inverno",
+  "name": "Aspecto do Inverno",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_druida",
+  "description": "Você recebe resistência a frio 5 e suas magias que causam dano de frio causam +1 ponto de dano por dado. Durante o inverno, suas magias de druida custam −1 PM.",
+  "requirements": null,
+  "effects": [
+    {
+      "type": "damage_resiste",
+      "damage": "de_frio",
+      "value": 5
+    },
+    {
+      "type": "magic_type_improvement",
+      "magic_type": "dano_de_frio",
+      "value": 1
+    },
+    {
+      "type": "reduce_PM_cost",
+      "value": -1,
+      "duration": "durante_o_inverno"
+    }
+  ],
+  "costs": null
+}

@@ -1,0 +1,103 @@
+{
+  "id": "âncora_dimensional",
+  "name": "Âncora Dimensional",
+  "type": "arcana",
+  "circle": "3",
+  "school": "abjur",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "curto_6m_9q",
+  "target": {
+    "amount": 1,
+    "up_to": null,
+    "type": "criatura|objeto"
+  },
+  "effect": "alvo",
+  "effect_details": {
+    "shape": "campo_de_força",
+    "dimention": null,
+    "size": null,
+    "other_details": "cor_de_esmeralda"
+  },
+  "counterspell": null,
+  "duration": "cena",
+  "duration_details": null,
+  "resistence": null,
+  "extra_costs": null,
+  "description": "O alvo é envolvido por um campo de força cor de esmeralda que impede movimento planar. Isso inclui magias de convocação (como Salto Dimensional e Teletransporte), viagens astrais e a habilidade incorpóreo.",
+  "enhancements": [
+    {
+      "cost": 2,
+      "type": "muda",
+      "description": "muda o alcance para médio, a área para esfera de 3m de raio e o alvo para criaturas escolhidas.",
+      "extra_details": {
+       "target": "criaturas_escolhidas",
+       "range" : "médio_30m_20q",
+        "range_details": {
+        "shape": "esfera",
+        "dimention": "raio",
+        "size": "3m"
+        }
+      }
+    },
+    {
+      "cost": 2,
+      "type": "muda",
+      "description": "muda o efeito para criar um fio de energia cor de esmeralda que prende o alvo a um ponto no espaço dentro do alcance. O ponto precisa ser fixo, mas não precisa de apoio ou superfície (pode simplesmente flutuar no ar). O alvo não pode se afastar mais de 3m do ponto, nem fisicamente, nem com movimento planar. O fio possui 20 PV e RD 20 (mas pode ser dissipado por efeitos que libertam criaturas, como o Julgamento Divino: Libertação do paladino).",
+      "extra_details": {
+        "effect": "fio_de_energia",
+        "dimention": "extensão",
+        "size": "3m",
+        "counterspell": "julgamento_divino_libertação_do_paladino"
+      }
+    },
+    {
+      "cost": 4,
+      "type": "muda",
+      "description": "como acima, mas em vez de um fio, cria uma corrente de energia, com 20 PV e RD 40.",
+      "extra_details": {
+        "effect": "corrente_de_energia",
+        "dimention": "extensão",
+        "size": "3m",
+        "counterspell": "julgamento_divino_libertação_do_paladino"}
+    },
+    {
+      "cost": 4,
+      "type": "muda",
+      "description": "muda o alvo para área de cubo de 9m, a duração para permanente e adiciona componente material (chave de esmeralda no valor de T$ 2.000). Em vez do normal, nenhum tipo de movimento planar pode ser feito para entrar ou sair da área.",
+      "extra_details": {
+      "effect": "área",
+        "effect_details": {
+        "shape": "cubo",
+        "dimention": "lado",
+        "size": "9m"
+        },
+        "extra_costs": {
+          "material_component": "Chave de Esmeralda",
+          "material_component_cost": "T$ 2000"
+        }
+      }
+    },
+    {
+      "cost": 9,
+      "type": "muda",
+      "description": "muda o alcance para médio, a área para esfera de 3m de raio e o alvo para criaturas escolhidas. Cria um fio de energia (veja acima) que prende todos os alvos ao centro da área.",
+      "extra_details": {
+        "range" :"médio",
+        "effect": "esfera",
+        "dimention": "raio",
+        "size": "3m",
+        "extra_effects": "fio_de_energia"
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "impedir_movimento",
+      "attribute": null,
+      "amount": null,
+      "resistence_requirement": null,
+      "extra_requirements": null
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "conceder_milagre",
+  "name": "Conceder Milagre",
+  "type": "divina",
+  "circle": "4",
+  "school": "encan",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "toque",
+  "target": {
+    "amount": 1,
+    "up_to": null,
+    "type": "criatura"
+  },
+  "effect": "alvo",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "permanente",
+  "duration_details": "você sofre uma penalidade de -3 PM até que o alvo lance a magia que ganhou de você.",
+  "resistence": null,
+  "extra_costs": null,
+  "description": "Você transfere um pouco de seu poder divino a outra criatura. Escolha uma magia de até 2º círculo que você conheça; o alvo pode lançar essa magia uma vez, sem pagar o custo base dela em PM (aprimoramentos podem ser usados, mas o alvo deve gastar seus próprios PM). Você sofre uma penalidade de –3 PM até que o alvo lance a magia que ganhou.",
+  "enhancements": [
+    {
+      "cost": 4,
+      "type": "muda",
+      "description": "muda o círculo da magia concedida para 3º e a penalidade de PM para –6.",
+      "extra_details": null
+    }
+  ],
+  "effects": [
+    {
+      "type": "transfere",
+      "attribute": null,
+      "amount": null,
+      "resistence_requirement": null,
+      "extra_requirements": null
+    }
+  ]
+}

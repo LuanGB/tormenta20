@@ -1,0 +1,22 @@
+{
+  "id": "granadeiro",
+  "name": "Granadeiro",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_inventor",
+  "description": "Você pode arremessar itens alquímicos e poções em alcance médio. Você pode usar seu modificador de Inteligência em vez de Destreza para calcular a CD do teste de resistência desses itens.",
+  "requirements": [
+    {
+      "type": "feature",
+      "sub_type": "hard",
+      "id": "alquimisca_de_batalha"
+    }
+  ],
+  "effects": [
+    {
+      "type": "throw_item",
+      "item": ["pocao", "item_alquimico"],
+      "range": "medio"
+    }
+  ],
+  "costs": null
+}

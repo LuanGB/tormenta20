@@ -1,0 +1,31 @@
+{
+  "id": "aspecto_da_primavera",
+  "name": "Aspecto da Primavera",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_druida",
+  "description": "Você recebe +1 em Carisma e suas magias de cura curam +1 PV por dado. Durante a primavera, suas magias de druida custam −1 PM.",
+  "requirements": null,
+  "effects": [
+    {
+      "type": "create_item",
+      "item": "pocao",
+      "action": "livre"
+    },
+    {
+      "type": "magic_improvement",
+      "magic": "cura",
+      "amount": "mais_1_por_dado"
+    },
+    {
+      "type": "attr_bonus_improvement",
+      "attr": "car",
+      "value": 1
+    },
+    {
+      "type": "reduce_PM_cost",
+      "value": -1,
+      "duration": "durante_a_primavera"
+    }
+  ],
+  "costs": null
+}

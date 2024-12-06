@@ -1,0 +1,56 @@
+{
+  "id": "vestimenta_da_fe",
+  "name": "Vestimenta de Fé",
+  "type": "divina",
+  "circle": "2",
+  "school": "abjur",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "toque",
+  "target": {
+    "amount": 1,
+    "up_to": null,
+    "type": "traje_armadura_ou_escudo"
+  },
+  "effect": "alvo",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "1_dia",
+  "duration_details": null,
+  "resistence": null,
+  "extra_costs": null,
+  "description": "Você fortalece uma indumentária com o poder de sua fé. Isso aumenta o bônus de Defesa de uma armadura ou escudo em +2 (isso é uma melhoria no item, portanto é cumulativa com outras magias). No caso de um traje, ele passa a oferecer +2 na Defesa e continua contando como se você não estivesse usando armadura.",
+  "enhancements": [
+    {
+      "cost": 3,
+      "type": "bonus",
+      "description": "o objeto também oferece o mesmo bônus em testes de resistência. Requer 3º círculo.",
+      "extra_details": {
+        "requirement": "3_circulo"
+      }
+    },
+    {
+      "cost": 4,
+      "type": "aumenta",
+      "description": "aumenta o bônus em +1.",
+      "extra_details": null
+    },
+    {
+      "cost": 7,
+      "type": "bonus",
+      "description": "o objeto também oferece resistência a dano 5. Requer 4º círculo.",
+      "extra_details": {
+        "requirement": "4_circulo"
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "bônus",
+      "attribute": "def",
+      "amount": "+2",
+      "resistence_requirement": null,
+      "extra_requirements": null
+    }
+  ]
+}

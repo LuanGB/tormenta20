@@ -1,0 +1,68 @@
+{
+  "id": "sussurros_insanos",
+  "name": "Sussurros Insanos",
+  "type": "arcana",
+  "circle": "2",
+  "school": "encan",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "curto_6m_9q",
+  "target": {
+    "amount": 1,
+    "up_to": null,
+    "type": "humanoide"
+  },
+  "effect": "alvo",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "cena",
+  "duration_details": null,
+  "resistence": {
+    "effect": "anula",
+    "skill": "vontade"
+  },
+  "extra_costs": null,
+  "description": "Você murmura palavras desconexas que afetam a mente do alvo. O alvo fica confuso.",
+  "enhancements": [
+    {
+      "cost": 2,
+      "type": "aumenta",
+      "description": "aumenta o número de alvos em +1.",
+      "extra_details": null
+    },
+    {
+      "cost": 3,
+      "type": "muda",
+      "description": "muda o alvo para 1 criatura.",
+      "extra_details": {
+        "target": {
+          "amount": 1,
+          "up_to": null,
+          "type": "criatura"
+        }
+      }
+    },
+    {
+      "cost": 12,
+      "type": "muda",
+      "description": "muda o alvo para criaturas escolhidas. Requer 5º círculo.",
+      "extra_details": {
+        "target": {
+          "amount": null,
+          "up_to": null,
+          "type": "criaturas_escolhidas"
+        },
+        "requirement": "5_circulo"
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "condição",
+      "attribute": null,
+      "amount": null,
+      "resistence_requirement": "vontade",
+      "extra_requirements": null
+    }
+  ]
+}

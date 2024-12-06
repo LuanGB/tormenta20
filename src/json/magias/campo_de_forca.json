@@ -1,0 +1,70 @@
+{
+  "id": "campo_de_forca",
+  "name": "Campo de Força",
+  "type": "arcana",
+  "circle": "2",
+  "school": "abjur",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "pessoal",
+  "target": {
+    "amount": null,
+    "up_to": null,
+    "type": "voce"
+  },
+  "effect": "voce",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "cena",
+  "duration_details": null,
+  "resistence": null,
+  "extra_costs": null,
+  "description": "Você recebe 30 PV temporários, mas apenas contra dano de corte, impacto ou perfuração.",
+  "enhancements": [
+    {
+      "cost": 1,
+      "type": "muda",
+      "description": "muda a execução para reação e a duração para instantânea. Em vez do normal, você recebe resistência a dano 30 contra o próximo dano que sofrer até o fim do turno atual.",
+      "extra_details": {
+        "execution": "reacao",
+        "duration": "instantânea"
+      }
+    },
+    {
+      "cost": 1,
+      "type": "aumenta",
+      "description": "aumenta os PV temporários em +5 ou a resistência a dano em +10.",
+      "extra_details": null
+    },
+    {
+      "cost": 7,
+      "type": "muda",
+      "description": "muda o alcance para curto e o alvo para 1 criatura ou objeto Enorme ou menor. Em vez do normal, cria uma esfera imóvel e tremeluzente com o tamanho do alvo e centrada nele. Nenhuma criatura, objeto ou efeito de dano pode passar pela esfera, embora criaturas possam respirar normalmente. Criaturas na área podem fazer um teste de Reflexos para evitar serem aprisionadas. Requer 4º círculo.",
+      "extra_details": {
+        "range": "curto_6m_9q",
+        "target": "1_criatura_ou_objeto_enorme_ou_menor",
+        "requirements": "4_circulo"
+      }
+    },
+    {
+      "cost": 9,
+      "type": "muda",
+      "description": "como acima, mas também muda a duração para sustentada. Tudo dentro da esfera fica praticamente sem peso. Uma vez por rodada, você pode gastar uma ação livre para flutuar a esfera e seu conteúdo para qualquer local dentro de alcance longo. Requer 4º círculo.",
+      "extra_details": {
+        "range": "curto_6m_9q",
+        "target": "1_criatura_ou_objeto_enorme_ou_menor",
+        "duration": "sustentada",
+        "requirements": "4_circulo"
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "bonus_temporario",
+      "attribute": "pv",
+      "amount": "30",
+      "resistence_requirement": null,
+      "extra_requirements": null
+    }
+  ]
+}

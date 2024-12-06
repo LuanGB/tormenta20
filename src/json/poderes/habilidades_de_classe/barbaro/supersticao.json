@@ -1,0 +1,14 @@
+{
+  "id": "supersticao",
+  "name": "Superstição",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_barbaro",
+  "description": "Você odeia magia, o que faz com que seja mais resistente a ela. Você recebe resistência a magia +2.",
+  "requirements": null,
+  "effects": [
+    {
+      "type": "magic_resist",
+      "value": 2
+    }
+  ]
+}

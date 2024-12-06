@@ -1,0 +1,27 @@
+{
+  "id": "estandarte",
+  "name": "Estandarte",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_cavaleiro",
+  "description": "Sua flâmula torna-se célebre, um símbolo de inspiração para seus aliados. No início de cada cena, você e todos os aliados que possam ver seu estandarte recebem um número de PM temporários igual ao seu bônus de Carisma (mínimo 1). PM temporários desaparecem no final da cena.",
+  "requirements": [
+     {
+      "type": "character_lvl",
+      "sub_type": "hard",
+      "value": 14
+    },
+    {
+      "type": "feature",
+      "sub_type": "hard",
+      "id": "titulo"
+    }
+  ],
+  "effects": [
+    {
+      "type": "PM_improvement",
+      "value": "bonus_de_carisma",
+      "duration": "cena"
+    }
+  ],
+  "costs": null
+}

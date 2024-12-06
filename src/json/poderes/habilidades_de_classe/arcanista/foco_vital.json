@@ -1,0 +1,15 @@
+{
+  "id": "foco_vital",
+  "name": "Foco Vital",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_arcanista",
+  "description": "Se você estiver segurando seu foco e sofrer dano que o levaria a 0 PV ou menos, você fica com 1 PV e o foco perde pontos de vida igual ao valor excedente, até ser destruído.",
+  "requirements": [
+    {
+      "type": "caminho_do_arcanista",
+      "sub_type": "hard",
+      "id": "bruxo"
+    }
+  ],
+  "effects": null
+}

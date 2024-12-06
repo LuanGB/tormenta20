@@ -1,0 +1,77 @@
+{
+  "id": "nevoa",
+  "name": "Névoa",
+  "type": "universal",
+  "circle": "1",
+  "school": "conv",
+  "execution": "padrão",
+  "execution_details": "Esta magia não funciona sob a água.",
+  "range": "curto_6m_9q",
+  "target": {
+    "amount": null,
+    "up_to": null,
+    "type": "nuvem_com_6m_de_raio_e_6m_de_altura"
+  },
+  "effect": "area",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "cena",
+  "duration_details": "Um vento forte dispersa a névoa em 4 rodadas e um vendaval a dispersa em 1 rodada.",
+  "resistence": null,
+  "extra_costs": null,
+  "description": "Uma névoa espessa eleva-se de um ponto a sua escolha, obscurecendo toda a visão — criaturas a até 1,5m têm camuflagem e criaturas a partir de 3m têm camuflagem total. Um vento forte dispersa a névoa em 4 rodadas e um vendaval a dispersa em 1 rodada. Esta magia não funciona sob a água.",
+  "enhancements": [
+    {
+      "cost": 1,
+      "type": "outro",
+      "description": "a magia também funciona sob a água, criando uma nuvem de tinta.",
+      "extra_details": null
+    },
+    {
+      "cost": 2,
+      "type": "outro",
+      "description": "você pode escolher criaturas no alcance ao lançar a magia; elas enxergam através do efeito. Requer 2º círculo.",
+      "extra_details": {
+        "requirement": "2_circulo"
+      }
+    },
+    {
+      "cost": 2,
+      "type": "outro",
+      "description": "além do normal, a nuvem tem um cheiro horrível. No início de seus turnos, qualquer criatura dentro dela, ou qualquer criatura com faro em alcance curto da nuvem, deve fazer um teste de Fortitude. Se falhar, fica enjoada por uma rodada.",
+      "extra_details": {
+        "resistence": {
+          "effect": "parcial",
+          "skill": "fortitude"
+        }
+      }
+    },
+    {
+      "cost": 2,
+      "type": "outro",
+      "description": "além do normal, a nuvem tem um tom esverdeado e se torna cáustica. No início de seus turnos, criaturas dentro dela sofrem 2d4 pontos de dano de ácido.",
+      "extra_details": null
+    },
+    {
+      "cost": 3,
+      "type": "aumenta",
+      "description": "aumenta o dano de ácido em +2d4.",
+      "extra_details": null
+    },
+    {
+      "cost": 5,
+      "type": "outro",
+      "description": "além do normal, a nuvem fica muito espessa, quase sólida. Qualquer criatura dentro dela tem seu deslocamento reduzido para 3m e sofre –2 em testes de ataque e rolagens de dano.",
+      "extra_details": null
+    }
+  ],
+  "effects": [
+    {
+      "type": "outro",
+      "attribute": null,
+      "amount": null,
+      "resistence_requirement": null,
+      "extra_requirements": null
+    }
+  ]
+}

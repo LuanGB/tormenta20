@@ -1,0 +1,30 @@
+{
+  "id": "ambidestria",
+  "name": "Ambidestria",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_cacador",
+  "description": "Se estiver usando duas armas (e pelo menos uma delas for leve) e fizer a ação atacar, você pode fazer dois ataques, um com cada arma. Se fizer isso, sofre –2 em todos os testes de ataque até o seu próximo turno.",
+  "requirements": [
+    {
+      "type": "attr_value",
+      "sub_type": "hard",
+      "attr": "des",
+      "value": 15
+    }
+  ],
+  "effects": [
+    {
+      "type": "extra_attack",
+      "requirement": [
+        {
+          "weapon": "ao_menos_uma_leve" 
+        }
+      ]
+    },
+    {
+      "type": "attack_penalty",
+      "value": -2
+    }
+  ],
+  "costs": null
+}

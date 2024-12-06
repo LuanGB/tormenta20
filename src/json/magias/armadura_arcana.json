@@ -1,0 +1,78 @@
+
+{
+  "id": "armadura_arcana",
+  "name": "Armadura Arcana",
+  "type": "arcana",
+  "circle": "1",
+  "school": "abjur",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "pessoal",
+  "target": {
+    "amount": null,
+    "up_to": null,
+    "type": "você"
+  },
+  "area_effect": null,
+  "area_effect_details": null,
+  "counterspell": null,
+  "duration": "cena",
+  "duration_details": null,
+  "resistence": null,
+  "extra_costs": null,
+  "description": "Esta magia cria uma película protetora invisível, mas tangível, fornecendo +4 na Defesa. Esse bônus é cumulativo com outras magias, mas não com bônus fornecido por armaduras.",
+  "enhancements": [
+    {
+      "cost": 1,
+      "type": "muda",
+      "description": "Muda a execução para reação. Em vez do normal, você cria um escudo mágico que fornece +6 na Defesa contra o próximo ataque que sofrer até o fim do turno atual.",
+      "extra_details": {
+        "execution": "reaction",
+        "duration": "fim do turno atual",
+        "effects": [
+          {
+            "type": "bônus",
+            "attribute": "ca",
+            "amount": "+6",
+            "resistence_requirement": null,
+            "extra_requirements": null
+          }
+        ]
+      }
+    },
+    {
+      "cost": 2,
+      "type": "aumenta",
+      "description": "Aumenta o bônus na Defesa em +1.",
+      "extra_details": {
+        "effects": [
+          {
+            "type": "bônus",
+            "attribute": "ca",
+            "amount": "+1",
+            "resistence_requirement": null,
+            "extra_requirements": null
+          }
+        ]
+      }
+    },
+    {
+      "cost": 2,
+      "type": "muda",
+      "description": "Muda a duração para 1 dia.",
+      "extra_details": {
+        "duration": "1 dia",
+        "circle": 2
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "bônus",
+      "attribute": "ca",
+      "amount": "+4",
+      "resistence_requirement": null,
+      "extra_requirements": null
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "lingua_de_prata",
+  "name": "Lingua de Prata",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_nobre",
+  "description": "Quando faz um teste de perícia baseada em Carisma, você pode gastar 2 PM para receber um bônus no teste igual a metade do seu nível.",
+  "requirements": null,
+  "effects": [
+    {
+      "type": "skill_improvement",
+      "value": "metade_do_seu_lvl",
+      "skill": "baseada_em_carisma"
+    }
+  ],
+  "costs": [
+    {
+    "value": 2,
+    "type": "PM"
+    }
+  ]
+}

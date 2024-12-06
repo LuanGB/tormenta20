@@ -1,0 +1,27 @@
+{
+  "id": "aura_ardente",
+  "name": "Aura Ardente",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_paladino",
+  "description": "Enquanto sua aura estiver ativa, no início de cada um de seus turnos, espíritos e mortos-vivos a sua escolha dentro dela sofrem dano de luz igual a 5 + seu bônus de Carisma.",
+  "requirements": [
+     {
+      "type": "character_lvl",
+      "sub_type": "hard",
+      "value": 10
+    },
+    {
+      "type": "fearute_actived",
+      "sub_type": "soft",
+      "feature": "aura_sagrada"
+    }
+  ],
+  "effects": [
+    {
+      "type": "extra_damage",
+      "value": "5_mais_bonus_de_car",
+      "requirements": "inimigos_dentro_da_area"
+    }
+  ],
+  "costs": null
+}

@@ -1,0 +1,30 @@
+{
+  "id": "missa_superar_as_limitacoes",
+  "name": "Missa: Superar as Limitações",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_clerigo",
+  "description": "Você encoraja os ouvintes a superar suas próprias habilidades. Cada participante recebe +1d6 num único teste a sua escolha.",
+  "requirements": null,
+  "effects": [
+    {
+      "type": "skill_improvement",
+      "amount": "1d6",
+      "skill": "escolha_uma"
+    },
+    {
+      "type": "amount_targets",
+      "amount": "1_mas_bonus_sab",
+      "duration": "um_dia"
+    }
+  ],
+  "costs": [
+    {
+    "value": 1,
+    "type": "hora"
+    },
+    {
+    "value": 25,
+    "type": "tibares"
+    }
+  ]
+}

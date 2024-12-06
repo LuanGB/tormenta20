@@ -1,0 +1,20 @@
+{
+  "id": "heranca_aprimorada",
+  "name": "Herança Aprimorada",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_arcanista",
+  "description": "Você recebe a herança aprimorada de sua linhagem sobrenatural.",
+  "requirements": [
+     {
+      "type": "character_lvl",
+      "sub_type": "soft",
+      "value": 6
+    },
+    {
+      "type": "caminho_do_arcanista",
+      "sub_type": "hard",
+      "id": "feiticeiro"
+    }
+  ],
+  "effects": null
+}

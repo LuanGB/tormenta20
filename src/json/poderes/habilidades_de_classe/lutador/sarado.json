@@ -1,0 +1,27 @@
+{
+  "id": "sarado",
+  "name": "Sarado",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_lutador",
+  "description": "Você soma seu bônus de Força no seu total de pontos de vida e em testes de Fortitude. A critério do mestre, você pode chamar a atenção de pessoas que se atraiam por físicos bem definidos.",
+  "requirements": [
+    {
+      "type": "attr_value",
+      "sub_type": "hard",
+      "attr": "for",
+      "value": 17
+    }
+  ],
+  "effects": [
+    {
+      "type": "add_PV_attr",
+      "attr": "for"
+    },
+    {
+      "type": "add_skill_attr",
+      "attr": "for",
+      "skill": "fortidude"
+    }
+  ],
+  "costs": null
+}

@@ -1,0 +1,56 @@
+{
+  "id": "talho_invisivel_de_edauros",
+  "name": "Talho Invisível de Edauros",
+  "type": "arcana",
+  "circle": "4",
+  "school": "evoc",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "curto_6m_9q",
+  "target": {
+    "amount": null,
+    "up_to": null,
+    "type": "cone"
+  },
+  "effect": "area",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "instantânea",
+  "duration_details": null,
+  "resistence": {
+    "effect": "parcial",
+    "skill": "fortitude"
+  },
+  "extra_costs": null,
+  "description": "Esta magia cruel foi desenvolvida pelo mago de combate Edauros, quando ainda era um bípede. Você faz um gesto rápido e dispara uma lâmina de ar em alta velocidade. Criaturas na área sofrem 8d8 pontos de dano de corte e ficam sangrando. Alvos que passem no teste de resistência sofrem metade do dano e não ficam sangrando.",
+  "enhancements": [
+    {
+      "cost": 2,
+      "type": "aumenta",
+      "description": "aumenta o dano em +2d8.",
+      "extra_details": null
+    },
+    {
+      "cost": 2,
+      "type": "muda",
+      "description": "muda o alvo para você e a duração para sustentada. Uma vez por rodada, como uma ação padrão, você pode disparar uma lâmina de ar contra um alvo em alcance médio, causando 6d8 pontos de dano de corte (Fortitude reduz à metade).",
+      "extra_details": {
+        "target": {
+          "amount": null,
+          "up_to": null,
+          "type": "voce"
+        },
+        "duration": "sustentada"
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "dano",
+      "attribute": "pv",
+      "amount": "8d8",
+      "resistence_requirement": "fortitude",
+      "extra_requirements": null
+    }
+  ]
+}

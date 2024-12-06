@@ -1,0 +1,14 @@
+{
+  "id": "aumentar_repertorio",
+  "name": "Aumentar Repertório",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_bardo",
+  "description": "Você aprende duas magias de qualquer círculo que possa lançar. Elas devem pertencer às escolas que você sabe usar, mas podem ser arcanas ou divinas. Você pode escolher este poder quantas vezes quiser.",
+  "requirements": null,
+  "effects": [
+    {
+      "type": "learn_magic",
+      "value": 2
+    }
+  ]
+}

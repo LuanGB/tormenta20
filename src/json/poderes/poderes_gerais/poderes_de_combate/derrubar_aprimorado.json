@@ -1,0 +1,34 @@
+{
+  "id": "derrubar_aprimorado",
+  "name": "Derrubar Aprimorado",
+  "type": "poder_geral",
+  "sub_type": "poder_de_combate",
+  "description": "Você recebe +2 em testes de ataque para derrubar. Quando derruba uma criatura com essa manobra, pode gastar 1 PM para fazer um ataque extra contra ela.",
+  "requirements": [
+    {
+      "type": "feature",
+      "sub_type": "hard",
+      "id": "combate_defensivo"
+    },
+    {
+      "type": "action_type",
+      "sub_type": "soft",
+      "action": "derrubar"
+    }
+  ],
+  "effects": [
+    {
+      "type": "attack_test_improvment",
+      "value": 2,
+      "duration": "instantanea"
+    },
+    {
+      "type": "extra_attack",
+      "requirements": "conseguir_derrubar",
+      "costs": {
+        "value": 1,
+        "type": "PM"
+      }
+    }
+  ]
+}

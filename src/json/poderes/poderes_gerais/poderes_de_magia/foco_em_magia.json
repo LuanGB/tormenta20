@@ -1,0 +1,20 @@
+{
+  "id": "foco_em_magia",
+  "name": "Foco em Magia",
+  "type": "poder_geral",
+  "sub_type": "poder_de_magia",
+  "description": "Escolha uma magia. Seu custo diminui em –1 PM (cumulativo com outras reduções de custo). Você pode escolher este poder outras vezes para magias diferentes.",
+  "requirements": [
+    {
+      "type": "expertise",
+      "sub_type": "soft",
+      "skill": "lancar_magias"
+    }
+  ],
+  "effects": [
+    {
+      "type": "PM_cost_reduction",
+      "reduction": -1
+    }
+  ]
+}

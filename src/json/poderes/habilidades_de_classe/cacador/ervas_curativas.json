@@ -1,0 +1,27 @@
+{
+  "id": "ervas_curativas",
+  "name": "Ervas Curativas",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_cacador",
+  "description": "Você pode gastar uma ação completa e uma quantidade de PM a sua escolha (limitado pelo seu bônus de Sabedoria) para aplicar ervas que curam ou desintoxicam em você ou num aliado adjacente. Para cada PM que gastar, cura 2d6 PV ou remove uma condição envenenado afetando o alvo.",
+  "requirements": null,
+  "effects": [
+    {
+      "type": "remove_condition",
+      "condition": "anvenedado"
+    },
+    {
+      "type": "cura",
+      "value": "2d6_por_PM_gasto"
+    }
+  ],
+  "costs": [
+    {
+    "value": "a_sua_escolha_limitado_pelo_bonus_de_sabedoria",
+    "type": "PM"
+    },
+    {
+      "type": "action_completa"
+    }
+  ]
+}

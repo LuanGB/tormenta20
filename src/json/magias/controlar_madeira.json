@@ -1,0 +1,69 @@
+{
+  "id": "controlar_madeira",
+  "name": "Controlar Madeira",
+  "type": "divina",
+  "circle": "2",
+  "school": "trans",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "medio_30m_20q",
+  "target": {
+    "amount": 1,
+    "up_to": null,
+    "type": "objeto_de_medeira_grande_ou_menor"
+  },
+  "effect": "item",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "cena",
+  "duration_details": null,
+  "resistence": null,
+  "extra_costs": null,
+  "description": "Ao lançar a magia, escolha um dos efeitos.\nFortalecer: item recebe +5 na RD e dobra seus PV. Além disso, armas têm seu dano aumentado em um passo e escudos têm sua Defesa aumentada em +2.\nModelar: muda a forma do alvo. Transforma um galho em espada, um tronco em uma caixa... Não pode criar mecanismos complexos ou consumíveis.\nRepelir: o alvo é repelido por você. Se for uma arma, ataques feitos com ela contra você falham automaticamente. Um objeto que vá atingi-lo vai desviar ou parar adjacente a você, sem lhe causar dano.\nRetorcer: torna o alvo imprestável. Armas e itens retorcidos impõem –2 em testes, um escudo deixa de fornecer bônus, uma porta emperra, um barco começa a afundar e naufraga ao final da cena.",
+  "enhancements": [
+    {
+      "cost": 1,
+      "type": "muda",
+      "description": "muda o alcance para pessoal, o alvo para você e a duração para 1 dia. Você e seu equipamento se transformam em uma árvore Grande. Você não pode falar ou fazer ações físicas, mas percebe seus arredores.",
+      "extra_details": {
+        "range": "pessoal",
+        "target": "voce"
+      }
+    },
+    {
+      "cost": 3,
+      "type": "muda",
+      "description": "muda o alvo para quadrado com 9m de lado e a duração para cena. A vegetação fica rígida e afiada. A área vira terreno difícil e criaturas sofrem 1d6 pontos de dano de corte para cada 1,5m que avancem nela.",
+      "extra_details": {
+        "target": "area"
+      }
+    },
+    {
+      "cost": 7,
+      "type": "muda",
+      "description": "muda o alvo para Enorme. Requer 3º círculo.",
+      "extra_details": {
+        "target": "objeto_enorme",
+        "requirement": "3_circulo"
+      }
+    },
+    {
+      "cost": 12,
+      "type": "muda",
+      "description": "muda o alvo para Colossal. Requer 4º círculo.",
+      "extra_details": {
+        "target": "objeto_colossal",
+        "requirement": "4_circulo"
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "controle",
+      "attribute": null,
+      "amount": null,
+      "resistence_requirement": null,
+      "extra_requirements": null
+    }
+  ]
+}

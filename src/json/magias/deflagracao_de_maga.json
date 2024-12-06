@@ -1,0 +1,54 @@
+{
+  "id": "deflagracao_de_mana",
+  "name": "Deflagração de Mana",
+  "type": "arcana",
+  "circle": "5",
+  "school": "evoc",
+  "execution": "completa",
+  "execution_details": null,
+  "range": "pessoal",
+  "target": {
+    "amount": null,
+    "up_to": null,
+    "type": "area"
+  },
+  "effect": "area_",
+  "effect_details": {
+    "shape": "esfera",
+    "dimention": "raio",
+    "size": "15m_yq",
+    "other_details": null
+  },
+  "counterspell": null,
+  "duration": "instantânea",
+  "duration_details": "Os itens magicos de quem passar no teste de resistencia voltam ao normal após um dia",
+  "resistence": {
+    "effect": "parcial",
+    "skill": "fortitude"
+  },
+  "extra_costs": null,
+  "description": "Após concentrar seu mana, você emana energia, como uma estrela em plena terra. Todas as criaturas na área sofrem 150 pontos de dano de essência e todos os itens mágicos (exceto artefatos) tornam-se mundanos. Você não é afetado pela magia. Alvos que passem no teste de Fortitude sofrem metade do dano e seus itens mágicos voltam a funcionar após um dia.",
+  "enhancements": [
+    {
+      "cost": 1,
+      "type": "aumenta",
+      "description": "aumenta o dano em 10.",
+      "extra_details": null
+    },
+    {
+      "cost": 5,
+      "type": "outro",
+      "description": "afeta apenas criaturas a sua escolha.",
+      "extra_details": null
+    }
+  ],
+  "effects": [
+    {
+      "type": "dano_de_essencia",
+      "attribute": "pv",
+      "amount": "150",
+      "resistence_requirement": "fortitude",
+      "extra_requirements": null
+    }
+  ]
+}

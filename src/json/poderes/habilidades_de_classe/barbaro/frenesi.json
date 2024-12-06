@@ -1,0 +1,30 @@
+{
+  "id": "frenesi",
+  "name": "Frenesi",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_barbaro",
+  "description": "Se estiver em fúria e usar a ação atacar para fazer um ataque corpo a corpo, você pode gastar 2 PM para fazer um ataque adicional.",
+  "requirements": [
+    {
+      "type": "fearute_actived",
+      "sub_type": "soft",
+      "skill": "furia"
+    },
+    {
+      "type": "attack_type",
+      "sub_type": "soft",
+      "weapon": "corpo_a_corpo"
+    }
+  ],
+  "effects": [
+    {
+      "type": "additional_action"
+    }
+  ],
+  "costs": [
+    {
+    "value": 2,
+    "type": "PM"
+    }
+  ]
+}

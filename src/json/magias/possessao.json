@@ -1,0 +1,55 @@
+{
+  "id": "possessão",
+  "name": "Possessão",
+  "type": "arcana",
+  "circle": "5",
+  "school": "encan",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "longo_90m_60q",
+  "target": {
+    "amount": 1,
+    "up_to": null,
+    "type": "criatura"
+  },
+  "effect": "alvo",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "1_dia",
+  "duration_details": "você pode retornar ao seu corpo como uma ação livre",
+  "resistence": {
+    "effect": "anula",
+    "skill": "vontade"
+  },
+  "extra_costs": null,
+  "description": "Sua consciência entra no corpo do alvo, assumindo controle dele. Seu corpo fica inconsciente e a consciência do alvo fica inerte. Você usa a sua ficha, mas com os atributos físicos e deslocamento dele. Se o alvo passar no teste de resistência, fica imune a esta magia por um dia e sabe que você tentou possuí-lo. Caso o corpo da criatura morra, ela morre e você deve fazer um teste de Vontade. Se passar, sua consciência retorna ao seu corpo, contanto que esteja dentro do alcance. Do contrário, você também morre. Retornar ao seu corpo voluntariamente é uma ação livre.",
+  "enhancements": [
+    {
+      "cost": 5,
+      "type": "outro",
+      "description": "você ganha acesso às habilidades de raça e classe da criatura.",
+      "extra_details": null
+    },
+    {
+      "cost": 5,
+      "type": "outro",
+      "description": "se estiver dentro do alcance do seu corpo original, você pode “saltar\" de uma criatura possuída para outra. O novo alvo tem direito a um teste de Vontade. Se falhar, você assume o controle do corpo dele e o alvo anterior recobra a consciência.",
+      "extra_details": null
+    },
+    {
+      "cost": 5,
+      "type": "muda",
+      "description": "muda a duração para permanente, mas destrói seu corpo original. A criatura possuída faz um teste de Vontade no começo de cada dia. Se passar, recobra a consciência pelo dia (e a sua própria consciência fica inerte). Se o corpo de uma criatura possuída morrer e houver outra criatura em alcance curto, você pode tentar possuí-la como uma reação.",
+      "extra_details": null
+    }
+  ],
+  "effects": [
+    {
+      "type": "outro",
+      "attribute": null,
+      "amount": null,
+      "resistence_requirement": "vontade",
+      "extra_requirements": null
+    }
+  ]
+}

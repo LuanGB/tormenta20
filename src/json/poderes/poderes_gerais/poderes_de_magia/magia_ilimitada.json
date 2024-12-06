@@ -1,0 +1,20 @@
+{
+  "id": "magia_ilimitada",
+  "name": "Magia Ilimitada",
+  "type": "poder_geral",
+  "sub_type": "poder_de_magia",
+  "description": "Você soma seu modificador do atributo-chave no limite de PM que pode gastar numa magia. Por exemplo, um mago de 5º nível com Int 18 (+4) e este poder pode gastar até 9 PM em cada magia.",
+  "requirements": [
+    {
+      "type": "expertise",
+      "sub_type": "soft",
+      "skill": "lancar_magias"
+    }
+  ],
+  "effects": [
+    {
+      "type": "add_attr_PM_limit",
+      "attr": "atributo_chave"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "voz_poderosa",
+  "name": "Voz Poderosa",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_nobre",
+  "description": "Você recebe +2 em Diplomacia e Intimidação. Suas habilidades de nobre com alcance curto passam para alcance médio.",
+  "requirements": null,
+  "effects": [
+    {
+      "type": "skill_improvement",
+      "value": 2,
+      "skill": ["diplomacia", "intimidacao"]
+    }
+  ],
+  "costs": null
+}

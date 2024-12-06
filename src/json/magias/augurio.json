@@ -1,0 +1,62 @@
+{
+  "id": "augurio",
+  "name": "Augúrio",
+  "type": "divina",
+  "circle": "2",
+  "school": "adiv",
+  "execution": "completa",
+  "execution_details": null,
+  "range": "pessoal",
+  "target": {
+    "amount": null,
+    "up_to": null,
+    "type": "você"
+  },
+  "effect": "outro",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "instantânea",
+  "duration_details": null,
+  "resistence": null,
+  "extra_costs": null,
+  "description": "Esta magia diz se uma ação que você tomará em até uma hora trará resultados bons ou ruins. O mestre rola 1d6 em segredo; com um resultado 2 a 6, você recebe uma das seguintes respostas: “felicidade\" (a ação trará bons resultados); “miséria\" (a ação trará maus resultados); “felicidade e miséria\" (para ambos) ou “nada\" (para ações que não trarão resultados bons ou ruins). Veja Tormenta20, p. 173, para um exemplo. Com um resultado 1, a magia falha e oferece o resultado \"nada\". Lançar esta magia múltiplas vezes sobre o mesmo assunto gera sempre o primeiro resultado.",
+  "enhancements": [
+    {
+      "cost": 3,
+      "type": "muda",
+      "description": "muda a execução para 1 minuto. Em vez do normal, você consulta uma divindade, fazendo uma pergunta sobre um evento que acontecerá em até um dia. O mestre rola 1d6; com um resultado de 2 a 6, você recebe uma resposta ou pista, desde uma simples frase até uma profecia ou enigma. Requer 3º círculo.",
+      "extra_details": {
+        "requirements": "3º círculo"
+      }
+    },
+    {
+      "cost": 7,
+      "type": "muda",
+      "description": "muda a execução para 10 minutos e a duração para 1 minuto. Em vez do normal, você consulta uma divindade, podendo fazer uma pergunta por rodada, desde que ela possa ser respondida com “sim\" “não\" ou “não sei\" (os deuses não são oniscientes). O mestre rola 1d6 para cada pergunta. Em caso de falha (resultado 1), a resposta é “não sei\". Requer 4º círculo.",
+      "extra_details": {
+        "requirements": "4º círculo"
+      }
+    },
+    {
+      "cost": 7,
+      "type": "dado",
+      "description": "o mestre rola 1d12; a magia só falha em 1.",
+      "extra_details": null
+    },
+    {
+      "cost": 12,
+      "type": "dado",
+      "description": "mestre rola 1d20; a magia só falha em 1.",
+      "extra_details": null
+    }
+  ],
+  "effects": [
+    {
+      "type": "outro",
+      "attribute": null,
+      "amount": null,
+      "resistence_requirement": null,
+      "extra_requirements": null
+    }
+  ]
+}

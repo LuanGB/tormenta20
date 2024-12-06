@@ -1,0 +1,19 @@
+{
+  "id": "forca_da_natureza",
+  "name": "Força da Natureza",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_druida",
+  "description": "No 20º nível, você diminui o custo de todas as suas magias em –2 PM e aumenta a CD delas em +2. Os bônus dobram (–4 PM e +4 na CD) se você estiver em terrenos naturais.",
+  "requirements": null,
+  "effects": [
+    {
+      "type": "CD_magic_improvement",
+      "value": 2
+    },
+    {
+      "type": "reduce_PM_cost",
+      "value": -2
+    }
+  ],
+  "costs": null
+}

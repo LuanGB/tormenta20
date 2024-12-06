@@ -1,0 +1,30 @@
+{
+  "id": "golpe_demolidor",
+  "name": "Golpe Demolidor",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_guerreiro",
+  "description": "Quando usa a manobra quebrar ou ataca um objeto, você pode gastar 2 PM para ignorar a RD dele.",
+  "requirements": [
+    {
+      "type": "manouver",
+      "sub_type": "soft",
+      "manouver": "quebrar"
+    },
+    {
+      "type": "target_type",
+      "sub_type": "soft",
+      "target": "objeto"
+    }
+  ],
+  "effects": [
+    {
+      "type": "ignore_RD"
+    }
+  ],
+  "costs": [
+    {
+    "value": 2,
+    "type": "PM"
+    }
+  ]
+}

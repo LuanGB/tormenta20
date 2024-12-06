@@ -1,0 +1,34 @@
+{
+  "id": "abencoar_arma",
+  "name": "Abençoar Arma",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_clerigo",
+  "description": "Você se torna proficiente na arma preferida de sua divindade. Se estiver empunhando essa arma, pode gastar uma ação de movimento e 3 PM para infundi-la com poder divino. Até o final da cena, a arma emite luz dourada ou púrpura (como uma tocha) e você pode usar seu modificador de Sabedoria em testes de ataque e rolagens de dano com ela (em vez do modificador padrão). Além disso, o dano da arma aumenta em um passo e ela é considerada mágica para propósitos de resistência a dano",
+  "requirements": [
+    {
+      "type": "weapon_type",
+      "sub_type": "soft",
+      "weapon": "arma_preferida_da_sua_divindade"
+    }
+  ],
+  "effects": [
+    {
+      "type": "switch_skill_attr",
+      "skill": "luta",
+      "attr": "sab"
+    },
+    {
+      "type": "use_damage_attr",
+      "attr": "sab"
+    }
+  ],
+  "costs": [
+    {
+    "value": 3,
+    "type": "PM"
+    },
+    {
+    "type": "acao_de_movimento"
+    }
+  ]
+}

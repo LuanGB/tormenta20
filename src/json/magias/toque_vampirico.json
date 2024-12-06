@@ -1,0 +1,64 @@
+{
+  "id": "toque_vampirico",
+  "name": "Toque Vampirico",
+  "type": "arcana",
+  "circle": "2",
+  "school": "necro",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "toque",
+  "target": {
+    "amount": 1,
+    "up_to": null,
+    "type": "criatura"
+  },
+  "effect": "alvo",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "instantânea",
+  "duration_details": null,
+  "resistence": {
+    "effect": "reduz_à_metade",
+    "skill": "fortitude"
+  },
+  "extra_costs": null,
+  "description": "Sua mão brilha com energia sombria, causando 6d6 pontos de dano de trevas. Você recupera pontos de vida iguais à metade do dano causado (se causou algum dano).",
+  "enhancements": [
+    {
+      "cost": 1,
+      "type": "outro",
+      "description": "como parte da execução da magia, você pode fazer um ataque corpo a corpo contra o alvo. Se acertar, causa o dano do ataque e da magia, e recupera pontos de vida iguais à metade do dano da magia.",
+      "extra_details": null
+    },
+    {
+      "cost": 2,
+      "type": "aumenta",
+      "description": "aumenta o dano em +2d6",
+      "extra_details": null
+    },
+    {
+      "cost": 2,
+      "type": "muda",
+      "description": "muda o alcance para pessoal, o alvo para você e a duração para cena. Em vez do normal, a cada rodada você pode gastar uma ação padrão para tocar 1 criatura e causar 3d6 pontos de dano. Você recupera pontos de vida iguais à metade do dano causado. Requer 3º círculo.",
+      "extra_details": {
+        "range": "pessoal",
+        "target": {
+          "amount": null,
+          "up_to": null,
+          "type": "voce"
+        },
+        "duration": "cena",
+        "reeuirement": "3_circulo"
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "dano",
+      "attribute": "pv",
+      "amount": "6d6",
+      "resistence_requirement": "fortitude",
+      "extra_requirements": null
+    }
+  ]
+}

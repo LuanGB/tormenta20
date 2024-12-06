@@ -1,0 +1,76 @@
+{
+  "id": "convocacao_instantanea",
+  "name": "Convocação Instantânea",
+  "type": "arcana",
+  "circle": "3",
+  "school": "conv",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "ilimitado",
+  "target": {
+    "amount": 1,
+    "up_to": null,
+    "type": "objeto_de_ate_5kg"
+  },
+  "effect": "alvo",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "instantânea",
+  "duration_details": null,
+  "resistence": null,
+  "extra_costs": {
+    "material_component": "runa ou marca pessoal",
+    "material_component_cost": "T$ 5",
+    "pm_debuff": null,
+    "pm_sacrifice": null
+  },
+  "description": "Você invoca um objeto de qualquer lugar para sua mão. O item deve ter sido previamente preparado com uma runa ou marca pessoal sua (ao custo de T$ 5).\nA magia não funciona se o objeto estiver com outra criatura, mas você saberá onde ele está e quem o tem (ou a descrição da criatura, se não a conhecer).",
+  "enhancements": [
+    {
+      "cost": 1,
+      "type": "outro",
+      "description": "além do normal, até 1 hora após ter lançado a magia, você pode gastar uma ação de movimento para enviar o objeto de volta para o local em que ele estava antes.",
+      "extra_details": null    
+    },
+    {
+      "cost": 1,
+      "type": "muda",
+      "description": "muda para alvo um baú Médio, duração permanente e adiciona sacrifício de 1 PM. Em vez do normal, você esconde o baú alvo no Etéreo, com até 250kg de equipamento. A magia faz com que todo objeto caiba no baú, qualquer que seja seu tamanho. Você pode convocar o baú para um espaço livre adjacente, ou de volta para o Etéreo, como uma ação padrão. Componente material: baú construído com matéria-prima da melhor qualidade (T$ 1.000). Você deve ter em mãos uma miniatura do baú, no valor de T$ 100, para invocar o baú verdadeiro.",
+      "extra_details": {
+        "target": {
+          "amount": 1,
+          "up_to": null,
+          "type": "bau_medio"
+        },
+        "duration": "permanente",
+        "extra_costs": {
+          "material_component": "baú construido com matéria-prima da melhor qualidade e miniatura do baú",
+          "material_component_cost": "T$ 1.000 e T$ 100",
+          "pm_debuff": null,
+          "pm_sacrifice": 1
+        }
+      }
+    },
+    {
+      "cost": 2,
+      "type": "aumenta",
+      "description": "aumenta o número de alvos em +1.",
+      "extra_details": null
+    },
+    {
+      "cost": 2,
+      "type": "aumenta",
+      "description": "aumenta o peso limite do alvo em um fator de 10, até 500 kg. Um objeto muito grande ou pesado para aparecer em suas mãos é teletransportado para um espaço adjacente a sua escolha.",
+      "extra_details": null
+    }
+  ],
+  "effects": [
+    {
+      "type": "outro",
+      "attribute": null,
+      "amount": null,
+      "resistence_requirement": null,
+      "extra_requirements": null
+    }
+  ]
+}

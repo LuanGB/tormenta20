@@ -1,0 +1,28 @@
+{
+  "id": "atletico",
+  "name": "Atlético",
+  "type": "poder_geral",
+  "sub_type": "poder_de_destino",
+  "description": "Você recebe +2 em Atletismo e +3m em seu deslocamento.",
+  "requirements": [
+    {
+      "type": "attr_value",
+      "sub_type": "hard",
+      "attr": "for",
+      "value": 15
+    }
+  ],
+  "effects": [
+    {
+      "type": "skill_improvement",
+      "skill": "atletismo",
+      "value": 2,
+      "duration": "permanente"
+    },
+    {
+      "type": "move_improvement",
+      "value": 3,
+      "duration": "permanente"
+    }
+  ]
+}

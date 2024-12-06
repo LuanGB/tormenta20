@@ -1,0 +1,54 @@
+{
+  "id": "visao_mistica",
+  "name": "Visão Mística",
+  "type": "universal",
+  "circle": "1",
+  "school": "adiv",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "pessoal",
+  "target": {
+    "amount": null,
+    "up_to": null,
+    "type": "voce"
+  },
+  "effect": "alvo",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "cena",
+  "duration_details": null,
+  "resistence": null,
+  "extra_costs": null,
+  "description": "Seus olhos brilham com uma luz azul e passam a enxergar auras mágicas. Este efeito é similar ao uso de Misticismo para detectar magia, mas você detecta todas as auras mágicas em alcance médio e recebe todas as informações sobre elas sem gastar ações. Além disso, você pode gastar uma ação de movimento para descobrir se uma criatura que possa perceber em alcance médio é capaz de lançar magias e qual a aura gerada pelas magias de círculo mais alto que ela pode lançar.",
+  "enhancements": [
+    {
+      "cost": 1,
+      "type": "outro",
+      "description": "recebe visão no escuro.",
+      "extra_details": null
+    },
+    {
+      "cost": 2,
+      "type": "muda",
+      "description": "muda a duração para 1 dia.",
+      "extra_details": {
+        "duration": "1_dia"
+      }
+    },
+    {
+      "cost": 2,
+      "type": "outro",
+      "description": "também pode enxergar objetos e criaturas invisíveis. Eles aparecem como formas translúcidas.",
+      "extra_details": null
+    }
+  ],
+  "effects": [
+    {
+      "type": "outro",
+      "attribute": null,
+      "amount": null,
+      "resistence_requirement": null,
+      "extra_requirements": null
+    }
+  ]
+}

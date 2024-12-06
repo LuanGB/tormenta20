@@ -1,0 +1,21 @@
+{
+  "id": "virtude_paladinesca_humildade",
+  "name": "Virtude Paladinesca: Humildade.",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_paladino",
+  "description": "Na primeira rodada de um combate, você pode gastar uma ação completa para rezar e pedir orientação. Você recebe uma quantidade de PM temporários igual ao seu bônus de Carisma.",
+  "requirements": null,
+  "effects": [
+    {
+      "type": "PM_improvement",
+      "value": "bonus_de_carisma",
+      "duraction": "cena",
+      "requirement": "primeira_rodada_de_um_combate"
+    }
+  ],
+  "costs": [
+    {
+    "type": "acao_completa"
+    }
+  ]
+}

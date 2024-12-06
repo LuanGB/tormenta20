@@ -1,0 +1,20 @@
+{
+  "id": "pele_de_ferro",
+  "name": "Pele de Ferro",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_barbaro",
+  "description": "Você recebe +2 na Defesa, mas apenas se não estiver usando armadura pesada.",
+  "requirements": [
+    {
+      "type": "armor_type",
+      "sub_type": "soft",
+      "armor": "leve"
+    }
+  ],
+  "effects": [
+    {
+      "type": "defense_improvement",
+      "value": 2
+    }
+  ]
+}

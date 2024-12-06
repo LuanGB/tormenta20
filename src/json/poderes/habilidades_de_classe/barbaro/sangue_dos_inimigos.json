@@ -1,0 +1,24 @@
+{
+  "id": "sangue_dos_inimigos",
+  "name": "Sangue dos Inimigos",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_barbaro",
+  "description": "Enquanto está em fúria, quando faz um acerto crítico ou reduz um inimigo a 0 PV, você recebe um bônus cumulativo de +1 em testes de ataque e rolagens de dano, limitado pelo seu nível, até o fim da cena.",
+  "requirements": [
+    {
+      "type": "fearute_actived",
+      "sub_type": "soft",
+      "skill": "furia"
+    }
+  ],
+  "effects": [
+    {
+      "type": "attack_improvement",
+      "value": "1_por_critico_ou_inimigo_a_0_PV"
+    },
+    {
+      "type": "damage_improvement",
+      "value": "1_por_critico_ou_inimigo_a_0_PV"
+    }
+  ]
+}

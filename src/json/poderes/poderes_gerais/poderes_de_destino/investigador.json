@@ -1,0 +1,28 @@
+{
+  "id": "investigador",
+  "name": "Investigador",
+  "type": "poder_geral",
+  "sub_type": "poder_de_destino",
+  "description": "Você recebe +2 em Investigação e soma seu bônus de Inteligência em Intuição.",
+  "requirements": [
+    {
+      "type": "attr_value",
+      "sub_type": "hard",
+      "attr": "int",
+      "value": 13
+    }
+  ],
+  "effects": [
+    {
+      "type": "skill_improvement",
+      "skill": "investigacao",
+      "value": 2,
+      "duration": "permanente"
+    },
+    {
+      "type": "add_attr_bonus_to_skill",
+      "attr": "int",
+      "skill": "intuicao"
+    }
+  ]
+}

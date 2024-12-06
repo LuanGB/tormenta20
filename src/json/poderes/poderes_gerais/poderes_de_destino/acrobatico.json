@@ -1,0 +1,30 @@
+{
+  "id": "acrobatico",
+  "name": "Acobático",
+  "type": "poder_geral",
+  "sub_type": "poder_de_destino",
+  "description": "Você pode usar seu modificador de Destreza em vez de Força em testes de Atletismo. Além disso, terreno difícil não reduz seu deslocamento nem o impede de realizar investidas.",
+  "requirements": [
+    {
+      "type": "attr_value",
+      "sub_type": "hard",
+      "attr": "des",
+      "value": 15
+    }
+  ],
+  "effects": [
+    {
+      "type": "switch_skill_attr",
+      "skill": "atletismo",
+      "attr": "des"
+    },
+    {
+      "type": "move_improvement",
+      "description": "terreno difícil não reduz seu deslocamento"
+    },
+    {
+      "type": "maneuver_improvment",
+      "description": "terreno difícil não impede de realizar investidas"
+    }
+  ]
+}

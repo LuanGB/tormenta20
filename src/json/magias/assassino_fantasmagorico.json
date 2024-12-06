@@ -1,0 +1,36 @@
+{
+  "id": "assassino_fantasmagorico",
+  "name": "Assassino Fantasmagórico",
+  "type": "arcana",
+  "circle": "4",
+  "school": "necro",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "longo_90m_60q",
+  "target": {
+    "amount": 1,
+    "up_to": null,
+    "type": "criatura"
+  },
+  "effect": "alvo",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "cena(desc)",
+  "duration_details": "só acaba a magia quando o alvo fica inconsciente, se o espectro for dissipado ou ao término da cena",
+  "resistence": {
+    "effect": "parcial",
+    "skill": "vontade,fortitude"
+  },
+  "extra_costs": null,
+  "description": "Você cria uma imagem daquilo que o alvo mais teme. Apenas a própria vítima pode ver o Assassino Fantasmagórico com nitidez; outras criaturas presentes (incluindo você) enxergam apenas um espectro sombrio. O espectro surge adjacente a você e flutua em direção à vítima com deslocamento de voo 18m por turno. Ele é incorpóreo e imune a magias (exceto magias que dissipam outras). Se o espectro terminar seu turno em alcance curto da vítima, ela deve fazer um teste de Vontade. Se falhar, ficará abalada. Se o espectro terminar seu turno adjacente à vítima, ela deve fazer um teste de Fortitude. Se passar, sofre 6d6 pontos de dano de trevas (este dano não pode reduzir o alvo a menos de 0 PV e não o deixa sangrando). Se falhar, sofre um colapso, ficando imediatamente com –1 PV e sangrando. O espectro persegue o alvo implacavelmente. Ele só desaparece se deixar seu alvo inconsciente, se for dissipado ou ao término da cena.",
+  "enhancements": null,
+  "effects": [
+    {
+      "type": "outro",
+      "attribute": null,
+      "amount": null,
+      "resistence_requirement": "vontade,fortitude",
+      "extra_requirements": null
+    }
+  ]
+}

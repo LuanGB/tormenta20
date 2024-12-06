@@ -1,0 +1,15 @@
+{
+  "id": "olho_do_falcao",
+  "name": "Olho do Falcão",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_cacador",
+  "description": "Você pode usar a habilidade Marca da Presa em criaturas em alcance longo.",
+  "requirements": null,
+  "effects": [
+    {
+      "type": "range_improvement",
+      "range": "longo"
+    }
+  ],
+  "costs": null
+}

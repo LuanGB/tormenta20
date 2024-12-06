@@ -1,0 +1,32 @@
+{
+  "id": "ataque_poderoso",
+  "name": "Ataque Poderoso",
+  "type": "poder_geral",
+  "sub_type": "poder_de_combate",
+  "description": "Declare que está usando este poder antes de fazer um ataque corpo a corpo. Você sofre –2 no teste de ataque, mas recebe +5 na rolagem de dano.",
+  "requirements": [
+    {
+      "type": "attr_value",
+      "sub_type": "hard",
+      "attr": "for",
+      "value": 13
+    },
+    {
+      "type": "attack_type",
+      "sub_type": "soft",
+      "weapons": "corpo_a_corpo"
+    }
+  ],
+  "effects": [
+    {
+      "type": "attack_penalty",
+      "value": -2,
+      "duration": "instantanea"
+    },
+    {
+      "type": "damage_improvement",
+      "value": 5,
+      "duration": "instantanea"
+    }
+  ]
+}

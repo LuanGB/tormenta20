@@ -1,0 +1,26 @@
+{
+  "id": "espirito_dos_equinocios",
+  "name": "Espírito dos Equinócios",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_druida",
+  "description": "Sua alma e corpo estão em equilíbrio. Você pode gastar 1 PM para escolher 10 em um teste de resistência.",
+  "requirements": [
+     {
+      "type": "character_lvl",
+      "sub_type": "hard",
+      "value": 10
+    },
+    {
+      "type": "feature",
+      "sub_type": "hard",
+      "id": ["aspecto_da_primavera", "aspecto_do_outono"]
+    }
+  ],
+  "effects": "ver_texto",
+  "costs": [
+    {
+    "value": 1,
+    "type": "PM"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "melodia_curativa",
+  "name": "Melodia Curativa",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_bardo",
+  "description": "Você pode gastar uma ação padrão e 1 PM para gerar um efeito curativo. Você e todos os seus aliados em alcance curto recuperam 1d6 PV. Para cada 2 PM extras que você gastar, cura +1d6 PV (ou seja, pode gastar 3 PM para recuperar 2d6 PV, 5 PM para recuperar 3d6 PV e assim por diante).",
+  "requirements": [
+    {
+      "type": "range",
+      "sub_type": "soft",
+      "range": "curto"
+    },
+    {
+      "type": "target_type",
+      "sub_type": "soft",
+      "target": "aliados"
+    }
+  ],
+  "effects": [
+    {
+      "type": "PV_improvement",
+      "value": "1d6"
+    }
+  ],
+  "costs": [
+    {
+    "value": 1,
+    "type": "PM"
+    },
+    {
+    "value": 1,
+    "type": "acao_padrao"
+    }
+  ]
+}

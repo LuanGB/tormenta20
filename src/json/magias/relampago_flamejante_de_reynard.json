@@ -1,0 +1,43 @@
+{
+  "id": "relampago_flamejante_de_reynard",
+  "name": "Relâmpago Flamejante de Reynard",
+  "type": "arcana",
+  "circle": "4",
+  "school": "evoc",
+  "execution": "2_rodadas",
+  "execution_details": "é necessário duas rodadas para ativar os efeitos da magia, depois disso com ação de movimento você pode disparar",
+  "range": "medio_30m_20q",
+  "target": {
+    "amount": null,
+    "up_to": null,
+    "type": "bolas_de_fogo_ou_relampagos"
+  },
+  "effect": "alvo",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "sustentada",
+  "duration_details": "se usar o atauqe misto a magia é terminada",
+  "resistence": {
+    "effect": "reduz_à_metade",
+    "skill": "reflaxos"
+  },
+  "extra_costs": null,
+  "description": "Esta é uma magia poderosa, mas lenta, desenvolvida pelo metódico e impassível arquimago Reynard. Na primeira rodada de execução, você invoca as energias elementais do fogo e uma de suas mãos fica em chamas. Na segunda rodada, invoca as energias elementais dos relâmpagos, ficando com a outra mão eletrificada. Então, pela duração da magia, pode usar uma ação de movimento para disparar bolas de fogo (6d6 pontos de dano de fogo numa esfera de 3m de raio) ou relâmpagos (6d6 pontos de dano de eletricidade numa linha). Você também pode, como uma ação padrão, usar as duas mãos num ataque de energia mista (12d12 pontos de dano, metade de fogo e metade de eletricidade, numa esfera de 6m de raio). Você precisa estar com as duas mãos livres para invocar o efeito misto e isso consome toda a energia da magia, terminando-a imediatamente.",
+  "enhancements": [
+    {
+      "cost": 4,
+      "type": "aumenta",
+      "description": "aumenta o dano das rajadas em +1d6 e o dano da rajada mista em +2d12",
+      "extra_details": null
+    }
+  ],
+  "effects": [
+    {
+      "type": "dano",
+      "attribute": "pv",
+      "amount": "6d6_ou_12d12",
+      "resistence_requirement": "reflexos",
+      "extra_requirements": null
+    }
+  ]
+}

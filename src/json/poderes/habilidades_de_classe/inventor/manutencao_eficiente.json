@@ -1,0 +1,26 @@
+{
+  "id": "manutencao_eficiente",
+  "name": "Manutenção Eficiente",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_inventor",
+  "description": "A quantidade de engenhocas que você pode manter aumenta em +3.",
+  "requirements": [
+     {
+      "type": "character_lvl",
+      "sub_type": "hard",
+      "value": 5
+    },
+    {
+      "type": "feature",
+      "sub_type": "hard",
+      "id": "engenhoqueiro"
+    }
+  ],
+  "effects": [
+    {
+      "type": "active_contraption_improvement",
+      "value": 3
+    }
+  ],
+  "costs": null
+}

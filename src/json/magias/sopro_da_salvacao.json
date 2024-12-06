@@ -1,0 +1,52 @@
+{
+  "id": "sopro_da_salvacao",
+  "name": "Sopro da Salvação",
+  "type": "divina",
+  "circle": "3",
+  "school": "evoc",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "curto_6m_9q",
+  "target": {
+    "amount": null,
+    "up_to": null,
+    "type": "cone"
+  },
+  "effect": "curto_6m_9q",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "instantânea",
+  "duration_details": null,
+  "resistence": null,
+  "extra_costs": null,
+  "description": "Você enche seus pulmões de energia positiva e sopra um cone de poeira reluzente. O sopro afeta apenas seus aliados na área, curando 2d8+4 pontos de vida e removendo uma das seguintes condições de todos os alvos: abalado, atordoado, apavorado, alquebrado, cego, confuso, debilitado, enjoado, esmorecido, exausto, fascinado, fatigado, fraco, frustrado, lento, paralisado, pasmo e surdo.",
+  "enhancements": [
+    {
+      "cost": 2,
+      "type": "aumenta",
+      "description": "aumenta a quantidade de cura em 1d8+2",
+      "extra_details": null
+    },
+    {
+      "cost": 4,
+      "type": "outro",
+      "description": "além do normal, se um aliado estiver com PV negativos, seus PV são levados a 0 e então a cura é aplicada.",
+      "extra_details": null
+    },
+    {
+      "cost": 4,
+      "type": "outro",
+      "description": "remove todas as condições listadas, em vez de apenas uma.",
+      "extra_details": null
+    }
+  ],
+  "effects": [
+    {
+      "type": "cura",
+      "attribute": "pv",
+      "amount": "2d8+4",
+      "resistence_requirement": null,
+      "extra_requirements": null
+    }
+  ]
+}

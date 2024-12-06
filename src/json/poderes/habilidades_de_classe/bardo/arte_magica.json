@@ -1,0 +1,20 @@
+{
+  "id": "arte_magica",
+  "name": "Arte Mágica",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_bardo",
+  "description": "Enquanto você estiver sob efeito de sua habilidade Inspiração, a CD para resistir a suas magias de bardo aumenta em +2",
+  "requirements": [
+    {
+      "type": "fearute_actived",
+      "sub_type": "soft",
+      "skill": "inspiracao"
+    }
+  ],
+  "effects": [
+    {
+      "type": "CD_improvement",
+      "value": 2
+    }
+  ]
+}

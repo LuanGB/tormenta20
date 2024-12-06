@@ -1,0 +1,15 @@
+{
+  "id": "presenca_aristocratica",
+  "name": "Presença Aristocrática",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_nobre",
+  "description": "Sempre que uma criatura inteligente (Int 3 ou mais) tentar machucá-lo (causar dano com um ataque, magia ou habilidade) você pode gastar 2 PM. Se fizer isso, a criatura deve fazer um teste de Vontade (CD Car). Se falhar, não conseguirá machucá-lo e perderá a ação. Você só pode usar esta habilidade uma vez por cena contra cada criatura.",
+  "requirements": null,
+  "effects": "ver_texto",
+  "costs": [
+    {
+    "value": 2,
+    "type": "PM"
+    }
+  ]
+}

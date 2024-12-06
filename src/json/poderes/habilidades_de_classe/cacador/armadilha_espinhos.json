@@ -1,0 +1,15 @@
+{
+  "id": "armadilha_espinhos",
+  "name": "Armadilha: Espinhos",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_cacador",
+  "description": "A vítima sofre 6d6 pontos de dano de perfuração. Um teste de Reflexos (CD Sab) reduz o dano à metade.",
+  "requirements": null,
+  "effects": [
+    {
+      "type": "damage_improvement",
+      "value": "6d6"
+    }
+  ],
+  "costs": null
+}

@@ -1,0 +1,49 @@
+{
+  "id": "forca_dos_penhascos",
+  "name": "Força dos Penhascos",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_druida",
+  "description": "Você recebe +2 em Fortitude. Se estiver pisando em rocha sólida, pode gastar 1 PM e uma reação para receber RD 10 contra um ataque.",
+  "requirements": null,
+  "effects": [
+    {
+      "type": "create_item",
+      "item": "pocao",
+      "action": "livre"
+    },
+    {
+      "type": "condition",
+      "condition": "abalada",
+      "duration": "cena"
+    },
+    {
+      "type": "manouver_improvement",
+      "manouver": ["derrubar", "empurrar"],
+      "action": "livre"
+    },
+    {
+      "type": "attack_penalty",
+      "value": -2,
+      "duration": ""
+    },
+    {
+      "type": "skill_improvement",
+      "value": 2
+    },
+    {
+      "type": "RD_bonus",
+      "value": 1,
+      "duration": "enquanto_pisa_em_rocha_solida",
+      "costs": [
+        {
+          "value": 1,
+          "type": "PM"
+        },
+        {
+          "type": "acao_de_reacao"
+        }
+      ]
+    }
+  ],
+  "costs": null
+}

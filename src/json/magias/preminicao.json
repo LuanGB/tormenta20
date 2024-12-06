@@ -1,0 +1,57 @@
+{
+  "id": "premonicao",
+  "name": "Premonição",
+  "type": "divina",
+  "circle": "4",
+  "school": "adiv",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "pessoal",
+  "target": {
+    "amount": null,
+    "up_to": null,
+    "type": "voce"
+  },
+  "effect": "alvo",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "cena",
+  "duration_details": null,
+  "resistence": null,
+  "extra_costs": null,
+  "description": "Vislumbres do futuro permitem que você reavalie suas ações. Uma vez por rodada, você pode usar uma reação para rolar novamente um teste recém realizado, mas deve aceitar o resultado da nova rolagem.",
+  "enhancements": [
+    {
+      "cost": 3,
+      "type": "muda",
+      "description": "muda a execução para reação, o alcance para curto, o alvo para 1 criatura e a duração para instantânea. Esta magia só pode ser usada em uma criatura que tenha acabado de fazer um teste. Obriga a criatura a fazer uma nova rolagem de dados e aceitar o novo resultado, seja ele um sucesso ou falha. Criaturas involuntárias têm direito a um teste de Vontade para negar o efeito.",
+      "extra_details": {
+        "execution": "reação",
+        "range": "curto_6m_9q",
+        "target": {
+          "amount": 1,
+          "up_to": null,
+          "type": "criatura"
+        },
+        "duration": "instantânea"
+      }
+    },
+    {
+      "cost": 5,
+      "type": "muda",
+      "description": "muda a duração para 1 dia.",
+      "extra_details": {
+        "duration": "1_dia"
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "outro",
+      "attribute": null,
+      "amount": null,
+      "resistence_requirement": null,
+      "extra_requirements": null
+    }
+  ]
+}

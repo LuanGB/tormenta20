@@ -1,0 +1,49 @@
+{
+  "id": "buraco_negro",
+  "name": "Buraco Negro",
+  "type": "universal",
+  "circle": "5",
+  "school": "conv",
+  "execution": "completa",
+  "execution_details": null,
+  "range": "longo_90m_60q",
+  "target": {
+    "amount": null,
+    "up_to": null,
+    "type": "buraco_negro"
+  },
+  "effect": "curto_6m_9q",
+  "effect_details": null,
+  "counterspell": "null",
+  "duration": "3_rodadas",
+  "duration_details": null,
+  "resistence": {
+    "effect": "parcial",
+    "skill": "fortitude|..."
+  },
+  "extra_costs": null,
+  "description": "Esta magia cria um vácuo capaz de sugar tudo nas proximidades. Escolha um espaço desocupado para o buraco negro. No início de cada um de seus três turnos seguintes, todas as criaturas em alcance longo do buraco negro, incluindo você, devem fazer um teste de Fortitude. Em caso de falha, ficam caídas e são puxadas 30m na direção do buraco. Objetos soltos também são puxados. Criaturas podem gastar uma ação de movimento para se segurar em algum objeto fixo, recebendo +2 em seus testes de resistência. Criaturas e objetos que toquem o buraco negro são sugadas, desaparecendo para sempre.\nNão se conhece o destino das coisas sugadas pelo buraco negro, mas alguns estudiosos sugerem que podem ser enviadas para outros mundos. Muitos clérigos de Tenebra acreditam que esta magia abre um portal para Sombria, o lar de sua deusa, e sonham um dia poder realizar essa jornada.",
+  "enhancements": [
+    {
+      "cost": 5,
+      "type": "muda",
+      "description": "muda o efeito para que você não seja afetado.",
+      "extra_details": null
+    },
+    {
+      "cost": 10,
+      "type": "muda",
+      "description": "muda o efeito para que criaturas escolhidas dentro do alcance não sejam afetadas",
+      "extra_details": null
+    }
+  ],
+  "effects": [
+    {
+      "type": "outro",
+      "attribute": null,
+      "amount": null,
+      "resistence_requirement":"fortitude",
+      "extra_requirements": null
+    }
+  ]
+}

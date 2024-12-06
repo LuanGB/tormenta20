@@ -1,0 +1,37 @@
+{
+  "id": "preparar_pocao",
+  "name": "Preparar Poção",
+  "type": "poder_geral",
+  "sub_type": "poder_de_magia",
+  "description": "Você pode usar a perícia Ofício (alquimia) para fabricar poções com magias que conheça de 1º e 2º círculos. Veja a página 121 para a regra de fabricar itens e a página 327 para a regra de poções.",
+  "requirements": [
+    {
+      "type": "magic_circle",
+      "sub_type": "soft",
+      "circle": ["1","2"]
+    },
+     {
+      "type": "class_feature",
+      "sub_type": "hard",
+      "id": "magias"
+    },
+    {
+      "type": "skill_training",
+      "sub_type": "soft",
+      "skill": "oficio_alquimia"
+    },
+    {
+      "type": "expertise",
+      "sub_type": "soft",
+      "skill": "lancar_magias"
+    }
+  ],
+  "effects": [
+    {
+      "type": "create_item",
+      "item": "pocao",
+      "create": ["pag_121", "pag_327"],
+      "requirement": "cohecer_a_magia_desejada"
+    }
+  ]
+}

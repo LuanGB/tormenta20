@@ -1,0 +1,41 @@
+{
+  "id": "explosao_caleidoscopica",
+  "name": "Explosão Caleidoscópica",
+  "type": "arcana",
+  "circle": "4",
+  "school": "ilus",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "curto_6m_9q",
+  "target": {
+    "amount": null,
+    "up_to": null,
+    "type": "esfera"
+  },
+  "effect": "area",
+  "effect_details": {
+    "shape": "esfera",
+    "dimention": "raio",
+    "size": "6m_yq",
+    "other_details": null
+  },
+  "counterspell": null,
+  "duration": "instantânea",
+  "duration_details": null,
+  "resistence": {
+    "effect": "parcial",
+    "skill": "fortitude"
+  },
+  "extra_costs": null,
+  "description": "Esta magia cria uma forte explosão de luzes estroboscópicas e sons cacofônicos que desorientam as criaturas atingidas. O efeito que cada criatura sofre depende do ND dela.\nND 4 ou menor: se falhar no teste de resistência, fica inconsciente. Se passar, fica atordoada por 1d4 rodadas e enjoada pelo resto da cena.\nND entre 5 e 9: se falhar no teste de resistência, fica atordoada por 1d4 rodadas e enjoada pelo resto da cena. Se passar, fica atordoada por 1 rodada e enjoada por 1d4 rodadas.\nND 10 ou maior: se falhar no teste de resistência, fica atordoada por 1 rodada e enjoada por 1d4 rodadas. Se passar, fica desprevenida e enjoada por 1 rodada.",
+  "enhancements": null,
+  "effects": [
+    {
+      "type": "dano",
+      "attribute": "pv",
+      "amount": "varia",
+      "resistence_requirement": "fortitude",
+      "extra_requirements": null
+    }
+  ]
+}

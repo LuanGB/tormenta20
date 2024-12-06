@@ -1,0 +1,10 @@
+{
+  "id": "armadilha_rede",
+  "name": "Armadilha: Rede",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_cacador",
+  "description": "Todas as criaturas na área devem fazer um teste de Reflexos (CD Sab) para não ficarem enredadas. Uma vítima pode se libertar com uma ação padrão e um teste de Acrobacia ou Atletismo (CD 25). Além disso, a área ocupada pela rede é considerada terreno difícil.",
+  "requirements": null,
+  "effects": "ver_texto",
+  "costs": null
+}

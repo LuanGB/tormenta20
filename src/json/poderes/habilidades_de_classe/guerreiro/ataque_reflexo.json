@@ -1,0 +1,37 @@
+{
+  "id": "ataque_reflexo",
+  "name": "Ataque Reflexo",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_guerreiro",
+  "description": "Se um alvo em alcance de seus ataques corpo a corpo ficar desprevenido ou se mover voluntariamente para fora do seu alcance, você pode gastar 1 PM para fazer um ataque corpo a corpo contra esse alvo como uma reação.",
+  "requirements": [
+    {
+      "type": "attr_value",
+      "sub_type": "hard",
+      "attr": "des",
+      "value": 13
+    },
+    {
+      "type": "target",
+      "sub_type": "soft",
+      "target": ["desprevinido", "se_mover_para_fora_do_alcance"]
+    },
+    {
+      "type": "range",
+      "sub_type": "soft",
+      "range": "corpo_a_corpo"
+    }
+  ],
+  "effects": [
+    {
+      "type": "extra_attack",
+      "attack": "reacao"
+    }
+  ],
+  "costs": [
+    {
+    "value": 1,
+    "type": "PM"
+    }
+  ]
+}

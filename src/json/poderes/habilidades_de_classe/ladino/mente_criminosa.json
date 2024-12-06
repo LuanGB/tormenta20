@@ -1,0 +1,23 @@
+{
+  "id": "mente_criminosa",
+  "name": "Mente Criminosa",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_ladino",
+  "description": "Você soma seu bônus de Inteligência em Ladinagem e Furtividade.",
+  "requirements": [
+    {
+      "type": "attr_value",
+      "sub_type": "hard",
+      "attr": "int",
+      "value": 13
+    }
+  ],
+  "effects": [
+    {
+      "type": "add_attr_to_skill",
+      "attr": "int",
+      "skill": ["ladinagem", "furtividade"]
+    }
+  ],
+  "costs": null
+}

@@ -1,0 +1,20 @@
+{
+  "id": "etiqueta",
+  "name": "Etiqueta",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_cavaleiro",
+  "description": "Você pode gastar 1 PM para rolar novamente um teste recém realizado de Diplomacia ou Nobreza.",
+  "requirements": null,
+  "effects": [
+    {
+      "type": "rerol_skill_test",
+      "skill": ["nobraza", "diplomacia"]
+    }
+  ],
+  "costs": [
+    {
+    "value": 1,
+    "type": "PM"
+    }
+  ]
+}

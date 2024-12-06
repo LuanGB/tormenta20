@@ -1,0 +1,36 @@
+{
+  "id": "desarmar_aprimorado",
+  "name": "Desarmer Aprimorado",
+  "type": "poder_geral",
+  "sub_type": "poder_de_combate",
+  "description": "Você recebe +2 em testes de ataque para desarmar. Quando desarma uma criatura, pode gastar 1 PM para arremessar a arma dela para longe. Para definir onde a arma cai, role 1d8 para a direção (sendo “1\" diretamente à sua frente “2\" à frente e à direita e assim por diante, em sentido horário) e 1d6 para a distância (medida em quadrados de 1,5m a partir da criatura desarmada).",
+  "requirements": [
+    {
+      "type": "feature",
+      "sub_type": "hard",
+      "id": "combate_defensivo"
+    },
+    {
+      "type": "action_type",
+      "sub_type": "soft",
+      "action": "desarmar"
+    }
+  ],
+  "effects": [
+    {
+      "type": "attack_test_improvment",
+      "value": 2,
+      "duration": "instantanea"
+    },
+    {
+      "type": "extra_action",
+      "action": "arremesar",
+      "requirements": "conseguir_desarmar",
+      "costs": {
+        "value": 1,
+        "type": "PM"
+      },
+      "details": "ver_descrição"
+    }
+  ]
+}

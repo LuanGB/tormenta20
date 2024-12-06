@@ -1,0 +1,58 @@
+{
+  "id": "protecao_contra_magia",
+  "name": "Proteção Contra Magias",
+  "type": "divina",
+  "circle": "3",
+  "school": "abjur",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "toque",
+  "target": {
+    "amount": 1,
+    "up_to": null,
+    "type": "criatura"
+  },
+  "effect": "alvo",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "cena",
+  "duration_details": null,
+  "resistence": null,
+  "extra_costs": null,
+  "description": "Você protege o alvo contra efeitos mágicos nocivos. O alvo recebe +5 em testes de resistência contra magias.",
+  "enhancements": [
+    {
+      "cost": 4,
+      "type": "muda",
+      "description": "muda o bônus para +10. Requer 4º círculo.",
+      "extra_details": {
+        "requirement": "4_circulo"
+      }
+    },
+    {
+      "cost": 4,
+      "type": "muda",
+      "description": "em vez do normal, o alvo fica imune a uma escola de magia a sua escolha. Requer 4º círculo.",
+      "extra_details": {
+        "requirement": "4_circulo"
+      }
+    },
+    {
+      "cost": 9,
+      "type": "muda",
+      "description": "em vez do normal, o alvo fica imune a duas escolas de magia a sua escolha. Requer 5º círculo.",
+      "extra_details": {
+        "requirement": "5_circulo"
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "bônus",
+      "attribute": "testes_de_resistência_contra_magias",
+      "amount": "+5",
+      "resistence_requirement": null,
+      "extra_requirements": null
+    }
+  ]
+}

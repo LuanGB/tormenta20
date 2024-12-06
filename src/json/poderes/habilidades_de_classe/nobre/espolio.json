@@ -1,0 +1,16 @@
+{
+  "id": "espolio",
+  "name": "Espolio",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_nobre",
+  "description": "Você recebe um item a sua escolha com preço de até T$ 2.000.",
+  "requirements": [
+    {
+     "type": "character_lvl",
+     "sub_type": "hard",
+     "value": 1
+    }
+  ],
+  "effects": "ver_texto",
+  "costs": null
+}

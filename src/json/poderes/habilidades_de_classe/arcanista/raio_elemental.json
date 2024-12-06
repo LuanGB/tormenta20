@@ -1,0 +1,26 @@
+{
+  "id": "raio_elemental",
+  "name": "Raio Elemental",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_arcanista",
+  "description": "Quando usa Raio Arcano, você pode pagar 1 PM para que ele cause dano de um tipo de energia a sua escolha, entre ácido, eletricidade, fogo, frio ou trevas. Se o alvo falhar no teste de Reflexos, sofre uma condição, de acordo com o tipo de energia. Veja a descrição das condições no Apêndice. Ácido: vulnerável por uma rodada. Eletricidade: ofuscado por uma rodada. Fogo: fica em chamas. Frio: lento por uma rodada. Trevas: não pode ser curado por uma rodada.",
+  "requirements": [
+    {
+      "type": "feature",
+      "sub_type": "hard",
+      "id": "raio_arcano"
+    }
+  ],
+  "effects": [
+    {
+      "type": "damage_type_improvement",
+      "damage_type": ["acido", "eletricidade", "fogo", "frio", "trevas"]
+    }
+  ],
+  "costs": [
+    {
+      "value": 1,
+      "type": "PM"
+    }
+  ]
+}

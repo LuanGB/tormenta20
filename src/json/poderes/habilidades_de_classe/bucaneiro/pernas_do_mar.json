@@ -1,0 +1,16 @@
+{
+  "id": "pernas_do_mar",
+  "name": "Pernas do Mar",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_bucaneiro",
+  "description": "Você está acostumado à superfície oscilante do convés. Você recebe +2 em Acrobacia e Atletismo e não fica desprevenido quando está se equilibrando ou escalando.",
+  "requirements": null,
+  "effects": [
+    {
+      "type": "skill_improvement",
+      "value": 2,
+      "duration": ["acrobacia", "atletismo"]
+    }
+  ],
+  "costs": null
+}

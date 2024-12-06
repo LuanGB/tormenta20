@@ -1,0 +1,26 @@
+{
+  "id": "casca_grossa",
+  "name": "Casca Grossa",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_lutador",
+  "description": "No 3º nível, você soma seu bônus de Constituição na Defesa, limitado pelo seu nível e apenas se não estiver usando armadura pesada. Além disso, no 7º nível, e a cada quatro níveis, você recebe +1 na Defesa.",
+  "requirements": [
+     {
+      "type": "character_lvl",
+      "sub_type": "hard",
+      "value": [3,7,11,15,19]
+    },
+    {
+      "type": "armor_type",
+      "sub_type": "soft",
+      "armor": "nao_pode_ser_pesada"
+    }
+  ],
+  "effects": [
+    {
+      "type": "add_defense_attr",
+      "attr": "cos"
+    }
+  ],
+  "costs": null
+}

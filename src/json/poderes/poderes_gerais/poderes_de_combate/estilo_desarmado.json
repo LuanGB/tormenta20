@@ -1,0 +1,30 @@
+{
+  "id": "estilo_desarmado",
+  "name": "Estilo Desarmado",
+  "type": "poder_geral",
+  "sub_type": "poder_de_combate",
+  "description": "Seus ataques desarmados causam 1d6 pontos de dano e podem causar dano letal ou não letal (sem penalidades).",
+  "requirements": [
+    {
+      "type": "weapon_type",
+      "sub_type": "soft",
+      "weapons": "desarmado"
+    },
+    {
+      "type": "expertise",
+      "sub_type": "hard",
+      "skill": "luta"
+    }
+  ],
+  "effects": [
+    {
+      "type": "damage_improvement",
+      "value": "1d6",
+      "duration": "permanente"
+    },
+    {
+      "type": "damege_type",
+      "damege": ["letal", "nao_letal"]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "mao_na_boca",
+  "name": "Mão na Boca",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_ladino",
+  "description": "Você recebe +2 em testes de agarrar. Quando faz um ataque furtivo contra uma criatura desprevenida, você pode fazer um teste de agarrar como uma ação livre. Se agarrar a criatura, ela não poderá falar enquanto estiver agarrada.",
+  "requirements": [
+    {
+      "type": "skill_training",
+      "sub_type": "hard",
+      "skill": "luta"
+    }
+  ],
+  "effects": [
+    {
+      "type": "manouver_improvement",
+      "value": 2,
+      "manouver": "agarrar"
+    }
+  ],
+  "costs": null
+}

@@ -1,0 +1,58 @@
+{
+  "id": "aparencia_perfeita",
+  "name": "Aparência Perfeita",
+  "type": "arcana",
+  "circle": "2",
+  "school": "ilus",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "pessoal",
+  "target": {
+    "amount": null,
+    "up_to": null,
+    "type": "voce"
+  },
+  "effect": "voce",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "cena",
+  "duration_details": null,
+  "resistence": null,
+  "extra_costs": null,
+  "description": "Esta magia lhe concede um rosto idealizado, porte físico garboso, voz melodiosa e olhar sedutor, deixando-o mais atraente e confiável. Enquanto a magia estiver ativa, seu Carisma torna-se 20 (ou recebe um bônus de +4, caso seja 20 ou maior) e você recebe +5 nos testes de Diplomacia e Enganação. Quando a magiaacaba, quaisquer observadores percebem a mudança e tendem a suspeitar de você. Da mesma maneira, pessoas que o viram sob o efeito da magia sentirão que “algo está errado\" ao vê-lo em condições normais. Quando a cena acabar, você pode gastar os PM da magia novamente como uma ação livre para mantê-la ativa. Este efeito não fornece PV ou PM adicionais.",
+  "enhancements": [
+    {
+      "cost": 1,
+      "type": "muda",
+      "description": "muda o alcance para toque e o alvo para 1 humanoide",
+      "extra_details": {
+       "range": "toque",
+        "target": {
+          "amount": 1,
+          "up_to": null,
+          "type": "humanoide"
+        }
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "set_carisma",
+      "condition": "car<4",
+      "attribute": "car",
+      "value": "20",
+      "skill": "diplomacia,enganação",
+      "resistence_requirement": null,
+      "extra_requirements": null
+    },
+    {
+      "type": "acc_carisma",
+      "condition": "car>4",
+      "attribute": "car",
+      "amount": "4",
+      "skill": "diplomacia,enganação",
+      "resistence_requirement": null,
+      "extra_requirements": null
+    }
+  ]
+}

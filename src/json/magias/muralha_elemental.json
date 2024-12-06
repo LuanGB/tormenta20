@@ -1,0 +1,56 @@
+{
+  "id": "muralha_elemental",
+  "name": "Muralha Elemental",
+  "type": "arcana",
+  "circle": "3",
+  "school": "evoc",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "medio_30m_20q",
+  "target": {
+    "amount": null,
+    "up_to": null,
+    "type": "muralha_de_energia"
+  },
+  "effect": "medio_30m_20q",
+  "effect_details": "veja_texto",
+  "counterspell": null,
+  "duration": "cena",
+  "duration_details": null,
+  "resistence": "veja_texto",
+  "extra_costs": null,
+  "description": "Cria uma barreira de até 30m de comprimento e 3m de altura (ou vice-versa), ou uma cúpula de 3m de raio.\nFogo. Um lado da muralha emite ondas de calor, que causam 2d6 pontos de dano de fogo em criaturas a até 6m, quando surge e no início de seus turnos. Atravessar a muralha causa 8d6 pontos de dano de fogo. Caso seja criada em uma área onde existem criaturas, elas sofrem 8d6 pontos de dano, mas podem fazer um teste de Reflexos para reduzir o dano à metade e escapar para um lado.\nGelo. Na forma de cúpula, pode prender criaturas, mas elas têm direito a um teste de Reflexos para escapar antes que a cúpula se forme. Cada trecho de 3m da muralha tem Defesa 8, 40 PV e RD 5 e é vulnerável a fogo. Uma criatura que atravesse um trecho rompido da muralha sofre 4d6 pontos de dano de frio.",
+  "enhancements": [
+    {
+      "cost": 2,
+      "type": "aumenta",
+      "description": "aumenta o comprimento em +15m e altura em +3m, até 60m de comprimento e 9m de altura.",
+      "extra_details": null
+    },
+    {
+      "cost": 4,
+      "type": "muda",
+      "description": "muda a duração para sustentada e adiciona uma nova escolha, Essência. A muralha é invisível e indestrutível. Ela não pode ser atravessada nem mesmo por criaturas incorpóreas, mas magias como Salto Dimensional, podem atravessá-la. Magias lançadas sobre uma criatura ou área, como Sono, podem ser lançadas contra alvos no outro lado. Requer 4º círculo.",
+      "extra_details": {
+        "duration": "sustentada",
+        "requirement": "4_circulo"
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "dano",
+      "attribute": "pv",
+      "amount": "veja_texto",
+      "resistence_requirement": "reflexos",
+      "extra_requirements": null
+    },
+    {
+      "type": "dano",
+      "attribute": "pv",
+      "amount": "veja_texto",
+      "resistence_requirement": "reflexos",
+      "extra_requirements": null
+    }
+  ]
+}

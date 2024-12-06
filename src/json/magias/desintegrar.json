@@ -1,0 +1,43 @@
+{
+  "id": "desintegrar",
+  "name": "Desintegrar",
+  "type": "arcana",
+  "circle": "4",
+  "school": "trans",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "medio_30m_20q",
+  "target": {
+    "amount": 1,
+    "up_to": null,
+    "type": "criatura_ou_objeto"
+  },
+  "effect": "alvo",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "instantânear",
+  "duration_details": null,
+  "resistence": {
+    "effect": "parcial",
+    "skill": "fortitude"
+  },
+  "extra_costs": null,
+  "description": "Você dispara um raio fino e esverdeado que causa 10d12 pontos de dano de essência. Se o alvo passar no teste de resistência, em vez disso sofre 2d12 pontos de dano.\nIndependentemente do resultado do teste de Fortitude, se os PV do alvo forem reduzidos a 0 ou menos, ele será completamente desintegrado, restando apenas pó.",
+  "enhancements": [
+    {
+      "cost": 4,
+      "type": "aumenta",
+      "description": "aumenta o dano total em +2d12 e o dano mínimo em +1d12.",
+      "extra_details": null
+    }
+  ],
+  "effects": [
+    {
+      "type": "dano",
+      "attribute": "pv",
+      "amount": "10d12_ou_2d12",
+      "resistence_requirement": "fortitude",
+      "extra_requirements": null
+    }
+  ]
+}

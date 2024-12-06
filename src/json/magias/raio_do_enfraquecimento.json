@@ -1,0 +1,65 @@
+{
+  "id": "raio_do_enfraquecimento",
+  "name": "Raio do Enfraquecimento",
+  "type": "arcana",
+  "circle": "1",
+  "school": "necro",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "curto_6m_9q",
+  "target": {
+    "amount": 1,
+    "up_to": null,
+    "type": "criatura"
+  },
+  "effect": "alvo",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "cena",
+  "duration_details": null,
+  "resistence": {
+    "effect": "parcial",
+    "skill": "fortitude"
+  },
+  "extra_costs": null,
+  "description": "Você dispara um raio púrpura que drena as forças do alvo. Se falhar na resistência, o alvo fica fatigado. Se passar, fica vulnerável.",
+  "enhancements": [
+    {
+      "cost": 0,
+      "type": "muda",
+      "description": "muda o alcance para toque e a resistência para Fortitude anula. Em vez do normal, ao tocar o alvo, sua mão emana um brilho púrpura. O alvo fica fatigado. Note que, como efeitos de magia não acumulam, lançar este truque duas vezes contra o mesmo alvo não irá deixá-lo exausto.",
+      "extra_details": {
+        "range": "toque",
+        "resistence": {
+          "effect": "anula",
+          "skill": "fortitude"
+        }
+      }
+    },
+    {
+      "cost": 2,
+      "type": "muda",
+      "description": "em vez do normal, se falhar na resistência o alvo fica exausto. Se passar, fica fatigado. Requer 2º círculo.",
+      "extra_details": {
+        "requirement": "2_circulo"
+      }
+    },
+    {
+      "cost": 5,
+      "type": "muda",
+      "description": "em vez do normal, se falhar na resistência o alvo fica inconsciente. Se passar, fica exausto. Requer 3º círculo.",
+      "extra_details": {
+        "requirement": "3_circulo"
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "aumenta|muda|outro",
+      "attribute": "pv|pm...",
+      "amount": "+10",
+      "resistence_requirement": null,
+      "extra_requirements": null
+    }
+  ]
+}

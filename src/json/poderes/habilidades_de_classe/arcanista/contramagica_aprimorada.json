@@ -1,0 +1,15 @@
+{
+  "id": "contramagica_aprimorada",
+  "name": "Contramágiaca Aprimorada",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_arcanista",
+  "description": "Uma vez por rodada, você pode fazer uma contramágica como uma reação (veja a página 164).",
+  "requirements": [
+    {
+      "type": "magia",
+      "sub_type": "hard",
+      "id": "dissipar_magia"
+    }
+  ],
+  "effects": null
+}

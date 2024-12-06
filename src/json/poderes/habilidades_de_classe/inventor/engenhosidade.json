@@ -1,0 +1,27 @@
+{
+  "id": "egenhosidade",
+  "name": "Engenhosidade",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_inventor",
+  "description": "Quando faz um teste de perícia, você pode gastar 2 PM para receber um bônus igual ao seu modificador de Inteligência no teste. Você não pode usar esta habilidade em testes de ataque.",
+  "requirements": [
+     {
+      "type": "character_lvl",
+      "sub_type": "hard",
+      "value": 1
+    }
+  ],
+  "effects": [
+    {
+      "type": "use_bonus_attr",
+      "attr": "int",
+      "requirement": "testes_de_pericia"
+    }
+  ],
+  "costs": [
+    {
+    "value": 2,
+    "type": "PM"
+    }
+  ]
+}

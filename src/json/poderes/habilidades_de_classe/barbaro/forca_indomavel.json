@@ -1,0 +1,21 @@
+{
+  "id": "forca_indomavel",
+  "name": "Força Indomável",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_barbaro",
+  "description": "Você pode gastar 1 PM para somar seu nível em um teste de Força ou Atletismo. Você pode usar esta habilidade depois de rolar o dado, mas deve usá-la antes de o mestre dizer se você passou ou não.",
+  "requirements": null,
+  "effects": [
+    {
+      "type": "skill_improvement",
+      "skill": ["força", "atletismo"],
+      "value": "lvl_de_personagem"
+    }
+  ],
+  "costs": [
+    {
+    "value": 1,
+    "type": "PM"
+    }
+  ]
+}

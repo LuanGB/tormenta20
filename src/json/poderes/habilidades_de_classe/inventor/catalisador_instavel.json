@@ -1,0 +1,32 @@
+{
+  "id": "catalisador_instavel",
+  "name": "Catalisador Instável",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_inventor",
+  "description": "Você pode gastar uma ação completa e 3 PM para fabricar um item alquímico ou poção cuja fórmula conheça instantaneamente. O custo do item é reduzido à metade e você não precisa fazer o teste de Ofício (alquimia). Contudo, ele só dura até o fim da cena.",
+  "requirements": [
+    {
+      "type": "feature",
+      "sub_type": "hard",
+      "id": "alquimista_iniciado"
+    }
+  ],
+  "effects": [
+    {
+      "type": "create_item",
+      "item": "pocao",
+      "action": "instantaneamente",
+      "duration": "cena",
+      "cost": "reduzido_a_metade"
+    }
+  ],
+  "costs": [
+    {
+    "value": 3,
+    "type": "PM"
+    },
+    {
+    "type": "acao_completa"
+    }
+  ]
+}

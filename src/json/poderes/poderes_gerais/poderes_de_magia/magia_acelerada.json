@@ -1,0 +1,37 @@
+{
+  "id": "magia_acelerada",
+  "name": "Magia Acelerada",
+  "type": "poder_geral",
+  "sub_type": "poder_de_magia",
+  "description": "Muda a execução da magia para ação livre. Você só pode aplicar este aprimoramento em magias com execução de movimento, padrão ou completa e só pode lançar uma magia como ação livre por rodada.",
+  "requirements": [
+    {
+      "type": "magic_circle",
+      "sub_type": "hard",
+      "value": 2
+    },
+    {
+      "type": "execution_type",
+      "sub_type": "soft",
+      "execution": ["movimento", "padrao", "completa"]
+    },
+    {
+      "type": "expertise",
+      "sub_type": "soft",
+      "skill": "lancar_magias"
+    }
+  ],
+  "effects": [
+    {
+      "type": "change_execution",
+      "execution": "livre",
+      "duration": "1_magia_por_rodada"
+    }
+  ],
+  "costs": [
+    {
+    "value": 4,
+    "type": "PM"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "id": "disfarce_ilusorio",
+  "name": "Disfarce Ilusório",
+  "type": "arcana",
+  "circle": "1",
+  "school": "ilus",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "pessoal",
+  "target": {
+    "amount": null,
+    "up_to": null,
+    "type": "voce"
+  },
+  "effect": "alvo",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "cena",
+  "duration_details": null,
+  "resistence": {
+    "effect": "desacredita",
+    "skill": "vontade"
+  },
+  "extra_costs": null,
+  "description": "Você muda a aparência do alvo (altura, peso, tom de pele, cor de cabelo, timbre de voz etc.), incluindo equipamento. O alvo recebe +10 em Enganação para disfarce, mas não recebe novas habilidades.",
+  "enhancements": [
+    {
+      "cost": 0,
+      "type": "muda",
+      "description": "muda o alcance para toque, o alvo para 1 criatura e a duração para 1 semana. Em vez do normal, você faz uma pequena alteração na aparência do alvo, como deixar o nariz vermelho ou fazer brotar um gerânio no alto da cabeça. A mudança é inofensiva, mas persistente — se a flor for arrancada, por exemplo, outra nascerá no local.",
+      "extra_details": {
+        "range": "toque",
+        "target": {
+          "amount": 1,
+          "up_to": null,
+          "type": "criatura"
+        },
+        "duration": "1_semana"
+      }
+    },
+    {
+      "cost": 1,
+      "type": "muda",
+      "description": "muda o alcance para curto e o alvo para 1 objeto. Você pode, por exemplo, transformar pedaços de ferro em moedas de ouro. Você recebe +10 em testes de Enganação para falsificação.",
+      "extra_details": {
+        "range": "curto",
+        "target": {
+          "amount": 1,
+          "up_to": null,
+          "type": "objeto"
+        }
+      }
+    },
+    {
+      "cost": 2,
+      "type": "muda",
+      "description": "muda o alcance para curto e o alvo para 1 criatura. Uma criatura involuntária pode anular o efeito com um teste de Vontade.",
+      "extra_details": {
+        "range": "curto",
+        "target": {
+          "amount": 1,
+          "up_to": null,
+          "type": "criatura"
+        }
+      }
+    },
+    {
+      "cost": 2,
+      "type": "muda",
+      "description": "a ilusão inclui odores e sensações. Isso muda o bônus em Enganação para disfarce para +20.",
+      "extra_details": null
+    },
+    {
+      "cost": 3,
+      "type": "muda",
+      "description": "muda o alcance para curto e o alvo para criaturas escolhidas. Cada criatura pode ter uma aparência diferente. Criaturas involuntárias podem anular o efeito com um teste de Vontade. Requer 2º círculo.",
+      "extra_details": {
+        "requirement": "2_circulo"
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "bônus",
+      "attribute": null,
+      "skill": "enganação",
+      "amount": "+10",
+      "resistence_requirement": "vontade",
+      "extra_requirements": null
+    }
+  ]
+}

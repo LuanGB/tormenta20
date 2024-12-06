@@ -1,0 +1,68 @@
+{
+  "id": "anular_a_luz",
+  "name": "Anular a Luz",
+  "type": "divina",
+  "circle": "3",
+  "school": "necro",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "pessoal",
+  "target": {
+    "amount": null,
+    "up_to": null,
+    "type": "area"
+  },
+  "effect": "area",
+  "effect_details": {
+    "shape": "esfera",
+    "dimention": "raio",
+    "size": "6m_qy",
+    "other_details": null
+  },
+  "counterspell": null,
+  "duration": "rodadas",
+  "duration_details": "1d4",
+  "resistence": null,
+  "extra_costs": null,
+  "description": "Esta magia cria uma onda de escuridão que causa diversos efeitos. Todas as magias de 3º  círculo ou menor ativas na área são dissipadas se você passar num teste de Religião contra a CD de cada magia. Seus aliados na área são protegidos por uma aura sombria e recebem +4 na Defesa até o fim da cena. Inimigos na área ficam enjoados por 1d4 rodadas (apenas uma vez pela magia). Anular a Luz anula Dispersar as Trevas.",
+  "enhancements": [
+    {
+      "cost": 2,
+      "type": "aumenta",
+      "description": "aumenta o bônus na Defesa em +1",
+      "extra_details": null
+    },
+    {
+      "cost": 4,
+      "type": "muda",
+      "description": "muda o círculo máximo de magias dissipadas para 4º. Requer 4º círculo.",
+      "extra_details": {
+        "requirements": "4º círculo"
+      }
+    },
+    {
+      "cost": 9,
+      "type": "muda",
+      "description": "muda o círculo máximo de magias dissipadas para 5º.",
+      "extra_details": {
+      "requirements": "5º círculo"
+      }
+    }
+    ],
+  "effects": [
+    {
+      "type": "anula",
+      "attribute": "magias",
+      "skill": "religiao",
+      "resistence_requirement": null,
+      "extra_requirements": null
+    },
+    {
+      "type": "aumenta",
+      "attribute": "def",
+      "amount": "+4",
+      "resistence_requirement": null,
+      "extra_requirements": null
+    }
+  ]
+}

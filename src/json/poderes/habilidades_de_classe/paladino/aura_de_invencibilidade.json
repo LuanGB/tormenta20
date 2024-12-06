@@ -1,0 +1,27 @@
+{
+  "id": "aura_de_invencibilidade",
+  "name": "Aura de Invencibilidade",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_paladino",
+  "description": "Enquanto sua aura estiver ativa, você ignora o primeiro dano que sofrer na cena. O mesmo se aplica a seus aliados dentro da aura.",
+  "requirements": [
+     {
+      "type": "character_lvl",
+      "sub_type": "hard",
+      "value": 18
+    },
+    {
+      "type": "fearute_actived",
+      "sub_type": "soft",
+      "feature": "aura_sagrada"
+    }
+  ],
+  "effects": [
+    {
+      "type": "ignore_damage",
+      "damage": "primeiro_dano_dofrido_na_cena",
+      "target": "voce_e_alidaos_dentro_do_alcance"
+    }
+  ],
+  "costs": null
+}

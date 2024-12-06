@@ -1,0 +1,37 @@
+{
+  "id": "julgamento_divino_vindicacao",
+  "name": "Julgamento Divino: Vindicação",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_paladino",
+  "description": "Você pode gastar 2 PM para marcar um inimigo que tenha causado dano a você ou a seus aliados na cena. Você recebe +1 em testes de ataque e +1d8 em rolagens de dano contra o inimigo escolhido, mas sofre –5 em testes de ataque contra quaisquer outros alvos. No 5º nível, e a cada cinco níveis seguintes, você pode pagar +1 PM para aumentar o bônus de ataque em +1 e o bônus de dano em +1d8. O efeito termina caso o alvo fique inconsciente.",
+  "requirements": [
+    {
+      "type": "enemy_type",
+      "sub_type": "soft",
+      "feature": "que_tenha_causado_dano_a_voce_ou_a_aliados"
+    }
+  ],
+  "effects": [
+    {
+      "type": "attack_penalty",
+      "value": -5,
+      "requirements": "atacar_alvo_que_nao_esteja_marcado"
+    },
+    {
+      "type": "attack_improvement",
+      "value": 1,
+      "duration": "alvo_inconsciente"
+    },
+    {
+      "type": "damage_improvement",
+      "value": "1d8",
+      "duration": "alvo_inconsciente"
+    }
+  ],
+  "costs": [
+    {
+    "value": 2,
+    "type": "PM"
+    }
+  ]
+}

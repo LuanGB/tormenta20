@@ -1,0 +1,28 @@
+{
+  "id": "postura_de_combate_castigo_de_ferro",
+  "name": "Postura de Combate: Castigo de Ferro",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_cavaleiro",
+  "description": "Sempre que um aliado adjacente sofrer um ataque corpo a corpo, você pode gastar 1 PM para fazer um ataque na criatura que o atacou como uma reação.",
+  "requirements": null,
+  "effects": [
+    {
+      "type": "reaction_attack",
+      "requirements": "aliado_adijagente_sofrer_ataque_corpo_a_corpo"
+    }
+  ],
+  "costs": [
+    {
+    "value": 2,
+    "type": "PM"
+    },
+    {
+     "action": "moviment",
+     "type": "acao" 
+    },
+    {
+    "value": 1,
+    "type": "PM_extra"
+    }
+  ]
+}

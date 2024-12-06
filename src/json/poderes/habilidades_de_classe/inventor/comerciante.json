@@ -1,0 +1,21 @@
+{
+  "id": "comerciante",
+  "name": "Comerciante",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_inventor",
+  "description": "No 3º nível, você pode vender itens 10% mais caro (não cumulativo com barganha).",
+  "requirements": [
+     {
+      "type": "character_lvl",
+      "sub_type": "hard",
+      "value": 3
+    }
+  ],
+  "effects": [
+    {
+      "type": "item_cost_improvement",
+      "value": "10%_mais_caro"
+    }
+  ],
+  "costs": null
+}

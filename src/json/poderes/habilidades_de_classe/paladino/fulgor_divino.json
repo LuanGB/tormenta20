@@ -1,0 +1,27 @@
+{
+  "id": "fulgor_divino",
+  "name": "Fulgor Divino",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_paladino",
+  "description": "Quando usa Golpe Divino, todos os inimigos em alcance curto ficam ofuscados até o início do seu próximo turno.",
+  "requirements": [
+    {
+      "type": "fearute_actived",
+      "sub_type": "soft",
+      "feature": "golpe_divino"
+    },
+    {
+      "type": "ennemy_range",
+      "sub_type": "soft",
+      "range": "curto"
+    }
+  ],
+  "effects": [
+    {
+      "type": "condition",
+      "condition": "afuscado",
+      "duration": "inicio_do_seu_prox_turno"
+    }
+  ],
+  "costs": null
+}

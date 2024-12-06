@@ -1,0 +1,21 @@
+{
+  "id": "especialista_em_escola",
+  "name": "Especialista em Escola",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_arcanista",
+  "description": "Escolha uma escola de magia. A CD para resistir a suas magias dessa escola aumenta em +2.",
+  "requirements": [
+    {
+      "type": "caminho_do_arcanista",
+      "sub_type": "hard",
+      "id": ["bruxo", "mago"]
+    }
+  ],
+  "effects": [
+    {
+      "type": "CD_improvement",
+      "value": 2,
+      "requirements": "apenas magias da escola escolhida"
+    }
+  ]
+}

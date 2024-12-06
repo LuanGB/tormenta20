@@ -1,0 +1,35 @@
+{
+  "id": "presenca_aterradora",
+  "name": "Presença Aterradora",
+  "type": "poder_geral",
+  "sub_type": "poder_de_combate",
+  "description": "Você pode gastar uma ação padrão e 1 PM para assustar todas as criaturas a sua escolha em alcance curto. Veja a perícia Intimidação para as regras de assustar.",
+  "requirements": [
+    {
+      "type": "range_type",
+      "sub_type": "soft",
+      "range": "curto"
+    },
+    {
+      "type": "expertise",
+      "sub_type": "hard",
+      "skill": "intimidacao"
+    }
+  ],
+  "effects": [
+    {
+      "type": "target_type",
+      "target": "criaturas_a_sua_escoha"
+    }
+  ],
+  "costs": [
+    {
+    "value": 1,
+    "type": "PM"
+    },
+    {
+    "value": 1,
+    "type": "acao_padrao"
+    }
+  ]
+}

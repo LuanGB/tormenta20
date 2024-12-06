@@ -1,0 +1,16 @@
+{
+  "id": "bravata_audaz",
+  "name": "Bravata Audaz",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_bucaneiro",
+  "description": "Você jura fazer uma façanha específica, como roubar o tesouro de Sckhar ou ganhar um beijo do príncipe e da princesa até o fim do baile. Se cumprir a bravata, seu limite máximo de PM aumenta em +2d6 até o fim da aventura.",
+  "requirements": null,
+  "effects": [
+    {
+      "type": "PM_improvemente",
+      "amount": "2d6",
+      "duration": "até_o_fim_da_aventura"
+    }
+  ],
+  "costs": null
+}

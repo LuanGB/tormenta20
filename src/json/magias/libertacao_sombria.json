@@ -1,0 +1,43 @@
+{
+  "id": "libertacao_sombria",
+  "name": "Libertação Sombria",
+  "type": "divina",
+  "circle": "4",
+  "school": "necro",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "longo_90m_60q",
+  "target": {
+    "amount": 1,
+    "up_to": null,
+    "type": "criatura"
+  },
+  "effect": "alvo",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "1_dia",
+  "duration_details": "a magia termina se o alvo chegar a 0 pontos de vida",
+  "resistence": {
+    "effect": "anula",
+    "skill": "fortitude"
+  },
+  "extra_costs": null,
+  "description": "Cria uma conexão entre seu corpo e o da criatura alvo, deixando uma marca idêntica na pele de ambos. Enquanto a magia durar, sempre que você sofrer qualquer dano ou condição, o alvo desta magia deve fazer um teste de Fortitude; se falhar, sofre o mesmo dano que você ou adquire a mesma condição. A magia termina se o alvo chegar a 0 pontos de vida.",
+  "enhancements": [
+    {
+      "cost": 5,
+      "type": "outro",
+      "description": "além do normal, o alvo também pode morrer por perda de PV ou se você morrer (um teste de Fortitude anula a morte).",
+      "extra_details": null
+    }
+  ],
+  "effects": [
+    {
+      "type": "outro",
+      "attribute": null,
+      "amount": null,
+      "resistence_requirement": "fortitude",
+      "extra_requirements": null
+    }
+  ]
+}

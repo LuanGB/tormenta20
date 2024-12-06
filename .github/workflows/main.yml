@@ -25,3 +25,21 @@ jobs:
           bundler-cache: true
       - name: Run the default task
         run: bundle exec rake
+
+  jsonlint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: .ruby-version
+          bundler-cache: true
+
+      - name: Install JSON Lint
+        run: gem install jsonlint
+
+      - name: Lint jsons for consistency
+        run: jsonlint src/json/*.json

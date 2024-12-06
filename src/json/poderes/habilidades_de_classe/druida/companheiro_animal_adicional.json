@@ -1,0 +1,27 @@
+{
+  "id": "companheiro_animal_adicional",
+  "name": "Companheiro Animal Adicional",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_druida",
+  "description": "Você recebe um companheiro animal adicional, de um tipo diferente dos que já tenha. Você pode escolher este poder quantas vezes quiser, mas ainda está sujeito ao limite de aliados que pode ter (veja a página 246).",
+  "requirements": [
+     {
+      "type": "character_lvl",
+      "sub_type": "hard",
+      "value": 7
+    },
+    {
+      "type": "attr_value",
+      "sub_type": "hard",
+      "attr": "car",
+      "value": 15
+    },
+    {
+      "type": "feature",
+      "sub_type": "hard",
+      "id": "companheiro_animal"
+    }
+  ],
+  "effects": "ver_texto",
+  "costs": null
+}

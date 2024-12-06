@@ -1,0 +1,16 @@
+{
+  "id": "orar",
+  "name": "Orar",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_paladino",
+  "description": "Você aprende e pode lançar uma magia divina de 1º círculo a sua escolha. Seu atributo-chave para esta magia é Sabedoria. Você pode escolher este poder quantas vezes quiser.",
+  "requirements": null,
+  "effects": [
+    {
+      "type": "learn_magic",
+      "circle": 1,
+      "magic": "divina"
+    }
+  ],
+  "costs": null
+}

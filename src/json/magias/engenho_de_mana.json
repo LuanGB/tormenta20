@@ -1,0 +1,53 @@
+{
+  "id": "engenho_de_mana",
+  "name": "Engenho de Mana",
+  "type": "arcana",
+  "circle": "5",
+  "school": "abjur",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "medio_30m_20q",
+  "target": {
+    "amount": null,
+    "up_to": null,
+    "type": "disco_de_energia"
+  },
+  "effect": "disco_de_energia",
+  "effect_details": {
+    "shape": "disco",
+    "dimention": "diâmetro",
+    "size": "1,5m_yq",
+    "other_details": null
+  },
+  "counterspell": null,
+  "duration": "sustentada",
+  "duration_details": null,
+  "resistence": null,
+  "extra_costs": null,
+  "description": "Esta poderosa magia manifesta um disco de energia que lembra uma roda de engenho e flutua no ponto em que foi conjurado. O disco é intangível, imune a dano e não pode ser movido. Enquanto estiver ativo, tenta absorver qualquer magia lançada em alcance médio dele, como uma ação automática de contramágica, usando seu teste de Misticismo. Caso vença o teste, o engenho não só anula a magia como absorve os PM usados para lançá-la, acumulando PM temporários. No seu turno, se estiver ao alcance do disco, você pode gastar PM guardados nele para lançar magias.",
+  "enhancements": [
+    {
+      "cost": 1,
+      "type": "muda",
+      "description": "em vez de flutuar no ponto em que foi conjurado, o disco flutua atrás de você, mantendo-se sempre adjacente.",
+      "extra_details": null
+    },
+    {
+      "cost": 4,
+      "type": "muda",
+      "description": "muda a duração para 1 dia.",
+      "extra_details": {
+        "duration": "1_dia"
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "outro",
+      "attribute": null,
+      "amount": null,
+      "resistence_requirement": null,
+      "extra_requirements": null
+    }
+  ]
+}

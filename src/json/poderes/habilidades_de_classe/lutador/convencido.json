@@ -1,0 +1,16 @@
+{
+  "id": "convencido",
+  "name": "Convencido",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_lutador",
+  "description": "Acostumado a contar apenas com seus músculos, você adquiriu certo desdém por artes mais sofisticadas. Você recebe +5 em testes de resistência contra efeitos de Encantamento.",
+  "requirements": null,
+  "effects": [
+    {
+      "type": "resistence_test_improvement",
+      "value": 5,
+      "resistence": "encantamento"
+    }
+  ],
+  "costs": null
+}

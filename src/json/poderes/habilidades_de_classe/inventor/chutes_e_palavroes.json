@@ -1,0 +1,26 @@
+{
+  "id": "chutes_e_palavroes",
+  "name": "Chutes e Palavrões",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_inventor",
+  "description": "Uma vez por rodada, você pode pagar 1 PM para repetir um teste falho de Ofício (engenhoqueiro) recém realizado para ativar uma engenhoca.",
+  "requirements": [
+    {
+      "type": "feature",
+      "sub_type": "hard",
+      "id": "engenhoqueiro"
+    }
+  ],
+  "effects": [
+    {
+      "type": "reroll_dice",
+      "duration": "uma_vez_por_rodada"
+    }
+  ],
+  "costs": [
+    {
+    "value": 1,
+    "type": "PM"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "id": "alarme",
+  "name": "Alarme",
+  "type": "arcana",
+  "circle": "1|2|3|4|5",
+  "school": "abjur",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "pcurto_6m_9q",
+  "target": {
+    "amount": null,
+    "up_to": null,
+    "type": "area"
+  },
+  "effect": "area_9m",
+  "effect_details": {
+    "shape": "esfera",
+    "dimention": "raio...",
+    "size": "9m_yq",
+    "other_details": null
+  },
+  "counterspell": null,
+  "duration": "1 dia",
+  "duration_details": null,
+  "resistence": null,
+  "extra_costs": null,
+  "description": "Você cria uma barreira protetora invisível que detecta qualquer criatura que tocar ou entrar na área protegida. Ao lançar a magia, você pode escolher quais criaturas podem entrar na área sem ativar seus efeitos. Alarme pode emitir um aviso telepático ou sonoro, decidido quando a magia é lançada. Um aviso telepático alerta apenas você, inclusive acordando-o se estiver dormindo, mas apenas se estiver a até 1km da área protegida. Um aviso sonoro alerta todas as criaturas em alcance longo.",
+  "enhancements": [
+    {
+      "cost": 2,
+      "type": "muda",
+      "description": "muda o alcance para pessoal. A área é emanada a partir de você.",
+      "extra_details": {
+       }
+    },
+    {
+      "cost": 5,
+      "type": "outro",
+      "description": "além do normal, você também percebe qualquer efeito de adivinhação que seja usado dentro da área ou atravesse a área. Você pode fazer um teste oposto de Misticismo contra quem usou o efeito; se passar, tem um vislumbre de seu rosto e uma ideia aproximada de sua localização (“três dias de viagem ao norte\", por exemplo).",
+      "extra_details": {
+      "extra_skill": "misticismo"
+       }
+    },
+    {
+      "cost": 5,
+      "type": "muda",
+      "description": "muda a duração para 1 dia ou até ser descarregada e a resistência para Vontade anula. Quando um intruso entra na área, você pode descarregar a magia como uma reação. Se o intruso falhar na resistência, ficará paralisado por 1d4 rodadas. Além disso, pelas próximas 24 horas você e as criaturas escolhidas ganham +10 em testes de Sobrevivência para rastrear o intruso.",
+      "extra_details": {
+        "resistence": {
+          "effect": "anula",
+          "skill": "vontade"
+        },
+        "effect": {
+          "skill": "sobrevivência",
+          "amout": "+10",
+          "duration": "24h"
+        }
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "proteção",
+      "attribute": null,
+      "amount": null,
+      "resistence_requirement": null,
+      "extra_requirements": null
+    }
+  ]
+}

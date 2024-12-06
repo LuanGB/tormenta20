@@ -1,0 +1,56 @@
+{
+  "id": "roubar_a_alma",
+  "name": "Roubar a Alma",
+  "type": "universal",
+  "circle": "5",
+  "school": "necro",
+  "execution": "padrão",
+  "execution_details": "é preciso um objeto para almazenar a alma do alvo",
+  "range": "curto_6m_9q",
+  "target": {
+    "amount": 1,
+    "up_to": null,
+    "type": "criatura"
+  },
+  "effect": "alvo",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "permanente",
+  "duration_details": null,
+  "resistence": {
+    "effect": "parcial",
+    "skill": "vontade"
+  },
+  "extra_costs": {
+    "material_component": "objeto",
+    "material_component_cost": "T$ 1.000 por lvl do alvo",
+    "pm_debuff": null,
+    "pm_sacrifice": 1
+  },
+  "description": "Você rouba a alma da vítima, armazenando-a em um objeto. Se o alvo passar no teste de resistência, sente a tentativa de puxar sua alma para fora do corpo e fica abalado por 1 rodada. Se falhar, seu corpo fica caído, inconsciente e inerte, enquanto sua alma é transportada para dentro do objeto. O corpo não envelhece nem se decompõe, mas pode ser destruído normalmente. O objeto escolhido deve custar T$ 1.000 por nível da criatura e não possuir uma alma presa ou se quebrará quando a magia for lançada (embora personagens não conheçam o conceito de “nível\", podem ter noção do poder geral de uma criatura específica, estimando assim o valor do objeto). Se o objeto for destruído, a magia termina (se o alvo estava abalado, a condição termina imediatamente). Se o corpo estiver disponível, a alma retorna para ele; caso contrário, escapa para os Mundos dos Deuses.\nCusto adicional: sacrifício de 1 PM.",
+  "enhancements": [
+    {
+      "cost": 5,
+      "type": "outro",
+      "description": "o objeto que abriga a alma detém os mesmos PM totais que o alvo. Se estiver empunhando o objeto, você pode usar esses PM para lançar magias no lugar dos seus. O objeto recupera PM por dia como se o personagem estivesse em descanso normal.",
+      "extra_details": null
+    },
+    {
+      "cost": 10,
+      "type": "outro",
+      "description": "como uma reação ao lançar esta magia, você possui o corpo do alvo, como na magia Possessão.",
+      "extra_details": {
+        "execution": "reação"
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "outro",
+      "attribute": null,
+      "amount": null,
+      "resistence_requirement": "vontade",
+      "extra_requirements": null
+    }
+  ]
+}

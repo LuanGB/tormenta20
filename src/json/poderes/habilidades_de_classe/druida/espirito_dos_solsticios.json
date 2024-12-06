@@ -1,0 +1,31 @@
+{
+  "id": "espirito_dos_solsticios",
+  "name": "Espírito dos Solstícios",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_druida",
+  "description": "Você transita entre os extremos do mundo natural. Quando lança uma magia, pode gastar +4 PM para maximizar os efeitos numéricos variáveis dela. Por exemplo, uma magia Curar Ferimentos aprimorada para curar 5d8+5 PV irá curar automaticamente 45 PV, sem a necessidade de rolar dados. Uma magia sem efeitos variáveis não pode ser afetada por este poder.",
+  "requirements": [
+     {
+      "type": "character_lvl",
+      "sub_type": "hard",
+      "value": 10
+    },
+    {
+      "type": "feature",
+      "sub_type": "hard",
+      "id": ["aspecto_do_inverno", "aspecto_do_verao"]
+    },
+    {
+      "type": "magic_type",
+      "sub_type": "soft",
+      "magic": "efeitos_numericos_variaveis"
+    }
+  ],
+  "effects": "ver_texto",
+  "costs": [
+    {
+    "value": 4,
+    "type": "PM"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "durao",
+  "name": "Durão",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_guerreiro",
+  "description": "A partir do 3ª nível, sua rijeza muscular permite que você absorva ferimentos. Sempre que sofre dano, você pode gastar 2 PM para reduzir esse dano à metade.",
+  "requirements": [
+     {
+      "type": "character_lvl",
+      "sub_type": "hard",
+      "value": 3
+    },
+    {
+      "type": "take_damage",
+      "sub_type": "soft"
+    }
+  ],
+  "effects": [
+    {
+      "type": "reduce_damage",
+      "value": "a metade"
+    }
+  ],
+  "costs": [
+    {
+    "value": 2,
+    "type": "PM"
+    }
+  ]
+}

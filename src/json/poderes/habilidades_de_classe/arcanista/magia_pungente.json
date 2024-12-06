@@ -1,0 +1,20 @@
+{
+  "id": "magia_pungente",
+  "name": "Magia Pungente",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_arcanista",
+  "description": "Quando lança uma magia, você pode pagar 1 PM para aumentar em +2 a CD para resistir a ela.",
+  "requirements": null,
+  "effects": [
+    {
+      "type": "CD_improvement",
+      "value": 2
+    }
+  ],
+  "costs": [
+    {
+      "value": 1,
+      "type": "PM"
+    }
+  ]
+}

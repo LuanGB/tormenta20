@@ -1,0 +1,27 @@
+{
+  "id": "atraente",
+  "name": "Atraente",
+  "type": "poder_geral",
+  "sub_type": "poder_de_destino",
+  "description": "Você recebe +2 em testes de perícias baseadas em Carisma contra criaturas que possam se sentir fisicamente atraídas por você.",
+  "requirements": [
+    {
+      "type": "attr_value",
+      "sub_type": "hard",
+      "attr": "car",
+      "value": 13
+    },
+    {
+      "type": "creature_type",
+      "sub_type": "soft",
+      "creature": "que_podem_se_sentir_atraidas_por_voce"
+    }
+  ],
+  "effects": [
+    {
+      "type": "skil_test_improvement",
+      "skill": "baseadas_em_car",
+      "value": 2
+    }
+  ]
+}

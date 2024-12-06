@@ -1,0 +1,31 @@
+{
+  "id": "golpe_relampago",
+  "name": "Golpe Relâmpago",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_lutador",
+  "description": "Quando usa a ação atacar para fazer um ataque desarmado, você pode gastar 1 PM para realizar um ataque desarmado adicional.",
+  "requirements": [
+     {
+      "type": "character_lvl",
+      "sub_type": "hard",
+      "value": 1
+    },
+    {
+      "type": "attack_type",
+      "sub_type": "soft",
+      "attack": "desarmado"
+    }
+  ],
+  "effects": [
+    {
+      "type": "extra_attack",
+      "requirements": "desarmado" 
+    }
+  ],
+  "costs": [
+    {
+    "value": 1,
+    "type": "PM"
+    }
+  ]
+}

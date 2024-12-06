@@ -1,0 +1,48 @@
+{
+  "id": "banimento",
+  "name": "Banimento",
+  "type": "divina",
+  "circle": "3",
+  "school": "abjur",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "curto_6m_9q",
+  "target": {
+    "amount": 1,
+    "up_to": null,
+    "type": "criatura"
+  },
+  "effect": "alvo",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "instantânea",
+  "duration_details": null,
+  "resistence": {
+    "effect": "parcial",
+    "skill": "vontade"
+  },
+  "extra_costs": {
+    "material_component": "itens que se opnham ao alvo",
+    "material_component_cost": null,
+    "pm_debuff": null,
+    "pm_sacrifice": null
+  },
+  "description": "Você expulsa criaturas que não são naturais deste mundo. Um alvo nativo de outro mundo, como muitas criaturas do tipo espírito é teletransportado de volta para um lugar aleatório de seu mundo de origem. Já um alvo morto-vivo tem sua conexão com as energias negativas quase completamente rompida, sendo reduzido a 1d6 PV. Se passar na resistência, em vez dos efeitos acima, o alvo fica enjoado por 1d4 rodadas. Se você tiver um ou mais itens que se oponham ao alvo de alguma maneira, a CD do teste de resistência aumenta em +2 por item. Por exemplo, se lançar a magia contra demônios do frio (vulneráveis a água benta e que odeiam luz e calor) enquanto segura um frasco de água benta e uma tocha acesa, a CD do teste de resistência aumenta em +4. O mestre decide se determinado item é forte o bastante contra a criatura para isso.",
+  "enhancements": [
+    {
+      "cost": 1,
+      "type": "aumenta",
+      "description": "aumenta o número de alvos em +1.",
+      "extra_details": null
+    }
+  ],
+  "effects": [
+    {
+      "type": "dano,enjoo",
+      "attribute": "pv,rodada",
+      "amount": "1d6,1d4",
+      "resistence_requirement":"vontade",
+      "extra_requirements": null
+    }
+  ]
+}

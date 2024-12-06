@@ -1,0 +1,22 @@
+{
+  "id": "montaria_corajosa",
+  "name": "Montaria Corajosa",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_cavaleiro",
+  "description": "Sua montaria concede +1d6 em rolagens de dano corpo a corpo (cumulativo com qualquer bônus que ela já forneça como aliado).",
+  "requirements": [
+    {
+      "type": "feature",
+      "sub_type": "hard",
+      "id": "montaria"
+    }
+  ],
+  "effects": [
+    {
+      "type": "damage_improvement",
+      "value": "1d6",
+      "requirements": "dano_corpo_a_corpo"
+    }
+  ],
+  "costs": null
+}

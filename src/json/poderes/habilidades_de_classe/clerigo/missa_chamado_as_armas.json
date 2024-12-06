@@ -1,0 +1,33 @@
+{
+  "id": "missa_chamado_as_armas",
+  "name": "Missa: Chamado às Armas",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_clerigo",
+  "description": "Sua prece fortalece o espírito de luta. Os participantes recebem +1 em testes de ataque e rolagens de dano.",
+  "requirements": null,
+  "effects": [
+    {
+      "type": "damage_improvement",
+      "value": 1
+    },
+    {
+      "type": "attack_improvement",
+      "value": 1
+    },
+    {
+      "type": "amount_targets",
+      "amount": "1_mas_bonus_sab",
+      "duration": "um_dia"
+    }
+  ],
+  "costs": [
+    {
+    "value": 1,
+    "type": "hora"
+    },
+    {
+    "value": 25,
+    "type": "tibares"
+    }
+  ]
+}

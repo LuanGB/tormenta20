@@ -1,0 +1,33 @@
+{
+  "name": "tormenta20",
+  "version": "0.1.0",
+  "description": "A Ruby, Node and Python library with data about the Brazilian TTRPG, Tormenta20",
+  "main": "src/ts/index.ts",
+  "directories": {
+    "src": "src/ts"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LuanGB/tormenta20.git"
+  },
+  "keywords": [
+    "ttrpg",
+    "rpg",
+    "tormenta",
+    "tormenta20"
+  ],
+  "author": "LuanGB",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LuanGB/tormenta20/issues"
+  },
+  "homepage": "https://github.com/LuanGB/tormenta20#readme",
+  "dependencies": {
+    "typescript": "^5.7.2"
+  },
+  "devDependencies": {}
+}

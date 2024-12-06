@@ -1,0 +1,32 @@
+{
+  "id": "julgamento_divino_salvacao",
+  "name": "Julgamento Divino: Salvação",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_paladino",
+  "description": "Você pode gastar 2 PM para marcar um inimigo em alcance curto. Até o fim da cena, quando você acerta um ataque corpo a corpo nesse inimigo, recupera 5 pontos de vida.",
+  "requirements": [
+    {
+      "type": "range_terget",
+      "sub_type": "soft",
+      "range": "curto"
+    },
+    {
+      "type": "attack_type",
+      "sub_type": "soft",
+      "attack": "corpo_a_corpo"
+    }
+  ],
+  "effects": [
+    {
+      "type": "PV_recovery",
+      "value": 5,
+      "requirements": "acertar_ataque_ate_o_fim_da_cena"
+    }
+  ],
+  "costs": [
+    {
+    "value": 2,
+    "type": "PM"
+    }
+  ]
+}

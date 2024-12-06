@@ -1,0 +1,20 @@
+{
+  "id": "virtude_paladinesca_castidade",
+  "name": "Virtude Paladinesca: Castidade",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_paladino",
+  "description": "Você se torna imune a efeitos de encantamento e recebe +5 em testes de Intuição para perceber blefes.",
+  "requirements": null,
+  "effects": [
+    {
+      "type": "immune_to_enchantment"
+    },
+    {
+      "type": "skill_improvement",
+      "value": 5,
+      "skill": "intuicao",
+      "requirements": "perceber_blefes"
+    }
+  ],
+  "costs": null
+}

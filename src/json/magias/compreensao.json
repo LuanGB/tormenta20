@@ -1,0 +1,77 @@
+{
+  "id": "compreensao",
+  "name": "Compreensão",
+  "type": "universal",
+  "circle": "1",
+  "school": "adiv",
+  "execution": "padrão",
+  "execution_details": "pode gastar sua ação de movimento para ouvir os pensamentos do alvo",
+  "range": "toque",
+  "target": {
+    "amount": 1,
+    "up_to": null,
+    "type": "criatura|texto"
+  },
+  "effect": "alvo",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "cena",
+  "duration_details": null,
+  "resistence": {
+    "effect": "anula",
+    "skill": "vontade",
+    "extra_details": "ao passar no texto o alvo impede que seus pensamentos sejam lidos"
+  },
+  "extra_costs": null,
+  "description": "Se tocar um texto, você entender o que está escrito nele mesmo que não conheça o idioma. Se tocar uma criatura inteligente, pode falar com ela mesmo que não tenham um idioma em comum. Se tocar uma criatura não inteligente, como um animal, pode perceber seus sentimentos. Você também pode gastar uma ação de movimento para ouvir os pensamentos de uma criatura tocada (você “ouve\" o que o alvo está pensando), mas um alvo involuntário tem direito a um teste de Vontade para proteger seus pensamentos e evitar este efeito.",
+  "enhancements": [
+    {
+      "cost": 1,
+      "type": "muda",
+      "description": "muda o alcance para curto",
+      "extra_details": {
+        "range": "curto"
+      }
+    },
+    {
+      "cost": 2,
+      "type": "muda",
+      "description": "muda o alcance para curto e o alvo para criaturas escolhidas. Você pode entender todas as criaturas afetadas, mas só pode ouvir os pensamentos de uma por vez.",
+      "extra_details": {
+        "range": "curto",
+        "target": "criaturas_escolhidas"
+      }
+    },
+    {
+      "cost": 2,
+      "type": "muda",
+      "description": "muda o alvo para 1 criatura. Em vez do normal, pode vasculhar os pensamentos do alvo para extrair informações. O alvo tem direito a um teste de Vontade para anular este efeito. O mestre decide se a criatura sabe ou não a informação que você procura. Requer 2º círculo.",
+      "extra_details": {
+        "target": {
+          "amount": 1,
+          "type": "criatura"
+        },
+        "requirement": "2_circulo"
+      }
+    },
+    {
+      "cost": 5,
+      "type": "muda",
+      "description": "muda o alcance para pessoal e o alvo para você. Em vez do normal, você pode falar, entender e escrever qualquer idioma. Requer 3º círculo.",
+      "extra_details": {
+        "range": "pessoal",
+        "target": "voce",
+        "requirement": "3_circulo"
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "outro",
+      "attribute": null,
+      "amount": null,
+      "resistence_requirement": "vontade",
+      "extra_requirements": null
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "julgamento_divino_justica",
+  "name": "Julgamento Divino: Justiça",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_paladino",
+  "description": "Você pode gastar 2 PM para marcar um inimigo em alcance curto. A próxima vez que esse inimigo causar dano em você ou em um de seus aliados, deve fazer um teste de Vontade (CD Car). Se falhar, sofre dano de luz igual à metade do dano que causou.",
+  "requirements": [
+    {
+      "type": "range_target",
+      "sub_type": "soft",
+      "range": "curto"
+    }
+  ],
+  "effects": "ver_texto",
+  "costs": [
+    {
+    "value": 2,
+    "type": "PM"
+    }
+  ]
+}

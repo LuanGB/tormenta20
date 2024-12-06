@@ -1,0 +1,32 @@
+{
+  "id": "aura_sagrada",
+  "name": "Aura Sagrada",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_paladino",
+  "description": "No 3º nível, você pode gastar 1 PM para gerar uma aura com alcance curto a partir de você. A aura emite uma luz dourada e agradável, que ilumina como uma tocha. Além disso, você e os aliados dentro da aura recebem um bônus igual ao seu bônus de Carisma nos testes de resistência. Manter a aura custa 1 PM por turno.",
+  "requirements": [
+     {
+      "type": "character_lvl",
+      "sub_type": "hard",
+      "value": 3
+    },
+    {
+      "type": "range",
+      "sub_type": "soft",
+      "range": "curto"
+    }
+  ],
+  "effects": [
+    {
+      "type": "resitence_test_improvement",
+      "value": "bonus_de_carisma",
+      "target": "voce_e_seus_aliados"
+    }
+  ],
+  "costs": [
+    {
+    "value": 1,
+    "type": "PM_por_turno"
+    }
+  ]
+}

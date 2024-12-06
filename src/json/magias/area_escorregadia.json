@@ -1,0 +1,61 @@
+{
+  "id": "area_escorregadia",
+  "name": "Área Escorregadia",
+  "type": "arcana",
+  "circle": "1",
+  "school": "conv",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "curto_6m_9q",
+  "target": {
+    "amount": 1,
+    "up_to": null,
+    "type": "objeto|area"
+  },
+  "effect": "area_3m",
+  "effect_details": {
+    "shape": "quadrado",
+    "dimention": "lado",
+    "size": "3m",
+    "other_details": null
+  },
+  "counterspell": null,
+  "duration": "cena",
+  "duration_details": null,
+  "resistence": {
+    "effect": "ver_texto",
+    "skill": "reflexos"
+  },
+  "extra_costs": null,
+  "description": "Esta magia recobre uma superfície com uma substância gordurosa e escorregadia. Criaturas na área devem passar na resistência para não cair. Nas rodadas seguintes, criaturas que tentem movimentar-se pela área devem fazer testes de Acrobacia para equilíbrio (CD 10). Área Escorregadia pode tornar um item escorregadio. Uma criatura segurando um objeto afetado deve passar na resistência para não deixar o item cair cada vez que usá-lo.",
+  "enhancements": [
+    {
+      "cost": 1,
+      "type": "aumenta",
+      "description": "aumenta a área em +1 quadrado de 1,5m.",
+      "extra_details": null
+    },
+    {
+      "cost": 2,
+      "type": "muda",
+      "description": "muda a CD dos testes de Acrobacia para 15.",
+      "extra_details": null
+    },
+    {
+      "cost": 5,
+      "type": "muda",
+      "description": "muda a CD dos testes de Acrobacia para 20.",
+      "extra_details": null
+    }
+  ],
+  "effects": [
+    {
+      "type": "outro",
+      "attribute": "cd",
+      "skill": "acrobacia",
+      "amount": "10",
+      "resistence_requirement": null,
+      "extra_requirements": null
+    }
+  ]
+}

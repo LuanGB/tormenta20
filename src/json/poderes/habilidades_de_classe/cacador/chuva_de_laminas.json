@@ -1,0 +1,41 @@
+{
+  "id": "chuva_de_laminas",
+  "name": "Chuva de Lâminas",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_cacador",
+  "description": "Quando usa Ambidestria, você pode pagar 2 PM para fazer um ataque adicional com sua arma primária.",
+  "requirements": [
+     {
+      "type": "character_lvl",
+      "sub_type": "hard",
+      "value": 12
+    },
+    {
+      "type": "fearute_actived",
+      "sub_type": "soft",
+      "feature": "ambidestria"
+    },
+    {
+      "type": "attr_value",
+      "sub_type": "hard",
+      "attr": "des",
+      "value": 19
+    },
+    {
+      "type": "feature",
+      "sub_type": "hard",
+      "id": "ambidestria"
+    }
+  ],
+  "effects": [
+    {
+      "type": "extra_attack"
+    }
+  ],
+  "costs": [
+    {
+    "value": 2,
+    "type": "PM"
+    }
+  ]
+}

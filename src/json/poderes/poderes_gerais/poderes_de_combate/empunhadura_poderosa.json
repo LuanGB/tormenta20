@@ -1,0 +1,27 @@
+{
+  "id": "empunhadura_poderosa",
+  "name": "Empunhadura Poderosa",
+  "type": "poder_geral",
+  "sub_type": "poder_de_combate",
+  "description": "Ao usar uma arma feita para uma categoria de tamanho maior que a sua, a penalidade que você sofre nos testes de ataque diminui para –2 (normalmente, uma criatura que use uma arma feita para uma categoria de tamanho maior sofre uma penalidade de –5 nos testes de ataque).",
+  "requirements": [
+    {
+      "type": "attr_value",
+      "sub_type": "hard",
+      "attr": "for",
+      "value": 17
+    },
+    {
+      "type": "weapon_type",
+      "sub_type": "soft",
+      "weapons": "categoria_de_tamanho_maior_que_a_sua"
+    }
+  ],
+  "effects": [
+    {
+      "type": "change_penalty",
+      "initial_value": -5,
+      "final_value": -2
+    }
+  ]
+}

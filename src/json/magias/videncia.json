@@ -1,0 +1,36 @@
+{
+  "id": "videncia",
+  "name": "Vidência",
+  "type": "universal",
+  "circle": "3",
+  "school": "adiv",
+  "execution": "completa",
+  "execution_details": "é nescessário umas superficie reflexiva",
+  "range": "ilimitado",
+  "target": {
+    "amount": 1,
+    "up_to": null,
+    "type": "criatura"
+  },
+  "effect": "alvo",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "sustentada",
+  "duration_details": null,
+  "resistence": {
+    "effect": "anula",
+    "skill": "vontade"
+  },
+  "extra_costs": null,
+  "description": "Através de uma superfície reflexiva (bacia de água benta, lago, bola de cristal, espelho etc.) você pode ver e ouvir uma criatura escolhida e seus arredores (cerca de 6m em qualquer direção), mesmo que ela se mova. O alvo pode estar a qualquer distância, mas se passar em um teste de Vontade, a magia falha. A vítima recebe bônus ou penalidades em seu teste de resistência, dependendo do conhecimento que você tiver dela.\n• Não conhece o alvo: +10.\n• Ouviu falar do alvo: +5.\n• O alvo está em outro plano ou mundo: +5.\n• Já encontrou o alvo pessoalmente: +0.\n• Tem uma pintura, escultura ou outra representação do alvo: –2.\n• Conhece bem o alvo: –5.\n• Tem um pertence pessoal ou peça de roupa do alvo: –5.\n• Tem uma parte do corpo do alvo (unhas, cabelos...): –10.",
+  "enhancements": null,
+  "effects": [
+    {
+      "type": "outro",
+      "attribute": null,
+      "amount": null,
+      "resistence_requirement": "vontade",
+      "extra_requirements": null
+    }
+  ]
+}

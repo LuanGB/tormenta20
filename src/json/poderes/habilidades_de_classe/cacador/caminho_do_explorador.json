@@ -1,0 +1,21 @@
+{
+  "id": "caminho_do_explorador",
+  "name": "Caminho do Explorador",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_cacador",
+  "description": "No 5º nível, você pode atravessar terrenos difíceis sem sofrer redução em seu deslocamento e a CD para rastrear você aumenta em +10. Esta habilidade só funciona em terrenos nos quais você tenha a habilidade Explorador.",
+  "requirements": [
+     {
+      "type": "character_lvl",
+      "sub_type": "hard",
+      "value": 5
+    },
+    {
+      "type": "terrain type",
+      "sub_type": "soft",
+      "terrain": "escolhido_na_habilidade_explorador"
+    }
+  ],
+  "effects": "ver_texto",
+  "costs": null
+}

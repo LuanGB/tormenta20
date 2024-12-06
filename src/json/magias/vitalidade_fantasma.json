@@ -1,0 +1,55 @@
+{
+  "id": "vitalidade_fantasma",
+  "name": "Vitalidade Fantasma",
+  "type": "arcana",
+  "circle": "1",
+  "school": "necro",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "pessoal",
+  "target": {
+    "amount": null,
+    "up_to": null,
+    "type": "voce"
+  },
+  "effect": "alvo",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "instantânea",
+  "duration_details": "os PV temporários desaparecem ao final da cena",
+  "resistence": null,
+  "extra_costs": null,
+  "description": "Você suga energia vital da terra, recebendo 2d8 pontos de vida temporários. Os PV temporários desaparecem ao final da cena.",
+  "enhancements": [
+    {
+      "cost": 2,
+      "type": "aumenta",
+      "description": "aumenta os PV temporários recebidos em +1d8.",
+      "extra_details": null
+    },
+    {
+      "cost": 5,
+      "type": "muda",
+      "description": "muda o alvo para área: esfera com 6m de raio centrada em você e a resistência para Fortitude reduz à metade. Em vez do normal, você suga energia das criaturas vivas na área, causando 1d8 pontos de dano de trevas e recebendo PV temporários iguais ao dano total causado. Os PV temporários desaparecem ao final da cena. Requer 2º círculo.",
+      "extra_details": {
+        "target": "area",
+        "effects": "area",
+        "effect_details": {
+          "shape": "esfera",
+          "dimention": "raio",
+          "size": "6m_9q",
+          "other_details": "o centro da ewsfera é o conjurador"
+        }
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "aumenta_temporariamente",
+      "attribute": "pv",
+      "amount": "2d8",
+      "resistence_requirement": null,
+      "extra_requirements": null
+    }
+  ]
+}

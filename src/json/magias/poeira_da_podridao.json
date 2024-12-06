@@ -1,0 +1,43 @@
+{
+  "id": "poeira_da_podridao",
+  "name": "Poeira da Podridão",
+  "type": "divina",
+  "circle": "3",
+  "school": "necro",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "medio_30m_20q",
+  "target": {
+    "amount": null,
+    "up_to": null,
+    "type": "nuvem_com_6m_de_raio"
+  },
+  "effect": "area",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "cena",
+  "duration_details": null,
+  "resistence": {
+    "effect": "veja_texto",
+    "skill": "fortitude"
+  },
+  "extra_costs": null,
+  "description": "Você manifesta uma nuvem de poeira carregada de energia negativa, que apodrece lentamente as criaturas na área. Ao lançar a magia, e no início de seus turnos, criaturas na área sofrem 2d8+8 pontos de dano de trevas (Fortitude reduz à metade). Alvos que falharem no teste ficam imunes a magias de cura por uma rodada.",
+  "enhancements": [
+    {
+      "cost": 2,
+      "type": "aumenta",
+      "description": "aumenta o dano em 1d8+4.",
+      "extra_details": null
+    }
+  ],
+  "effects": [
+    {
+      "type": "dano",
+      "attribute": "pv",
+      "amount": "2d8+8",
+      "resistence_requirement": "fortitude",
+      "extra_requirements": null
+    }
+  ]
+}

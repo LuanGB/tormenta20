@@ -1,0 +1,26 @@
+{
+  "id": "esgrima_magica",
+  "name": "Esgrima Mágica",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_bardo",
+  "description": "Sua arte mescla esgrima e magia, transformando dança em golpes. Enquanto estiver sob efeito de Inspiração, você pode substituir testes de Luta por testes de Atuação, mas apenas se estiver empunhando armas leves ou de uma mão.",
+  "requirements": [
+    {
+      "type": "fearute_actived",
+      "sub_type": "soft",
+      "skill": "inspiracao"
+    },
+    {
+      "type": "weapon_type",
+      "sub_type": "soft",
+      "weapon": ["leve", "uma_mao"]
+    }
+  ],
+  "effects": [
+    {
+      "type": "switch_skill_for_another",
+      "skill": "luta",
+      "snother": "atuacao"
+    }
+  ]
+}

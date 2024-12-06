@@ -1,0 +1,37 @@
+{
+  "id": "duelo",
+  "name": "Duelo",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_cavaleiro",
+  "description": "A partir do 2º nível, você pode gastar 2 PM para escolher um inimigo em alcance curto e receber +1 em testes de ataque e rolagens de dano contra ele até o fim da cena. Se atacar outro inimigo, o bônus termina. Para cada 2 PM extras que você gastar, o bônus aumenta em +1.",
+  "requirements": [
+     {
+      "type": "character_lvl",
+      "sub_type": "soft",
+      "value": 2
+    },
+    {
+      "type": "enemy_range",
+      "sub_type": "soft",
+      "range": "curto"
+    }
+  ],
+  "effects": [
+    {
+      "type": "damage_improvement",
+      "value": 1,
+      "duration": "cena"
+    },
+    {
+      "type": "attack_improvement",
+      "value": 1,
+      "duration": "cena"
+    }
+  ],
+  "costs": [
+    {
+    "value": 2,
+    "type": "PM"
+    }
+  ]
+}

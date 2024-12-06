@@ -1,0 +1,81 @@
+{
+  "id": "amedrontar",
+  "name": "Amedrontar",
+  "type": "arcana",
+  "circle": "1",
+  "school": "necro",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "curto_6m_9q",
+  "target": {
+    "amount": 1,
+    "up_to": null,
+    "type": "animal_ou_humanoide_de_ND_2_ou_menor"
+  },
+  "effect": "alvo",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "cena",
+  "duration_details": "o efeito dura por 1d4 rodadas e depois o alvo fica abalado, caso passe no teste, fica apenas abalado por 1d4 rodadas",
+  "resistence": {
+    "effect": "parcial",
+    "skill": "vontade"
+  },
+  "extra_costs": null,
+  "description": "O alvo é envolvido por energias sombrias assustadoras. Se falhar na resistência, fica apavorado por 1d4 rodadas, depois abalado. Se passar, fica abalado por 1d4 rodadas.",
+  "enhancements": [
+    {
+      "cost": 2,
+      "type": "muda",
+      "description": "muda o alvo para criatura de ND 2 ou menor",
+      "extra_details": null
+    },
+    {
+      "cost": 2,
+      "type": "afeta",
+      "description": "afeta alvos de ND 5 ou menor. Requer 2º círculo",
+      "extra_details": {
+        "requirements": "2º círculo"
+      }
+    },
+    {
+      "cost": 5,
+      "type": "afeta",
+      "description": "afeta todos os alvos válidos a sua escolha dentro do alcance.",
+      "extra_details": null
+    },
+    {
+      "cost": 5,
+      "type": "afeta",
+      "description": "afeta alvos de ND 10 ou menor. Requer 3º círculo.",
+      "extra_details": {
+        "requirements": "3º círculo"
+      }
+    },
+    {
+      "cost": 9,
+      "type": "afeta",
+      "description": "afeta alvos de ND 15 ou menor. Requer 4º círculo.",
+      "extra_details": {
+        "requirements": "4º círculo"
+      }
+    },
+    {
+      "cost": 14,
+      "type": "afeta",
+      "description": "afeta alvos de qualquer ND. Requer5º círculo.",
+      "extra_details": {
+        "requirements": "5º círculo"
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "outro",
+      "attribute": null,
+      "amount": null,
+      "resistence_requirement": "vontade",
+      "extra_requirements": null
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "educacao_privilegiada",
+  "name": "Educação Privilegiada",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_nobre",
+  "description": "Você se torna treinado em duas perícias de nobre a sua escolha.",
+  "requirements": null,
+  "effects": [
+    {
+      "type": "skill_traning",
+      "amount": 2,
+      "skill": "pericias_de_nobre"
+    }
+  ],
+  "costs": null
+}

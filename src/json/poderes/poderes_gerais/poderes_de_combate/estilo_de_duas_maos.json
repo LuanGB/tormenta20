@@ -1,0 +1,32 @@
+{
+  "id": "estilo_de_duas_maos",
+  "name": "Estilo de Duas Mãos",
+  "type": "poder_geral",
+  "sub_type": "poder_de_combate",
+  "description": "Se estiver usando uma arma corpo a corpo com as duas mãos, você recebe +5 nas rolagens de dano. Este poder não pode ser usado com armas leves.",
+  "requirements": [
+    {
+      "type": "attr_value",
+      "sub_type": "hard",
+      "attr": "for",
+      "value": 15
+    },
+    {
+      "type": "weapon_type",
+      "sub_type": "soft",
+      "weapons": "corpo_a_corpo_duas_maos"
+    },
+    {
+      "type": "expertise",
+      "sub_type": "hard",
+      "skill": "luta"
+    }
+  ],
+  "effects": [
+    {
+      "type": "damage_improvement",
+      "value": 5,
+      "duration": "permanente"
+    }
+  ]
+}

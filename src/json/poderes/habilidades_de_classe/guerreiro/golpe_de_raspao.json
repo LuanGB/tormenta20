@@ -1,0 +1,26 @@
+{
+  "id": "golpe_de_raspao",
+  "name": "Golpe de Raspão",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_guerreiro",
+  "description": "Quando erra um ataque, você pode gastar 1 PM. Se fizer isso, causa 1d8 pontos de dano (do tipo da arma) no alvo do ataque.",
+  "requirements": [
+    {
+      "type": "attack_type",
+      "sub_type": "soft",
+      "attack": "missed"
+    }
+  ],
+  "effects": [
+    {
+      "type": "damage_bonus",
+      "value": "1d8"
+    }
+  ],
+  "costs": [
+    {
+    "value": 1,
+    "type": "PM"
+    }
+  ]
+}

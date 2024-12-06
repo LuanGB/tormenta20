@@ -1,0 +1,49 @@
+{
+  "id": "armamento_da_natureza",
+  "name": "Armamento Da Natureza",
+  "type": "divina",
+  "circle": "1",
+  "school": "trans",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "toque",
+  "target": {
+    "amount": 1,
+    "up_to": null,
+    "type": "arma"
+  },
+  "effect": "arma",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "cena",
+  "duration_details": null,
+  "resistence": null,
+  "extra_costs": null,
+  "description": "Você fortalece uma arma mundana primitiva (sem custo em T$, como bordão, clava, funda ou tacape), uma arma natural ou um ataque desarmado. O dano da arma aumenta em um passo e ela é considerada mágica para propósitos de resistência a dano. Ao lançar a magia, você pode mudar o tipo de dano da arma (escolhendo entre corte, impacto ou perfuração).",
+  "enhancements": [
+    {
+      "cost": 1,
+      "type": "fornece",
+      "description": "fornece +1 nos testes de ataque com a arma.",
+      "extra_details": null
+    },
+    {
+      "cost": 2,
+      "type": "muda",
+      "description": "muda a execução para ação de mo-vimento.",
+      "extra_details": null
+    },
+    {
+      "cost": 3,
+      "type": "aumenta",
+      "description": "aumenta o bônus nos testes de ataque em +1.",
+      "extra_details": null
+    },
+    {
+      "cost": 5,
+      "type": "aumenta",
+      "description": "aumenta o dano da arma em mais um passo.",
+      "extra_details": null
+    }
+  ]
+}

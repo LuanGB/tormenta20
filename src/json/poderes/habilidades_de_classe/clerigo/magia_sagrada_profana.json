@@ -1,0 +1,26 @@
+{
+  "id": "magia_sagrada_profana",
+  "name": "Magia Sagrada/Profana",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_clerigo",
+  "description": "Quando lança uma magia divina que causa dano, você pode gastar +1 PM. Se fizer isso, muda o tipo de dano da magia para luz ou trevas (de acordo com a sua divindade)",
+  "requirements": [
+    {
+      "type": "magic_type",
+      "sub_type": "soft",
+      "magic": "dano"
+    }
+  ],
+  "effects": [
+    {
+      "type": "switch_damage_type",
+      "damage_type": ["luz", "trevas"]
+    }
+  ],
+  "costs": [
+    {
+    "value": 1,
+    "type": "PM"
+    }
+  ]
+}

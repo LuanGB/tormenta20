@@ -1,0 +1,18 @@
+{
+  "id": "forma_selvagem",
+  "name": "Forma Selvagem",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_druida",
+  "description": "Você pode se transformar em um tipo de animal. Veja a seguir. Você pode escolher este poder diversas vezes. A cada vez, aprende uma forma selvagem diferente.",
+  "requirements": "ver_livro",
+  "effects": "ver_livro",
+  "costs": [
+    {
+    "value": 3,
+    "type": "PM"
+    },
+    {
+    "type": "acao_completa"
+    }
+  ]
+}

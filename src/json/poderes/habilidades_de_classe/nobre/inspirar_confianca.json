@@ -1,0 +1,15 @@
+{
+  "id": "inspirar_confianca",
+  "name": "Inspirar Confiança",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_nobre",
+  "description": "Sua presença faz as pessoas darem o melhor de si. Você pode gastar 2 PM para fazer um aliado em alcance curto rolar novamente um teste recém realizado.",
+  "requirements": null,
+  "effects": "ver_texto",
+  "costs": [
+    {
+    "value": 2,
+    "type": "PM"
+    }
+  ]
+}

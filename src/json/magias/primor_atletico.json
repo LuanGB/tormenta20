@@ -1,0 +1,68 @@
+{
+  "id": "primor_atletico",
+  "name": "Primor Atlético",
+  "type": "arcana",
+  "circle": "1",
+  "school": "trans",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "toque",
+  "target": {
+    "amount": 1,
+    "up_to": null,
+    "type": "criatura"
+  },
+  "effect": "alvo",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "cena",
+  "duration_details": null,
+  "resistence": null,
+  "extra_costs": null,
+  "description": "Você modifica os limites físicos do alvo, que recebe deslocamento +9m e +10 em testes de Atletismo.",
+  "enhancements": [
+    {
+      "cost": 1,
+      "type": "bônus",
+      "description": "além do normal, o alvo recebe um bônus adicional de +20 em testes de Atletismo para saltar (para um bônus total de +30).",
+      "extra_details": null
+    },
+    {
+      "cost": 1,
+      "type": "outro",
+      "description": "além do normal, o alvo pode escalar paredes e tetos sem precisar fazer testes de Atletismo. Para isso, precisa estar com as mãos livres, mas pode usar uma única mão se ficar parado no lugar. O alvo não fica desprevenido enquanto escala.",
+      "extra_details": null
+    },
+    {
+      "cost": 1,
+      "type": "muda",
+      "description": "muda a execução para ação de movimento, o alcance para pessoal, o alvo para você e a duração para instantânea. Você salta muito alto e pousa em alcance corpo a corpo de uma criatura em alcance curto. Se fizer um ataque corpo a corpo contra essa criatura nesta rodada, recebe os benefícios e penalidades de uma investida e sua arma tem o dano aumentado em um dado do mesmo tipo durante este ataque.",
+      "extra_details": {
+        "execution": "movimento",
+        "range": "pessoal",
+        "target": {
+          "amount": null,
+          "up_to": null,
+          "type": "voce"
+        },
+        "duration": "instantânea"
+      }
+    },
+    {
+      "cost": 3,
+      "type": "outro",
+      "description": "além do normal, ao fazer testes de perícias baseadas em Força, Destreza ou Constituição, o alvo pode rolar dois dados e escolher o melhor. Não afeta testes de ataque ou resistência. Requer 2º círculo.",
+      "extra_details": null
+    }
+  ],
+  "effects": [
+    {
+      "type": "bônus",
+      "attribute": null,
+      "skill": "deslocamento,atletismo",
+      "amount": "+9m+10",
+      "resistence_requirement": null,
+      "extra_requirements": null
+    }
+  ]
+}

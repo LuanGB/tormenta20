@@ -1,0 +1,62 @@
+{
+  "id": "desespero_esmagador",
+  "name": "Desespero Esmagador",
+  "type": "arcana",
+  "circle": "2",
+  "school": "encan",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "curto_6m_9q",
+  "target": {
+    "amount": null,
+    "up_to": null,
+    "type": "humanoides_na_area"
+  },
+  "effect": "area_6m",
+  "effect_details": {
+    "shape": "cone",
+    "dimention": null,
+    "size": "6m_yq",
+    "other_details": null
+  },
+  "counterspell": null,
+  "duration": "cena",
+  "duration_details": "quem passar no teste de resitencia muda a duração para uma rodada",
+  "resistence": {
+    "effect": "parcial",
+    "skill": "vontade"
+  },
+  "extra_costs": null,
+  "description": "Humanoides na área são acometidos de grande tristeza, adquirindo as condições fraco e frustrado. Se passarem na resistência, adquirem essas condições por uma rodada.",
+  "enhancements": [
+    {
+      "cost": 2,
+      "type": "outro",
+      "description": "em vez do normal, as condições adquiridas são debilitado e esmorecido.",
+      "extra_details": null
+    },
+    {
+      "cost": 3,
+      "type": "outro",
+      "description": "em vez do normal, afeta qualquer tipo de criatura.",
+      "extra_details": null
+    },
+    {
+      "cost": 3,
+      "type": "outro",
+      "description": "além do normal, criaturas que falhem na resistência ficam aos prantos (em termos de jogo, adquirem a condição pasmo) por 1 rodada. Requer 3º círculo.",
+      "extra_details": {
+        "requirement": "3_circulo"
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "status",
+      "attribute": null,
+      "amount": null,
+      "resistence_requirement": "vontade",
+      "extra_requirements": null
+    }
+  ]
+}

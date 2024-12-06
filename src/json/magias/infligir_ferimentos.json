@@ -1,0 +1,70 @@
+{
+  "id": "infligir_ferimentos",
+  "name": "Infligir Ferimentos",
+  "type": "divina",
+  "circle": "1",
+  "school": "necro",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "toque",
+  "target": {
+    "amount": 1,
+    "up_to": null,
+    "type": "criatura"
+  },
+  "effect": "alvo",
+  "effect_details": null,
+  "counterspell": "curar_ferimentos",
+  "duration": "instantânea",
+  "duration_details": null,
+  "resistence": {
+    "effect": "reduz_à_metade",
+    "skill": "fortitude"
+  },
+  "extra_costs": null,
+  "description": "Você canaliza energia negativa contra um alvo, causando 2d8+2 pontos de dano de trevas (ou curando 2d8+2 PV, se for um morto-vivo). Infligir Ferimentos anula Curar Ferimentos.",
+  "enhancements": [
+    {
+      "cost": 1,
+      "type": "outro",
+      "description": "além do normal, se falhar na resistência, o alvo fica fraco pela cena.",
+      "extra_details": null
+    },
+    {
+      "cost": 2,
+      "type": "aumenta",
+      "description": "aumenta o dano em 1d8+1.",
+      "extra_details": null
+    },
+    {
+      "cost": 2,
+      "type": "outro",
+      "description": "como parte da execução da magia, você pode fazer um ataque corpo a corpo contra o alvo. Se acertar, causa o dano do ataque e o efeito da magia.",
+      "extra_details": {
+        "execution_details": "você pode fazer um ataque corpo a corpo com o alvo"
+      }
+    },
+    {
+      "cost": 5,
+      "type": "muda",
+      "description": "muda o alcance para curto e o alvo para criaturas escolhidas.",
+      "extra_details": {
+        "range": "curto_6m_9q",
+        "target": {
+          "amount": null,
+          "up_to": null,
+          "type": "criaturas_escolhidas"
+        }
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "dano",
+      "attribute": "pv",
+      "amount": "2d8+2",
+      "resistence_requirement": "fortitude",
+      "extra_requirements": null
+    }
+  ]
+}

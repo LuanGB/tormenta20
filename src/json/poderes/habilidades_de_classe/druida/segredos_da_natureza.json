@@ -1,0 +1,16 @@
+{
+  "id": "segredos_da_natureza",
+  "name": "Segredos da Natureza",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_druida",
+  "description": "Você aprende duas magias de qualquer círculo que possa lançar. Elas devem pertencer às escolas que você sabe usar, mas podem ser arcanas ou divinas. Você pode escolher este poder quantas vezes quiser.",
+  "requirements": null,
+  "effects": [
+    {
+      "type": "learn_magic",
+      "amount": 2,
+      "requirement": "pertencer_as_escolas_que_voce_sabe_usar"
+    }
+  ],
+  "costs": null
+}

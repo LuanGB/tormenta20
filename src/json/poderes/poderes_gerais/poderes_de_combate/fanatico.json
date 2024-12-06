@@ -1,0 +1,30 @@
+{
+  "id": "fanatico",
+  "name": "Fanático",
+  "type": "poder_geral",
+  "sub_type": "poder_de_combate",
+  "description": "Seu deslocamento não é reduzido por usar armaduras pesadas.",
+  "requirements": [
+    {
+      "type": "armor_type",
+      "sub_type": "soft",
+      "aermor": "pesada"
+    },
+    {
+      "type": "feature",
+      "sub_type": "hard",
+      "id": "encouracado"
+    },
+    {
+      "type": "level",
+      "sub_type": "hard",
+      "value": 12
+    }
+  ],
+  "effects": [
+    {
+      "type": "move_improvement",
+      "move": "normal"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "oportunismo",
+  "name": "Oportunismo",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_ladino",
+  "description": "Você recebe +2 em testes de ataque contra inimigos que já sofreram dano desde seu último turno.",
+  "requirements": null,
+  "effects": [
+    {
+      "type": "attack_improvement",
+      "value": 2,
+      "requirement": "o_alvo_ja_deve_ter_sofrido_dano"
+    }
+  ],
+  "costs": null
+}

@@ -1,0 +1,10 @@
+{
+  "id": "virtude_paladinesca_temperanca",
+  "name": "Virtude Paladinesca: Temperança",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_paladino",
+  "description": "Quando ingere um alimento, item alquímico ou poção, você consome apenas metade do item. Na prática, cada item desses rende duas “doses\" para você.",
+  "requirements": null,
+  "effects": "ver_texto",
+  "costs": null
+}

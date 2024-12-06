@@ -1,0 +1,26 @@
+{
+  "id": "golpe_imprudente",
+  "name": "Golpe Imprudente",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_lutador",
+  "description": "Quando usa Golpe Relâmpago, você pode atacar de forma impulsiva. Se fizer isso, você aumenta seu dano desarmado em mais um dado do mesmo tipo (por exemplo, se o seu dano é 2d6, você causa 3d6), mas sofre –5 em sua Defesa, até o início de seu próximo turno.",
+  "requirements": [
+    {
+      "type": "fearute_actived",
+      "sub_type": "soft",
+      "feature": "golpe_relampago"
+    }
+  ],
+  "effects": [
+    {
+      "type": "defense_penalty",
+      "value": -5,
+    "duration": "inicio_do_prox_turno"
+    },
+    {
+      "type": "damage_improvement",
+      "value": "um_dado_extra"
+    }
+  ],
+  "costs": null
+}

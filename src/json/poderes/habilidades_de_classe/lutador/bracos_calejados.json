@@ -1,0 +1,21 @@
+{
+  "id": "bracos_calejados",
+  "name": "Braços Calejados",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_lutador",
+  "description": "Se você não estiver usando armadura, soma seu bônus de Força na Defesa, limitado pelo seu nível.",
+  "requirements": [
+    {
+      "type": "weapon_type",
+      "sub_type": "soft",
+      "weapon": "sem_armadura"
+    }
+  ],
+  "effects": [
+    {
+      "type": "add_defense_bonus_attr",
+      "attr": "for"
+    }
+  ],
+  "costs": null
+}

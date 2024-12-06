@@ -1,0 +1,67 @@
+{
+  "id": "servo_divino",
+  "name": "Servo Divino",
+  "type": "divina",
+  "circle": "3",
+  "school": "conv",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "curto_6m_9q",
+  "target": {
+    "amount": null,
+    "up_to": null,
+    "type": "criatura_conjurada"
+  },
+  "effect": "alvo",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "cena_descarregar",
+  "duration_details": "a magia acaba quando o espirito conjurado cumpre sua tarefa",
+  "resistence": null,
+  "extra_costs": {
+    "material_component": "pagamento",
+    "material_component_cost": "T$ 100",
+    "pm_debuff": null,
+    "pm_sacrifice": null
+  },
+  "description": "Você pede a sua divindade que envie um espírito para ajudá-lo. Esse espírito realiza uma tarefa a sua escolha que possa ser cumprida em até uma hora — desde algo simples como “use suas asas para nos levar até o topo da montanha\" até algo complexo como “escolte esses camponeses até o castelo\". A magia é descarregada quando a criatura cumpre a tarefa, retornando a seu plano natal. O tipo de criatura é escolhido pelo mestre, de acordo com as necessidades da tarefa.\nComponente material: um pagamento de T$ 100 ao espírito. A forma de pagamento varia — doações a um templo, um item mágico ou mesmo dinheiro.",
+  "enhancements": [
+    {
+      "cost": 4,
+      "type": "muda",
+      "description": "muda a duração para 1 dia ou até ser descarregada. O espírito realiza uma tarefa a sua escolha que exija até um dia. O custo aumenta para T$ 500. O resto segue normal.",
+      "extra_details": {
+        "duration": "1_dia_descarregar",
+        "extra_costs": {
+          "material_component": "pagamento",
+          "material_component_cost": "T$ 500",
+          "pm_debuff": null,
+          "pm_sacrifice": null
+        }  
+      }
+    },
+    {
+      "cost": 9,
+      "type": "muda",
+      "description": "muda a duração para 1 semana ou até ser descarregada. O espírito realiza uma tarefa que exija até uma semana. O custo aumenta para T$ 1.000. O resto segue normal.",
+      "extra_details": {
+        "duration": "1_semana_descarregar",
+        "extra_costs": {
+          "material_component": "pagamento",
+          "material_component_cost": "T$ 1.000",
+          "pm_debuff": null,
+          "pm_sacrifice": null
+        }
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "outro",
+      "attribute": null,
+      "amount": null,
+      "resistence_requirement": null,
+      "extra_requirements": null
+    }
+  ]
+}

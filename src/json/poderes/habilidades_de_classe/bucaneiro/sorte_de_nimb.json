@@ -1,0 +1,21 @@
+{
+  "id": "sorte_de_nimb",
+  "name": "Sorte de Nimb",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_bucaneiro",
+  "description": "No 20º nível, o bucaneiro está acostumado a encarar os piores desafios e rir na cara deles — pois sabe que tem a sorte ao seu lado. Você pode gastar 5 PM para rolar novamente um teste recém realizado. Qualquer resultado 11 ou mais na segunda rolagem será considerado um 20 natural.",
+  "requirements": [
+     {
+      "type": "character_lvl",
+      "sub_type": "hard",
+      "value": 20
+    }
+  ],
+  "effects": "ver_texto",
+  "costs": [
+    {
+    "value": 5,
+    "type": "PM"
+    }
+  ]
+}

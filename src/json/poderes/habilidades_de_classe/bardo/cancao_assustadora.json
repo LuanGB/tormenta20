@@ -1,0 +1,25 @@
+{
+  "id": "cancao_assustadora",
+  "name": "Canção Assustadora",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_bardo",
+  "description": "Você pode gastar uma ação padrão e 1 PM para forçar todas as criaturas a sua escolha em alcance curto a fazer um teste de Vontade (CD Car). Uma criatura que falhe fica abalada até o fim da cena. Uma criatura que passe se torna imune a esta habilidade até o fim do dia.",
+  "requirements": null,
+  "effects": [
+    {
+      "type": "condition",
+      "condition": "abalada",
+      "duration": "cena"
+    }
+  ],
+  "costs": [
+    {
+    "value": 1,
+    "type": "PM"
+    },
+    {
+    "value": 1,
+    "type": "acao_padrao"
+    }
+  ]
+}

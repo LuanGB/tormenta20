@@ -1,0 +1,26 @@
+{
+  "id": "golpe_cruel",
+  "name": "Golpe Cruel",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_lutador",
+  "description": "No 5º nível, você acerta onde dói. Sua margem de ameaça com ataques desarmados aumenta em +1.",
+  "requirements": [
+     {
+      "type": "character_lvl",
+      "sub_type": "hard",
+      "value": 5
+    },
+    {
+      "type": "attack_type",
+      "sub_type": "soft",
+      "attack": "desarmado"
+    }
+  ],
+  "effects": [
+    {
+      "type": "critical_improvement",
+      "value": 1
+    }
+  ],
+  "costs": null
+}

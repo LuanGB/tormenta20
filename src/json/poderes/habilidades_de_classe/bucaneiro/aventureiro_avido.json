@@ -1,0 +1,20 @@
+{
+  "id": "aventureiro_avido",
+  "name": "Aventureiro Ávido",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_bucaneiro",
+  "description": "Uma vez por rodada, você pode gastar 5 PM para realizar uma ação padrão ou de movimento adicional. Se possuir o poder Surto Heroico, em vez disso seu custo diminui em –2 PM",
+  "requirements": null,
+  "effects": [
+    {
+      "type": "extra_accion",
+      "action": ["padrao", "movimento"]
+    }
+  ],
+  "costs": [
+    {
+    "value": 5,
+    "type": "PM"
+    }
+  ]
+}

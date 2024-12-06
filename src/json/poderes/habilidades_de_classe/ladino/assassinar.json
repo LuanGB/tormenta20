@@ -1,0 +1,35 @@
+{
+  "id": "assassinar",
+  "name": "Assassinar",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_ladino",
+  "description": "Você pode gastar uma ação de movimento e 3 PM para analisar uma criatura em alcance curto. Até o fim de seu próximo turno, seu primeiro Ataque Furtivo que causar dano a ela tem seus dados de dano extras dessa habilidade dobrados.",
+  "requirements": [
+     {
+      "type": "character_lvl",
+      "sub_type": "hard",
+      "value": 5
+    },
+    {
+      "type": "range",
+      "sub_type": "soft",
+      "range": "curto"
+    }
+  ],
+  "effects": [
+    {
+      "type": "damage_bonus_improvement",
+      "value": "dobro_de_dados",
+      "duration": "fim_do_proximo_turno"
+    }
+  ],
+  "costs": [
+    {
+    "value": 1,
+    "type": "PM"
+    },
+    {
+    "type": "acao_de_movimento"
+    }
+  ]
+}

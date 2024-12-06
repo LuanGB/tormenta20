@@ -1,0 +1,107 @@
+{
+  "id": "metamorfose",
+  "name": "Metamorfose",
+  "type": "arcana",
+  "circle": "2",
+  "school": "trans",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "pessoal",
+  "target": {
+    "amount": null,
+    "up_to": null,
+    "type": "voce"
+  },
+  "effect": "alvo",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "cena",
+  "duration_details": null,
+  "resistence": null,
+  "extra_costs": null,
+  "description": "Você muda sua aparência e forma — incluindo seu equipamento — para qualquer outra criatura, existente ou imaginada. Independentemente da forma escolhida, você recebe +20 em testes de Enganação para disfarce. Características não mencionadas não mudam.\nSe mudar para uma forma humanoide, pode mudar o tipo de dano físico de suas armas (se usa uma maça e transformá-la em espada, ela pode causar dano de corte, por exemplo). Se quiser, pode assumir uma forma humanoide com uma categoria de tamanho acima ou abaixo da sua; nesse caso aplique os modificadores em Furtividade e testes de manobra.\nSe mudar para outras formas, você pode escolher uma Forma Selvagem do druida (veja Tormenta20, página 63). Nesse caso você não pode atacar com suas armas, falar ou lançar magias até voltar ao normal, mas recebe uma ou mais armas naturais e os bônus da forma selvagem escolhida.",
+  "enhancements": [
+    {
+      "cost": 1,
+      "type": "outro",
+      "description": "a forma recebe uma habilidade de sentidos entre faro, visão na penumbra e visão no escuro.",
+      "extra_details": null
+    },
+    {
+      "cost": 3,
+      "type": "outro",
+      "description": "a forma recebe percepção às cegas (alcance curto). Requer 3º círculo.",
+      "extra_details": {
+        "requirement": "3_circulo"
+      }
+    },
+    {
+      "cost": 3,
+      "type": "muda",
+      "description": "muda o alcance para toque, o alvo para 1 criatura e adiciona resistência (Vontade anula).",
+      "extra_details": {
+        "range": "toque",
+        "target": {
+          "amount": 1,
+          "up_to": null,
+          "type": "criatura"
+        },
+        "resistence": {
+          "effect": "anula",
+          "skill": "vontade"
+        }
+      }
+    },
+    {
+      "cost": 3,
+      "type": "muda",
+      "description": "muda para alcance médio, alvo 1 criatura e resistência Vontade anula. Em vez do normal, transforma o alvo em uma criatura ou objeto inofensivo (ovelha, sapo, galinha, pudim de ameixa etc.). A criatura não pode atacar, falar e lançar magias; seu deslocamento vira 3m e sua Defesa vira 10. Outras características não mudam. No início de seus turnos, o alvo pode fazer um teste de Vontade; se passar, retorna à forma normal e a magia termina. Requer 3º círculo.",
+      "extra_details": {
+        "range": "medio_30m_20q",
+        "target": {
+          "amount": 1,
+          "up_to": null,
+          "type": "criatura"
+        },
+        "resistence": {
+          "effect": "anula",
+          "skill": "vontade"
+        },
+        "requirement": "3_circulo"
+      }
+    },
+    {
+      "cost": 5,
+      "type": "outro",
+      "description": "se mudar para formas não humanoides, pode escolher uma Forma Selvagem Aprimorada. Requer 3º círculo.",
+      "extra_details": {
+        "requirement": "3_circulo"
+      }
+    },
+    {
+      "cost": 9,
+      "type": "outro",
+      "description": "se mudar para formas não humanoides, pode escolher uma Forma Selvagem Superior. Requer 4º círculo.",
+      "extra_details": {
+        "requirement": "4_circulo"
+      }
+    },
+    {
+      "cost": 12,
+      "type": "outro",
+      "description": "além do normal, no início de seus turnos o alvo pode mudar de forma novamente, como uma ação livre, fazendo novas escolhas. Requer 5º círculo.",
+      "extra_details": {
+        "requirement": "5_circulo"
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "outro",
+      "attribute": null,
+      "amount": null,
+      "resistence_requirement": null,
+      "extra_requirements": null
+    }
+  ]
+}

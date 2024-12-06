@@ -1,0 +1,31 @@
+{
+  "id": "estilo_de_arremeso",
+  "name": "Estilo de Arremeso",
+  "type": "poder_geral",
+  "sub_type": "poder_de_combate",
+  "description": "Você pode sacar armas de arremesso como uma ação livre e recebe +2 nas rolagens de dano com elas.",
+  "requirements": [
+    {
+      "type": "weapon_type",
+      "sub_type": "soft",
+      "weapons": "arremesso"
+    },
+    {
+      "type": "expertise",
+      "sub_type": "hard",
+      "skill": "pontaria"
+    }
+  ],
+  "effects": [
+    {
+      "type": "change_acction",
+      "sub_type": "sacar_armas",
+      "action": "livre"
+    },
+    {
+      "type": "damage_improvement",
+      "value": 2,
+      "duration": "permanente"
+    }
+  ]
+}

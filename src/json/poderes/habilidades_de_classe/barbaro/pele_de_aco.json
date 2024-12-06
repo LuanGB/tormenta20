@@ -1,0 +1,25 @@
+{
+  "id": "pele_de_aco",
+  "name": "Pele de Aço",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_barbaro",
+  "description": "O bônus de Pele de Ferro aumenta para +5.",
+  "requirements": [
+     {
+      "type": "character_lvl",
+      "sub_type": "soft",
+      "value": 8
+    },
+    {
+      "type": "feature",
+      "sub_type": "hard",
+      "id": "pele_de_ferro"
+    }
+  ],
+  "effects": [
+    {
+      "type": "defense_improvement",
+      "value": 5
+    }
+  ]
+}

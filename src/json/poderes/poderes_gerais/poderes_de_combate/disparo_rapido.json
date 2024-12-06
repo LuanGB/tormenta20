@@ -1,0 +1,47 @@
+{
+  "id": "disparo_rapido",
+  "name": "Disparo Rápido",
+  "type": "poder_geral",
+  "sub_type": "poder_de_combate",
+  "description": "Se estiver usando uma arma de ataque à distância e gastar uma ação completa para atacar, você pode fazer um ataque adicional com ela (se puder recarregá-la como ação livre). Se fizer isso, sofre –2 em todos os testes de ataque até o seu próximo turno.",
+  "requirements": [
+    {
+      "type": "attr_value",
+      "sub_type": "hard",
+      "attr": "des",
+      "value": 13
+    },
+    {
+      "type": "weapon_type",
+      "sub_type": "soft",
+      "weapons": "a_distancia"
+    },
+    {
+      "type": "feature",
+      "sub_type": "hard",
+      "id": ["estilo_de_disparo", "estilo_de_arremeso"]
+    }
+  ],
+  "effects": [
+    {
+      "type": "extra_attack",
+      "requirements": [
+        {
+          "action": "livre",
+          "mavouver": "recarregar"
+        }
+      ]
+    },
+    {
+      "type": "attack_penalty",
+      "value": -2,
+      "duration": "proximo_turno"
+    }
+  ],
+  "costs": [
+    {
+    "value": 1,
+    "type": "acao_completa"
+    }
+  ]
+}

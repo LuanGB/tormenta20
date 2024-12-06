@@ -1,0 +1,37 @@
+{
+  "id": "arma_magica",
+  "name": "Arma Mágica",
+  "type": "universal",
+  "circle": "1",
+  "school": "trans",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "toque",
+  "target": {
+    "amount": 1,
+    "up_to": null,
+    "type": "arma"
+  },
+  "effect": null,
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "cena",
+  "duration_details": null,
+  "resistence": null,
+  "extra_costs": null,  
+  "description": "A arma fornece um bônus de +1 nos testes de ataque e rolagens de dano e é considerada mágica. Caso você esteja empunhando a arma, pode usar seu atributo-chave de magias em vez do atributo original nos testes de ataque.",
+  "enhancements": [
+    {
+      "cost": 2,
+      "type": "aumenta",
+      "description": "aumenta o bônus em +1, limitado pelo círculo máximo de magia que você pode lançar.",
+      "extra_details": null
+    },
+    {
+      "cost": 2,
+      "type": "dano",
+      "description": "a arma passa a causar +1d6 de dano de ácido, eletricidade, fogo ou frio, escolhido no momento em que a magia é lançada.",
+       "extra_details": null
+    }
+  ]
+}

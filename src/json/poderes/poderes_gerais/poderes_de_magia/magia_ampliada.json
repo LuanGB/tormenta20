@@ -1,0 +1,30 @@
+{
+  "id": "magia_ampliada",
+  "name": "Magia Ampliada",
+  "type": "poder_geral",
+  "sub_type": "poder_de_magia",
+  "description": "Aumenta o alcance da magia em um passo (de curto para médio, de médio para longo) ou dobra a área de efeito da magia. Por exemplo, uma Bola de Fogo ampliada tem seu alcance aumentado para longo ou sua área aumentada para 12m de raio.",
+  "requirements": [
+    {
+      "type": "expertise",
+      "sub_type": "soft",
+      "skill": "lancar_magias"
+    }
+  ],
+  "effects": [
+    {
+      "type": "range_improvement",
+      "value": "1_passo"
+    },
+    {
+      "type": "range_effect_improvement",
+      "value": "dobro_da_area"
+    }
+  ],
+  "costs": [
+    {
+    "value": 2,
+    "type": "PM"
+    }
+  ]
+}

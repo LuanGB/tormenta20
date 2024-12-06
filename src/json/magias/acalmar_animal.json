@@ -1,0 +1,59 @@
+{
+  "id": "acalmar_animal",
+  "name": "Acalmar Animal",
+  "type": "divina",
+  "circle": "1",
+  "school": "encan",
+  "execution": "padrão",
+  "execution_details": "detalhes relacionados a execução da magia",
+  "range": "curto_6m_9q",
+  "target": {
+    "amount": 1,
+    "up_to": null,
+    "type": "animal"
+  },
+  "effect": "alvo",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "cena",
+  "duration_details": null,
+  "resistence": {
+    "effect": "anula",
+    "skill": "vontade"
+  },
+  "extra_costs": null,
+  "description": "O animal fica prestativo em relação a você. Ele não fica sob seu controle, mas percebe suas palavras e ações da maneira mais favorável possível. Você recebe +10 nos testes de Adestramento e Diplomacia que fizer contra o animal.\nUm alvo hostil ou que esteja envolvido em um combate recebe +5 em seu teste de resistência. Se você ou seus aliados tomarem qualquer ação hostil contra o alvo, a magia é dissipada e ele retorna à atitude que tinha antes (ou piorada, de acordo com o mestre). Se tratar bem o alvo, a atitude pode permanecer mesmo após o término da magia.",
+  "enhancements": [
+    {
+      "cost": 1,
+      "type": "muda",
+      "description": "muda o alcance para médio"
+    },
+    {
+      "cost": 1,
+      "type": "muda",
+      "description": "muda o alvo para 1 monstro ou espírito com Inteligência 1 ou 2"
+    },
+    {
+      "cost": 2,
+      "type": "aumenta",
+      "description": "aumenta o número de alvos em +1"
+    },
+    {
+      "cost": 5,
+      "type": "muda",
+      "description": "muda o alvo para 1 monstro ou espírito. Requer 3º círculo.",
+      "extra_requirements": "Requer 3º circulo"
+    }
+  ],
+  "effects": [
+    {
+      "type": "outro",
+      "attribute": "adestramento_diplomacia",
+      "amount": "+10",
+      "resistence_requirement": "vontade",
+      "extra_requirements": null
+    }
+  ]
+}
+

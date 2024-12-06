@@ -1,0 +1,61 @@
+{
+  "id": "missao_divina",
+  "name": "MIssão Divina",
+  "type": "divina",
+  "circle": "3",
+  "school": "encan",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "curto_6m_9q",
+  "target": {
+    "amount": 1,
+    "up_to": null,
+    "type": "criatura"
+  },
+  "effect": "alvo",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "1_semana_ou_descarregar",
+  "duration_details": null,
+  "resistence": {
+    "effect": "anula_veja_texto",
+    "skill": "vontade"
+  },
+  "extra_costs": null,
+  "description": "Você obriga o alvo a cumprir uma tarefa a sua escolha. A magia dura uma semana ou até o alvo cumprir a tarefa, o que vier primeiro. O alvo pode recusar a missão — mas, no fim de cada dia em que não se esforçar para cumprir a tarefa, deve fazer um teste de Vontade; se falhar, sofre uma penalidade cumulativa de –2 em todos os testes e rolagens. A Missão Divina não pode forçar um ato suicida, nem designar uma tarefa impossível (como matar uma criatura que não existe).",
+  "enhancements": [
+    {
+      "cost": 2,
+      "type": "muda",
+      "description": "muda o alcance para toque, a duração para permanente e adiciona penalidade de –1 PM. Em vez do normal, você inscreve uma marca (como uma tatuagem) na pele do alvo e escolhe um tipo de ação que ativará a marca. Normalmente, será cometer um crime (roubar, matar...). Sempre que a marca é ativada, o alvo recebe uma penalidade cumulativa de –2 em todos os testes. Muitas vezes, portar essa marca é um estigma por si só, já que esta magia normalmente é lançada em criminosos ou traidores. Se for dissipada, a marca e suas penalidades são suprimidas por um dia; elas só podem ser removidas pelo conjurador original ou pelas magias Desejo, Intervenção Divina ou Purificação (com o aprimoramento de 3º círculo).",
+      "extra_details": {
+        "range": "toque",
+        "duration": "permanente",
+        "extra_costs": {
+          "material_component": null,
+          "material_component_cost": null,
+          "pm_debuff": 1,
+          "pm_sacrifice": null
+        },
+        "counterspell": "desejo,intervencao_divina_purificacao"
+      }
+    },
+    {
+      "cost": 4,
+      "type": "aumenta",
+      "description": "aumenta a duração para 1 ano ou até ser descarregada.",
+      "extra_details": {
+        "duration": "1_ano_ou_descarregar"
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "penalidade_cumulativa",
+      "attribute": "todas_os_teste_e_rolagens",
+      "amount": "-2",
+      "resistence_requirement": "vontade",
+      "extra_requirements": null
+    }
+  ]
+}

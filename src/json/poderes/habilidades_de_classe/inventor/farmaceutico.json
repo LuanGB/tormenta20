@@ -1,0 +1,37 @@
+{
+  "id": "farmaceutico",
+  "name": "Farmacêutico",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_inventor",
+  "description": "Quando usa um item alquímico que cure pontos de vida, você pode gastar uma quantidade de PM a sua escolha (limitado pelo seu bônus de Inteligência). Para cada PM que gastar, o item cura um dado extra do mesmo tipo.",
+  "requirements": [
+     {
+      "type": "item_type",
+      "sub_type": "soft",
+      "item": "alquimico_de_cura"
+    },
+    {
+      "type": "attr_value",
+      "sub_type": "hard",
+      "attr": "sab",
+      "value": 13
+    },
+    {
+      "type": "skill_training",
+      "sub_type": "hard",
+      "skill": "oficio_alquimia"
+    }
+  ],
+  "effects": [
+    {
+      "type": "cure_improvement",
+      "amount": "um_dado_extra_por_PM"
+    }
+  ],
+  "costs": [
+    {
+    "value": "a_sua_escolha",
+    "type": "PM"
+    }
+  ]
+}

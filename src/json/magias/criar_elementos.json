@@ -1,0 +1,63 @@
+{
+  "id": "criar_elementos",
+  "name": "Criar Elementos",
+  "type": "divina",
+  "circle": "1",
+  "school": "conv",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "curto_6m_9q",
+  "target": {
+    "amount": null,
+    "up_to": null,
+    "type": "elemento_escolhido"
+  },
+  "effect": "elemento",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "instantânea",
+  "duration_details": null,
+  "resistence": null,
+  "extra_costs": null,
+  "description": "Você cria uma pequena porção de um elemento real, não mágico.\nÁgua: enche um recipiente Minúsculo (como um odre) com água potável ou cria um cubo (ou objeto simples) de gelo de tamanho Minúsculo.\nAr: cria vento. Isso purifica um quadrado de 1,5m de gás ou fumaça ou remove névoa por uma rodada.\nFogo: cria uma chama que ilumina como uma tocha. Você pode segurá-la na mão sem se queimar ou fazê-la surgir em um quadrado de 1,5m. Uma criatura ou objeto no quadrado sofre 1d6 pontos de dano de fogo; se falhar num teste de Reflexos, pega fogo.\nTerra: cria um cubo (ou objeto simples) de tamanho Minúsculo feito de terra, argila ou pedra.",
+  "enhancements": [
+    {
+      "cost": 1,
+      "type": "aumenta",
+      "description": "aumenta a quantidade do elemento em um passo (uma categoria de tamanho para água ou terra +1 quadrado de 1,5m para ar e fogo).",
+      "extra_details": null
+    },
+    {
+      "cost": 1,
+      "type": "muda",
+      "description": "muda o efeito para alvo 1 criatura ou objeto e a resistência para Reflexos reduz à metade. Se escolher água ou terra, você arremessa o cubo ou objeto criado no alvo, causando 2d4 pontos de dano de impacto. Para cada categoria de tamanho acima de Minúsculo, o dano aumenta em um passo. O cubo se desfaz em seguida.",
+      "extra_details": {
+        "effects": "alvo",
+        "target": {
+          "amount": 1,
+          "up_to": null,
+          "type": "criatura_ou_objeto"
+        },
+        "resistence": {
+          "effect": "reduz_à_metade",
+          "skill": "reflexos"
+        }
+      }
+    },
+    {
+      "cost": 2,
+      "type": "aumenta",
+      "description": "se escolheu fogo, aumenta o dano inicial de cada chama em +1d6.",
+      "extra_details": null
+    }
+  ],
+  "effects": [
+    {
+      "type": "outro",
+      "attribute": null,
+      "amount": null,
+      "resistence_requirement": null,
+      "extra_requirements": null
+    }
+  ]
+}

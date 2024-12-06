@@ -1,0 +1,43 @@
+{
+  "id": "mata_dragao",
+  "name": "Mata Dragão",
+  "type": "arcana",
+  "circle": "5",
+  "school": "evoc",
+  "execution": "duas_rodadas",
+  "execution_details": null,
+  "range": "medio_30m_20q",
+  "target": {
+    "amount": null,
+    "up_to": null,
+    "type": "cone"
+  },
+  "effect": "medio_30m_20q",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "instantânea",
+  "duration_details": null,
+  "resistence": {
+    "effect": "reduz_à_metade",
+    "skill": "reflexos"
+  },
+  "extra_costs": null,
+  "description": "Esta é uma das mais poderosas magias de destruição existentes. Após entoar longos cânticos, o conjurador dispara uma carga de energia que varre uma enorme área à sua frente, causando 20d12 pontos de dano de essência em todas as criaturas, construções e objetos livres atingidos. Apesar de seu poder destrutivo, esta magia é lenta, tornando seu uso difícil em combate. Além disso, pode causar tantos danos colaterais que poucos conjuradores se arriscam a utilizá-la.",
+  "enhancements": [
+    {
+      "cost": 1,
+      "type": "aumenta",
+      "description": "aumenta o dano em 1d12.",
+      "extra_details": null
+    }
+  ],
+  "effects": [
+    {
+      "type": "dano",
+      "attribute": "pv",
+      "amount": "20d12",
+      "resistence_requirement": "reflexos",
+      "extra_requirements": null
+    }
+  ]
+}

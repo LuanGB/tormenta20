@@ -1,0 +1,26 @@
+{
+  "id": "golpe_violento",
+  "name": "Golpe Violento",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_lutador",
+  "description": "No 9º nível, você bate com muita força. Seu multiplicador de crítico com ataques desarmados aumenta em +1.",
+  "requirements": [
+     {
+      "type": "character_lvl",
+      "sub_type": "hard",
+      "value": 9
+    },
+    {
+      "type": "attack_type",
+      "sub_type": "soft",
+      "attack": "desarmado"
+    }
+  ],
+  "effects": [
+    {
+      "type": "critical_damage_improvement",
+      "value": 1
+    }
+  ],
+  "costs": null
+}

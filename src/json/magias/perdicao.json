@@ -1,0 +1,40 @@
+{
+  "id": "perdicao",
+  "name": "Perdição",
+  "type": "divina",
+  "circle": "1",
+  "school": "necro",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "curto_6m_9q",
+  "target": {
+    "amount": null,
+    "up_to": null,
+    "type": "criaturas_escolhidas"
+  },
+  "effect": "alvo",
+  "effect_details": null,
+  "counterspell": "benca",
+  "duration": "cena",
+  "duration_details": null,
+  "resistence": null,
+  "extra_costs": null,
+  "description": "Amaldiçoa os alvos, que recebem –1 em testes de ataque e rolagens de dano. Perdição anula Bênção.",
+  "enhancements": [
+    {
+      "cost": 2,
+      "type": "aumenta",
+      "description": "aumenta as penalidades em –1, limitado pelo círculo máximo de magia que você pode lançar.",
+      "extra_details": null
+    }
+  ],
+  "effects": [
+    {
+      "type": "penalidade",
+      "attribute": "testes_de_ataque_rolagens_de_dano",
+      "amount": "-1",
+      "resistence_requirement": null,
+      "extra_requirements": null
+    }
+  ]
+}

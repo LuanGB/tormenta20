@@ -1,0 +1,81 @@
+{
+  "id": "tranquilidade",
+  "name": "Tranquilo",
+  "type": "divina",
+  "circle": "1",
+  "school": "encan",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "curto_6m_9q",
+  "target": {
+    "amount": 1,
+    "up_to": null,
+    "type": "animal_ou_humanoide"
+  },
+  "effect": "alvo",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "cena",
+  "duration_details": null,
+  "resistence": {
+    "effect": "parcial",
+    "skill": "vontade"
+  },
+  "extra_costs": null,
+  "description": "Você emana ondas de serenidade. Se falhar na resistência, o alvo tem sua atitude mudada para indiferente (veja Tormenta20, página 118) e não pode atacar ou realizar qualquer ação agressiva. Se passar, sofre –2 em testes de ataque. Qualquer ação hostil contra o alvo ou seus aliados dissipa a magia e faz ele retornar à atitude que tinha antes (ou pior, de acordo com o mestre).",
+  "enhancements": [
+    {
+      "cost": 1,
+      "type": "muda",
+      "description": "muda o alvo para 1 criatura.",
+      "extra_details": {
+        "target": {
+          "amount": 1,
+          "up_to": null,
+          "type": "criatura"
+        }
+      }
+    },
+    {
+      "cost": 1,
+      "type": "aumenta",
+      "description": "aumenta o número de alvos em +1.",
+      "extra_details": {
+         "target": {
+          "amount": 2,
+          "up_to": false,
+          "type": "animal_ou_humanoide"
+        }
+      }
+    },
+    {
+      "cost": 2,
+      "type": "aumenta",
+      "description": "aumenta a penalidade em -1.",
+      "extra_details": null
+    },
+    {
+      "cost": 5,
+      "type": "muda",
+      "description": "muda o alcance para médio e o alvo para criaturas escolhidas. Requer 3º círculo.",
+      "extra_details": {
+        "range": "medio_30m_20q",
+        "target": {
+          "amount": null,
+          "up_to": false,
+          "type": "criaturas_escolhidas"
+        },
+        "requirement": "3_circulo"
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "aumenta|muda|outro",
+      "attribute": "pv|pm...",
+      "amount": "+10",
+      "resistence_requirement": null,
+      "extra_requirements": null
+    }
+  ]
+}

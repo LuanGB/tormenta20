@@ -1,0 +1,74 @@
+{
+  "id": "aviso",
+  "name": "Aviso",
+  "type": "universal",
+  "circle": "1",
+  "school": "adiv",
+  "execution": "movimento",
+  "execution_details": null,
+  "range": "longo_90m_60q",
+  "target": {
+    "amount": 1,
+    "up_to": null,
+    "type": "criatura"
+  },
+  "effect": "alvo",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "instantânea",
+  "duration_details": null,
+  "resistence": null,
+  "description": "Envia um aviso telepático para uma criatura, mesmo que não possa vê-la nem tenha linha de efeito. Escolha um: Alerta: o alvo recebe +5 em seu próximo teste de Iniciativa e de Percepção dentro da cena. Mensagem: o alvo recebe uma mensagem sua de até 25 palavras. Vocês devem ter um idioma em comum para o alvo poder entendê-lo. Localização: o alvo sabe onde você está naquele momento. Se você mudar de posição, ele não saberá.",
+  "enhancements": [
+    {
+      "cost": 1,
+      "type": "aumenta",
+      "description": "aumenta o alcance em um fator de 10 (90m para 900m, 900m para 9km e assim por diante).",
+      "extra_details": null
+    },
+    {
+      "cost": 1,
+      "type": "outro",
+      "description": "se escolher mensagem, o alvo pode enviar uma resposta de até 25 palavras para você até o fim de seu próximo turno.",
+      "extra_details": null
+    },
+    {
+      "cost": 2,
+      "type": "muda",
+      "description": "se escolher localização, muda a duração para cena. O alvo sabe onde você está mesmo que você mude de posição.",
+      "extra_details": null
+    },
+    {
+      "cost": 3,
+      "type": "aumenta",
+      "description": "aumenta o número de alvos em +1.",
+      "extra_details": null
+    }
+  ],
+  "effects": [
+    {
+      "name": "Alerta",
+      "type": "bônus",
+      "skill": "iniciativa,percepção",
+      "amount": "+5",
+      "resistence_requirement": null,
+      "extra_requirements": null
+    },
+    {
+      "name": "Mensagem",
+      "type": "comunicação",
+      "skill": null,
+      "amount": null,
+      "resistence_requirement": null,
+      "extra_requirements": null
+    },
+    {
+      "name": "Localização",
+      "type": "posição",
+      "skill": null,
+      "amount": null,
+      "resistence_requirement": null,
+      "extra_requirements": null
+    }
+  ]
+}

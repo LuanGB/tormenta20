@@ -1,0 +1,19 @@
+{
+  "id": "postura_de_combate_provocacao_petulante",
+  "name": "Postura de Combate: Provocação Petulante",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_cavaleiro",
+  "description": "Enquanto esta postura estiver ativa, todos os inimigos que iniciarem seus turnos dentro de seu alcance curto devem fazer um teste de Vontade (CD Car). Se falharem, devem atacar você nessa rodada.",
+  "requirements": null,
+  "effects": "ver_texto",
+  "costs": [
+    {
+    "value": 2,
+    "type": "PM"
+    },
+    {
+     "action": "moviment",
+     "type": "acao" 
+    }
+  ]
+}

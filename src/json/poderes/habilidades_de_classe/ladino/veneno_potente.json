@@ -1,0 +1,25 @@
+{
+  "id": "veneno_potente",
+  "name": "Veneno Potente",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_ladino",
+  "description": "A CD para resistir aos venenos que você usa aumenta em +2 e esses venenos causam +1 ponto de dano por dado de dano.",
+  "requirements": [
+    {
+      "type": "skill_training",
+      "sub_type": "hard",
+      "skill": "oficio_alquimia"
+    }
+  ],
+  "effects": [
+    {
+      "type": "CD_resistence_improvement",
+      "value": 2
+    },
+    {
+      "type": "damage_improvement",
+      "value": "1_por_dado"
+    }
+  ],
+  "costs": null
+}

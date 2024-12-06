@@ -1,0 +1,26 @@
+{
+  "id": "caldeirao_do_bruxo",
+  "name": "Caldeirão do Bruxo",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_arcanista",
+  "description": "Você pode criar poções, como se tivesse o poder geral Preparar Poção. Se tiver ambos, você pode criar poções de 3º círculo.",
+  "requirements": [
+    {
+      "type": "feature",
+      "sub_type": "hard",
+      "id": "bruxo"
+    },
+    {
+      "type": "skill_training",
+      "sub_type": "hard",
+      "skill": "oficio_alquimia"
+    }
+  ],
+  "effects": [
+    {
+      "type": "create_item",
+      "item": "pocao",
+      "action": "livre"
+    }
+  ]
+}

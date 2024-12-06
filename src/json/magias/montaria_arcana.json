@@ -1,0 +1,68 @@
+{
+  "id": "montaria_arcana",
+  "name": "Montaria Arcana",
+  "type": "arcana",
+  "circle": "2",
+  "school": "conv",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "curto_6m_9q",
+  "target": {
+    "amount": null,
+    "up_to": null,
+    "type": "criatura_conjurada"
+  },
+  "effect": "alvo",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "1_dia",
+  "duration_details": null,
+  "resistence": null,
+  "extra_costs": null,
+  "description": "Convoca um cavalo de batalha que serve como um aliado montaria veterano. Sua aparência é de um animal negro com crina e cauda cinzentas e cascos feitos de fumaça, mas você pode mudá-la se quiser. Além dos benefícios normais, a Montaria Arcana pode atravessar terreno difícil sem redução em seu deslocamento.",
+  "enhancements": [
+    {
+      "cost": 1,
+      "type": "outro",
+      "description": "além do normal, criaturas do tipo animal em alcance curto da montaria devem fazer um teste de Vontade. Se passarem, ficam abaladas pela cena; se falharem, ficam apavoradas por 1d4 rodadas, depois abaladas pela cena.",
+      "extra_details": null
+    },
+    {
+      "cost": 3,
+      "type": "muda",
+      "description": "muda a duração para permanente e adiciona sacrifício de 1 PM.",
+      "extra_details": {
+        "duration": "permanente",
+        "extra_costs": {
+          "material_component": null,
+          "material_component_cost":null,
+          "pm_debuff": null,
+          "pm_sacrifice": 1
+        }
+      }
+    },
+    {
+      "cost": 3,
+      "type": "aumenta",
+      "description": "aumenta o tamanho da montaria em uma categoria. Isso também aumenta o número de criaturas que ela pode carregar — duas para uma criatura Enorme, seis para Colossal. Uma única criatura controla a montaria; as outras apenas são deslocadas.",
+      "extra_details": null
+    },
+    {
+      "cost": 3,
+      "type": "muda",
+      "description": "muda o nível do aliado para mestre. Requer 3º círculo.",
+      "extra_details": {
+        "requirement": "3_circulo"
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "outro",
+      "attribute": null,
+      "amount": null,
+      "resistence_requirement": null,
+      "extra_requirements": null
+    }
+  ]
+}

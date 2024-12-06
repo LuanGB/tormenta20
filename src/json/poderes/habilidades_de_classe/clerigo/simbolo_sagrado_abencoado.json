@@ -1,0 +1,25 @@
+{
+  "id": "simbolo_sagrado_abencoado",
+  "name": "Símbolo Sagrado Abençoado",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_clerigo",
+  "description": "Você pode gastar uma ação de movimento e 1 PM para fazer uma prece e energizar seu símbolo sagrado até o fim da cena. Um símbolo sagrado energizado emite uma luz dourada ou prateada (se sua divindade canaliza energia positiva) ou púrpura ou avermelhada (se canaliza energia negativa) que ilumina como uma tocha. Enquanto você estiver empunhando um símbolo sagrado energizado, o custo em PM para lançar suas magias divinas diminui em 1.",
+  "requirements": null,
+  "effects": [
+    {
+      "type": "reduce_PM_cost_magic",
+      "magic": "divina",
+      "value": -1,
+      "requirement": "empunhar_o_simbolo_sagrado"
+    }
+  ],
+  "costs": [
+    {
+    "value": 1,
+    "type": "PM"
+    },
+    {
+    "type": "acao_de_movimento"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "planejamento_marcial",
+  "name": "Planejamento Marcial",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_guerreiro",
+  "description": "Uma vez por dia, você pode gastar uma hora e 3 PM para escolher um poder de guerreiro ou de combate cujos pré-requisitos cumpra. Você recebe os benefícios desse poder até o próximo dia.",
+  "requirements": [
+     {
+      "type": "character_lvl",
+      "sub_type": "hard",
+      "value": 10
+    },
+    {
+      "type": "feature",
+      "sub_type": "hard",
+      "id": "guerra"
+    }
+  ],
+  "effects": "ver_texto",
+  "costs": [
+    {
+    "value": 3,
+    "type": "PM"
+    },
+    {
+    "type": "uma_hora"
+    }
+  ]
+}

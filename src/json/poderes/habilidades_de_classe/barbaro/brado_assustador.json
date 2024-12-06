@@ -1,0 +1,27 @@
+{
+  "id": "brado_assustador",
+  "name": "Brado Assustador",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_barbaro",
+  "description": "Você pode gastar uma ação de movimento e 1 PM para soltar um berro feroz. Todos os inimigos em alcance curto devem fazer um teste de Vontade (CD Car). Um inimigo que falhe fica abalado até o fim da cena. Um inimigo que passe se torna imune a esta habilidade até o fim do dia.",
+  "requirements": [
+    {
+      "type": "skill_training",
+      "sub_type": "hard",
+      "skill": "intimidação"
+    }
+  ],
+  "effects": [
+    {
+      "type": "implement_condition",
+      "condition": "abalado",
+      "skill_test_resist": "vontade"
+    }
+  ],
+  "costs": [
+    {
+    "value": 1,
+    "type": ["PM", "acao_de_movimento"]
+    }
+  ]
+}

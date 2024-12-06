@@ -1,0 +1,40 @@
+{
+  "id": "heroismo",
+  "name": "Heroísmo",
+  "type": "divina",
+  "circle": "3",
+  "school": "encan",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "toque",
+  "target": {
+    "amount": 1,
+    "up_to": null,
+    "type": "criatura"
+  },
+  "effect": "alvo",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "cena",
+  "duration_details": null,
+  "resistence": null,
+  "extra_costs": null,
+  "description": "Esta magia imbui uma criatura com coragem e valentia. O alvo fica imune a medo. Além disso, recebe +4 em testes de ataque e rolagens de dano contra inimigos com nível maior que o seu.",
+  "enhancements": [
+    {
+      "cost": 4,
+      "type": "muda",
+      "description": "muda o bônus para +6",
+      "extra_details": null
+    }
+  ],
+  "effects": [
+    {
+      "type": "bônus",
+      "attribute": "ataque,dano",
+      "amount": "+4",
+      "resistence_requirement": null,
+      "extra_requirements": null
+    }
+  ]
+}

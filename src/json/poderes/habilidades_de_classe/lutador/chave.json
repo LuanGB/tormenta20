@@ -1,0 +1,32 @@
+{
+  "id": "chave",
+  "name": "Chave",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_lutador",
+  "description": "Se estiver agarrando uma criatura e fizer um teste de manobra contra ela para causar dano, o dano desarmado aumenta em um passo.",
+  "requirements": [
+     {
+      "type": "character_lvl",
+      "sub_type": "hard",
+      "value": 4
+    },
+    {
+      "type": "attr_value",
+      "sub_type": "hard",
+      "attr": "int",
+      "value": 13
+    },
+    {
+      "type": "feature",
+      "sub_type": "hard",
+      "id": "lutador_de_chao"
+    }
+  ],
+  "effects": [
+    {
+      "type": "damage_improvement",
+      "value": "um_passo"
+    }
+  ],
+  "costs": null
+}

@@ -1,0 +1,73 @@
+{
+  "id": "libertacao",
+  "name": "Libertação",
+  "type": "universal",
+  "circle": "4",
+  "school": "abjur",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "curto_6m_9q",
+  "target": {
+    "amount": 1,
+    "up_to": null,
+    "type": "criatura"
+  },
+  "effect": "alvo",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "cena",
+  "duration_details": null,
+  "resistence": null,
+  "extra_costs": null,
+  "description": "O alvo fica imune a condições de paralisia e ignora qualquer efeito que impeça ou restrinja seu deslocamento. Por fim, pode usar habilidades que exigem liberdade de movimentos mesmo se estiver usando armadura ou escudo.",
+  "enhancements": [
+    {
+      "cost": 2,
+      "type": "outro",
+      "description": "além do normal, o alvo pode caminhar sobre a água ou outros líquidos com seu deslocamento normal. Entretanto, isso não protege contra qualquer efeito que o líquido possa causar (o alvo pode andar sobre lava, mas ainda vai sofrer dano).",
+      "extra_details": null
+    },
+    {
+      "cost": 2,
+      "type": "outro",
+      "description": "além do normal, o alvo pode escolher 20 em todos os testes de Atletismo.",
+      "extra_details": null
+    },
+    {
+      "cost": 2,
+      "type": "outro",
+      "description": "além do normal, o alvo pode escolher 20 em todos os testes de Acrobacia e pode fazer todas as manobras desta perícia mesmo sem treinamento.",
+      "extra_details": null
+    },
+    {
+      "cost": 5,
+      "type": "muda",
+      "description": "muda o alcance para curto e o alvo para até 5 criaturas.",
+      "extra_details": {
+        "range": "curto_6m_9q",
+        "target": {
+          "amount": 5,
+          "up_to": true,
+          "type": "criaturas"
+        }
+      }
+    },
+    {
+      "cost": 5,
+      "type": "outro",
+      "description": "pode dissipar Aprisionamento.",
+      "extra_details": {
+        "counterspell": "aprisionamento"
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "outro",
+      "attribute": null,
+      "amount": null,
+      "resistence_requirement": null,
+      "extra_requirements": null
+    }
+  ]
+}

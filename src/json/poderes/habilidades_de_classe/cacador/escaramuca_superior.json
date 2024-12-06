@@ -1,0 +1,48 @@
+{
+  "id": "escaramuca_superior",
+  "name": "Escaramuça Superior",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_cacador",
+  "description": "Quando usa Escaramuça, seus bônus aumentam para +5 em Defesa e Reflexos e +1d12 em rolagens de dano. ",
+  "requirements": [
+     {
+      "type": "character_lvl",
+      "sub_type": "hard",
+      "value": 12
+    },
+    {
+      "type": "fearute_actived",
+      "sub_type": "soft",
+      "feature": "escaramuca"
+    },
+    {
+      "type": "feature",
+      "sub_type": "hard",
+      "id": "escaramuca"
+    }
+  ],
+  "effects": [
+      {
+      "type": "attack_improvement",
+      "value": "1d12",
+      "duration": "turno"
+    },
+    {
+      "type": "damage_improvement",
+      "value": "1d12",
+      "duration": "turno"
+    },
+    {
+      "type": "skill_improvement",
+      "value": 5,
+      "skill": "reflexos",
+      "duration": "turno"
+    },
+    {
+      "type": "defense_improvement",
+      "value": 5,
+      "duration": "turno"
+    }
+  ],
+  "costs": null
+}

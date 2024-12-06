@@ -1,0 +1,71 @@
+{
+  "id": "tempestade_divina",
+  "name": "Tempestade Divina",
+  "type": "divina",
+  "circle": "2",
+  "school": "evoc",
+  "execution": "completa",
+  "execution_details": "essa magia só pode ser lançada em ambientes abertos",
+  "range": "longo_90m_60q",
+  "target": {
+    "amount": null,
+    "up_to": null,
+    "type": "cilindro"
+  },
+  "effect": "area",
+  "effect_details": {
+    "shape": "cilindro",
+    "dimention": "raio,altura",
+    "size": "9m_yq,9m_yq",
+    "other_details": null
+  },
+  "counterspell": null,
+  "duration": "cena",
+  "duration_details": null,
+  "resistence": null,
+  "extra_costs": null,
+  "description": "Esta magia só pode ser usada em ambientes abertos. A área fica sujeita a um vendaval — ataques à distância sofrem penalidade de –5, chamas são apagadas e névoas e fumaças são dissipadas em 1 rodada. Você também pode causar chuva (–5 em testes de Percepção), neve (como chuva, mais a área se torna terreno difícil) ou granizo (como chuva, mais 1 ponto de dano de impacto por rodada, no início de seus turnos). Criaturas na área recebem uma penalidade de –15m no deslocamento de voo (mínimo 1,5m).",
+  "enhancements": [
+    {
+      "cost": 1,
+      "type": "muda",
+      "description": "muda a duração para sustentada. Além do normal, uma vez por rodada, como uma ação padrão, você pode fazer um relâmpago cair sobre um alvo na área, causando 3d8 pontos de dano de eletricidade (Reflexos reduz à metade).",
+      "extra_details": {
+        "duration": "sustentada"
+      }
+    },
+    {
+      "cost": 1,
+      "type": "muda",
+      "description": "se escolheu causar granizo, muda o dano para 1d6.",
+      "extra_details": null
+    },
+    {
+      "cost": 2,
+      "type": "aumenta",
+      "description": "aumenta o dano em +1.",
+      "extra_details": null
+    },
+    {
+      "cost": 3,
+      "type": "outro",
+      "description": "se escolheu causar chuva, ela revela criaturas e objetos invisíveis na área.",
+      "extra_details": null
+    },
+    {
+      "cost": 7,
+      "type": "outro",
+      "description": "se escolheu causar neve, criaturas na área sofrem 2d6 pontos de dano de frio no início de seus turnos.",
+      "extra_details": null
+    }
+  ],
+  "effects": [
+    {
+      "type": "outro",
+      "attribute": null,
+      "amount": null,
+      "resistence_requirement": null,
+      "extra_requirements": null
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "armadilha_arataca",
+  "name": "Armadinha: Arataca",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_cacador",
+  "description": "A vítima sofre 2d6 pontos de dano de perfuração e fica agarrada. Uma criatura agarrada pode escapar com uma ação padrão e um teste de Acrobacia ou Atletismo (CD Sab).",
+  "requirements": null,
+  "effects": [
+    {
+      "type": "condition",
+      "condition": "agarrada",
+      "duration": "ate_se_soltar"
+    },
+    {
+      "type": "damage_improvement",
+      "value": "2d6"
+    }
+  ],
+  "costs": null
+}

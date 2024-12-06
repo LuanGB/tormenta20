@@ -1,0 +1,30 @@
+{
+  "id": "ataque_extra",
+  "name": "Ataque Extra",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_guerreiro",
+  "description": "A partir do 6º nível, quando usa a ação atacar, você pode gastar 2 PM para realizar um ataque adicional com a mesma arma.",
+  "requirements": [
+     {
+      "type": "character_lvl",
+      "sub_type": "hard",
+      "value": 6
+    },
+    {
+      "type": "attack",
+      "sub_type": "soft"
+    }
+  ],
+  "effects": [
+    {
+      "type": "extra_attack",
+      "requirement": "mesma_arma"
+    }
+  ],
+  "costs": [
+    {
+    "value": 2,
+    "type": "PM"
+    }
+  ]
+}

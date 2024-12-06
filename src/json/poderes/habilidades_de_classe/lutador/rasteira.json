@@ -1,0 +1,27 @@
+{
+  "id": "rasteira",
+  "name": "Rasteira",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_lutador",
+  "description": "Quando faz um ataque desarmado, você pode gastar 2 PM. Se fizer isso e acertar o ataque, o oponente fica caído.",
+  "requirements": [
+    {
+      "type": "attack_type",
+      "sub_type": "soft",
+      "attack": "desarmado"
+    }
+  ],
+  "effects": [
+    {
+      "type": "condition",
+      "condition": "acaido",
+      "requirement": "acertar_ataque"
+    }
+  ],
+  "costs": [
+    {
+    "value": 2,
+    "type": "PM"
+    }
+  ]
+}

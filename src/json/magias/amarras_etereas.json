@@ -1,0 +1,57 @@
+{
+  "id": "amarras_etereas",
+  "name": "Amarras Etereas",
+  "type": "arcana",
+  "circle": "2",
+  "school": "conv",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "medio_30m_20q",
+  "target": {
+    "amount": 1,
+    "up_to": null,
+    "type": "criatura"
+  },
+  "effect": "alvo",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "cena",
+  "duration_details": null,
+  "resistence": {
+    "effect": "anula",
+    "skill": "reflexos"
+  },
+  "extra_costs": null,
+  "description": "Três laços de energia surgem do chão e se enroscam no alvo, deixando-o agarrado. A vítima pode gastar uma ação padrão para fazer um teste de Atletismo e tentar se livrar. Se passar, destrói um laço, mais um laço adicional para cada 2 pontos pelos quais superou a CD. Os laços também podem ser atacados e destruídos: cada um tem Defesa 10, 10 PV, RD 5 e imunidade a dano mágico. Se todos os laços forem destruídos, a magia é dissipada. Por serem feitos de energia, os laços afetam criaturas incorpóreas.",
+  "enhancements": [
+    {
+      "cost": 2,
+      "type": "aumenta",
+      "description": "aumenta o número de alvos em +1",
+      "extra_details": null
+    },
+    {
+      "cost": 2,
+      "type": "aumenta",
+      "description": "aumenta o número de laços em umalvo a sua escolha em +1",
+      "extra_details": null
+    },
+    {
+      "cost": 3,
+      "type": "outro",
+      "description": "em vez do normal, cada laço é destruído automaticamente com um único ataque bem-sucedido; porém, cada laço destruído libera um choque de energia que causa 1d6+1 pontos de dano de essência na criatura amarrada. Requer 3º círculo.",
+      "extra_details": {
+        "requirement": "3º círculo"
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "agarrar",
+      "attribute": null,
+      "amount": null,
+      "resistence_requirement": "atletismo",
+      "extra_requirements": null
+    }
+  ]
+}

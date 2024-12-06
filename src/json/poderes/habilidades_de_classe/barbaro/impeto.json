@@ -1,0 +1,21 @@
+{
+  "id": "impeto",
+  "name": "Ímpeto",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_barbaro",
+  "description": "Você pode gastar 1 PM para aumentar seu deslocamento em +6m por uma rodada.",
+  "requirements":null,
+  "effects": [
+    {
+      "type": "displacement_improvement",
+      "value": 6,
+      "duration": "uma_rodada"
+    }
+  ],
+  "costs": [
+    {
+    "value": 1,
+    "type": "PM"
+    }
+  ]
+}

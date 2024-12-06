@@ -1,0 +1,26 @@
+{
+  "id": "voadora",
+  "name": "Voadora",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_lutador",
+  "description": "Quando faz uma investida desarmada, você pode gastar 2 PM. Se fizer isso, recebe +1d6 no dano para cada 3m que se deslocar até chegar ao oponente, limitado pelo seu nível.",
+  "requirements": [
+    {
+      "type": "action_type",
+      "sub_type": "soft",
+      "action": "investida_desarmada"
+    }
+  ],
+  "effects": [
+    {
+      "type": "damage_improvement",
+      "value": "1d6_a_cada_3m_de_deslocamento"
+    }
+  ],
+  "costs": [
+    {
+    "value": 2,
+    "type": "PM"
+    }
+  ]
+}

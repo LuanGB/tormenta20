@@ -1,0 +1,33 @@
+{
+  "id": "lingua_dos_becos",
+  "name": "Língua dos Becos",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_lutador",
+  "description": "Você pode pagar 1 PM para usar seu bônus de Força no lugar de Carisma em um teste de perícia baseada em Carisma.",
+  "requirements": [
+    {
+      "type": "attr_value",
+      "sub_type": "hard",
+      "attr": "for",
+      "value": 13
+    },
+    {
+      "type": "skill_training",
+      "sub_type": "hard",
+      "skill": "intimidacao"
+    }
+  ],
+  "effects": [
+    {
+      "type": "switch_skill_attr",
+      "skill": "baseada_em_car",
+      "attr": "for"
+    }
+  ],
+  "costs": [
+    {
+    "value": 1,
+    "type": "PM"
+    }
+  ]
+}

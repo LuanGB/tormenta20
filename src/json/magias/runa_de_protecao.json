@@ -1,0 +1,77 @@
+{
+  "id": "runa_de_protecao",
+  "name": "Runa de Proteção",
+  "type": "universal",
+  "circle": "2",
+  "school": "abjur",
+  "execution": "completa",
+  "execution_details": null,
+  "range": "toque",
+  "target": {
+    "amount": 1,
+    "up_to": null,
+    "type": "objeto_ou_passagem"
+  },
+  "effect": "area_passagem",
+  "effect_details": {
+    "shape": null,
+    "dimention": "largura",
+    "size": "6m_9q",
+    "other_details": null
+  },
+  "counterspell": null,
+  "duration": "permanente_descarregar",
+  "duration_details": null,
+  "resistence": {
+    "effect": "reduz_à_metade",
+    "skill": "nenhum_ou_reflexos"
+  },
+  "extra_costs": {
+    "material_component": "pó de diamante",
+    "material_component_cost": "T$ 200",
+    "pm_debuff": null,
+    "pm_sacrifice": null
+  },
+  "description": "Escolha entre ácido, eletricidade, fogo, frio, luz ou trevas. Quando uma criatura abre o objeto ou passa pela passagem, a runa explode, causando 6d6 pontos de dano do tipo escolhido em 3m de raio. Criaturas na área, com exceção da criatura que ativou a runa, têm direito a um teste de Reflexos para reduzir o dano à metade. Você pode determinar uma palavra que impeça a runa de se ativar e/ou que a runa se ative apenas em condições específicas (por exemplo, apenas por goblins). Encontrar e desarmar a runa exige testes de Investigação e Ladinagem (CD 28). Componente material: pó de diamante no valor de T$ 200.",
+  "enhancements": [
+    {
+      "cost": 1,
+      "type": "aumenta",
+      "description": "aumenta o dano em +2d6.",
+      "extra_details": null
+    },
+    {
+      "cost": 1,
+      "type": "muda",
+      "description": "muda o alvo para 1 objeto que possa ser lido, como um livro, pergaminho ou mapa. A runa explode quando o objeto é lido. O objeto também sofre o dano (possivelmente sendo destruído).",
+      "extra_details": {
+        "target": {
+          "amount": 1,
+          "up_to": null,
+          "type": "objeto_que_possa_ser_lido"
+        }
+      }
+    },
+    {
+      "cost": 1,
+      "type": "outro",
+      "description": "lance uma magia de até 2º círculo como parte da execução da Runa de Proteção. Quando a runa é ativada, em vez do efeito normal, lança esta magia sobre a criatura que o ativou (se for uma magia de área, a área é centrada na criatura).",
+      "extra_details": null
+    },
+    {
+      "cost": 3,
+      "type": "outro",
+      "description": "como acima, mas a runa também causa o dano normal. Você define a ordem dos efeitos.",
+      "extra_details": null
+    }
+  ],
+  "effects": [
+    {
+      "type": "dano",
+      "attribute": "pv",
+      "amount": "6d6",
+      "resistence_requirement": "nenhuma_ou_reflexos",
+      "extra_requirements": null
+    }
+  ]
+}

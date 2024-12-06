@@ -1,0 +1,28 @@
+{
+  "id": "vontade_de_ferro",
+  "name": "Vontade de Ferro",
+  "type": "poder_geral",
+  "sub_type": "poder_de_destino",
+  "description": "Você recebe +1 PM para cada dois níveis de personagem e +2 em Vontade.",
+  "requirements": [
+    {
+      "type": "attr_value",
+      "sub_type": "hard",
+      "attr": "sab",
+      "value": 13
+    }
+  ],
+  "effects": [
+    {
+      "type": "pm_improvement",
+      "value": "1pm_a_cada_2_lvl",
+      "duration": "permanente"
+    },
+    {
+      "type": "skill_improvement",
+      "skill": "vontade",
+      "value": 2,
+      "duration": "permanente"
+    }
+  ]
+}

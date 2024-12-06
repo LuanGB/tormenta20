@@ -1,0 +1,27 @@
+{
+  "id": "arma_sagrada",
+  "name": "Arma Sagrada",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_paladino",
+  "description": "Se estiver empunhando a arma preferida de seu deus, o dado de dano que você rola por Golpe Divino aumenta para d12.",
+  "requirements": [
+    {
+      "type": "devotee_of_divinity",
+      "sub_type": "hard",
+      "divinity": "qualquer_uma_de_paladino_exceto_Lena_e_Marah"
+    },
+    {
+      "type": "weapon_type",
+      "sub_type": "soft",
+      "weapon": "preferida_do_deus"
+    }
+  ],
+  "effects": [
+    {
+      "type": "change_dice_feature",
+      "value": "d12",
+      "feature": "golpe_divino"
+    }
+  ],
+  "costs": null
+}

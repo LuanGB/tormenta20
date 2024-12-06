@@ -1,0 +1,31 @@
+{
+  "id": "disparo_preciso",
+  "name": "Disparo Preciso",
+  "type": "poder_geral",
+  "sub_type": "poder_de_combate",
+  "description": "Você pode fazer ataques à distância contra oponentes envolvidos em combate corpo a corpo sem sofrer a penalidade padrão de –5 no teste de ataque.",
+  "requirements": [
+    {
+      "type": "feature",
+      "sub_type": "hard",
+      "id": ["estilo_de_disparo", "estilo_de_arremesso"]
+    },
+    {
+      "type": "enemy_type",
+      "sub_type": "soft",
+      "enemy": "envolvido_em_combate_corpo_a_corpo"
+    },
+    {
+      "type": "attack_type",
+      "sub_type": "soft",
+      "attack": "ataque_a_ddistancia"
+    }
+  ],
+  "effects": [
+    {
+      "type": "remove_debuff",
+      "value": -5,
+      "debuff": "teste_de_ataque"
+    }
+  ]
+}

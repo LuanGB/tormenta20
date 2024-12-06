@@ -1,0 +1,101 @@
+{
+  "id": "pele_de_pedra",
+  "name": "Pele de Pedra",
+  "type": "universal",
+  "circle": "3",
+  "school": "trans",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "pessoal",
+  "target": {
+    "amount": null,
+    "up_to": null,
+    "type": "voce"
+  },
+  "effect": "alvo",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "cena",
+  "duration_details": null,
+  "resistence": null,
+  "extra_costs": null,
+  "description": "Sua pele ganha aspecto e dureza de rocha. Você recebe resistência a dano 5.",
+  "enhancements": [
+    {
+      "cost": 1,
+      "type": "muda",
+      "description": "muda o alcance para toque e o alvo para 1 criatura.",
+      "extra_details": {
+        "range": "toque",
+        "target": {
+          "amount": 1,
+          "up_to": null,
+          "type": "criatura"
+        }
+      }
+    },
+    {
+      "cost": 4,
+      "type": "muda",
+      "description": "muda a duração para 1 dia.",
+      "extra_details": {
+        "duration": "1_dia"
+      }
+    },
+    {
+      "cost": 4,
+      "type": "muda",
+      "description": "sua pele ganha aspecto e dureza de aço. Você recebe resistência a dano 10. Requer 4º círculo.",
+      "extra_details": {
+        "requirement": "4_circulo"
+      }
+    },
+    {
+      "cost": 4,
+      "type": "muda",
+      "description": "muda o alcance para toque, o alvo para 1 criatura, a duração para 1d4 rodadas e adiciona Resistência: Fortitude anula. Em vez do efeito normal, a magia transforma o alvo e seu equipamento em uma estátua inerte e sem consciência. A estátua possui os mesmos PV da criatura e resistência a dano 8; se for quebrada, a criatura morrerá. Requer 4º círculo.",
+      "extra_details": {
+        "range": "toque",
+        "target": {
+          "amount": 1,
+          "up_to": null,
+          "type": "criatura"
+        },
+        "duration": "1d4_rodadas",
+        "resistence": {
+          "effect": "anula",
+          "skill": "fortitude"
+        },
+        "requirement": "4_circulo"
+      }
+    },
+    {
+      "cost": 9,
+      "type": "muda",
+      "description": "como acima, mas com duração permanente. Requer 5º círculo.",
+      "extra_details": {
+        "range": "toque",
+        "target": {
+          "amount": 1,
+          "up_to": null,
+          "type": "criatura"
+        },
+        "duration": "permanente",
+        "resistence": {
+          "effect": "anula",
+          "skill": "fortitude"
+        },
+        "requirement": "5_circulo"
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "bonus",
+      "attribute": "resistencia_a_dano",
+      "amount": "5",
+      "resistence_requirement": null,
+      "extra_requirements": null
+    }
+  ]
+}

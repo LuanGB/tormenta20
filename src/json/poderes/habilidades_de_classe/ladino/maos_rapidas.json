@@ -1,0 +1,33 @@
+{
+  "id": "maos_rapidas",
+  "name": "Mãos Rápidas",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_ladino",
+  "description": "Ao fazer um teste de Ladinagem para abrir fechaduras, ocultar item, punga ou sabotar, você pode pagar 1 PM para fazê-lo como uma ação livre.",
+  "requirements": [
+    {
+      "type": "attr_value",
+      "sub_type": "hard",
+      "attr": "des",
+      "value": 15
+    },
+    {
+      "type": "skill_training",
+      "sub_type": "hard",
+      "skill": "ladinagem"
+    }
+  ],
+  "effects": [
+    {
+      "type": "change_action",
+      "action": "livre",
+      "requirements": "teste_de_ladinagem_para_sabotar"
+    }
+  ],
+  "costs": [
+    {
+    "value": 1,
+    "type": "PM"
+    }
+  ]
+}

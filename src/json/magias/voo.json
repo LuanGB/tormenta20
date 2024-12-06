@@ -1,0 +1,70 @@
+{
+  "id": "voo",
+  "name": "Voo",
+  "type": "arcana",
+  "circle": "3",
+  "school": "trans",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "pessoal",
+  "target": {
+    "amount": null,
+    "up_to": null,
+    "type": "voce"
+  },
+  "effect": "alvo",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "cena",
+  "duration_details": null,
+  "resistence": null,
+  "extra_costs": null,
+  "description": "Você recebe deslocamento de voo 12m. Voar por meio desta magia é simples como andar — você pode atacar e lançar magias normalmente enquanto voa. Quando a magia termina, você desce lentamente até o chão, como se estivesse sob efeito de Queda Suave.",
+  "enhancements": [
+    {
+      "cost": 1,
+      "type": "muda",
+      "description": "muda o alcance para toque e o alvo para 1 criatura.",
+      "extra_details": {
+        "range": "toque",
+        "target": {
+          "amount": 1,
+          "up_to": null,
+          "type": "criatura"
+        }
+      }
+    },
+    {
+      "cost": 4,
+      "type": "muda",
+      "description": "muda a duração para 1 dia. Requer 4º círculo.",
+      "extra_details": {
+        "duration": "1_dia",
+        "requirement": "4_circulo"
+      }
+    },
+    {
+      "cost": 4,
+      "type": "muda",
+      "description": "muda o alcance para curto, e o alvo para até 10 criaturas. Requer 4º círculo.",
+      "extra_details": {
+        "range": "curto_6m_9q",
+        "target": {
+          "amount": 10,
+          "up_to": true,
+          "type": "criaturas"
+        },
+        "requirement": "4_circulo"
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "outro",
+      "attribute": "deslocamento_de_voo",
+      "amount": "12m",
+      "resistence_requirement": null,
+      "extra_requirements": null
+    }
+  ]
+}

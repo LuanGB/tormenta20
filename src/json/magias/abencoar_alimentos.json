@@ -1,0 +1,71 @@
+{
+  "id": "abencoar_alimentos",
+  "name": "Abençoar Alimentos",
+  "type": "divina",
+  "circle": "1",
+  "school": "trans",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "curto",
+  "target": {
+    "amount": 1,
+    "up_to": false,
+    "type": "alimento para criatura"
+  },
+  "area_effect": null,
+  "area_effect_details": null,
+  "counterspell": null,
+  "duration": "cena",
+  "duration_details": null,
+  "resistence": null,
+  "extra_costs": null,
+  "description": "Você purifica e abençoa uma porção de comida ou dose de bebida. Isso torna um alimento sujo, estragado ou envenenado próprio para consumo. Além disso, se for consumido até o final da duração, o alimento oferece 5 PV temporários ou 1 PM temporário (além de quaisquer bônus que já oferecesse). Bônus de alimentação duram um dia e cada personagem só pode receber um bônus de alimentação por dia. ",
+  "enhancements": [
+    {
+      "cost": 0,
+      "type": "truque",
+      "description": "o alimento é purificado (não causa nenhum efeito nocivo se estava estragado ou envenenado), mas não oferece bônus ao ser consumido.",
+      "extra_details": {
+        "effects": null
+      }
+    },
+    {
+      "cost": 1,
+      "type": "aumenta",
+      "description": "Aumenta o número de alvos em +1",
+      "extra_details": {
+        "target": {
+          "amount": 2,
+          "up_to": null,
+          "type": "alimento para criatura"
+        }
+      }
+    },
+    {
+      "cost": 1,
+      "type": "muda",
+      "description": "Muda a duração para permanente, o alvo para 1 frasco com água e adiciona componente material (pó de prata no valor de T$ 5). Em vez do normal, cria um frasco de água benta.",
+      "extra_details": {
+        "duration": "permanente",
+        "target": {
+          "amount": 1,
+          "up_to": null,
+          "type": "frasco de água"
+        },
+        "extra_costs": {
+          "material_component": "pó de prata",
+          "material_component_cost": "5"
+        }
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "bônus",
+      "attribute": "pv,pm",
+      "amount": "5,1",
+      "resistence_requirement": null,
+      "extra_requirements": null
+    }
+  ]
+}

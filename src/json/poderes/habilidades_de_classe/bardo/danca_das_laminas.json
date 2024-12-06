@@ -1,0 +1,38 @@
+{
+  "id": "danca_das_laminas",
+  "name": "Dança das Lâminas",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_bardo",
+  "description": "Quando você lança uma magia com execução de uma ação padrão, pode gastar 1 PM para fazer um ataque corpo a corpo como uma ação livre.",
+  "requirements": [
+     {
+      "type": "character_lvl",
+      "sub_type": "hard",
+      "value": 10
+    },
+    {
+      "type": "feature",
+      "sub_type": "hard",
+      "id": "esgrima_magica"
+    },
+    {
+      "type": "execution_type",
+      "sub_type": "soft",
+      "execution": "padrão",
+      "accion": "lancar_magias"
+    }
+  ],
+  "effects": [
+    {
+      "type": "extra_attack",
+      "attack": "corpo_a_corpo",
+      "action": "livre"
+    }
+  ],
+  "costs": [
+    {
+    "value": 1,
+    "type": "PM"
+    }
+  ]
+}

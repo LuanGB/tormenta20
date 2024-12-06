@@ -3,9 +3,15 @@
 /_yardoc/
 /coverage/
 /doc/
-/pkg/
 /spec/reports/
 /tmp/
+/node_modules/
 
 # rspec failure tracking
 .rspec_status
+
+# local build files
+/jsBuild/
+/dist/
+/pkg/
+/src/tormenta20.egg-info/

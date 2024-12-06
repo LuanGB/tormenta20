@@ -1,0 +1,28 @@
+{
+  "id": "julgamento_divino_zelo",
+  "name": "Julgamento Divino: Zelo",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_paladino",
+  "description": "Você pode gastar 1 PM para marcar um alvo em alcance longo. Pelo restante da cena, sempre que se mover na direção desse alvo, você se move com o dobro de seu deslocamento.",
+  "requirements": [
+    {
+      "type": "range_target",
+      "sub_type": "soft",
+      "range": "longo"
+    }
+  ],
+  "effects": [
+    {
+      "type": "displacement_improvement",
+      "value":"dobro",
+      "duration": "cena",
+      "requirements": "se_mover_na_direcao_do_alvo"
+    }
+  ],
+  "costs": [
+    {
+    "value": 1,
+    "type": "PM"
+    }
+  ]
+}

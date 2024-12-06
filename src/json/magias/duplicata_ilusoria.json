@@ -1,0 +1,40 @@
+{
+  "id": "duplicata_ilusoria",
+  "name": "Duplicata Ilusória",
+  "type": "arcana",
+  "circle": "4",
+  "school": "ilus",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "medio_30m_20q",
+  "target": {
+    "amount": null,
+    "up_to": null,
+    "type": "copia_ilusoria"
+  },
+  "effect": "alvo",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "cena",
+  "duration_details": "se a cópia sair do alcance ela desaparece",
+  "resistence": null,
+  "extra_costs": null,
+  "description": "Você cria uma cópia ilusória semirreal de... você mesmo! Ela é idêntica em aparência, som e cheiro, mas é intangível. A cada turno, você escolhe se verá e ouvirá através da duplicata ou de seu corpo original. A cópia reproduz todas as suas ações, incluindo fala. Qualquer magia com alcance de toque ou maior que você lançar pode se originar da duplicata, em vez do seu corpo original. As magias afetam outros alvos normalmente, com a única diferença de se originarem da cópia, em vez de você. Se quiser que a duplicata faça algo diferente de você, você deve gastar uma ação de movimento. Qualquer criatura que interagir com a cópia tem direito a um teste de Vontade para perceber que é uma ilusão. As magias que se  originam dela, no entanto, são reais. A cópia desaparece se sair do alcance.",
+  "enhancements": [
+    {
+      "cost": 3,
+      "type": "bônus",
+      "description": "cria uma cópia adicional.",
+      "extra_details": null
+    }
+    ],
+  "effects": [
+    {
+      "type": "outro",
+      "attribute": null,
+      "amount": null,
+      "resistence_requirement": null,
+      "extra_requirements": null
+    }
+  ]
+}

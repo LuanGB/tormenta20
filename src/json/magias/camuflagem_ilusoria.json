@@ -1,0 +1,50 @@
+{
+  "id": "camuflagem_ilusoria",
+  "name": "Camuflagem Ilisória",
+  "type": "arcana",
+  "circle": "2",
+  "school": "ilus",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "toque",
+  "target": {
+    "amount": 1,
+    "up_to": null,
+    "type": "criatura"
+  },
+  "effect": "alvo",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "cena",
+  "duration_details": null,
+  "resistence": null,
+  "extra_costs": null,
+  "description": "O alvo fica com sua imagem nublada, como se vista através de um líquido. Ele recebe camuflagem.",
+  "enhancements": [
+    {
+      "cost": 3,
+      "type": "outro",
+      "description": "a imagem do alvo fica mais distorcida. Ele ainda pode ser visto, mas recebe camuflagem total.",
+      "extra_details": null
+    },
+    {
+      "cost": 7,
+      "type": "muda",
+      "description": "muda o alcance para curto e o alvo para criaturas escolhidas. Requer 4º círculo.",
+      "extra_details": {
+        "range": "curto",
+        "target": "criaturas_escolhidas",
+        "requirement": "4_circulo"
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "camuflagem",
+      "attribute": null,
+      "amount": null,
+      "resistence_requirement": null,
+      "extra_requirements": null
+    }
+  ]
+}

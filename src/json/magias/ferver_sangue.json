@@ -1,0 +1,56 @@
+{
+  "id": "ferver_sangue",
+  "name": "Ferver Sangue",
+  "type": "arcana",
+  "circle": "3",
+  "school": "necro",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "curto_6m_9q",
+  "target": {
+    "amount": 1,
+    "up_to": null,
+    "type": "criatura"
+  },
+  "effect": "alvo",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "sustentada",
+  "duration_details": "se o alvo passar em dois testes de fortitude seguidos, a magia é dissipada",
+  "resistence": {
+    "effect": "reduz_à_metade",
+    "skill": "fortitude"
+  },
+  "extra_costs": null,
+  "description": "O sangue do alvo aquece rapidamente até entrar em ebulição. Quando a magia é lançada, e no início de cada um de seus turnos, o alvo sofre 3d6 pontos de dano de fogo (Fortitude reduz à metade). Se o alvo passar em dois testes de Fortitude seguidos, dissipa a magia. Se o alvo for reduzido a 0 PV pelo dano desta magia, seu corpo explode, matando-o e causando 6d6 pontos de dano de fogo em todas as criaturas a até 3m (Reflexos reduz à metade). Essa magia não afeta criaturas sem sangue, como construtos e mortos-vivos.",
+  "enhancements": [
+    {
+      "cost": 2,
+      "type": "aumenta",
+      "description": "aumenta o dano em +1d6.",
+      "extra_details": null
+    },
+    {
+      "cost": 9,
+      "type": "muda",
+      "description": "muda o alvo para criaturas escolhidas. Requer 5º círculo.",
+      "extra_details": {
+        "target": {
+          "amount": null,
+          "up_to": null,
+          "type": "criaturas_eescolhidas"
+        },
+        "requirement": "5_circulo"
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "dano",
+      "attribute": "pv",
+      "amount": "3d6",
+      "resistence_requirement": "fortitude",
+      "extra_requirements": null
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "julgamento_divino_autoridade",
+  "name": "Julgamento Divino: Autoridade",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_paladino",
+  "description": "Você pode gastar 1 PM para comandar uma criatura em alcance curto. Faça um teste de Diplomacia oposto pelo teste de Vontade da criatura. Se você passar, ela obedece a um comando simples como “pare\" ou “largue a arma\". Se a criatura passar, fica imune a esse efeito por um dia.",
+  "requirements": [
+    {
+      "type": "range_terget",
+      "sub_type": "soft",
+      "range": "curto"
+    }
+  ],
+  "effects": "ver_texto",
+  "costs": [
+    {
+    "value": 1,
+    "type": "PM"
+    }
+  ]
+}

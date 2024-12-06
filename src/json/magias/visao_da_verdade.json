@@ -1,0 +1,65 @@
+{
+  "id": "visao_da_verdade",
+  "name": "Visão da Verdade",
+  "type": "universal",
+  "circle": "4",
+  "school": "adiv",
+  "execution": "movimento",
+  "execution_details": null,
+  "range": "pessoal",
+  "target": {
+    "amount": null,
+    "up_to": null,
+    "type": "voce"
+  },
+  "effect": "pessoal",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "cena",
+  "duration_details": null,
+  "resistence": null,
+  "extra_costs": null,
+  "description": "Você enxerga a forma real das coisas. Você pode ver através de camuflagem (normal e total), escuridão (normal e mágica) e efeitos de ilusão e transmutação (enxergando a verdade como formas translúcidas ou sobrepostas).",
+  "enhancements": [
+    {
+      "cost": 1,
+      "type": "muda",
+      "description": "muda o alcance para toque e o alvo para 1 criatura.",
+      "extra_details": {
+        "range": "toque",
+        "target": {
+          "amount": 1,
+          "up_to": null,
+          "type": "criatura"
+        }
+      }
+    },
+    {
+      "cost": 1,
+      "type": "bonus",
+      "description": "além do normal, o alvo fica com sentidos apurados; ele recebe +10 em todos os testes de Percepção.",
+      "extra_details": null
+    },
+    {
+      "cost": 2,
+      "type": "bonus",
+      "description": "além do normal, o alvo escuta falsidades; ele recebe +10 em todos os testes de Intuição.",
+      "extra_details": null
+    },
+    {
+      "cost": 4,
+      "type": "outro",
+      "description": "além do normal, o alvo enxerga através de paredes e barreiras com 30cm de espessura ou menos (as paredes e barreiras parecem translúcidas).",
+      "extra_details": null
+    }
+  ],
+  "effects": [
+    {
+      "type": "outro",
+      "attribute": null,
+      "amount": null,
+      "resistence_requirement": null,
+      "extra_requirements": null
+    }
+  ]
+}

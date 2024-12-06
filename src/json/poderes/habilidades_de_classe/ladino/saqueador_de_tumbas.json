@@ -1,0 +1,21 @@
+{
+  "id": "saqueador_de_tumbas",
+  "name": "Saqueador de Tumbas",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_ladino",
+  "description": "Você recebe +5 em testes de Investigação para encontrar armadilhas e em testes de Reflexos para evitá-las. Além disso, gasta uma ação padrão para desabilitar mecanismos, em vez de 1d4 rodadas (veja a perícia Ladinagem).",
+  "requirements": null,
+  "effects": [
+    {
+      "type": "skill_improvement",
+      "value": 5,
+      "skill": ["investigacao", "reflexos"],
+      "requirements": ["encontrar_armadilhas", "fugir_de_armadilhas"]
+    },
+    {
+      "type": "change_action_type",
+      "action": "padrao"
+    }
+  ],
+  "costs": null
+}

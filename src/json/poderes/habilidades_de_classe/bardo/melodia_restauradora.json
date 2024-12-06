@@ -1,0 +1,26 @@
+{
+  "id": "melodia_restauradora",
+  "name": "Melodia Restauradora",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_bardo",
+  "description": "Quando você usa Melodia Curativa, pode gastar 2 PM extras. Se fizer isso, escolha uma das condições a seguir: abalado, apavorado, alquebrado, atordoado, cego, confuso, esmorecido, exausto, fatigado, frustrado ou surdo. Você remove a condição escolhida de quaisquer aliados a sua escolha afetados pela Melodia Curativa.",
+  "requirements": [
+    {
+      "type": "feature",
+      "sub_type": "hard",
+      "id": "melodia_curativa"
+    }
+  ],
+  "effects": [
+    {
+      "type": "remove_codition",
+      "codition": ["abalado", "apavorado", "alquebrado", "atordoado", "cego", "confuso", "esmorecido", "exausto", "fatigado", "frustrado", "surdo"]
+    }
+  ],
+  "costs": [
+    {
+    "value": 2,
+    "type": "PM"
+    }
+  ]
+}

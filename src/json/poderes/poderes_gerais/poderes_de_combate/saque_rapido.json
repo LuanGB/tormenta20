@@ -1,0 +1,26 @@
+{
+  "id": "saque_rapido",
+  "name": "Saque Rápido",
+  "type": "poder_geral",
+  "sub_type": "poder_de_combate",
+  "description": "Você recebe +2 em Iniciativa e pode sacar ou guardar itens como uma ação livre (em vez de ação de movimento). Além disso, a ação que você gasta para recarregar uma arma de disparo diminui em uma categoria (ação completa para padrão, padrão para movimento, movimento para livre).",
+  "requirements": [
+    {
+      "type": "expertise",
+      "sub_type": "hard",
+      "skill": "iniciativa"
+    }
+  ],
+  "effects": [
+    {
+      "type": "expertise_improvement",
+      "value": 2,
+      "skill": "iniciativa"
+    },
+    {
+      "type": "change_action_type",
+      "action": "livre",
+      "sub_action": ["sacar", "guardar"]
+    }
+  ]
+}

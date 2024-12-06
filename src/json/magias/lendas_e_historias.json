@@ -1,0 +1,49 @@
+{
+  "id": "lendas_e_historias",
+  "name": "Lendas e Histórias",
+  "type": "universal",
+  "circle": "3",
+  "school": "adiv",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "toque",
+  "target": {
+    "amount": 1,
+    "up_to": null,
+    "type": "criatura,objeto,local"
+  },
+  "effect": "alvo",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "sustentada",
+  "duration_details": null,
+  "resistence": null,
+  "extra_costs": null,
+  "description": "Você descobre informações sobre uma criatura, objeto ou local que esteja tocando. O que exatamente você descobre depende do mestre: talvez você não descubra tudo que há para saber, mas ganhe pistas para continuar a investigação. A cada rodada que mantiver a magia, você descobre:\n• Todas as informações sobre o alvo, como se tivesse passado em todos os testes de Conhecimento para tal.\n• Todas as habilidades do alvo. Se for uma criatura, você sabe suas estatísticas de jogo como raça, classe, nível, atributos, magias, resistências e fraquezas. Se for um item mágico, aprende seu efeito e funcionamento.\n• Se o alvo está sob influência de alguma magia e todas as informações sobre as magias ativas, se houver alguma.",
+  "enhancements": [
+    {
+      "cost": 4,
+      "type": "muda",
+      "description": "muda a execução para 1 dia, o alcance para ilimitado e adiciona componente material (cuba de ouro cheia d’água e ingredientes mágicos, no valor de T$ 1.000). Você ainda precisa ter alguma informação sobre o alvo, como um nome, descrição ou localização.",
+      "extra_details": {
+        "execution": "1_dia",
+        "range": "ilimitado",
+        "extra_costs": {
+          "material_component": "cuba de ouro cheia d'agua e ingredientes mágicos",
+          "material_component_cost": "T$ 1.000",
+          "pm_debuff": null,
+          "pm_sacrifice": null
+        }
+      }
+    }
+    ],
+  "effects": [
+    {
+      "type": "outro",
+      "attribute": null,
+      "amount": null,
+      "resistence_requirement": null,
+      "extra_requirements": null
+    }
+  ]
+}

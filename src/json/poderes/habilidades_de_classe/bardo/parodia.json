@@ -1,0 +1,21 @@
+{
+  "id": "parodia",
+  "name": "Paródia",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_bardo",
+  "description": "Uma vez por rodada, quando vê alguém lançando uma magia em alcance médio, você pode pagar 1 PM e fazer um teste de Atuação (CD 15 + custo em PM da magia). Se passar, até o final de seu próximo turno você pode lançar essa magia.",
+  "requirements": [
+    {
+      "type": "range",
+      "sub_type": "soft",
+      "range": "medio"
+    }
+  ],
+  "effects": null,
+  "costs": [
+    {
+    "value": 1,
+    "type": "PM"
+    }
+  ]
+}

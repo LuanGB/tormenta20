@@ -1,0 +1,19 @@
+{
+  "id": "veneficio",
+  "name": "Venefício",
+  "type": "poder_geral",
+  "sub_type": "poder_de_destino",
+  "description": "Quando usa um veneno, você não corre risco de se envenenar acidentalmente. Além disso, a CD para resistir aos seus venenos aumenta em +2.",
+  "requirements": [
+    {
+      "type": "skill_training",
+      "sub_type": "hard",
+      "skill": "oficio_alquimia"
+    }
+  ],
+  "effects": [
+    {
+      
+    }
+  ]
+}

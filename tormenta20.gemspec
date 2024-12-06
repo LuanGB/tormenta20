@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative "lib/tormenta20/version"
+require_relative "src/ruby/tormenta20/version"
 
 Gem::Specification.new do |spec|
   spec.name = "tormenta20"
@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.authors = ["LuanGB"]
   spec.email = ["luan.goncbs@gmail.com"]
 
-  spec.summary = "A Ruby and Node library with data about the Brazilian TTRPG, Tormenta20"
-  spec.description = "A Ruby and Node library with data about the Brazilian TTRPG, Tormenta20"
+  spec.summary = "A Ruby, Node and Python library with data about the Brazilian TTRPG, Tormenta20"
+  spec.description = "A Ruby, Node and Python library with data about the Brazilian TTRPG, Tormenta20"
   spec.homepage = "https://github.com/LuanGB/tormenta20"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 3.0.0"
@@ -29,10 +29,10 @@ Gem::Specification.new do |spec|
   end
   spec.bindir = "exe"
   spec.executables = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
-  spec.require_paths = ["lib"]
+  spec.require_paths = ["src/ruby"]
 
   # Uncomment to register a new dependency of your gem
-  # spec.add_dependency "example-gem", "~> 1.0"
+  spec.add_dependency "activesupport", "~> 8.0"
 
   # For more information and examples about making a new gem, check out our
   # guide at: https://bundler.io/guides/creating_gem.html

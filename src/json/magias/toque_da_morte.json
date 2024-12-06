@@ -1,0 +1,58 @@
+{
+  "id": "toque_da_morte",
+  "name": "Toque da Morte",
+  "type": "universal",
+  "circle": "5",
+  "school": "necro",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "toque",
+  "target": {
+    "amount": 1,
+    "up_to": null,
+    "type": "criatura"
+  },
+  "effect": "alvo",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "instantânea",
+  "duration_details": null,
+  "resistence": {
+    "effect": "parcial",
+    "skill": "fortitude"
+  },
+  "extra_costs": null,
+  "description": "Sua mão exala energias letais. Se a criatura tocada falhar no teste de Fortitude, seus PV são reduzidos a –10; se passar, sofre 10d8 pontos de dano de trevas.",
+  "enhancements": [
+    {
+      "cost": 2,
+      "type": "muda",
+      "description": "muda o alcance para curto. Em vez de tocar no alvo, você dispara um raio púrpura da ponta de seu dedo indicador.",
+      "extra_details": {
+        "range": "alcance"
+      }
+    },
+    {
+      "cost": 10,
+      "type": "muda",
+      "description": "muda o alcance para curto e o alvo para inimigos no alcance. Em vez de tocar no alvo, você dispara raios púrpuras da ponta de seus dedos.",
+      "extra_details": {
+        "range": "curto",
+        "alvo": {
+          "amount": null,
+          "up_to": null,
+          "type": "inimigos_no_alcance"
+        }
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "dano",
+      "attribute": "pv",
+      "amount": "10d8",
+      "resistence_requirement": "fortitude",
+      "extra_requirements": null
+    }
+  ]
+}

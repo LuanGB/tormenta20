@@ -1,0 +1,31 @@
+{
+  "id": "agite_antes_de_usar",
+  "name": "Agite Antes de Usar",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_inventor",
+  "description": "Quando usa um item alquímico que cause dano, você pode gastar uma quantidade de PM a sua escolha (limitado pelo seu bônus de Inteligência). Para cada PM que gastar, o item causa um dado extra de dano do mesmo tipo.",
+  "requirements": [
+    {
+      "type": "item_type",
+      "sub_type": "soft",
+      "item": "alquimico_de_dano"
+    },
+    {
+      "type": "skill_training",
+      "sub_type": "hard",
+      "skill": "oficio_alquimia"
+    }
+  ],
+  "effects": [
+    {
+      "type": "damage_improvement",
+      "amount": "um_dado_extra_por_PM"
+    }
+  ],
+  "costs": [
+    {
+    "value": "a_sua_escolha",
+    "type": "PM"
+    }
+  ]
+}

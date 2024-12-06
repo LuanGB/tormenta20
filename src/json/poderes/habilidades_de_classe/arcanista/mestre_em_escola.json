@@ -1,0 +1,26 @@
+{
+  "id": "mestre_em_escola",
+  "name": "Mestre em Escola",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_arcanista",
+  "description": "Escolha uma escola de magia. O custo para lançar magias dessa escola diminui em –1 PM. Pré-requisitos: Especialista em Escola com a escola escolhida, 8º nível de arcanista.",
+  "requirements": [
+     {
+      "type": "character_lvl",
+      "sub_type": "soft",
+      "value": 8
+    },
+    {
+      "type": "feature",
+      "sub_type": "hard",
+      "id": "especialista_em_escola"
+    }
+  ],
+  "effects": [
+    {
+      "type": "decrease_cost",
+      "value": -1,
+      "requirements": "especialista em escola na mesma escola escolhida"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "aura_poderosa",
+  "name": "Aura Poderosa",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_paladino",
+  "description": "O alcance da sua aura aumenta para médio.",
+  "requirements": [
+     {
+      "type": "character_lvl",
+      "sub_type": "hard",
+      "value": 6
+    }
+  ],
+  "effects": [
+    {
+      "type": "range_feature_improvement",
+      "range": "medio",
+      "feature": "aura_sagrada"
+    }
+  ],
+  "costs": null
+}

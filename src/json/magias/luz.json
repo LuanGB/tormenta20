@@ -1,0 +1,121 @@
+{
+  "id": "luz",
+  "name": "Luz",
+  "type": "universal",
+  "circle": "1",
+  "school": "evoc",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "curto_6m_9q",
+  "target": {
+    "amount": 1,
+    "up_to": null,
+    "type": "objeto"
+  },
+  "effect": "alvo",
+  "effect_details": null,
+  "counterspell": "escuridao",
+  "duration": "cena",
+  "duration_details": null,
+  "resistence": {
+    "effect": "anula",
+    "skill": "vontade"
+  },
+  "extra_costs": null,
+  "description": "O objeto emite luz em uma área com 6m de raio. Ele pode ser guardado para interromper a luz, que voltará caso ele seja revelado. Se lançar a magia num objeto de uma criatura involuntária, ela tem direito a um teste de Vontade para anulá-la. Luz anula Escuridão.",
+  "enhancements": [
+    {
+      "cost": 1,
+      "type": "aumenta",
+      "description": "aumenta a área iluminada em +3m de raio.",
+      "extra_details": null
+    },
+    {
+      "cost": 2,
+      "type": "muda",
+      "description": "muda a duração para 1 dia.",
+      "extra_details": {
+        "duration": "1_dia"
+      }
+    },
+    {
+      "cost": 2,
+      "type": "muda",
+      "description": "muda a duração para permanente e adiciona componente material (pó de rubi no valor de T$ 50). Não pode ser usado em conjunto com outros aprimoramentos. Requer 2º círculo.",
+      "extra_details": {
+        "duration": "permanente",
+        "extra_costs": {
+          "material_component": "pó de rubi",
+          "material_component_cost": "T$ 50",
+          "pm_debuff": null,
+          "pm_sacrifice": null
+        },
+        "requirement": "2_circulo"
+      }
+    },
+    {
+      "cost": 0,
+      "type": "muda",
+      "description": "muda o alvo para 1 criatura. Você lança a magia nos olhos do alvo, que fica ofuscado pela cena. Não afeta criaturas cegas.",
+      "extra_details": {
+        "target": {
+          "amount": 1,
+          "up_to": null,
+          "type": "objeto"
+        },
+        "requirement": "arcanos"
+      }
+    },
+    {
+      "cost": 2,
+      "type": "muda",
+      "description": "muda o alcance para longo e o efeito para 4 esferas flutuantes de luz com 10cm de diâmetro. Uma vez por rodada, você pode mover as esferas com uma ação livre para qualquer ponto dentro do alcance. Cada esfera ilumina como uma tocha. Se uma esfera ocupar o espaço de uma criatura, ela fica ofuscada e não recebe camuflagem por escuridão ou invisibilidade. Requer 2º círculo.",
+      "extra_details": {
+        "range": "longo_90m_60q",
+        "target": {
+          "amount": 4,
+          "up_to": false,
+          "type": "esferas"
+        },
+        "effect": "longo_90m_60q",
+        "effect_details": {
+          "shape": "esfera",
+          "dimention": "diâmetro",
+          "size": "10m_yq",
+          "other_details": null
+        },
+        "requirement": "arcanos_2_circulo"
+      }
+    },
+    {
+      "cost": 2,
+      "type": "outro",
+      "description": "criaturas que sofrem penalidades e dano pela luz solar sofrem seus efeitos como se estivessem expostos à luz solar real. Dentro da área seus aliados estabilizam automaticamente e ficam imunes à condição sangrando, e seus inimigos ficam ofuscados. Requer 2º círculo.",
+      "extra_details": {
+        "requirement": "divinos_2_circulo"
+      }
+    },{
+      "cost": 5,
+      "type": "muda",
+      "description": "muda o alcance para toque e o alvo para 1 criatura. Em vez do normal, o alvo é envolto por um halo de luz, recebendo +10 em Diplomacia e resistência a trevas 10. Requer 2º círculo.",
+      "extra_details": {
+        "range": "toque",
+        "target": {
+          "amount": 1,
+          "up_to": null,
+          "type": "criatura"
+        },
+        "requirement": "divinos_2_circulo"
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "iluminar",
+      "attribute": null,
+      "amount": null,
+      "resistence_requirement": "vontade",
+      "extra_requirements": null
+    }
+  ]
+}

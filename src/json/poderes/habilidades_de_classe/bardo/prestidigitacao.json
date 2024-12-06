@@ -1,0 +1,27 @@
+{
+  "id": "prestidigitacao",
+  "name": "Prestidigitação",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_bardo",
+  "description": "Quando faz uma ação padrão qualquer, você pode aproveitar seus gestos para lançar uma magia de ilusão. Faça um teste de Atuação (CD 15 + custo em PM da magia). Se passar, você lança a magia como uma ação livre. Outros personagens só percebem que você lançou uma magia se passarem num teste de Misticismo (CD 20). Se falhar, a magia não funciona, mas você gasta os PM mesmo assim.",
+  "requirements": [
+    {
+      "type": "action_type",
+      "sub_type": "soft",
+      "action": "padra"
+    },
+    {
+      "type": "skill_teste",
+      "sub_type": "soft",
+      "skill": "atuacao",
+      "CD": "15_mas_custo_em_PM_da_magia"
+    }
+  ],
+  "effects": [
+    {
+      "type": "action_type",
+      "action": "livre"
+    }
+  ],
+  "costs": null
+}

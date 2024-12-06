@@ -1,0 +1,26 @@
+{
+  "id": "abusar_dos_fracos",
+  "name": "Abusar dos Fracos",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_bucaneiro",
+  "description": "Quando ataca uma criatura sob efeito de uma condição de medo, seu dano aumenta em um passo.",
+  "requirements": [
+    {
+      "type": "feature",
+      "sub_type": "hard",
+      "id": "flagelo_dos_mares"
+    },
+    {
+      "type": "terget_codition",
+      "sub_type": "soft",
+      "codition": "medo"
+    }
+  ],
+  "effects": [
+    {
+      "type": "damage_improvement",
+      "value": "um_passo"
+    }
+  ],
+  "costs": null
+}

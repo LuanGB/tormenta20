@@ -1,0 +1,37 @@
+{
+  "id": "julgamento_divino_iluminacao",
+  "name": "Julgamento Divino: Iluminação",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_paladino",
+  "description": "Você pode marcar um inimigo em alcance curto. Quando acerta um ataque corpo a corpo nesse inimigo, você recebe 2 PM temporários. Você só pode proferir este julgamento uma vez por cena.",
+  "requirements": [
+    {
+      "type": "fearute_use_time",
+      "sub_type": "soft",
+      "time": "uma_vez_por_dia"
+    },
+    {
+      "type": "attack_type",
+      "sub_type": "soft",
+      "attack": "corpo_a_corpo"
+    },
+    {
+      "type": "range_target",
+      "sub_type": "soft",
+      "range": "curto"
+    },
+    {
+      "type": "caminho_do_arcanista",
+      "sub_type": "hard",
+      "id": ["bruxo", "mago"]
+    }
+  ],
+  "effects": [
+    {
+      "type": "PM_improvement",
+      "value": 2,
+      "duration": "cena"
+    }
+  ],
+  "costs": null
+}

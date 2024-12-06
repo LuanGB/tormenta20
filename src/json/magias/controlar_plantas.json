@@ -1,0 +1,78 @@
+{
+  "id": "controlar_plantas",
+  "name": "Controlar Plantas",
+  "type": "divina",
+  "circle": "1",
+  "school": "trans",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "curto_6m_9q",
+  "target": {
+    "amount": null,
+    "up_to": null,
+    "type": "area"
+  },
+  "effect": "area",
+  "effect_details": {
+    "shape": "quadrado",
+    "dimention": "lado",
+    "size": "9m_yq",
+    "other_details": null
+  },
+  "counterspell": null,
+  "duration": "cena",
+  "duration_details": "um dos aprimoramentos é capaz de dissipar a magia",
+  "resistence": {
+    "effect": "anula",
+    "skill": "reflexos"
+  },
+  "extra_costs": null,
+  "description": "Esta magia só pode ser lançada em uma área com vegetação. As plantas se enroscam nas criaturas da área. Aquelas que falharem na resistência ficam enredadas. Uma vítima pode se libertar com uma ação padrão e um teste de Acrobacia ou Atletismo. A área é considerada terreno difícil. No início do turno de cada criatura na área, a vegetação tenta enredá-la novamente, exigindo um novo teste de Reflexos.",
+  "enhancements": [
+    {
+      "cost": 0,
+      "type": "muda",
+      "description": "muda a área para alvo de 1 planta e a resistência para nenhuma. Você pode fazer a planta se mover como se fosse animada. Ela não pode causar dano ou atrapalhar a concentração de um conjurador.",
+      "extra_details": {
+        "target": {
+          "amount": 1,
+          "up_to": null,
+          "type": "planta"
+        }
+      }
+    },
+    {
+      "cost": 1,
+      "type": "muda",
+      "description": "muda a duração para instantânea. As plantas na área diminuem. Terreno difícil muda para terreno normal e não oferece camuflagem. Esse efeito dissipa o uso normal de Controlar Plantas.",
+      "extra_details": {
+        "duration": "instantanea"
+      }
+    },
+    {
+      "cost": 1,
+      "type": "outro",
+      "description": "além do normal, criaturas que falhem na resistência também ficam imóveis.",
+      "extra_details": null
+    },
+    {
+      "cost": 2,
+      "type": "aumenta|muda|outro",
+      "description": "muda o alcance para pessoal, a área para alvo (você) e a resistência para nenhuma. Você consegue se comunicar com plantas, que começam com atitude prestativa em relação a você, e fazer testes de Diplomacia com plantas. Plantas têm uma percepção limitada de seus arredores e normalmente fornecem respostas simplórias.",
+      "extra_details": {
+        "range": "pessoal",
+        "target": "voce",
+        "resistence_requirement": null
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "terreno",
+      "attribute": null,
+      "amount": null,
+      "resistence_requirement": "reflexos",
+      "extra_requirements": "estar em area com vegetação"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "confianca_dos_ringues",
+  "name": "Confiança dos Ringues",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_lutador",
+  "description": "Quando um oponente erra um ataque corpo a corpo contra você, você recebe 1 PM temporário. PM temporários desaparecem no final da cena.",
+  "requirements": [
+     {
+      "type": "character_lvl",
+      "sub_type": "hard",
+      "value": 10
+    }
+  ],
+  "effects": [
+    {
+      "type": "PM_improvement",
+      "value": 1,
+      "duration": "cena"
+    }
+  ],
+  "costs": null
+}

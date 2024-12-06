@@ -1,0 +1,22 @@
+{
+  "id": "conhecimento_de_formulas",
+  "name": "Conhecimento de Formulas",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_inventor",
+  "description": "Você aprende três fórmulas de quaisquer círculos que possa aprender. Você pode escolher este poder quantas vezes quiser.",
+  "requirements": [
+    {
+      "type": "feature",
+      "sub_type": "hard",
+      "id": "alquimista_iniciado"
+    }
+  ],
+  "effects": [
+    {
+      "type": "learn_formulas",
+      "amount": 3,
+      "requirements": "circulos_que_possa_aprender"
+    }
+  ],
+  "costs": null
+}

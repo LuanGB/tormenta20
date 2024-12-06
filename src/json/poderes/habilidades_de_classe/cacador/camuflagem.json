@@ -1,0 +1,21 @@
+{
+  "id": "camuflagem",
+  "name": "Camuflagem",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_cacador",
+  "description": "Você pode gastar 2 PM para usar a perícia Furtividade para se esconder mesmo sem cobertura disponível.",
+  "requirements": [
+     {
+      "type": "character_lvl",
+      "sub_type": "hard",
+      "value": 6
+    }
+  ],
+  "effects": "ver_texto",
+  "costs": [
+    {
+    "value": 2,
+    "type": "PM"
+    }
+  ]
+}

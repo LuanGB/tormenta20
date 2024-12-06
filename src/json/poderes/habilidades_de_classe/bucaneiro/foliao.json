@@ -1,0 +1,17 @@
+{
+  "id": "foliao",
+  "name": "Folião",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_bucaneiro",
+  "description": "Você tem facilidade em criar amizades durante festas, de noitadas em tavernas a bailes na corte. O mestre define exatamente o que você pode fazer com este poder. Como regra geral, a atitude de todas as pessoas em relação a você durante uma festa melhora em uma categoria.",
+  "requirements": [
+    {
+      "type": "attr_value",
+      "sub_type": "hard",
+      "attr": "car",
+      "value": 13
+    }
+  ],
+  "effects": "definido_pelo_mestre",
+  "costs": null
+}

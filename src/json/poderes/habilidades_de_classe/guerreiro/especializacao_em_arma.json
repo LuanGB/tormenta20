@@ -1,0 +1,16 @@
+{
+  "id": "especializacao_em_arma",
+  "name": "Especialização em Arma",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_guerreiro",
+  "description": "Escolha uma arma. Você recebe +2 em rolagens de dano com a arma escolhida. Você pode escolher este poder outras vezes para armas diferentes.",
+  "requirements": null,
+  "effects": [
+    {
+      "type": "damage_improvement",
+      "value": 2,
+      "requirement": "escolha_uma_arma"
+    }
+  ],
+  "costs": null
+}

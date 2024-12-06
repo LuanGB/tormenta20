@@ -1,0 +1,30 @@
+{
+  "id": "dono_da_rua",
+  "name": "Dono da Rua",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_lutador",
+  "description": "No 20º nível, seu dano desarmado aumenta para 2d10 (para criaturas Médias). Além disso, quando usa a ação atacar para fazer um ataque desarmado, você pode fazer dois ataques, em vez de um (podendo usar Golpe Relâmpago para fazer um terceiro).",
+  "requirements": [
+     {
+      "type": "character_lvl",
+      "sub_type": "hard",
+      "value": 20
+    },
+    {
+      "type": "attack_type",
+      "sub_type": "soft",
+      "attack": "desarmado"
+    }
+  ],
+  "effects": [
+    {
+      "type": "extra_attack",
+      "requirements": "usar_acao_atacar"
+    },
+    {
+      "type": "damage_improvement",
+      "value": "2d10"
+    }
+  ],
+  "costs": null
+}

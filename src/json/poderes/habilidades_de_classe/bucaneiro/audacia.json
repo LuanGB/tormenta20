@@ -1,0 +1,26 @@
+{
+  "id": "audacia",
+  "name": "Audácia",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_bucaneiro",
+  "description": "Quando faz um teste de perícia, você pode gastar 2 PM para receber um bônus igual ao seu modificador de Carisma no teste. Você não pode usar esta habilidade em testes de ataque.",
+  "requirements": [
+    {
+      "type": "test_type",
+      "sub_type": "soft",
+      "test": "skill"
+    }
+  ],
+  "effects": [
+    {
+      "type": "attr_bonus_improvement",
+      "attr_value": "carisma"
+    }
+  ],
+  "costs": [
+    {
+    "value": 2,
+    "type": "PM"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "rastreador",
+  "name": "Rastreador",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_cacador",
+  "description": "Você recebe +2 em Sobrevivência. Além disso, pode se mover com seu deslocamento normal enquanto rastreia sem sofrer penalidades no teste de Sobrevivência.",
+  "requirements": [
+    {
+      "type": "character_lvl",
+      "sub_type": "hard",
+      "value": 1
+    }
+  ],
+  "effects": [
+    {
+      "type": "skill_improvement",
+      "value": 2
+    }
+  ],
+  "costs": null
+}

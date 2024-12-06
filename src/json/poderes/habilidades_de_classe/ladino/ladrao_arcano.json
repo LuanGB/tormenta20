@@ -1,0 +1,38 @@
+{
+  "id": "ladrao_arcano",
+  "name": "Ladrão Arcano",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_ladino",
+  "description": "Quando causa dano com um ataque furtivo em uma criatura capaz de lançar magias, você pode “roubar\" uma magia que já a tenha visto lançar. Você precisa pagar 1 PM por círculo da magia e pode roubar magias de até 4º círculo. Até o final da cena, você pode lançar a magia roubada (atributo-chave Inteligência).",
+  "requirements": [
+     {
+      "type": "character_lvl",
+      "sub_type": "hard",
+      "value": 13
+    },
+    {
+      "type": "inflict_damage_feature",
+      "sub_type": "soft",
+      "feature": "ataque_furtivo"
+    },
+    {
+      "type": "feature",
+      "sub_type": "hard",
+      "id": "roubo_de_mana"
+    }
+  ],
+  "effects": [
+    {
+      "type": "steal_magic",
+      "magic": "que_ja_tenha_visto_o_alvo_lancar",
+      "circle": 4,
+      "duration": "cena"
+    }
+  ],
+  "costs": [
+    {
+    "value": "1_por_circulo",
+    "type": "PM"
+    }
+  ]
+}

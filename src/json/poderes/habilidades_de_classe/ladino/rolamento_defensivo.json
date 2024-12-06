@@ -1,0 +1,27 @@
+{
+  "id": "rolamento_defensivo",
+  "name": "Rolamento Defensivo",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_ladino",
+  "description": "Sempre que sofre dano, você pode gastar 2 PM para reduzir esse dano à metade. Após usar este poder, você fica caído.",
+  "requirements": [
+    {
+      "type": "skill_training",
+      "sub_type": "hard",
+      "skill": "reflexos"
+    }
+  ],
+  "effects": [
+    {
+      "type": "reduce_damage",
+      "value": "metade",
+      "requirement": "sofrer_dano"
+    }
+  ],
+  "costs": [
+    {
+    "value": 2,
+    "type": "PM"
+    }
+  ]
+}

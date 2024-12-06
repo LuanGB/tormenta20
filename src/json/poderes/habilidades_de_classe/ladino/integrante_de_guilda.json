@@ -1,0 +1,16 @@
+{
+  "id": "integrante_de_guilda",
+  "name": "Integrante de Guilda",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_ladino",
+  "description": "Você é membro de uma organização criminosa, desde uma pequena guilda de ladrões a uma irmandade de Valkaria. Os efeitos deste poder variam de acordo com a organização e ficam a cargo do mestre. Como regra geral, você recebe +5 em testes de Diplomacia com pessoas ligadas ao submundo e +5 em testes de Intimidação com pessoas comuns que temeriam sua organização. Além disso, tem acesso a itens e serviços roubados ou proibidos (como armas de pólvora e venenos).",
+  "requirements": null,
+  "effects": [
+    {
+      "type": "skill_improvement",
+      "value": 5,
+      "skill": ["diplomacia", "intimidacao"]
+    }
+  ],
+  "costs": null
+}

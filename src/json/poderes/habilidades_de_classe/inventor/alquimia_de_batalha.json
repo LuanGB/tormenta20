@@ -1,0 +1,26 @@
+{
+  "id": "alquimia_de_batalha",
+  "name": "Alquimia de Batalha",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_inventor",
+  "description": "Quando usa um item alquímico ou poção que cause dano, você soma seu modificador de Inteligência na rolagem de dano.",
+  "requirements": [
+    {
+      "type": "item_type",
+      "sub_type": "soft",
+      "item": ["alquimico_de_dano", "pocao_de_dano"]
+    },
+    {
+      "type": "feature",
+      "sub_type": "hard",
+      "id": "alquimista_iniciado"
+    }
+  ],
+  "effects": [
+    {
+      "type": "use_damage_attr",
+      "attr": "int"
+    }
+  ],
+  "costs": null
+}

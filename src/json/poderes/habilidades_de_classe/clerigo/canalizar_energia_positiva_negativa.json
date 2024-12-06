@@ -1,0 +1,18 @@
+{
+  "id": "canalizar_energia_positiva_negativa",
+  "name": "Canalizar Energia Positiva/Negativa",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_clerigo",
+  "description": "Você pode gastar uma ação padrão e 1 PM para liberar uma onda de energia positiva ou negativa (de acordo com sua divindade) que afeta todas as criaturas em alcance curto. Energia positiva cura 1d6 pontos de dano em criaturas vivas a sua escolha e causa 1d6 pontos de dano de luz em mortos-vivos. Energia negativa tem o efeito inverso — causa dano de trevas em criaturas vivas a sua escolha e cura mortos-vivos. Uma criatura que sofra dano tem direito a um teste de Vontade (CD Car) para reduzi-lo à metade. Para cada 2 PM extras que você gastar, a cura ou dano aumenta em +1d6 PV (ou seja, pode gastar 3 PM para curar 2d6 PV, 5 PM para curar 3d6 PV e assim por diante).",
+  "requirements": null,
+  "effects": "ver_texto",
+  "costs": [
+    {
+    "value": 1,
+    "type": "PM"
+    },
+    {
+    "type": "acao_padrao"
+    }
+  ]
+}

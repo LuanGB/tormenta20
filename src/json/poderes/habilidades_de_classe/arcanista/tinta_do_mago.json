@@ -1,0 +1,29 @@
+{
+  "id": "tinta_do_mago",
+  "name": "Tinta do Mago",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_arcanista",
+  "description": "Você pode criar pergaminhos, como se tivesse o poder Escrever Pergaminho. Se tiver ambos, seu custo para criar pergaminhos é reduzido à metade.",
+  "requirements": [
+    {
+      "type": "skill_training",
+      "sub_type": "hard",
+      "skill": "conhecimento"
+    },
+    {
+      "type": "caminho_do_arcanista",
+      "sub_type": "hard",
+      "id": "mago"
+    }
+  ],
+  "effects": [
+    {
+      "type": "create_item",
+      "item": "pergaminho"
+    },
+    {
+      "type": "reduce_cost",
+      "Requirement": "poder_escrever_pergaminho"
+    }
+  ]
+}

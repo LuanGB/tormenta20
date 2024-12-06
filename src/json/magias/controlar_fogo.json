@@ -1,0 +1,68 @@
+{
+  "id": "controlar_fogo",
+  "name": "Controlar Fogo",
+  "type": "divina",
+  "circle": "2",
+  "school": "evoc",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "curto_6m_9q",
+  "target": {
+    "amount": null,
+    "up_to": null,
+    "type": "varia_de_acordo_com_texto"
+  },
+  "effect": "alvo",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "cenar",
+  "duration_details": null,
+  "resistence": null,
+  "extra_costs": null,
+  "description": "Ao lançar a magia, escolha um dos efeitos.\nChamejar: o alvo é armas, armas naturais ou ataques desarmados escolhidos. Eles causam +1d6 de dano de fogo.\nEsquentar: o alvo é 1 objeto, que começa a esquentar. Ele sofre 1d6 pontos de dano de fogo por rodada e causa o mesmo dano a qualquer criatura o tocando. Uma criatura pode gastar uma ação completa para resfriar o objeto e cancelar a magia.\nExtinguir: o alvo é 1 chama Grande ou menor, que é apagada. Uma nuvem de fumaça com 3m de raio surge onde estava a chama, fornecendo camuflagem.\nModelar: o alvo é 1 chama Grande ou menor. A cada rodada, você pode gastar uma ação livre para movimentá-la 9m. Se atravessar um espaço ocupado, causa 2d6 pontos de dano de fogo (uma vez por rodada).",
+  "enhancements": [
+    {
+      "cost": 1,
+      "type": "muda",
+      "description": "muda a duração para sustentada e a resistência para Reflexos reduz à metade. Em vez do normal, a cada rodada, você pode gastar uma ação de movimento para projetar uma labareda, causando 4d6 pontos de dano de fogo (Ref reduz à metade) em um alvo em alcance curto a partir da chama.",
+      "extra_details": {
+        "duration": "sustentada",
+        "resistence": {
+          "effect": "reduz_à_metade",
+          "skill": "reflexos"
+        }
+      }
+    },
+    {
+      "cost": 2,
+      "type": "aumenta",
+      "description": "aumenta o dano em +1d6 (exceto Chamejar).",
+      "extra_details": null
+    },
+    {
+      "cost": 3,
+      "type": "muda",
+      "description": "muda o alvo para 1 criatura composta por fogo, lava ou magma e a resistência para Fortitude parcial. Se a criatura falhar no teste de resistência é reduzida a 0 PV. Se passar, sofre 5d6 pontos de dano.",
+      "extra_details": {
+        "target": {
+          "amount": 1,
+          "up_to": null,
+          "type": "criatura_composta_por_fogo_lava_ou_magma"
+        },
+        "resistence": {
+          "effect": "parcial",
+          "skill": "fortitude"
+        }
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "controle",
+      "attribute": null,
+      "amount": null,
+      "resistence_requirement": null,
+      "extra_requirements": null
+    }
+  ]
+}

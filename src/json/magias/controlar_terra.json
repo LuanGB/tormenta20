@@ -1,0 +1,64 @@
+{
+  "id": "controlar_terra",
+  "name": "Controlar Terra",
+  "type": "divina",
+  "circle": "3",
+  "school": "trans",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "longo_90m_60q",
+  "target": {
+    "amount": 9,
+    "up_to": null,
+    "type": "cubos"
+  },
+  "effect": "alvo",
+  "effect_details": {
+    "shape": "cubos",
+    "dimention": "lado",
+    "size": "1,5m_yq",
+    "other_details": null
+  },
+  "counterspell": null,
+  "duration": "instantânea",
+  "duration_details": null,
+  "resistence": {
+    "effect": "varia_de_acordo_com_texto",
+    "skill": "varia_de_acordo_com_texto"
+  },
+  "extra_costs": null,
+  "description": "Você manipula a densidade e a forma de terra, pedra, lama, argila ou areia. Ao lançar a magia, escolha.\nAmolecer: se afetar o teto, uma coluna ou suporte, provoca um desabamento que causa 10d6 pontos de dano de impacto às criaturas na área (Reflexos reduz à metade). Se afetar um piso de terra ou pedra, cria terreno difícil de areia ou argila, respectivamente.\nModelar: usa pedra ou argila para criar um ou mais objetos simples Enormes ou menores. Por exemplo, transformar um tijolo em uma maça, criar uma passagem em uma parede ou levantar um muro que oferece cobertura total (RD 8 e 50 PV para cada 3m).\nSolidificar: transforma lama ou areia em terra ou pedra. Criaturas pisando na superfície ficam agarradas. Elas podem se soltar com uma ação padrão e um teste de Acrobacia ou Atletismo.",
+  "enhancements": [
+    {
+      "cost": 1,
+      "type": "aumenta",
+      "description": "aumenta o número de cubos de 1,5m em +2.",
+      "extra_details": {
+        "target": {
+          "amount": 11,
+          "up_to": null,
+          "type": "cubos"
+        }
+      }
+    },
+    {
+      "cost": 1,
+      "type": "muda",
+      "description": "muda para alcance pessoal, alvo você e duração 1 dia. Você e seus itens fundem-se a um trecho ou objeto adjacente de pedra, terra, argila ou areia que possa acomodá-lo, podendo perceber seus arredores, mas não falar ou fazer ações físicas. Se ele for destruído, você surge em um espaço livre adjacente e sofre 10d6 pontos de dano de impacto.",
+      "extra_details": {
+        "range": "pessoal",
+        "target": "voce",
+        "duration": "1_dia"
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "controle",
+      "attribute": null,
+      "amount": null,
+      "resistence_requirement": null,
+      "extra_requirements": null
+    }
+  ]
+}

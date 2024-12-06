@@ -1,0 +1,66 @@
+{
+  "id": "consagrar",
+  "name": "Consagrar",
+  "type": "divina",
+  "circle": "1",
+  "school": "evoc",
+  "execution": "padrão",
+  "execution_details": "só pode ser conjurado em uma área sem nenhum símbolo dedicado a outra divindade se não a sua",
+  "range": "longo_90m_60q",
+  "target": {
+    "amount": null,
+    "up_to": null,
+    "type": "area"
+  },
+  "effect": "area_9m",
+  "effect_details": {
+    "shape": "esfera",
+    "dimention": "raio",
+    "size": "9m_yq",
+    "other_details": null
+  },
+  "counterspell": "profanar",
+  "duration": "1_dia",
+  "duration_details": null,
+  "resistence": null,
+  "extra_costs": null,
+  "description": "Esta magia enche a área com energia positiva. Efeitos de luz que curam pontos de vida ou canalizam energia positiva têm seus efeitos maximizados. Por exemplo, Curar Ferimentos cura automaticamente 18 PV em alvos dentro da área. Esta magia não pode ser lançada em uma área contendo um símbolo visível dedica-do a uma divindade que não a sua. Consagrar anula Profanar.",
+  "enhancements": [
+    {
+      "cost": 1,
+      "type": "outro",
+      "description": "além do normal, mortos-vivos na área sofrem -2 em testes e Defesa.",
+      "extra_details": null
+    },
+    {
+      "cost": 2,
+      "type": "aumenta",
+      "description": "aumenta as penalidades para mortos-vivos em -1",
+      "extra_details": null
+    },
+    {
+      "cost": 9,
+      "type": "muda",
+      "description": "muda a execução para 1 hora, a duração para permanente e adiciona componente material (incenso e óleos no calor de T$ 1000). Requer 4º círculo.",
+      "extra_details": {
+        "execution": "1_hora",
+        "duration": "permanente",
+        "extra_costs": {
+          "material_component": "incenso e óleos",
+          "material_component_cost": "T$1.000",
+          "pm_debuff": null,
+          "pm_sacrifice": null
+        }
+      }
+    }
+  ],
+  "effects": [
+    {
+      "type": "buff",
+      "attribute": null,
+      "amount": null,
+      "resistence_requirement": null,
+      "extra_requirements": null
+    }
+  ]
+}

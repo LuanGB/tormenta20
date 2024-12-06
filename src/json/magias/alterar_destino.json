@@ -1,0 +1,33 @@
+{
+  "id": "alterar_destino",
+  "name": "Alterar Destino",
+  "type": "arcana",
+  "circle": "5",
+  "school": "adiv",
+  "execution": "reação",
+  "execution_details": null,
+  "range": "pessoal",
+  "target": {
+    "amount": null,
+    "up_to": null,
+    "type": "você"
+  },
+  "effect": "mental",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "instantânea",
+  "duration_details": null,
+  "resistence": null,
+  "extra_costs": null,
+  "description": "Sua mente visualiza todas as possibilidades de um evento, permitindo a você escolher o melhor curso de ação. Você automaticamente passa em um teste de resistência ou evita um ataque até o início de seu próximo turno.",
+  "enhancements": null,
+  "effects": [
+    {
+      "type": "outro",
+      "attribute": null,
+      "amount": null,
+      "resistence_requirement": null,
+      "extra_requirements": null
+    }
+  ]
+}

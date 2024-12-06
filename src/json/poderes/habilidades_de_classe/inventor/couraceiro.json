@@ -1,0 +1,30 @@
+{
+  "id": "couraceiro",
+  "name": "Couraceiro",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_inventor",
+  "description": "Você recebe proficiência com armaduras pesadas e escudos. Quando usa armadura, pode somar seu bônus de Inteligência em vez de Destreza na Defesa (mas continua não podendo somar um bônus de atributo na Defesa quando usa armadura pesada).",
+  "requirements": [
+    {
+      "type": "armor_type",
+      "sub_type": "soft",
+      "armor": "pesada"
+    },
+    {
+      "type": "skill_training",
+      "sub_type": "hard",
+      "skill": "oficio_armeiro"
+    }
+  ],
+  "effects": [
+    {
+      "type": "proficiency",
+      "proficiency": ["armadura_pesada", "escudos"]
+    },
+    {
+      "type": "use_defense_attr",
+      "attr": "int"
+    }
+  ],
+  "costs": null
+}

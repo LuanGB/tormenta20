@@ -1,0 +1,60 @@
+{
+  "id": "caminhos_da_natureza",
+  "name": "Caminhos da Natureza",
+  "type": "divina",
+  "circle": "1",
+  "school": "conv",
+  "execution": "padrão",
+  "execution_details": null,
+  "range": "curto_6m_9q",
+  "target": {
+    "amount": null,
+    "up_to": null,
+    "type": "criaturas_escolhidas"
+  },
+  "effect": "alvo",
+  "effect_details": null,
+  "counterspell": null,
+  "duration": "1_dia",
+  "duration_details": null,
+  "resistence": null,
+  "extra_costs": null,
+  "description": "Você invoca espíritos da natureza, pedindo que eles abram seu caminho. As criaturas afetadas recebem deslocamento +3m e ignoram penalidades por terreno difícil em terrenos naturais.",
+  "enhancements": [
+    {
+      "cost": 0,
+      "type": "muda",
+      "description": "muda o alcance para pessoal e o alvo para você. Em vez do normal, você sabe onde fica o norte e recebe +5 em testes de Sobrevivência para se orientar.",
+      "extra_details": {
+        "range": "pessoal",
+        "target": "voce",
+        "effects": {
+          "type": "bonus",
+          "skill": "sobrevivencia",
+          "amount": "+5"
+        }
+      }
+    },
+    {
+      "cost": 1,
+      "type": "bonus",
+      "description": "além do normal, a CD para rastrear os alvos em terreno natural aumenta em +10.",
+      "extra_details": null
+    },
+    {
+      "cost": 2,
+      "type": "aumenta",
+      "description": "aumenta o bônus de deslocamento em +3m.",
+      "extra_details": null
+    }
+  ],
+  "effects": [
+    {
+      "type": "bonus",
+      "attribute": "deslocamento",
+      "amount": "+3m",
+      "resistence_requirement": null,
+      "extra_requirements": null
+    }
+  ]
+}

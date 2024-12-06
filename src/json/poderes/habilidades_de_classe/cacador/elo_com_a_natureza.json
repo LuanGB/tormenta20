@@ -1,0 +1,31 @@
+{
+  "id": "elo_com_a_natureza",
+  "name": "Elo com a Natureza",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_cacador",
+  "description": "Você soma seu bônus de Sabedoria em seu total de pontos de mana e aprende e pode lançar Caminhos da Natureza (atributo-chave Sabedoria).",
+  "requirements": [
+     {
+      "type": "character_lvl",
+      "sub_type": "hard",
+      "value": 3
+    },
+    {
+      "type": "attr_value",
+      "sub_type": "hard",
+      "attr": "sab",
+      "value": 13
+    }
+  ],
+  "effects": [
+    {
+      "type": "learn_magic",
+      "magic": "caminhos_da_natureza"
+    },
+    {
+      "type": "add_attr_PM",
+      "attr": "des"
+    }
+  ],
+  "costs": null
+}

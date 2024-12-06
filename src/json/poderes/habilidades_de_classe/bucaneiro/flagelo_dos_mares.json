@@ -1,0 +1,22 @@
+{
+  "id": "flagelo_dos_mares",
+  "name": "Flagelo dos Mares",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_bucaneiro",
+  "description": "Você aprende e pode lançar Amedrontar (atributo-chave Carisma). Esta não é uma habilidade mágica e provém de sua capacidade de incutir medo em seus inimigos.",
+  "requirements": [
+    {
+      "type": "skill_training",
+      "sub_type": "hard",
+      "skill": "intimidacao"
+    }
+  ],
+  "effects": [
+    {
+      "type": "learn_magic",
+      "magic": "amedrontar",
+      "attr_key": "car"
+    }
+  ],
+  "costs": null
+}

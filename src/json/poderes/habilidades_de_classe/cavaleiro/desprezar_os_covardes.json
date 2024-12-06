@@ -1,0 +1,21 @@
+{
+  "id": "desprezar_os_covardes",
+  "name": "Desprezar os Covardes",
+  "type": "habilidade_de_classe",
+  "sub_type": "poder_de_cavaleiro",
+  "description": "Você recebe resistência a dano 5 se estiver caído, desprevenido ou flanqueado.",
+  "requirements": [
+    {
+      "type": "under_condition",
+      "sub_type": "soft",
+      "condition": ["caido", "desprevinido", "flanqueado"]
+    }
+  ],
+  "effects": [
+    {
+      "type": "damage_resist_improvement",
+      "value": 5
+    }
+  ],
+  "costs": null
+}
